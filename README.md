@@ -1,0 +1,2 @@
+# eqfiles
+EverQuest support files
