@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/2/2023 4:28:10 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/2/2023 4:51:52 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -7488,12 +7488,9 @@ useful in the Avatar of War mission</Description>
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Target>5</Target>
-                <Menu>
-                  <MenuString>ENC02</MenuString>
-                </Menu>
-                <NumButton>22</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:09</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -7520,12 +7517,9 @@ useful in the Avatar of War mission</Description>
           </Step>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Target>5</Target>
-                <Menu>
-                  <MenuString>ENC02</MenuString>
-                </Menu>
-                <NumButton>23</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:10</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -7605,12 +7599,9 @@ useful in the Avatar of War mission</Description>
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Target>5</Target>
-                <Menu>
-                  <MenuString>ENC02</MenuString>
-                </Menu>
-                <NumButton>19</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:06</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -7637,12 +7628,9 @@ useful in the Avatar of War mission</Description>
           </Step>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Target>5</Target>
-                <Menu>
-                  <MenuString>ENC02</MenuString>
-                </Menu>
-                <NumButton>20</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:07</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -7670,12 +7658,9 @@ useful in the Avatar of War mission</Description>
           <Step>
             <Disabled>true</Disabled>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Target>5</Target>
-                <Menu>
-                  <MenuString>ENC02</MenuString>
-                </Menu>
-                <NumButton>21</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:08</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -7729,7 +7714,8 @@ useful in the Avatar of War mission</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <MappedKeyString />
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB01:12</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -7757,7 +7743,8 @@ useful in the Avatar of War mission</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <MappedKeyString />
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB01:02</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -8725,17 +8712,15 @@ useful in the Avatar of War mission</Description>
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>WIZ02</MenuString>
-                </Menu>
-                <NumButton>18</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:05</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
                 <MappedKey>
                   <KeyMapString>100: Ijuante</KeyMapString>
-                  <MappedKeyString>Combat: Offensives</MappedKeyString>
+                  <MappedKeyString>Combat: Burns</MappedKeyString>
                 </MappedKey>
                 <Enable>0</Enable>
               </MappedKeyAction>
@@ -8756,11 +8741,9 @@ useful in the Avatar of War mission</Description>
           </Step>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>WIZ02</MenuString>
-                </Menu>
-                <NumButton>19</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:06</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -8818,11 +8801,9 @@ useful in the Avatar of War mission</Description>
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>WIZ02</MenuString>
-                </Menu>
-                <NumButton>20</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:07</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -8849,11 +8830,9 @@ useful in the Avatar of War mission</Description>
           </Step>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>WIZ02</MenuString>
-                </Menu>
-                <NumButton>21</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:08</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -8880,11 +8859,9 @@ useful in the Avatar of War mission</Description>
           </Step>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>WIZ02</MenuString>
-                </Menu>
-                <NumButton>22</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:09</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -8911,11 +8888,9 @@ useful in the Avatar of War mission</Description>
           </Step>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>WIZ02</MenuString>
-                </Menu>
-                <NumButton>23</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:10</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -10704,11 +10679,9 @@ useful in the Avatar of War mission</Description>
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>BRD02</MenuString>
-                </Menu>
-                <NumButton>19</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:06</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -10735,11 +10708,9 @@ useful in the Avatar of War mission</Description>
           </Step>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>BRD02</MenuString>
-                </Menu>
-                <NumButton>17</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:04</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -10766,11 +10737,9 @@ useful in the Avatar of War mission</Description>
           </Step>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>BRD02</MenuString>
-                </Menu>
-                <NumButton>18</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:05</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -10797,11 +10766,9 @@ useful in the Avatar of War mission</Description>
           </Step>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>BRD02</MenuString>
-                </Menu>
-                <NumButton>21</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:08</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -10862,12 +10829,9 @@ useful in the Avatar of War mission</Description>
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Target>4</Target>
-                <Menu>
-                  <MenuString>BRD03</MenuString>
-                </Menu>
-                <NumButton>6</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB04:06</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -10894,12 +10858,9 @@ useful in the Avatar of War mission</Description>
           </Step>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Target>4</Target>
-                <Menu>
-                  <MenuString>BRD03</MenuString>
-                </Menu>
-                <NumButton>5</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB04:05</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -13479,11 +13440,9 @@ useful in the Avatar of War mission</Description>
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>SHM02</MenuString>
-                </Menu>
-                <NumButton>22</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:09</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -13510,11 +13469,9 @@ useful in the Avatar of War mission</Description>
           </Step>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>SHM02</MenuString>
-                </Menu>
-                <NumButton>23</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:10</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -13680,11 +13637,9 @@ useful in the Avatar of War mission</Description>
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>SHM02</MenuString>
-                </Menu>
-                <NumButton>21</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:08</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -13753,11 +13708,9 @@ useful in the Avatar of War mission</Description>
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>SHM01</MenuString>
-                </Menu>
-                <NumButton>22</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB01:09</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -13784,11 +13737,9 @@ useful in the Avatar of War mission</Description>
           </Step>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>SHM01</MenuString>
-                </Menu>
-                <NumButton>23</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB01:10</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -13815,11 +13766,9 @@ useful in the Avatar of War mission</Description>
           </Step>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>SHM01</MenuString>
-                </Menu>
-                <NumButton>24</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB01:11</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
