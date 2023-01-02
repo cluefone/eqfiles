@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/1/2023 2:14:06 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/2/2023 4:28:10 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -22248,6 +22248,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
               </MappedKeyAction>
             </Actions>
           </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>READY TO SOLO!</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
         </Steps>
       </MappedKey>
       <MappedKey>
@@ -22294,6 +22304,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
               </MappedKeyAction>
             </Actions>
           </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>READY TO SOLO!</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
         </Steps>
       </MappedKey>
       <MappedKey>
@@ -22337,6 +22357,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>3</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>READY TO SOLO!</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -22404,6 +22434,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
               </MappedKeyAction>
             </Actions>
           </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>READY TO SOLO!</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
         </Steps>
       </MappedKey>
       <MappedKey>
@@ -22447,6 +22487,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>5</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>READY TO SOLO!</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
               </MappedKeyAction>
             </Actions>
           </Step>
