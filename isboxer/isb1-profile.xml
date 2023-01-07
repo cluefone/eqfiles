@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/2/2023 4:51:52 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/7/2023 7:54:20 AM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -36,7 +36,7 @@
     <Slots>
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
-        <BackgroundMaxFPS>60</BackgroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
         <CharacterString>Chinger</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+1</Combo>
@@ -69,7 +69,7 @@
       </Slot>
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
-        <BackgroundMaxFPS>60</BackgroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
         <CharacterString>Ijuante</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+2</Combo>
@@ -102,7 +102,7 @@
       </Slot>
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
-        <BackgroundMaxFPS>60</BackgroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
         <CharacterString>Watley</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+3</Combo>
@@ -135,7 +135,7 @@
       </Slot>
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
-        <BackgroundMaxFPS>60</BackgroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
         <CharacterString>Shatner</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+4</Combo>
@@ -168,7 +168,7 @@
       </Slot>
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
-        <BackgroundMaxFPS>60</BackgroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
         <CharacterString>Ibsen</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+5</Combo>
@@ -295,7 +295,7 @@
     <Slots>
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
-        <BackgroundMaxFPS>60</BackgroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
         <CharacterString>Chinger</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+1</Combo>
@@ -306,6 +306,7 @@
           </Key>
         </SwitchToCombo>
         <EffectType>OnFocus</EffectType>
+        <WindowTitle>{CHARACTER}</WindowTitle>
         <SwitchToKeyMapString>010: - SESSIONS TEMPLATE</SwitchToKeyMapString>
         <SwitchToMappedKeyString>Focus Slot 01</SwitchToMappedKeyString>
         <FTLModifiers />
@@ -327,7 +328,7 @@
       </Slot>
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
-        <BackgroundMaxFPS>60</BackgroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
         <CharacterString>Ijuante</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+2</Combo>
@@ -338,6 +339,7 @@
           </Key>
         </SwitchToCombo>
         <EffectType>OnFocus</EffectType>
+        <WindowTitle>{CHARACTER}</WindowTitle>
         <SwitchToKeyMapString>010: - SESSIONS TEMPLATE</SwitchToKeyMapString>
         <SwitchToMappedKeyString>Focus Slot 02</SwitchToMappedKeyString>
         <FTLModifiers />
@@ -359,7 +361,7 @@
       </Slot>
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
-        <BackgroundMaxFPS>60</BackgroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
         <CharacterString>Watley</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+3</Combo>
@@ -370,7 +372,7 @@
           </Key>
         </SwitchToCombo>
         <EffectType>OnFocus</EffectType>
-        <WindowTitle />
+        <WindowTitle>{CHARACTER}</WindowTitle>
         <SwitchToKeyMapString>010: - SESSIONS TEMPLATE</SwitchToKeyMapString>
         <SwitchToMappedKeyString>Focus Slot 03</SwitchToMappedKeyString>
         <FTLModifiers />
@@ -392,7 +394,7 @@
       </Slot>
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
-        <BackgroundMaxFPS>60</BackgroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
         <CharacterString>Shatner</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+4</Combo>
@@ -403,7 +405,7 @@
           </Key>
         </SwitchToCombo>
         <EffectType>OnFocus</EffectType>
-        <WindowTitle />
+        <WindowTitle>{CHARACTER}</WindowTitle>
         <SwitchToKeyMapString>010: - SESSIONS TEMPLATE</SwitchToKeyMapString>
         <SwitchToMappedKeyString>Focus Slot 04</SwitchToMappedKeyString>
         <FTLModifiers />
@@ -425,7 +427,7 @@
       </Slot>
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
-        <BackgroundMaxFPS>60</BackgroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
         <CharacterString>Ibsen</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+5</Combo>
@@ -436,6 +438,7 @@
           </Key>
         </SwitchToCombo>
         <EffectType>OnFocus</EffectType>
+        <WindowTitle>{CHARACTER}</WindowTitle>
         <SwitchToKeyMapString>010: - SESSIONS TEMPLATE</SwitchToKeyMapString>
         <SwitchToMappedKeyString>Focus Slot 05</SwitchToMappedKeyString>
         <FTLModifiers />
@@ -468,6 +471,22 @@
           </Key>
         </SwitchToCombo>
         <EffectType>None</EffectType>
+        <WindowTitle>{CHARACTER}</WindowTitle>
+        <FTLModifiers />
+        <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+        </CPUCores>
         <VariableKeystrokeInstances />
       </Slot>
     </Slots>
@@ -550,7 +569,20 @@
         <EffectType>None</EffectType>
         <WindowTitle />
         <FTLModifiers />
-        <CPUCores />
+        <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+        </CPUCores>
         <VariableKeystrokeInstances />
       </Slot>
       <Slot>
@@ -566,6 +598,21 @@
           </Key>
         </SwitchToCombo>
         <EffectType>None</EffectType>
+        <FTLModifiers />
+        <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+        </CPUCores>
         <VariableKeystrokeInstances />
       </Slot>
       <Slot>
@@ -581,6 +628,21 @@
           </Key>
         </SwitchToCombo>
         <EffectType>None</EffectType>
+        <FTLModifiers />
+        <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+        </CPUCores>
         <VariableKeystrokeInstances />
       </Slot>
       <Slot>
@@ -596,6 +658,21 @@
           </Key>
         </SwitchToCombo>
         <EffectType>None</EffectType>
+        <FTLModifiers />
+        <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+        </CPUCores>
         <VariableKeystrokeInstances />
       </Slot>
     </Slots>
@@ -619,7 +696,7 @@
     <AccountName />
     <SubAccountName />
     <ServerName />
-    <ActualName>Chinger</ActualName>
+    <ActualName />
     <Game>EverQuest</Game>
     <GameProfile>EverQuest Default Profile</GameProfile>
     <AppendParameters />
@@ -702,7 +779,7 @@
     <AccountName />
     <SubAccountName />
     <ServerName />
-    <ActualName>Ibsen</ActualName>
+    <ActualName />
     <Game>EverQuest</Game>
     <GameProfile>EverQuest Default Profile</GameProfile>
     <AppendParameters />
@@ -756,7 +833,7 @@
     <AccountName />
     <SubAccountName />
     <ServerName />
-    <ActualName>Ijuante</ActualName>
+    <ActualName />
     <Game>EverQuest</Game>
     <GameProfile>EverQuest Default Profile</GameProfile>
     <AppendParameters />
@@ -813,7 +890,7 @@
     <AccountName />
     <SubAccountName />
     <ServerName />
-    <ActualName>Shatner</ActualName>
+    <ActualName />
     <Game>EverQuest</Game>
     <GameProfile>EverQuest Default Profile</GameProfile>
     <AppendParameters />
@@ -868,7 +945,7 @@
     <AccountName />
     <SubAccountName />
     <ServerName />
-    <ActualName>Watley</ActualName>
+    <ActualName />
     <Game>EverQuest</Game>
     <GameProfile>EverQuest Default Profile</GameProfile>
     <AppendParameters />
@@ -3442,7 +3519,9 @@ will work best with one of pal/wiz/enc casting IVU in step 1, then SHM in step 2
         <Name>Startup</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
-          <Step />
+          <Step>
+            <Actions />
+          </Step>
         </Steps>
       </MappedKey>
     </Mappings>
@@ -3478,7 +3557,6 @@ will work best with one of pal/wiz/enc casting IVU in step 1, then SHM in step 2
       </MappedKey>
       <MappedKey>
         <Name>Focus Slot 01</Name>
-        <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
             <Actions>
@@ -6017,6 +6095,12 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
                   <MenuString>_Setup</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="ClickBarStateAction">
+                <Target>all&amp;~dxnothing</Target>
+                <ClickBar />
+                <ActionType>Clear</ActionType>
+                <ClickBarSet />
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -22604,16 +22688,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>164</Y>
+                    <Y>200</Y>
                   </Location>
                   <Size>
                     <Width>169</Width>
-                    <Height>170</Height>
+                    <Height>190</Height>
                   </Size>
                   <X>0</X>
-                  <Y>164</Y>
+                  <Y>200</Y>
                   <Width>169</Width>
-                  <Height>170</Height>
+                  <Height>190</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
                 <MappedKey />
@@ -22625,14 +22709,14 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>16</X>
-                    <Y>558</Y>
+                    <Y>590</Y>
                   </Location>
                   <Size>
                     <Width>334</Width>
                     <Height>24</Height>
                   </Size>
                   <X>16</X>
-                  <Y>558</Y>
+                  <Y>590</Y>
                   <Width>334</Width>
                   <Height>24</Height>
                 </Rect>
@@ -22780,16 +22864,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>170</X>
-                    <Y>164</Y>
+                    <Y>200</Y>
                   </Location>
                   <Size>
                     <Width>169</Width>
-                    <Height>170</Height>
+                    <Height>190</Height>
                   </Size>
                   <X>170</X>
-                  <Y>164</Y>
+                  <Y>200</Y>
                   <Width>169</Width>
-                  <Height>170</Height>
+                  <Height>190</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
                 <MappedKey />
@@ -22801,14 +22885,14 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>371</X>
-                    <Y>558</Y>
+                    <Y>590</Y>
                   </Location>
                   <Size>
                     <Width>334</Width>
                     <Height>24</Height>
                   </Size>
                   <X>371</X>
-                  <Y>558</Y>
+                  <Y>590</Y>
                   <Width>334</Width>
                   <Height>24</Height>
                 </Rect>
@@ -22956,16 +23040,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>340</X>
-                    <Y>164</Y>
+                    <Y>200</Y>
                   </Location>
                   <Size>
                     <Width>169</Width>
-                    <Height>170</Height>
+                    <Height>190</Height>
                   </Size>
                   <X>340</X>
-                  <Y>164</Y>
+                  <Y>200</Y>
                   <Width>169</Width>
-                  <Height>170</Height>
+                  <Height>190</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
                 <MappedKey />
@@ -22977,14 +23061,14 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>16</X>
-                    <Y>341</Y>
+                    <Y>397</Y>
                   </Location>
                   <Size>
                     <Width>334</Width>
                     <Height>24</Height>
                   </Size>
                   <X>16</X>
-                  <Y>341</Y>
+                  <Y>397</Y>
                   <Width>334</Width>
                   <Height>24</Height>
                 </Rect>
@@ -23132,16 +23216,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>510</X>
-                    <Y>164</Y>
+                    <Y>200</Y>
                   </Location>
                   <Size>
                     <Width>169</Width>
-                    <Height>170</Height>
+                    <Height>190</Height>
                   </Size>
                   <X>510</X>
-                  <Y>164</Y>
+                  <Y>200</Y>
                   <Width>169</Width>
-                  <Height>170</Height>
+                  <Height>190</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
                 <MappedKey />
@@ -23153,14 +23237,14 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>371</X>
-                    <Y>341</Y>
+                    <Y>397</Y>
                   </Location>
                   <Size>
                     <Width>334</Width>
                     <Height>24</Height>
                   </Size>
                   <X>371</X>
-                  <Y>341</Y>
+                  <Y>397</Y>
                   <Width>334</Width>
                   <Height>24</Height>
                 </Rect>
@@ -34678,6 +34762,11 @@ clicking manually through VFX is possible, but probably not the best way</Descri
       </MappedKey>
       <MappedKey>
         <Name>SetHealingBarsStatusOnSwitch</Name>
+        <Description>executed when we switch to a slot from the Focus &lt;slot#&gt; mapped key
+
+enabled when the shaman is involved in the group
+
+this needs more work to be flexible, but will probably wait for isb2 which will be merging menus and click bars</Description>
         <ManualLoad>true</ManualLoad>
         <Steps>
           <Step>
@@ -39015,7 +39104,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39101,7 +39189,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39112,7 +39199,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39128,7 +39214,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39144,7 +39229,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39160,7 +39244,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39187,7 +39270,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39198,7 +39280,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39214,7 +39295,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39230,7 +39310,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39246,7 +39325,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39273,7 +39351,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39284,7 +39361,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39300,7 +39376,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39316,7 +39391,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39332,7 +39406,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39359,7 +39432,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39370,7 +39442,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39386,7 +39457,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39402,7 +39472,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39418,7 +39487,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39445,7 +39513,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39456,7 +39523,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39472,7 +39538,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39488,7 +39553,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39498,13 +39562,12 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <Target>all</Target>
             <ActionTimer>
               <PoolName>OpacityTimer</PoolName>
-              <Seconds>336.5</Seconds>
+              <Seconds>337.5</Seconds>
               <Enabled>true</Enabled>
             </ActionTimer>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39531,7 +39594,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39542,7 +39604,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39558,7 +39619,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39574,7 +39634,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39590,7 +39649,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39617,7 +39675,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39628,7 +39685,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39644,7 +39700,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39660,7 +39715,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39676,7 +39730,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39703,7 +39756,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39714,7 +39766,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39730,7 +39781,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39746,7 +39796,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39762,7 +39811,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39789,7 +39837,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39800,7 +39847,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39816,7 +39862,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39832,7 +39877,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39848,7 +39892,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39875,7 +39918,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39886,7 +39928,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39902,7 +39943,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39918,7 +39958,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39934,7 +39973,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39961,7 +39999,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39972,7 +40009,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -39988,7 +40024,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40004,7 +40039,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40020,7 +40054,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40063,7 +40096,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40074,7 +40106,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40090,7 +40121,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40106,7 +40136,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40122,7 +40151,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40148,7 +40176,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40159,7 +40186,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40175,7 +40201,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40191,7 +40216,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40207,7 +40231,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40233,7 +40256,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40244,7 +40266,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40260,7 +40281,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40276,7 +40296,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40292,7 +40311,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40318,7 +40336,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40329,7 +40346,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40345,7 +40361,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40361,7 +40376,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40377,7 +40391,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40404,7 +40417,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40415,7 +40427,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40431,7 +40442,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40447,7 +40457,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40463,7 +40472,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40490,7 +40498,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40501,7 +40508,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40517,7 +40523,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40533,7 +40538,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40549,7 +40553,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40629,7 +40632,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40640,7 +40642,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40656,7 +40657,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40672,7 +40672,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40688,7 +40687,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40715,7 +40713,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40726,7 +40723,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40742,7 +40738,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40758,7 +40753,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40774,7 +40768,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40833,7 +40826,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40844,7 +40836,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40860,7 +40851,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40876,7 +40866,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -40892,7 +40881,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
-              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
               <NumButton>-1</NumButton>
             </MenuButton>
             <ButtonChanges>
@@ -51342,11 +51330,11 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     </BorderColor>
     <frameSize>
       <Width>351</Width>
-      <Height>48</Height>
+      <Height>40</Height>
     </frameSize>
     <buttonSize>
       <Width>27</Width>
-      <Height>24</Height>
+      <Height>20</Height>
     </buttonSize>
     <buttonImage />
     <buttonImageHover />
@@ -51723,28 +51711,28 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Template>Menu - 2x13</Template>
     <ButtonLayout>BRD01</ButtonLayout>
     <HotkeyLayout />
-    <Y>349</Y>
+    <Y>405</Y>
   </Menu>
   <Menu>
     <Name>BRD02</Name>
     <Template>Menu - 2x13</Template>
     <ButtonLayout>BRD02</ButtonLayout>
     <HotkeyLayout />
-    <Y>397</Y>
+    <Y>445</Y>
   </Menu>
   <Menu>
     <Name>BRD03</Name>
     <Template>Menu - 2x13</Template>
     <ButtonLayout>BRD03</ButtonLayout>
     <HotkeyLayout />
-    <Y>445</Y>
+    <Y>485</Y>
   </Menu>
   <Menu>
     <Name>BRD04</Name>
     <Template>Menu - 2x13</Template>
     <ButtonLayout>BRD04</ButtonLayout>
     <HotkeyLayout />
-    <Y>493</Y>
+    <Y>525</Y>
   </Menu>
   <Menu>
     <Name>ENC01</Name>
@@ -51752,7 +51740,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <ButtonLayout>ENC01</ButtonLayout>
     <HotkeyLayout />
     <X>355</X>
-    <Y>349</Y>
+    <Y>405</Y>
   </Menu>
   <Menu>
     <Name>ENC02</Name>
@@ -51760,7 +51748,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <ButtonLayout>ENC02</ButtonLayout>
     <HotkeyLayout />
     <X>355</X>
-    <Y>397</Y>
+    <Y>445</Y>
   </Menu>
   <Menu>
     <Name>ENC03</Name>
@@ -51768,7 +51756,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <ButtonLayout>ENC03</ButtonLayout>
     <HotkeyLayout />
     <X>355</X>
-    <Y>445</Y>
+    <Y>485</Y>
   </Menu>
   <Menu>
     <Name>ENC04</Name>
@@ -51776,7 +51764,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <ButtonLayout>ENC04</ButtonLayout>
     <HotkeyLayout />
     <X>355</X>
-    <Y>493</Y>
+    <Y>525</Y>
   </Menu>
   <Menu>
     <Name>ISB42 - Formations</Name>
@@ -51827,7 +51815,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Template>Toggles</Template>
     <ButtonLayout>ISB42 - Toggles</ButtonLayout>
     <HotkeyLayout />
-    <Y>110</Y>
+    <Y>133</Y>
   </Menu>
   <Menu>
     <Name>PAL01</Name>
@@ -51843,7 +51831,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <ButtonLayout>SHM01</ButtonLayout>
     <HotkeyLayout />
     <X>355</X>
-    <Y>566</Y>
+    <Y>598</Y>
   </Menu>
   <Menu>
     <Name>SHM02</Name>
@@ -51851,7 +51839,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <ButtonLayout>SHM02</ButtonLayout>
     <HotkeyLayout />
     <X>355</X>
-    <Y>614</Y>
+    <Y>638</Y>
   </Menu>
   <Menu>
     <Name>SHM03</Name>
@@ -51859,7 +51847,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <ButtonLayout>SHM03</ButtonLayout>
     <HotkeyLayout />
     <X>355</X>
-    <Y>662</Y>
+    <Y>678</Y>
   </Menu>
   <Menu>
     <Name>SHM04</Name>
@@ -51867,7 +51855,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <ButtonLayout>SHM04</ButtonLayout>
     <HotkeyLayout />
     <X>355</X>
-    <Y>710</Y>
+    <Y>718</Y>
   </Menu>
   <Menu>
     <Name>WIZ01</Name>
@@ -51876,7 +51864,7 @@ C8088A08</Description>
     <Template>Menu - 2x13</Template>
     <ButtonLayout>WIZ01</ButtonLayout>
     <HotkeyLayout />
-    <Y>566</Y>
+    <Y>598</Y>
   </Menu>
   <Menu>
     <Name>WIZ02</Name>
@@ -51885,21 +51873,21 @@ C8088A08</Description>
     <Template>Menu - 2x13</Template>
     <ButtonLayout>WIZ02</ButtonLayout>
     <HotkeyLayout />
-    <Y>614</Y>
+    <Y>638</Y>
   </Menu>
   <Menu>
     <Name>WIZ03</Name>
     <Template>Menu - 2x13</Template>
     <ButtonLayout>WIZ03</ButtonLayout>
     <HotkeyLayout />
-    <Y>662</Y>
+    <Y>678</Y>
   </Menu>
   <Menu>
     <Name>WIZ04</Name>
     <Template>Menu - 2x13</Template>
     <ButtonLayout>WIZ04</ButtonLayout>
     <HotkeyLayout />
-    <Y>710</Y>
+    <Y>718</Y>
   </Menu>
   <Menu>
     <Name>xtargets</Name>
