@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/12/2023 11:23:20 AM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/12/2023 1:41:24 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -2012,6 +2012,7 @@ reset offensives back to 1 (ToDo: redundant here, if the next assist will do tha
             <Code>71</Code>
           </Key>
         </Combo>
+        <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
             <Actions>
@@ -5535,7 +5536,8 @@ inquisitor's judgment</Description>
       <MappedKey>
         <Name>Combat: Reset</Name>
         <Description>when combat ends, this resets our small burns back to step 1</Description>
-        <Mode>OnPressAndRelease</Mode>
+        <ResetTimer>5</ResetTimer>
+        <ResetType>FromLastPress</ResetType>
         <Steps>
           <Step>
             <Actions>
@@ -7782,7 +7784,8 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Combat: Reset</Name>
-        <Mode>OnPressAndRelease</Mode>
+        <ResetTimer>5</ResetTimer>
+        <ResetType>FromLastPress</ResetType>
         <Steps>
           <Step>
             <Actions>
@@ -9034,7 +9037,8 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Combat: Reset</Name>
-        <Mode>OnPressAndRelease</Mode>
+        <ResetTimer>5</ResetTimer>
+        <ResetType>FromLastPress</ResetType>
         <Steps>
           <Step>
             <Actions>
@@ -10908,9 +10912,11 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Combat: Reset</Name>
-        <Mode>OnPressAndRelease</Mode>
+        <ResetTimer>5</ResetTimer>
+        <ResetType>FromLastPress</ResetType>
         <Steps>
           <Step>
+            <Stick>0.2</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
@@ -10932,6 +10938,12 @@ useful in the Avatar of War mission</Description>
                 <Action>Set</Action>
                 <Value>1</Value>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>SLOT4 Combat: Reset STEP1</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
             </Actions>
           </Step>
           <Step>
@@ -10939,6 +10951,12 @@ useful in the Avatar of War mission</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB11:11</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>SLOT4 Combat: Reset STEP2</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -13796,7 +13814,8 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Combat: Reset</Name>
-        <Mode>OnPressAndRelease</Mode>
+        <ResetTimer>5</ResetTimer>
+        <ResetType>FromLastPress</ResetType>
         <Steps>
           <Step>
             <Actions>
@@ -19708,6 +19727,15 @@ now all 'other' characters will know how to target the MA, and assist the MA whe
                 <MappedKey>
                   <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                   <MappedKeyString>Control: Show Menus</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                  <MappedKeyString>Combat: Reset</MappedKeyString>
                 </MappedKey>
                 <Action>Set</Action>
                 <Value>1</Value>
