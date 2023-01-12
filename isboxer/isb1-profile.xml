@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/7/2023 7:54:20 AM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/12/2023 11:23:20 AM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -5535,6 +5535,7 @@ inquisitor's judgment</Description>
       <MappedKey>
         <Name>Combat: Reset</Name>
         <Description>when combat ends, this resets our small burns back to step 1</Description>
+        <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
             <Actions>
@@ -5549,6 +5550,14 @@ inquisitor's judgment</Description>
                 </MappedKey>
                 <Action>Set</Action>
                 <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:11</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -7773,6 +7782,7 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Combat: Reset</Name>
+        <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
             <Actions>
@@ -7787,6 +7797,14 @@ useful in the Avatar of War mission</Description>
                 </MappedKey>
                 <Action>Set</Action>
                 <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:11</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -8224,7 +8242,7 @@ useful in the Avatar of War mission</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Target>CurrentBoxes</Target>
-                <Text>{CHARACTER} INVITED TO GROUP1</Text>
+                <Text>SLOT 5 INVITED TO GROUP1</Text>
                 <DurationMS>1500</DurationMS>
                 <FadeDurationMS>0</FadeDurationMS>
                 <Red>0</Red>
@@ -9016,6 +9034,7 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Combat: Reset</Name>
+        <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
             <Actions>
@@ -9030,6 +9049,14 @@ useful in the Avatar of War mission</Description>
                 </MappedKey>
                 <Action>Set</Action>
                 <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:11</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -9469,7 +9496,7 @@ useful in the Avatar of War mission</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Target>CurrentBoxes</Target>
-                <Text>{CHARACTER} HAS BEEN INVITED TO GROUP1</Text>
+                <Text>SLOT 2 INVITED TO GROUP1</Text>
                 <DurationMS>1500</DurationMS>
                 <FadeDurationMS>0</FadeDurationMS>
                 <Red>0</Red>
@@ -10881,6 +10908,7 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Combat: Reset</Name>
+        <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
             <Actions>
@@ -10903,6 +10931,14 @@ useful in the Avatar of War mission</Description>
                 </MappedKey>
                 <Action>Set</Action>
                 <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:11</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -11378,7 +11414,7 @@ useful in the Avatar of War mission</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Target>CurrentBoxes</Target>
-                <Text>{CHARACTER} INVITED TO GROUP1</Text>
+                <Text>SLOT 4 INVITED TO GROUP1</Text>
                 <DurationMS>1500</DurationMS>
                 <FadeDurationMS>0</FadeDurationMS>
                 <Red>0</Red>
@@ -13760,6 +13796,7 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Combat: Reset</Name>
+        <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
             <Actions>
@@ -13782,6 +13819,14 @@ useful in the Avatar of War mission</Description>
                 </MappedKey>
                 <Action>Set</Action>
                 <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:11</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -14351,7 +14396,7 @@ useful in the Avatar of War mission</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Target>CurrentBoxes</Target>
-                <Text>{CHARACTER} INVITED TO GROUP1</Text>
+                <Text>SLOT 3 INVITED TO GROUP1</Text>
                 <DurationMS>1500</DurationMS>
                 <FadeDurationMS>0</FadeDurationMS>
                 <Red>0</Red>
@@ -19714,6 +19759,12 @@ now all 'other' characters will know how to target the MA, and assist the MA whe
                 <ActionType>Clear</ActionType>
                 <ClickBarSet />
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStateAction">
+                <Target>all&amp;~dxnothing</Target>
+                <Value>Off</Value>
+                <KeyMapString>ClickBarHealingConfig</KeyMapString>
+                <MappedKeyString>SetHealingBarsStatusOnSwitch</MappedKeyString>
+              </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
                 <Target>all&amp;~dxnothing</Target>
                 <Menu>
@@ -20947,11 +20998,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
             <Stop>true</Stop>
             <Stump>true</Stump>
             <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>CurrentBoxes</Target>
-                <KeyMapString>010: - SESSIONS TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Show Menus</MappedKeyString>
-              </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Text>READY TO DO INVITES</Text>
                 <Red>0</Red>
@@ -21227,7 +21273,7 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
               <MappedKeyAction xsi:type="MappedKeyStepAction">
                 <Target>all</Target>
                 <MappedKey>
-                  <KeyMapString>ISB42 - Custom Hotkeys</KeyMapString>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
                   <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
                 </MappedKey>
                 <Action>Set</Action>
@@ -21335,7 +21381,7 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
               <MappedKeyAction xsi:type="MappedKeyStepAction">
                 <Target>all</Target>
                 <MappedKey>
-                  <KeyMapString>ISB42 - Custom Hotkeys</KeyMapString>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
                   <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
                 </MappedKey>
                 <Action>Set</Action>
@@ -21434,7 +21480,7 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
               <MappedKeyAction xsi:type="MappedKeyStepAction">
                 <Target>all</Target>
                 <MappedKey>
-                  <KeyMapString>ISB42 - Custom Hotkeys</KeyMapString>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
                   <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
                 </MappedKey>
                 <Action>Set</Action>
@@ -21528,7 +21574,7 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
               <MappedKeyAction xsi:type="MappedKeyStepAction">
                 <Target>all</Target>
                 <MappedKey>
-                  <KeyMapString>ISB42 - Custom Hotkeys</KeyMapString>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
                   <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
                 </MappedKey>
                 <Action>Set</Action>
@@ -21622,7 +21668,7 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
               <MappedKeyAction xsi:type="MappedKeyStepAction">
                 <Target>all</Target>
                 <MappedKey>
-                  <KeyMapString>ISB42 - Custom Hotkeys</KeyMapString>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
                   <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
                 </MappedKey>
                 <Action>Set</Action>
