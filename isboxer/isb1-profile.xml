@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/12/2023 4:16:26 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/14/2023 9:45:17 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -20245,6 +20245,51 @@ now all 'other' characters will know how to target the MA, and assist the MA whe
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Control: Invite 134</Name>
+        <Description>Invites all slots from Slot 1</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>100: Watley</KeyMapString>
+                <MappedKeyString>Control: Invite Me to Group 1</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.2</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>100: Shatner</KeyMapString>
+                <MappedKeyString>Control: Invite Me to Group 1</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Target>3</Target>
+                <Name>Invite (Accept Invite)</Name>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Stump>true</Stump>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Target>4</Target>
+                <Name>Invite (Accept Invite)</Name>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>INVITES COMPLETED</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Green>0</Green>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Control: Invite 14</Name>
         <Steps>
           <Step>
@@ -21542,6 +21587,116 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Control: Setup-134</Name>
+        <Description>muti-step mapped key, typically executed via menu button
+
+Flush ATGs and Clear all VFX
+recreate VFX sources and viewers
+assign appropriate ATGs for each character slot (leader vs. follower)
+virtualize Control: Invites in 199: General in preparation for sending group invites
+</Description>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>all</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: Flush ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Clear</Action>
+                <Name />
+                <Target>all</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>0</Width>
+                    <Height>0</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>0</Width>
+                  <Height>0</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot3</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot4</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>1</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>3</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>4</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyRewriteAction">
+                <FromMappedKey>
+                  <KeyMapString>199: General</KeyMapString>
+                  <MappedKeyString>Control: Invites</MappedKeyString>
+                </FromMappedKey>
+                <ToMappedKey>
+                  <KeyMapString>199: General</KeyMapString>
+                  <MappedKeyString>Control: Invite 134</MappedKeyString>
+                </ToMappedKey>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Stump>true</Stump>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>READY TO DO INVITES</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Control: Setup-14</Name>
         <Mode>OnPressAndRelease</Mode>
         <Steps>
@@ -21993,7 +22148,7 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Setup-43</MappedKeyString>
+                  <MappedKeyString>Control: Invite 42</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
             </Actions>
