@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/14/2023 9:45:17 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/18/2023 5:50:45 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -1391,7 +1391,7 @@
         <Permanent>true</Permanent>
         <AlwaysOnTopMode>Normal</AlwaysOnTopMode>
         <Rect>
-          <Width>3440</Width>
+          <Width>2560</Width>
           <Height>1392</Height>
         </Rect>
       </Region>
@@ -1400,7 +1400,7 @@
         <Permanent>true</Permanent>
         <AlwaysOnTopMode>Normal</AlwaysOnTopMode>
         <Rect>
-          <Width>3440</Width>
+          <Width>2560</Width>
           <Height>1392</Height>
         </Rect>
       </Region>
@@ -1409,7 +1409,7 @@
         <Permanent>true</Permanent>
         <AlwaysOnTopMode>Normal</AlwaysOnTopMode>
         <Rect>
-          <Width>3440</Width>
+          <Width>2560</Width>
           <Height>1392</Height>
         </Rect>
       </Region>
@@ -1418,7 +1418,7 @@
         <Permanent>true</Permanent>
         <AlwaysOnTopMode>Normal</AlwaysOnTopMode>
         <Rect>
-          <Width>3440</Width>
+          <Width>2560</Width>
           <Height>1392</Height>
         </Rect>
       </Region>
@@ -1427,7 +1427,7 @@
         <Permanent>true</Permanent>
         <AlwaysOnTopMode>Normal</AlwaysOnTopMode>
         <Rect>
-          <Width>3440</Width>
+          <Width>2560</Width>
           <Height>1392</Height>
         </Rect>
       </Region>
@@ -1435,9 +1435,9 @@
         <CharacterSetSlot>6</CharacterSetSlot>
         <Permanent>true</Permanent>
         <Rect>
-          <Left>3440</Left>
-          <Width>376</Width>
-          <Height>1032</Height>
+          <Left>2560</Left>
+          <Width>880</Width>
+          <Height>1392</Height>
         </Rect>
       </Region>
     </Regions>
@@ -3569,110 +3569,9 @@ will work best with one of pal/wiz/enc casting IVU in step 1, then SHM in step 2
                 <KeyMapString>ClickBarHealingConfig</KeyMapString>
                 <MappedKeyString>SetHealingBarsStatusOnSwitch</MappedKeyString>
               </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Remove</Action>
-                <Name>is1</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>0</Y>
-                  </Location>
-                  <Size>
-                    <Width>1146</Width>
-                    <Height>240</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>0</Y>
-                  <Width>1146</Width>
-                  <Height>240</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is2</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>206</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>206</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is3</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>412</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>412</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is4</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>618</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>618</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is5</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>824</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>824</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: VFX - Focus 01</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -3692,110 +3591,9 @@ will work best with one of pal/wiz/enc casting IVU in step 1, then SHM in step 2
                 <KeyMapString>ClickBarHealingConfig</KeyMapString>
                 <MappedKeyString>SetHealingBarsStatusOnSwitch</MappedKeyString>
               </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is1</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>0</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>0</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Remove</Action>
-                <Name>is2</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>376</X>
-                    <Y>0</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>232</Height>
-                  </Size>
-                  <X>376</X>
-                  <Y>0</Y>
-                  <Width>376</Width>
-                  <Height>232</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is3</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>412</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>412</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is4</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>618</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>618</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is5</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>818</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>818</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: VFX - Focus 02</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -3815,110 +3613,9 @@ will work best with one of pal/wiz/enc casting IVU in step 1, then SHM in step 2
                 <KeyMapString>ClickBarHealingConfig</KeyMapString>
                 <MappedKeyString>SetHealingBarsStatusOnSwitch</MappedKeyString>
               </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is1</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>0</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>0</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is2</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>206</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>206</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Remove</Action>
-                <Name>is3</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>752</X>
-                    <Y>0</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>232</Height>
-                  </Size>
-                  <X>752</X>
-                  <Y>0</Y>
-                  <Width>376</Width>
-                  <Height>232</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is4</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>618</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>618</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is5</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>824</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>824</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: VFX - Focus 03</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -3938,109 +3635,9 @@ will work best with one of pal/wiz/enc casting IVU in step 1, then SHM in step 2
                 <KeyMapString>ClickBarHealingConfig</KeyMapString>
                 <MappedKeyString>SetHealingBarsStatusOnSwitch</MappedKeyString>
               </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is1</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>0</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>0</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is2</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>206</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>206</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is3</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>412</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>412</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Remove</Action>
-                <Name>is4</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>1128</X>
-                    <Y>0</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>232</Height>
-                  </Size>
-                  <X>1128</X>
-                  <Y>0</Y>
-                  <Width>376</Width>
-                  <Height>232</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is5</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>824</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>824</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: VFX - Focus 04</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -4060,110 +3657,9 @@ will work best with one of pal/wiz/enc casting IVU in step 1, then SHM in step 2
                 <KeyMapString>ClickBarHealingConfig</KeyMapString>
                 <MappedKeyString>SetHealingBarsStatusOnSwitch</MappedKeyString>
               </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is1</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>0</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>0</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is2</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>206</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>206</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is3</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>412</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>412</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>is4</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>618</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>206</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>618</Y>
-                  <Width>376</Width>
-                  <Height>206</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Remove</Action>
-                <Name>is5</Name>
-                <Target>dxNothing</Target>
-                <Rect>
-                  <Location>
-                    <X>1504</X>
-                    <Y>0</Y>
-                  </Location>
-                  <Size>
-                    <Width>376</Width>
-                    <Height>232</Height>
-                  </Size>
-                  <X>1504</X>
-                  <Y>0</Y>
-                  <Width>376</Width>
-                  <Height>232</Height>
-                </Rect>
-                <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: VFX - Focus 05</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -6361,7 +5857,10 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>TrackOn</Name>
-        <Description>create tracking vfx viewer</Description>
+        <Description>create tracking vfx viewer
+
+3440 width pos = 3170,375
+2560 width position = 2290, 375</Description>
         <Steps>
           <Step>
             <Actions>
@@ -6370,14 +5869,14 @@ useful in the Avatar of War mission</Description>
                 <Name>BRD-Tracking</Name>
                 <Rect>
                   <Location>
-                    <X>3170</X>
+                    <X>2290</X>
                     <Y>375</Y>
                   </Location>
                   <Size>
                     <Width>265</Width>
                     <Height>700</Height>
                   </Size>
-                  <X>3170</X>
+                  <X>2290</X>
                   <Y>375</Y>
                   <Width>265</Width>
                   <Height>700</Height>
@@ -8373,28 +7872,28 @@ useful in the Avatar of War mission</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is5|dxnothing)</Target>
                 <Menu>
                   <MenuString>ENC01</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is5|dxnothing)</Target>
                 <Menu>
                   <MenuString>ENC02</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is5|dxnothing)</Target>
                 <Menu>
                   <MenuString>ENC03</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is5|dxnothing)</Target>
                 <Menu>
                   <MenuString>ENC04</MenuString>
                 </Menu>
@@ -9636,28 +9135,28 @@ useful in the Avatar of War mission</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is2|dxnothing)</Target>
                 <Menu>
                   <MenuString>WIZ01</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is2|dxnothing)</Target>
                 <Menu>
                   <MenuString>WIZ02</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is2|dxnothing)</Target>
                 <Menu>
                   <MenuString>WIZ03</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is2|dxnothing)</Target>
                 <Menu>
                   <MenuString>WIZ04</MenuString>
                 </Menu>
@@ -9668,28 +9167,28 @@ useful in the Avatar of War mission</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is2|dxnothing)</Target>
                 <Menu>
                   <MenuString>WIZ01</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is2|dxnothing)</Target>
                 <Menu>
                   <MenuString>WIZ02</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is2|dxnothing)</Target>
                 <Menu>
                   <MenuString>WIZ03</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is2|dxnothing)</Target>
                 <Menu>
                   <MenuString>WIZ04</MenuString>
                 </Menu>
@@ -11533,28 +11032,28 @@ useful in the Avatar of War mission</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is4|dxnothing)</Target>
                 <Menu>
                   <MenuString>BRD01</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is4|dxnothing)</Target>
                 <Menu>
                   <MenuString>BRD02</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is4|dxnothing)</Target>
                 <Menu>
                   <MenuString>BRD03</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is4|dxnothing)</Target>
                 <Menu>
                   <MenuString>BRD04</MenuString>
                 </Menu>
@@ -11565,28 +11064,28 @@ useful in the Avatar of War mission</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is4|dxnothing)</Target>
                 <Menu>
                   <MenuString>BRD01</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is4|dxnothing)</Target>
                 <Menu>
                   <MenuString>BRD02</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is4|dxnothing)</Target>
                 <Menu>
                   <MenuString>BRD03</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is4|dxnothing)</Target>
                 <Menu>
                   <MenuString>BRD04</MenuString>
                 </Menu>
@@ -12080,14 +11579,14 @@ useful in the Avatar of War mission</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>3170</X>
+                    <X>2290</X>
                     <Y>375</Y>
                   </Location>
                   <Size>
                     <Width>265</Width>
                     <Height>700</Height>
                   </Size>
-                  <X>3170</X>
+                  <X>2290</X>
                   <Y>375</Y>
                   <Width>265</Width>
                   <Height>700</Height>
@@ -14538,28 +14037,28 @@ useful in the Avatar of War mission</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is3|dxnothing)</Target>
                 <Menu>
                   <MenuString>SHM01</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is3|dxnothing)</Target>
                 <Menu>
                   <MenuString>SHM02</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is3|dxnothing)</Target>
                 <Menu>
                   <MenuString>SHM03</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is3|dxnothing)</Target>
                 <Menu>
                   <MenuString>SHM04</MenuString>
                 </Menu>
@@ -14601,28 +14100,28 @@ useful in the Avatar of War mission</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is3|dxnothing)</Target>
                 <Menu>
                   <MenuString>SHM01</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is3|dxnothing)</Target>
                 <Menu>
                   <MenuString>SHM02</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is3|dxnothing)</Target>
                 <Menu>
                   <MenuString>SHM03</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(is3|dxnothing)</Target>
                 <Menu>
                   <MenuString>SHM04</MenuString>
                 </Menu>
@@ -22800,6 +22299,576 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
         <Steps>
           <Step>
             <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: VFX - Focus 01</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>is1</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>1146</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>1146</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is2</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>278</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>278</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is3</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>556</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>556</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is4</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>834</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>834</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is5</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>1112</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>1112</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: VFX - Focus 02</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is1</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>is2</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>278</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>278</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is3</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>556</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>556</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is4</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>834</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>834</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is5</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>1112</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>1112</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: VFX - Focus 03</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is1</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is2</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>278</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>278</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>is3</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>556</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>556</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is4</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>834</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>834</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is5</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>1112</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>1112</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: VFX - Focus 04</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is1</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is2</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>278</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>278</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is3</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>556</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>556</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>is4</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>834</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>834</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is5</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>1112</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>1112</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: VFX - Focus 05</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is1</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is2</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>278</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>278</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is3</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>556</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>556</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is4</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>834</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>834</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>is5</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>1112</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>1112</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
           </Step>
         </Steps>
       </MappedKey>
