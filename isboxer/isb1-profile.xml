@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/18/2023 5:50:45 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/19/2023 5:56:52 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -5592,6 +5592,13 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuStateAction">
+                <Target>all&amp;~(is1|dxnothing)</Target>
+                <Menu>
+                  <MenuString>PAL01</MenuString>
+                </Menu>
+                <ActionType>Load</ActionType>
+              </MappedKeyAction>
             </Actions>
           </Step>
           <Step>
@@ -5600,6 +5607,13 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
                 <Target>all&amp;~dxnothing</Target>
                 <Menu>
                   <MenuString>_Setup</MenuString>
+                </Menu>
+                <ActionType>Unload</ActionType>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuStateAction">
+                <Target>all&amp;~dxnothing</Target>
+                <Menu>
+                  <MenuString>PAL01</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
@@ -5869,16 +5883,16 @@ useful in the Avatar of War mission</Description>
                 <Name>BRD-Tracking</Name>
                 <Rect>
                   <Location>
-                    <X>2290</X>
+                    <X>2350</X>
                     <Y>375</Y>
                   </Location>
                   <Size>
-                    <Width>265</Width>
+                    <Width>205</Width>
                     <Height>700</Height>
                   </Size>
-                  <X>2290</X>
+                  <X>2350</X>
                   <Y>375</Y>
-                  <Width>265</Width>
+                  <Width>205</Width>
                   <Height>700</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
@@ -11579,16 +11593,16 @@ useful in the Avatar of War mission</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>2290</X>
+                    <X>2350</X>
                     <Y>375</Y>
                   </Location>
                   <Size>
-                    <Width>265</Width>
+                    <Width>205</Width>
                     <Height>700</Height>
                   </Size>
-                  <X>2290</X>
+                  <X>2350</X>
                   <Y>375</Y>
-                  <Width>265</Width>
+                  <Width>205</Width>
                   <Height>700</Height>
                 </Rect>
                 <MappedKey />
@@ -19789,6 +19803,51 @@ now all 'other' characters will know how to target the MA, and assist the MA whe
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Control: Invite 135</Name>
+        <Description>Invites all slots from Slot 1</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>100: Watley</KeyMapString>
+                <MappedKeyString>Control: Invite Me to Group 1</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.2</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>100: Ibsen</KeyMapString>
+                <MappedKeyString>Control: Invite Me to Group 1</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Target>3</Target>
+                <Name>Invite (Accept Invite)</Name>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Stump>true</Stump>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Target>5</Target>
+                <Name>Invite (Accept Invite)</Name>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>INVITES COMPLETED</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Green>0</Green>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Control: Invite 14</Name>
         <Steps>
           <Step>
@@ -21196,6 +21255,116 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Control: Setup-135</Name>
+        <Description>muti-step mapped key, typically executed via menu button
+
+Flush ATGs and Clear all VFX
+recreate VFX sources and viewers
+assign appropriate ATGs for each character slot (leader vs. follower)
+virtualize Control: Invites in 199: General in preparation for sending group invites
+</Description>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>all</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: Flush ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Clear</Action>
+                <Name />
+                <Target>all</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>0</Width>
+                    <Height>0</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>0</Width>
+                  <Height>0</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot3</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot5</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>1</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>3</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>5</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyRewriteAction">
+                <FromMappedKey>
+                  <KeyMapString>199: General</KeyMapString>
+                  <MappedKeyString>Control: Invites</MappedKeyString>
+                </FromMappedKey>
+                <ToMappedKey>
+                  <KeyMapString>199: General</KeyMapString>
+                  <MappedKeyString>Control: Invite 135</MappedKeyString>
+                </ToMappedKey>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Stump>true</Stump>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>READY TO DO INVITES</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Control: Setup-14</Name>
         <Mode>OnPressAndRelease</Mode>
         <Steps>
@@ -22335,16 +22504,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>278</Y>
+                    <Y>0</Y>
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
-                  <Y>278</Y>
+                  <Y>0</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22356,16 +22525,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>556</Y>
+                    <Y>348</Y>
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
-                  <Y>556</Y>
+                  <Y>348</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22377,16 +22546,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>834</Y>
+                    <Y>696</Y>
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
-                  <Y>834</Y>
+                  <Y>696</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22398,16 +22567,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>1112</Y>
+                    <Y>1044</Y>
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
-                  <Y>1112</Y>
+                  <Y>1044</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22432,12 +22601,12 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
                   <Y>0</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22470,16 +22639,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>556</Y>
+                    <Y>348</Y>
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
-                  <Y>556</Y>
+                  <Y>348</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22491,16 +22660,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>834</Y>
+                    <Y>696</Y>
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
-                  <Y>834</Y>
+                  <Y>696</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22512,16 +22681,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>1112</Y>
+                    <Y>1044</Y>
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
-                  <Y>1112</Y>
+                  <Y>1044</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22546,12 +22715,12 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
                   <Y>0</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22563,16 +22732,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>278</Y>
+                    <Y>348</Y>
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
-                  <Y>278</Y>
+                  <Y>348</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22605,16 +22774,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>834</Y>
+                    <Y>696</Y>
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
-                  <Y>834</Y>
+                  <Y>696</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22626,16 +22795,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>1112</Y>
+                    <Y>1044</Y>
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
-                  <Y>1112</Y>
+                  <Y>1044</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22660,12 +22829,12 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
                   <Y>0</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22677,16 +22846,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>278</Y>
+                    <Y>348</Y>
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
-                  <Y>278</Y>
+                  <Y>348</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22698,16 +22867,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>556</Y>
+                    <Y>696</Y>
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
-                  <Y>556</Y>
+                  <Y>696</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22740,16 +22909,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>1112</Y>
+                    <Y>1044</Y>
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
-                  <Y>1112</Y>
+                  <Y>1044</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22774,12 +22943,12 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
                   <Y>0</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22791,16 +22960,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>278</Y>
+                    <Y>348</Y>
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
-                  <Y>278</Y>
+                  <Y>348</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22812,16 +22981,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>556</Y>
+                    <Y>696</Y>
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
-                  <Y>556</Y>
+                  <Y>696</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22833,16 +23002,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>834</Y>
+                    <Y>1044</Y>
                   </Location>
                   <Size>
                     <Width>880</Width>
-                    <Height>278</Height>
+                    <Height>348</Height>
                   </Size>
                   <X>0</X>
-                  <Y>834</Y>
+                  <Y>1044</Y>
                   <Width>880</Width>
-                  <Height>278</Height>
+                  <Height>348</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22968,16 +23137,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>200</Y>
+                    <Y>219</Y>
                   </Location>
                   <Size>
-                    <Width>169</Width>
-                    <Height>190</Height>
+                    <Width>152</Width>
+                    <Height>171</Height>
                   </Size>
                   <X>0</X>
-                  <Y>200</Y>
-                  <Width>169</Width>
-                  <Height>190</Height>
+                  <Y>219</Y>
+                  <Width>152</Width>
+                  <Height>171</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
                 <MappedKey />
@@ -23143,17 +23312,17 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>all&amp;~(is3|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>170</X>
-                    <Y>200</Y>
+                    <X>152</X>
+                    <Y>219</Y>
                   </Location>
                   <Size>
-                    <Width>169</Width>
-                    <Height>190</Height>
+                    <Width>152</Width>
+                    <Height>171</Height>
                   </Size>
-                  <X>170</X>
-                  <Y>200</Y>
-                  <Width>169</Width>
-                  <Height>190</Height>
+                  <X>152</X>
+                  <Y>219</Y>
+                  <Width>152</Width>
+                  <Height>171</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
                 <MappedKey />
@@ -23319,17 +23488,17 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>all&amp;~(is4|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>340</X>
-                    <Y>200</Y>
+                    <X>304</X>
+                    <Y>219</Y>
                   </Location>
                   <Size>
-                    <Width>169</Width>
-                    <Height>190</Height>
+                    <Width>152</Width>
+                    <Height>171</Height>
                   </Size>
-                  <X>340</X>
-                  <Y>200</Y>
-                  <Width>169</Width>
-                  <Height>190</Height>
+                  <X>304</X>
+                  <Y>219</Y>
+                  <Width>152</Width>
+                  <Height>171</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
                 <MappedKey />
@@ -23495,17 +23664,17 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>all&amp;~(is5|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>510</X>
-                    <Y>200</Y>
+                    <X>456</X>
+                    <Y>219</Y>
                   </Location>
                   <Size>
-                    <Width>169</Width>
-                    <Height>190</Height>
+                    <Width>152</Width>
+                    <Height>171</Height>
                   </Size>
-                  <X>510</X>
-                  <Y>200</Y>
-                  <Width>169</Width>
-                  <Height>190</Height>
+                  <X>456</X>
+                  <Y>219</Y>
+                  <Width>152</Width>
+                  <Height>171</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
                 <MappedKey />
@@ -38924,8 +39093,14 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <DisplayText>Slots 1234</DisplayText>
       </MenuButton>
       <MenuButton>
-        <Actions />
-        <DisplayText />
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Control: Setup-135</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>Set 135</Text>
+        <DisplayText>Slots 135</DisplayText>
       </MenuButton>
       <MenuButton>
         <Actions>
@@ -45384,22 +45559,25 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>Chinger</Target>
-            <KeyMapString>100: Chinger</KeyMapString>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB03:07</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Mode>OnPress</Mode>
-        <Text>spire</Text>
+        <Text>beac</Text>
+        <DisplayText>Beacon</DisplayText>
       </MenuButton>
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>Chinger</Target>
-            <KeyMapString>100: Chinger</KeyMapString>
-            <MappedKeyString>GroupIVU</MappedKeyString>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB03:08</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Mode>OnPress</Mode>
-        <Text>ivu</Text>
+        <Text>lode</Text>
+        <DisplayText>Lodestar</DisplayText>
       </MenuButton>
     </Buttons>
   </MenuButtonSet>
@@ -51562,11 +51740,11 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     </BorderColor>
     <frameSize>
       <Width>351</Width>
-      <Height>24</Height>
+      <Height>20</Height>
     </frameSize>
     <buttonSize>
       <Width>27</Width>
-      <Height>24</Height>
+      <Height>20</Height>
     </buttonSize>
     <buttonImage />
     <buttonImageHover />
@@ -52100,10 +52278,10 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
   <Menu>
     <Name>PAL01</Name>
     <Template>Menu - 1x13</Template>
-    <ButtonLayout>PalButtonSet01</ButtonLayout>
+    <ButtonLayout>PAL01</ButtonLayout>
     <HotkeyLayout />
-    <X>795</X>
-    <Y>694</Y>
+    <X>470</X>
+    <Y>868</Y>
   </Menu>
   <Menu>
     <Name>SHM01</Name>
