@@ -1,5 +1,146 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/19/2023 5:56:52 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/22/2023 11:47:31 AM">
+  <CharacterSet>
+    <ExecuteOnLoad />
+    <Name>04Box</Name>
+    <EnforceSingleWindowControlTested>true</EnforceSingleWindowControlTested>
+    <Slots>
+      <Slot>
+        <ForegroundMaxFPS>60</ForegroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
+        <CharacterString>SHK</CharacterString>
+        <SwitchToCombo>
+          <Combo>Ctrl+Alt+1</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>1</Key>
+            <Code>2</Code>
+          </Key>
+        </SwitchToCombo>
+        <EffectType>None</EffectType>
+        <WindowTitle />
+        <FTLModifiers />
+        <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+        </CPUCores>
+        <VariableKeystrokeInstances />
+      </Slot>
+      <Slot>
+        <ForegroundMaxFPS>60</ForegroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
+        <CharacterString>CLR</CharacterString>
+        <SwitchToCombo>
+          <Combo>Ctrl+Alt+2</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>2</Key>
+            <Code>3</Code>
+          </Key>
+        </SwitchToCombo>
+        <EffectType>None</EffectType>
+        <FTLModifiers />
+        <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+        </CPUCores>
+        <VariableKeystrokeInstances />
+      </Slot>
+      <Slot>
+        <ForegroundMaxFPS>60</ForegroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
+        <CharacterString>ROG</CharacterString>
+        <SwitchToCombo>
+          <Combo>Ctrl+Alt+3</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>3</Key>
+            <Code>4</Code>
+          </Key>
+        </SwitchToCombo>
+        <EffectType>None</EffectType>
+        <FTLModifiers />
+        <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+        </CPUCores>
+        <VariableKeystrokeInstances />
+      </Slot>
+      <Slot>
+        <ForegroundMaxFPS>60</ForegroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
+        <CharacterString>SHM</CharacterString>
+        <SwitchToCombo>
+          <Combo>Ctrl+Alt+4</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>4</Key>
+            <Code>5</Code>
+          </Key>
+        </SwitchToCombo>
+        <EffectType>None</EffectType>
+        <FTLModifiers />
+        <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+        </CPUCores>
+        <VariableKeystrokeInstances />
+      </Slot>
+    </Slots>
+    <RepeaterProfile>Default</RepeaterProfile>
+    <KeyMapStrings />
+    <KeyMapWhiteOrBlackListType>Ignore</KeyMapWhiteOrBlackListType>
+    <KeyMapWhiteOrBlackList />
+    <ClickBarStrings />
+    <VirtualFileTargets />
+    <VirtualMappedKeys />
+    <VariableKeystrokeInstances />
+    <MenuInstances />
+    <WoWMacroSets />
+    <CrypticMacroSets />
+    <LaunchCharacterSetStrings />
+    <WindowLayout />
+  </CharacterSet>
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -550,20 +691,214 @@
     </WindowLayout>
   </CharacterSet>
   <CharacterSet>
-    <ExecuteOnLoad />
-    <Name>04Box</Name>
+    <ExecuteOnLoad>
+      <KeyMapString>199: General</KeyMapString>
+      <MappedKeyString>Control: GrpReset</MappedKeyString>
+    </ExecuteOnLoad>
+    <Name>3440-05Box-VFX-2monitors</Name>
+    <Description>Generated by ISBoxer 42 Quick Setup Wizard - 2/18/2022</Description>
+    <DisableFPSIndicator>true</DisableFPSIndicator>
     <EnforceSingleWindowControlTested>true</EnforceSingleWindowControlTested>
+    <GUIToggleCombo>
+      <Combo>Ctrl+Shift+Alt+G</Combo>
+      <Modifiers>Ctrl Shift Alt</Modifiers>
+      <Key>
+        <Key>G</Key>
+        <Code>34</Code>
+      </Key>
+    </GUIToggleCombo>
+    <ConsoleToggleCombo>
+      <Combo>Ctrl+Shift+Alt+H</Combo>
+      <Modifiers>Ctrl Shift Alt</Modifiers>
+      <Key>
+        <Key>H</Key>
+        <Code>35</Code>
+      </Key>
+    </ConsoleToggleCombo>
+    <VideoFXFocusCombo>
+      <Combo>Mouse1</Combo>
+      <Key>
+        <Key>Mouse1</Key>
+        <Code>0</Code>
+      </Key>
+    </VideoFXFocusCombo>
+    <UseConsoleToggleCombo>true</UseConsoleToggleCombo>
     <Slots>
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
         <BackgroundMaxFPS>30</BackgroundMaxFPS>
-        <CharacterString>SHK</CharacterString>
+        <CharacterString>Chinger</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+1</Combo>
           <Modifiers>Ctrl Alt</Modifiers>
           <Key>
             <Key>1</Key>
             <Code>2</Code>
+          </Key>
+        </SwitchToCombo>
+        <EffectType>OnFocus</EffectType>
+        <WindowTitle>{CHARACTER}</WindowTitle>
+        <SwitchToKeyMapString>010: - SESSIONS TEMPLATE</SwitchToKeyMapString>
+        <SwitchToMappedKeyString>Focus Slot 01</SwitchToMappedKeyString>
+        <FTLModifiers />
+        <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+        </CPUCores>
+        <VariableKeystrokeInstances />
+      </Slot>
+      <Slot>
+        <ForegroundMaxFPS>60</ForegroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
+        <CharacterString>Ijuante</CharacterString>
+        <SwitchToCombo>
+          <Combo>Ctrl+Alt+2</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>2</Key>
+            <Code>3</Code>
+          </Key>
+        </SwitchToCombo>
+        <EffectType>OnFocus</EffectType>
+        <WindowTitle>{CHARACTER}</WindowTitle>
+        <SwitchToKeyMapString>010: - SESSIONS TEMPLATE</SwitchToKeyMapString>
+        <SwitchToMappedKeyString>Focus Slot 02</SwitchToMappedKeyString>
+        <FTLModifiers />
+        <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+        </CPUCores>
+        <VariableKeystrokeInstances />
+      </Slot>
+      <Slot>
+        <ForegroundMaxFPS>60</ForegroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
+        <CharacterString>Watley</CharacterString>
+        <SwitchToCombo>
+          <Combo>Ctrl+Alt+3</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>3</Key>
+            <Code>4</Code>
+          </Key>
+        </SwitchToCombo>
+        <EffectType>OnFocus</EffectType>
+        <WindowTitle>{CHARACTER}</WindowTitle>
+        <SwitchToKeyMapString>010: - SESSIONS TEMPLATE</SwitchToKeyMapString>
+        <SwitchToMappedKeyString>Focus Slot 03</SwitchToMappedKeyString>
+        <FTLModifiers />
+        <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+        </CPUCores>
+        <VariableKeystrokeInstances />
+      </Slot>
+      <Slot>
+        <ForegroundMaxFPS>60</ForegroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
+        <CharacterString>Shatner</CharacterString>
+        <SwitchToCombo>
+          <Combo>Ctrl+Alt+4</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>4</Key>
+            <Code>5</Code>
+          </Key>
+        </SwitchToCombo>
+        <EffectType>OnFocus</EffectType>
+        <WindowTitle>{CHARACTER}</WindowTitle>
+        <SwitchToKeyMapString>010: - SESSIONS TEMPLATE</SwitchToKeyMapString>
+        <SwitchToMappedKeyString>Focus Slot 04</SwitchToMappedKeyString>
+        <FTLModifiers />
+        <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+        </CPUCores>
+        <VariableKeystrokeInstances />
+      </Slot>
+      <Slot>
+        <ForegroundMaxFPS>60</ForegroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
+        <CharacterString>Ibsen</CharacterString>
+        <SwitchToCombo>
+          <Combo>Ctrl+Alt+5</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>5</Key>
+            <Code>6</Code>
+          </Key>
+        </SwitchToCombo>
+        <EffectType>OnFocus</EffectType>
+        <WindowTitle>{CHARACTER}</WindowTitle>
+        <SwitchToKeyMapString>010: - SESSIONS TEMPLATE</SwitchToKeyMapString>
+        <SwitchToMappedKeyString>Focus Slot 05</SwitchToMappedKeyString>
+        <FTLModifiers />
+        <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+        </CPUCores>
+        <VariableKeystrokeInstances />
+      </Slot>
+      <Slot>
+        <ForegroundMaxFPS>60</ForegroundMaxFPS>
+        <BackgroundMaxFPS>30</BackgroundMaxFPS>
+        <CharacterString>dxNothing</CharacterString>
+        <SwitchToCombo>
+          <Combo>Ctrl+Alt+6</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>6</Key>
+            <Code>7</Code>
           </Key>
         </SwitchToCombo>
         <EffectType>None</EffectType>
@@ -585,110 +920,65 @@
         </CPUCores>
         <VariableKeystrokeInstances />
       </Slot>
-      <Slot>
-        <ForegroundMaxFPS>60</ForegroundMaxFPS>
-        <BackgroundMaxFPS>30</BackgroundMaxFPS>
-        <CharacterString>CLR</CharacterString>
-        <SwitchToCombo>
-          <Combo>Ctrl+Alt+2</Combo>
-          <Modifiers>Ctrl Alt</Modifiers>
-          <Key>
-            <Key>2</Key>
-            <Code>3</Code>
-          </Key>
-        </SwitchToCombo>
-        <EffectType>None</EffectType>
-        <FTLModifiers />
-        <CPUCores>
-          <unsignedInt>1</unsignedInt>
-          <unsignedInt>2</unsignedInt>
-          <unsignedInt>3</unsignedInt>
-          <unsignedInt>4</unsignedInt>
-          <unsignedInt>5</unsignedInt>
-          <unsignedInt>6</unsignedInt>
-          <unsignedInt>7</unsignedInt>
-          <unsignedInt>8</unsignedInt>
-          <unsignedInt>9</unsignedInt>
-          <unsignedInt>10</unsignedInt>
-          <unsignedInt>11</unsignedInt>
-          <unsignedInt>12</unsignedInt>
-        </CPUCores>
-        <VariableKeystrokeInstances />
-      </Slot>
-      <Slot>
-        <ForegroundMaxFPS>60</ForegroundMaxFPS>
-        <BackgroundMaxFPS>30</BackgroundMaxFPS>
-        <CharacterString>ROG</CharacterString>
-        <SwitchToCombo>
-          <Combo>Ctrl+Alt+3</Combo>
-          <Modifiers>Ctrl Alt</Modifiers>
-          <Key>
-            <Key>3</Key>
-            <Code>4</Code>
-          </Key>
-        </SwitchToCombo>
-        <EffectType>None</EffectType>
-        <FTLModifiers />
-        <CPUCores>
-          <unsignedInt>1</unsignedInt>
-          <unsignedInt>2</unsignedInt>
-          <unsignedInt>3</unsignedInt>
-          <unsignedInt>4</unsignedInt>
-          <unsignedInt>5</unsignedInt>
-          <unsignedInt>6</unsignedInt>
-          <unsignedInt>7</unsignedInt>
-          <unsignedInt>8</unsignedInt>
-          <unsignedInt>9</unsignedInt>
-          <unsignedInt>10</unsignedInt>
-          <unsignedInt>11</unsignedInt>
-          <unsignedInt>12</unsignedInt>
-        </CPUCores>
-        <VariableKeystrokeInstances />
-      </Slot>
-      <Slot>
-        <ForegroundMaxFPS>60</ForegroundMaxFPS>
-        <BackgroundMaxFPS>30</BackgroundMaxFPS>
-        <CharacterString>SHM</CharacterString>
-        <SwitchToCombo>
-          <Combo>Ctrl+Alt+4</Combo>
-          <Modifiers>Ctrl Alt</Modifiers>
-          <Key>
-            <Key>4</Key>
-            <Code>5</Code>
-          </Key>
-        </SwitchToCombo>
-        <EffectType>None</EffectType>
-        <FTLModifiers />
-        <CPUCores>
-          <unsignedInt>1</unsignedInt>
-          <unsignedInt>2</unsignedInt>
-          <unsignedInt>3</unsignedInt>
-          <unsignedInt>4</unsignedInt>
-          <unsignedInt>5</unsignedInt>
-          <unsignedInt>6</unsignedInt>
-          <unsignedInt>7</unsignedInt>
-          <unsignedInt>8</unsignedInt>
-          <unsignedInt>9</unsignedInt>
-          <unsignedInt>10</unsignedInt>
-          <unsignedInt>11</unsignedInt>
-          <unsignedInt>12</unsignedInt>
-        </CPUCores>
-        <VariableKeystrokeInstances />
-      </Slot>
     </Slots>
+    <LockForeground>false</LockForeground>
+    <LockWindow>true</LockWindow>
     <RepeaterProfile>Default</RepeaterProfile>
-    <KeyMapStrings />
+    <KeyMapStrings>
+      <string>000: - HOTKEYS</string>
+      <string>010: - SESSIONS TEMPLATE</string>
+      <string>010: 05 Box</string>
+      <string>090: - CLASS TEMPLATE</string>
+      <string>090: Class-BRD</string>
+      <string>090: Class-ENC</string>
+      <string>090: Class-PAL</string>
+      <string>090: Class-SHM</string>
+      <string>090: Class-WIZ</string>
+      <string>100: - CHARACTER TEMPLATE</string>
+      <string>100: Chinger</string>
+      <string>100: Ibsen</string>
+      <string>100: Ijuante</string>
+      <string>100: Shatner</string>
+      <string>100: Watley</string>
+      <string>199: AA</string>
+      <string>199: General</string>
+      <string>199: Items</string>
+      <string>199: Keybinds</string>
+      <string>199: Spellcasting</string>
+      <string>ClickBarHealingConfig</string>
+      <string>ISB42 - Always On</string>
+      <string>ISB42 - Base Hotkeys</string>
+      <string>ISB42 - Combat Broadcast</string>
+      <string>ISB42 - Combat Broadcast Hotkeys</string>
+      <string>ISB42 - Party</string>
+      <string>ISB42 - Toggles</string>
+    </KeyMapStrings>
     <KeyMapWhiteOrBlackListType>Ignore</KeyMapWhiteOrBlackListType>
     <KeyMapWhiteOrBlackList />
     <ClickBarStrings />
     <VirtualFileTargets />
-    <VirtualMappedKeys />
+    <VirtualMappedKeys>
+      <VirtualMappedKey>
+        <FromMappedKey>
+          <KeyMapString>010: - SESSIONS TEMPLATE</KeyMapString>
+        </FromMappedKey>
+        <ToMappedKey>
+          <KeyMapString>010: 05 Box</KeyMapString>
+        </ToMappedKey>
+      </VirtualMappedKey>
+    </VirtualMappedKeys>
     <VariableKeystrokeInstances />
-    <MenuInstances />
+    <MenuInstances>
+      <MenuInstance>
+        <MenuString>ISB42 - Toggles</MenuString>
+      </MenuInstance>
+    </MenuInstances>
     <WoWMacroSets />
     <CrypticMacroSets />
     <LaunchCharacterSetStrings />
-    <WindowLayout />
+    <WindowLayout>
+      <WindowLayoutString>5-3440-VFX-2monitors</WindowLayoutString>
+    </WindowLayout>
   </CharacterSet>
   <Character>
     <ExecuteOnLoad />
@@ -1438,6 +1728,115 @@
           <Left>2560</Left>
           <Width>880</Width>
           <Height>1392</Height>
+        </Rect>
+      </Region>
+    </Regions>
+    <SwapGroups>
+      <SwapGroup />
+      <SwapGroup DeactivateSwapGroup="1" />
+      <SwapGroup DeactivateSwapGroup="2" />
+      <SwapGroup DeactivateSwapGroup="3" />
+      <SwapGroup DeactivateSwapGroup="4" />
+      <SwapGroup DeactivateSwapGroup="5" />
+      <SwapGroup DeactivateSwapGroup="6" />
+      <SwapGroup DeactivateSwapGroup="7" />
+    </SwapGroups>
+  </WindowLayout>
+  <WindowLayout>
+    <UserScreenSet>
+      <AllScreens>
+        <UserScreen>
+          <Bounds>
+            <Width>3440</Width>
+            <Height>1440</Height>
+          </Bounds>
+          <WorkingArea>
+            <Width>3440</Width>
+            <Height>1392</Height>
+          </WorkingArea>
+          <Primary>true</Primary>
+          <DeviceName>\\.\DISPLAY1</DeviceName>
+          <DPIScale>100</DPIScale>
+        </UserScreen>
+        <UserScreen>
+          <Bounds>
+            <Left>3440</Left>
+            <Width>1920</Width>
+            <Height>1080</Height>
+          </Bounds>
+          <WorkingArea>
+            <Left>3440</Left>
+            <Width>1920</Width>
+            <Height>1032</Height>
+          </WorkingArea>
+          <DeviceName>\\.\DISPLAY2</DeviceName>
+          <DPIScale>100</DPIScale>
+        </UserScreen>
+      </AllScreens>
+      <Name>&lt;Window Layout-specified&gt;</Name>
+    </UserScreenSet>
+    <Name>5-3440-VFX-2monitors</Name>
+    <Description>This Window Layout features stacked windows with no border, the size of the full screen, on \\.\DISPLAY1. Swapping disabled. Leaves space for the Windows taskbar. This style is great in conjunction with Video FX to see parts of, or all of, the other windows.</Description>
+    <InstantSwap>true</InstantSwap>
+    <RolloverStyle>
+      <Enabled>false</Enabled>
+      <Scale>1.5</Scale>
+      <Rollup>false</Rollup>
+      <Frames>10</Frames>
+    </RolloverStyle>
+    <Regions>
+      <Region>
+        <CharacterSetSlot>1</CharacterSetSlot>
+        <Permanent>true</Permanent>
+        <AlwaysOnTopMode>Normal</AlwaysOnTopMode>
+        <Rect>
+          <Width>2560</Width>
+          <Height>1392</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>2</CharacterSetSlot>
+        <Permanent>true</Permanent>
+        <AlwaysOnTopMode>Normal</AlwaysOnTopMode>
+        <Rect>
+          <Width>2560</Width>
+          <Height>1392</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>3</CharacterSetSlot>
+        <Permanent>true</Permanent>
+        <AlwaysOnTopMode>Normal</AlwaysOnTopMode>
+        <Rect>
+          <Width>2560</Width>
+          <Height>1392</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>4</CharacterSetSlot>
+        <Permanent>true</Permanent>
+        <AlwaysOnTopMode>Normal</AlwaysOnTopMode>
+        <Rect>
+          <Width>2560</Width>
+          <Height>1392</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>5</CharacterSetSlot>
+        <Permanent>true</Permanent>
+        <AlwaysOnTopMode>Normal</AlwaysOnTopMode>
+        <Rect>
+          <Width>2560</Width>
+          <Height>1392</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>6</CharacterSetSlot>
+        <Permanent>true</Permanent>
+        <Rect>
+          <Left>3440</Left>
+          <Width>1920</Width>
+          <Height>1032</Height>
         </Rect>
       </Region>
     </Regions>
@@ -2522,6 +2921,56 @@ if i remember to hit it in time
             <Code>65</Code>
           </Key>
         </Combo>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Clear</Action>
+                <Name />
+                <Target>all</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>0</Width>
+                    <Height>0</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>0</Width>
+                  <Height>0</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>VFX TOGGLE OFF</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>VFX TOGGLE ON</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: VFX-Toggle-OLD</Name>
+        <Description>Toggle active VFX</Description>
+        <ManualLoad>true</ManualLoad>
         <Steps>
           <Step>
             <Actions>
@@ -4361,6 +4810,12 @@ will work best with one of pal/wiz/enc casting IVU in step 1, then SHM in step 2
           </Step>
         </Steps>
       </MappedKey>
+      <MappedKey>
+        <Name>Control: VFX - Slot</Name>
+        <Steps>
+          <Step />
+        </Steps>
+      </MappedKey>
     </Mappings>
   </KeyMap>
   <KeyMap>
@@ -5592,13 +6047,6 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
-              <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is1|dxnothing)</Target>
-                <Menu>
-                  <MenuString>PAL01</MenuString>
-                </Menu>
-                <ActionType>Load</ActionType>
-              </MappedKeyAction>
             </Actions>
           </Step>
           <Step>
@@ -5607,13 +6055,6 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
                 <Target>all&amp;~dxnothing</Target>
                 <Menu>
                   <MenuString>_Setup</MenuString>
-                </Menu>
-                <ActionType>Unload</ActionType>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
-                <Menu>
-                  <MenuString>PAL01</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
@@ -8058,6 +8499,182 @@ useful in the Avatar of War mission</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Control: VFX - Slot</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot5player</Name>
+                <Target>5</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>485</X>
+                    <Y>947</Y>
+                  </Location>
+                  <Size>
+                    <Width>169</Width>
+                    <Height>190</Height>
+                  </Size>
+                  <X>485</X>
+                  <Y>947</Y>
+                  <Width>169</Width>
+                  <Height>190</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot5target</Name>
+                <Target>5</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>32</X>
+                    <Y>1012</Y>
+                  </Location>
+                  <Size>
+                    <Width>446</Width>
+                    <Height>24</Height>
+                  </Size>
+                  <X>32</X>
+                  <Y>1012</Y>
+                  <Width>446</Width>
+                  <Height>24</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot5clicks</Name>
+                <Target>5</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>174</X>
+                    <Y>959</Y>
+                  </Location>
+                  <Size>
+                    <Width>163</Width>
+                    <Height>51</Height>
+                  </Size>
+                  <X>174</X>
+                  <Y>959</Y>
+                  <Width>163</Width>
+                  <Height>51</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot5casting</Name>
+                <Target>5</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>360</X>
+                    <Y>985</Y>
+                  </Location>
+                  <Size>
+                    <Width>100</Width>
+                    <Height>24</Height>
+                  </Size>
+                  <X>360</X>
+                  <Y>985</Y>
+                  <Width>100</Width>
+                  <Height>24</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot5player</Name>
+                <Target>all&amp;~(is5|dxnothing)</Target>
+                <Rect>
+                  <Location>
+                    <X>456</X>
+                    <Y>219</Y>
+                  </Location>
+                  <Size>
+                    <Width>152</Width>
+                    <Height>171</Height>
+                  </Size>
+                  <X>456</X>
+                  <Y>219</Y>
+                  <Width>152</Width>
+                  <Height>171</Height>
+                </Rect>
+                <UseMouseRepeat>true</UseMouseRepeat>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot5target</Name>
+                <Target>all&amp;~(is5|dxnothing)</Target>
+                <Rect>
+                  <Location>
+                    <X>371</X>
+                    <Y>397</Y>
+                  </Location>
+                  <Size>
+                    <Width>334</Width>
+                    <Height>24</Height>
+                  </Size>
+                  <X>371</X>
+                  <Y>397</Y>
+                  <Width>334</Width>
+                  <Height>24</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot5clicks</Name>
+                <Target>all&amp;~(is5|dxnothing)</Target>
+                <Rect>
+                  <Location>
+                    <X>174</X>
+                    <Y>779</Y>
+                  </Location>
+                  <Size>
+                    <Width>163</Width>
+                    <Height>43</Height>
+                  </Size>
+                  <X>174</X>
+                  <Y>779</Y>
+                  <Width>163</Width>
+                  <Height>43</Height>
+                </Rect>
+                <UseMouseRepeat>true</UseMouseRepeat>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot5casting</Name>
+                <Target>all&amp;~(is5|dxnothing)</Target>
+                <Rect>
+                  <Location>
+                    <X>360</X>
+                    <Y>884</Y>
+                  </Location>
+                  <Size>
+                    <Width>100</Width>
+                    <Height>24</Height>
+                  </Size>
+                  <X>360</X>
+                  <Y>884</Y>
+                  <Width>100</Width>
+                  <Height>24</Height>
+                </Rect>
+                <UseMouseRepeat>true</UseMouseRepeat>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Forage</Name>
         <Steps>
           <Step>
@@ -9333,6 +9950,182 @@ useful in the Avatar of War mission</Description>
                     <Code>28</Code>
                   </Key>
                 </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: VFX - Slot</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot2player</Name>
+                <Target>2</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>485</X>
+                    <Y>947</Y>
+                  </Location>
+                  <Size>
+                    <Width>169</Width>
+                    <Height>190</Height>
+                  </Size>
+                  <X>485</X>
+                  <Y>947</Y>
+                  <Width>169</Width>
+                  <Height>190</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot2target</Name>
+                <Target>2</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>32</X>
+                    <Y>1012</Y>
+                  </Location>
+                  <Size>
+                    <Width>446</Width>
+                    <Height>24</Height>
+                  </Size>
+                  <X>32</X>
+                  <Y>1012</Y>
+                  <Width>446</Width>
+                  <Height>24</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot2clicks</Name>
+                <Target>2</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>174</X>
+                    <Y>959</Y>
+                  </Location>
+                  <Size>
+                    <Width>163</Width>
+                    <Height>51</Height>
+                  </Size>
+                  <X>174</X>
+                  <Y>959</Y>
+                  <Width>163</Width>
+                  <Height>51</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot2casting</Name>
+                <Target>2</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>360</X>
+                    <Y>985</Y>
+                  </Location>
+                  <Size>
+                    <Width>100</Width>
+                    <Height>24</Height>
+                  </Size>
+                  <X>360</X>
+                  <Y>985</Y>
+                  <Width>100</Width>
+                  <Height>24</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot2player</Name>
+                <Target>all&amp;~(is2|dxnothing)</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>219</Y>
+                  </Location>
+                  <Size>
+                    <Width>152</Width>
+                    <Height>171</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>219</Y>
+                  <Width>152</Width>
+                  <Height>171</Height>
+                </Rect>
+                <UseMouseRepeat>true</UseMouseRepeat>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot2target</Name>
+                <Target>all&amp;~(is2|dxnothing)</Target>
+                <Rect>
+                  <Location>
+                    <X>16</X>
+                    <Y>590</Y>
+                  </Location>
+                  <Size>
+                    <Width>334</Width>
+                    <Height>24</Height>
+                  </Size>
+                  <X>16</X>
+                  <Y>590</Y>
+                  <Width>334</Width>
+                  <Height>24</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot2clicks</Name>
+                <Target>all&amp;~(is2|dxnothing)</Target>
+                <Rect>
+                  <Location>
+                    <X>174</X>
+                    <Y>911</Y>
+                  </Location>
+                  <Size>
+                    <Width>163</Width>
+                    <Height>43</Height>
+                  </Size>
+                  <X>174</X>
+                  <Y>911</Y>
+                  <Width>163</Width>
+                  <Height>43</Height>
+                </Rect>
+                <UseMouseRepeat>true</UseMouseRepeat>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot2casting</Name>
+                <Target>all&amp;~(is2|dxnothing)</Target>
+                <Rect>
+                  <Location>
+                    <X>360</X>
+                    <Y>956</Y>
+                  </Location>
+                  <Size>
+                    <Width>100</Width>
+                    <Height>24</Height>
+                  </Size>
+                  <X>360</X>
+                  <Y>956</Y>
+                  <Width>100</Width>
+                  <Height>24</Height>
+                </Rect>
+                <UseMouseRepeat>true</UseMouseRepeat>
+                <MappedKey />
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -11230,6 +12023,182 @@ useful in the Avatar of War mission</Description>
                     <Code>28</Code>
                   </Key>
                 </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: VFX - Slot</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot4player</Name>
+                <Target>4</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>485</X>
+                    <Y>947</Y>
+                  </Location>
+                  <Size>
+                    <Width>169</Width>
+                    <Height>190</Height>
+                  </Size>
+                  <X>485</X>
+                  <Y>947</Y>
+                  <Width>169</Width>
+                  <Height>190</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot4target</Name>
+                <Target>4</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>32</X>
+                    <Y>1012</Y>
+                  </Location>
+                  <Size>
+                    <Width>446</Width>
+                    <Height>24</Height>
+                  </Size>
+                  <X>32</X>
+                  <Y>1012</Y>
+                  <Width>446</Width>
+                  <Height>24</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot4clicks</Name>
+                <Target>4</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>174</X>
+                    <Y>959</Y>
+                  </Location>
+                  <Size>
+                    <Width>163</Width>
+                    <Height>51</Height>
+                  </Size>
+                  <X>174</X>
+                  <Y>959</Y>
+                  <Width>163</Width>
+                  <Height>51</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot4casting</Name>
+                <Target>4</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>360</X>
+                    <Y>985</Y>
+                  </Location>
+                  <Size>
+                    <Width>100</Width>
+                    <Height>24</Height>
+                  </Size>
+                  <X>360</X>
+                  <Y>985</Y>
+                  <Width>100</Width>
+                  <Height>24</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot4player</Name>
+                <Target>all&amp;~(is4|dxnothing)</Target>
+                <Rect>
+                  <Location>
+                    <X>304</X>
+                    <Y>219</Y>
+                  </Location>
+                  <Size>
+                    <Width>152</Width>
+                    <Height>171</Height>
+                  </Size>
+                  <X>304</X>
+                  <Y>219</Y>
+                  <Width>152</Width>
+                  <Height>171</Height>
+                </Rect>
+                <UseMouseRepeat>true</UseMouseRepeat>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot4target</Name>
+                <Target>all&amp;~(is4|dxnothing)</Target>
+                <Rect>
+                  <Location>
+                    <X>16</X>
+                    <Y>397</Y>
+                  </Location>
+                  <Size>
+                    <Width>334</Width>
+                    <Height>24</Height>
+                  </Size>
+                  <X>16</X>
+                  <Y>397</Y>
+                  <Width>334</Width>
+                  <Height>24</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot4clicks</Name>
+                <Target>all&amp;~(is4|dxnothing)</Target>
+                <Rect>
+                  <Location>
+                    <X>174</X>
+                    <Y>823</Y>
+                  </Location>
+                  <Size>
+                    <Width>163</Width>
+                    <Height>43</Height>
+                  </Size>
+                  <X>174</X>
+                  <Y>823</Y>
+                  <Width>163</Width>
+                  <Height>43</Height>
+                </Rect>
+                <UseMouseRepeat>true</UseMouseRepeat>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot4casting</Name>
+                <Target>all&amp;~(is4|dxnothing)</Target>
+                <Rect>
+                  <Location>
+                    <X>360</X>
+                    <Y>908</Y>
+                  </Location>
+                  <Size>
+                    <Width>100</Width>
+                    <Height>24</Height>
+                  </Size>
+                  <X>360</X>
+                  <Y>908</Y>
+                  <Width>100</Width>
+                  <Height>24</Height>
+                </Rect>
+                <UseMouseRepeat>true</UseMouseRepeat>
+                <MappedKey />
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -14287,6 +15256,182 @@ useful in the Avatar of War mission</Description>
                     <Code>28</Code>
                   </Key>
                 </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: VFX - Slot</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot3player</Name>
+                <Target>3</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>485</X>
+                    <Y>947</Y>
+                  </Location>
+                  <Size>
+                    <Width>169</Width>
+                    <Height>190</Height>
+                  </Size>
+                  <X>485</X>
+                  <Y>947</Y>
+                  <Width>169</Width>
+                  <Height>190</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot3target</Name>
+                <Target>3</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>32</X>
+                    <Y>1012</Y>
+                  </Location>
+                  <Size>
+                    <Width>446</Width>
+                    <Height>24</Height>
+                  </Size>
+                  <X>32</X>
+                  <Y>1012</Y>
+                  <Width>446</Width>
+                  <Height>24</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot3clicks</Name>
+                <Target>3</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>174</X>
+                    <Y>959</Y>
+                  </Location>
+                  <Size>
+                    <Width>163</Width>
+                    <Height>51</Height>
+                  </Size>
+                  <X>174</X>
+                  <Y>959</Y>
+                  <Width>163</Width>
+                  <Height>51</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot3casting</Name>
+                <Target>3</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>360</X>
+                    <Y>985</Y>
+                  </Location>
+                  <Size>
+                    <Width>100</Width>
+                    <Height>24</Height>
+                  </Size>
+                  <X>360</X>
+                  <Y>985</Y>
+                  <Width>100</Width>
+                  <Height>24</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot3player</Name>
+                <Target>all&amp;~(is3|dxnothing)</Target>
+                <Rect>
+                  <Location>
+                    <X>152</X>
+                    <Y>219</Y>
+                  </Location>
+                  <Size>
+                    <Width>152</Width>
+                    <Height>171</Height>
+                  </Size>
+                  <X>152</X>
+                  <Y>219</Y>
+                  <Width>152</Width>
+                  <Height>171</Height>
+                </Rect>
+                <UseMouseRepeat>true</UseMouseRepeat>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot3target</Name>
+                <Target>all&amp;~(is3|dxnothing)</Target>
+                <Rect>
+                  <Location>
+                    <X>371</X>
+                    <Y>590</Y>
+                  </Location>
+                  <Size>
+                    <Width>334</Width>
+                    <Height>24</Height>
+                  </Size>
+                  <X>371</X>
+                  <Y>590</Y>
+                  <Width>334</Width>
+                  <Height>24</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot3clicks</Name>
+                <Target>all&amp;~(is3|dxnothing)</Target>
+                <Rect>
+                  <Location>
+                    <X>174</X>
+                    <Y>867</Y>
+                  </Location>
+                  <Size>
+                    <Width>163</Width>
+                    <Height>43</Height>
+                  </Size>
+                  <X>174</X>
+                  <Y>867</Y>
+                  <Width>163</Width>
+                  <Height>43</Height>
+                </Rect>
+                <UseMouseRepeat>true</UseMouseRepeat>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot3casting</Name>
+                <Target>all&amp;~(is3|dxnothing)</Target>
+                <Rect>
+                  <Location>
+                    <X>360</X>
+                    <Y>932</Y>
+                  </Location>
+                  <Size>
+                    <Width>100</Width>
+                    <Height>24</Height>
+                  </Size>
+                  <X>360</X>
+                  <Y>932</Y>
+                  <Width>100</Width>
+                  <Height>24</Height>
+                </Rect>
+                <UseMouseRepeat>true</UseMouseRepeat>
+                <MappedKey />
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -20220,24 +21365,6 @@ now all 'other' characters will know how to target the MA, and assist the MA whe
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot2</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>1</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -20246,6 +21373,25 @@ now all 'other' characters will know how to target the MA, and assist the MA whe
                 <Target>2</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -20314,28 +21460,6 @@ now all 'other' characters will know how to target the MA, and assist the MA whe
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot2</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot3</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>1</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -20349,6 +21473,25 @@ now all 'other' characters will know how to target the MA, and assist the MA whe
                 <Target>3</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -20417,32 +21560,6 @@ now all 'other' characters will know how to target the MA, and assist the MA whe
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot2</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot3</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot4</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>1</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -20461,6 +21578,25 @@ now all 'other' characters will know how to target the MA, and assist the MA whe
                 <Target>4</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -20497,8 +21633,8 @@ now all 'other' characters will know how to target the MA, and assist the MA whe
         <Description>muti-step mapped key, typically executed via menu button
 
 Flush ATGs and Clear all VFX
-recreate VFX sources and viewers
 assign appropriate ATGs for each character slot (leader vs. follower)
+recreate VFX sources and viewers
 virtualize Control: Invites in 199: General in preparation for sending group invites
 </Description>
         <Mode>OnPressAndRelease</Mode>
@@ -20536,36 +21672,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot2</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot3</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot4</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot5</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>1</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -20589,6 +21695,25 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>5</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -20657,32 +21782,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot2</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot3</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot5</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>1</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -20701,6 +21800,25 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>5</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -20769,28 +21887,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot2</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot4</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>1</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -20804,6 +21900,25 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>4</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -20872,32 +21987,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot2</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot4</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot5</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>1</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -20916,6 +22005,25 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>5</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -20984,28 +22092,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot2</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot5</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>1</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -21019,6 +22105,25 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>5</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -21087,24 +22192,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot3</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>1</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -21113,6 +22200,25 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>3</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -21188,28 +22294,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot3</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot4</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>1</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -21223,6 +22307,25 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>4</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -21298,28 +22401,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot3</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot5</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>1</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -21333,6 +22414,25 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>5</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -21401,24 +22501,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot4</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>1</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -21427,6 +22509,25 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>4</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -21495,24 +22596,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot5</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>1</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -21521,6 +22604,25 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>5</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -21589,24 +22691,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot2</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>3</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -21615,6 +22699,25 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>2</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -21683,24 +22786,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot5</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>3</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -21709,6 +22794,25 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>5</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -21777,24 +22881,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot2</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>4</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -21803,6 +22889,25 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>2</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -21871,24 +22976,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot3</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>4</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -21897,6 +22984,25 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>3</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -21965,24 +23071,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot5</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>4</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -21991,6 +23079,25 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>5</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -22059,24 +23166,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
             <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: VFX - Slot2</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <Target>all</Target>
-                <MappedKey>
-                  <KeyMapString>000: - HOTKEYS</KeyMapString>
-                  <MappedKeyString>Control: VFX-Toggle</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>0.1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>5</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
@@ -22085,6 +23174,25 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>2</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: VFX - Slot</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Control: VFX-Toggle-OLD</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -22473,6 +23581,8 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
       </MappedKey>
       <MappedKey>
         <Name>Control: VFX - Focus 01</Name>
+        <Description>1 monitor - 880x348
+1080p 2nd screen - 912,513 (16x9 ratio)</Description>
         <Steps>
           <Step>
             <Actions>
@@ -22507,13 +23617,13 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                     <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
                   <X>0</X>
                   <Y>0</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22524,17 +23634,17 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>0</X>
-                    <Y>348</Y>
+                    <X>912</X>
+                    <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
-                  <X>0</X>
-                  <Y>348</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <X>912</X>
+                  <Y>0</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22546,16 +23656,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>696</Y>
+                    <Y>513</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
                   <X>0</X>
-                  <Y>696</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22566,17 +23676,17 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>0</X>
-                    <Y>1044</Y>
+                    <X>912</X>
+                    <Y>513</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
-                  <X>0</X>
-                  <Y>1044</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <X>912</X>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22600,13 +23710,13 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                     <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
                   <X>0</X>
                   <Y>0</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22638,17 +23748,17 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>0</X>
-                    <Y>348</Y>
+                    <X>912</X>
+                    <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
-                  <X>0</X>
-                  <Y>348</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <X>912</X>
+                  <Y>0</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22660,16 +23770,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>696</Y>
+                    <Y>513</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
                   <X>0</X>
-                  <Y>696</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22680,17 +23790,17 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>0</X>
-                    <Y>1044</Y>
+                    <X>912</X>
+                    <Y>513</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
-                  <X>0</X>
-                  <Y>1044</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <X>912</X>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22714,13 +23824,13 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                     <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
                   <X>0</X>
                   <Y>0</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22731,17 +23841,17 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>0</X>
-                    <Y>348</Y>
+                    <X>912</X>
+                    <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
-                  <X>0</X>
-                  <Y>348</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <X>912</X>
+                  <Y>0</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22774,16 +23884,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>696</Y>
+                    <Y>513</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
                   <X>0</X>
-                  <Y>696</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22794,17 +23904,17 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>0</X>
-                    <Y>1044</Y>
+                    <X>912</X>
+                    <Y>513</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
-                  <X>0</X>
-                  <Y>1044</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <X>912</X>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22828,13 +23938,13 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                     <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
                   <X>0</X>
                   <Y>0</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22845,17 +23955,17 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>0</X>
-                    <Y>348</Y>
+                    <X>912</X>
+                    <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
-                  <X>0</X>
-                  <Y>348</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <X>912</X>
+                  <Y>0</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22867,16 +23977,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>696</Y>
+                    <Y>513</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
                   <X>0</X>
-                  <Y>696</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22908,17 +24018,17 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>0</X>
-                    <Y>1044</Y>
+                    <X>912</X>
+                    <Y>513</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
-                  <X>0</X>
-                  <Y>1044</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <X>912</X>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22942,13 +24052,13 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                     <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
                   <X>0</X>
                   <Y>0</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22959,17 +24069,17 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>0</X>
-                    <Y>348</Y>
+                    <X>912</X>
+                    <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
-                  <X>0</X>
-                  <Y>348</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <X>912</X>
+                  <Y>0</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -22981,16 +24091,16 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>696</Y>
+                    <Y>513</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
                   <X>0</X>
-                  <Y>696</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -23001,17 +24111,17 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>0</X>
-                    <Y>1044</Y>
+                    <X>912</X>
+                    <Y>513</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>912</Width>
+                    <Height>513</Height>
                   </Size>
-                  <X>0</X>
-                  <Y>1044</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <X>912</X>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -23035,710 +24145,6 @@ virtualize Control: Invites in 199: General in preparation for sending group inv
                   <Height>278</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
-                <MappedKey />
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: VFX - Slot2</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot2player</Name>
-                <Target>2</Target>
-                <IsSource>true</IsSource>
-                <Rect>
-                  <Location>
-                    <X>485</X>
-                    <Y>947</Y>
-                  </Location>
-                  <Size>
-                    <Width>169</Width>
-                    <Height>190</Height>
-                  </Size>
-                  <X>485</X>
-                  <Y>947</Y>
-                  <Width>169</Width>
-                  <Height>190</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot2target</Name>
-                <Target>2</Target>
-                <IsSource>true</IsSource>
-                <Rect>
-                  <Location>
-                    <X>32</X>
-                    <Y>1012</Y>
-                  </Location>
-                  <Size>
-                    <Width>446</Width>
-                    <Height>24</Height>
-                  </Size>
-                  <X>32</X>
-                  <Y>1012</Y>
-                  <Width>446</Width>
-                  <Height>24</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot2clicks</Name>
-                <Target>2</Target>
-                <IsSource>true</IsSource>
-                <Rect>
-                  <Location>
-                    <X>174</X>
-                    <Y>959</Y>
-                  </Location>
-                  <Size>
-                    <Width>163</Width>
-                    <Height>51</Height>
-                  </Size>
-                  <X>174</X>
-                  <Y>959</Y>
-                  <Width>163</Width>
-                  <Height>51</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot2casting</Name>
-                <Target>2</Target>
-                <IsSource>true</IsSource>
-                <Rect>
-                  <Location>
-                    <X>360</X>
-                    <Y>985</Y>
-                  </Location>
-                  <Size>
-                    <Width>100</Width>
-                    <Height>24</Height>
-                  </Size>
-                  <X>360</X>
-                  <Y>985</Y>
-                  <Width>100</Width>
-                  <Height>24</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot2player</Name>
-                <Target>all&amp;~(is2|dxnothing)</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>219</Y>
-                  </Location>
-                  <Size>
-                    <Width>152</Width>
-                    <Height>171</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>219</Y>
-                  <Width>152</Width>
-                  <Height>171</Height>
-                </Rect>
-                <UseMouseRepeat>true</UseMouseRepeat>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot2target</Name>
-                <Target>all&amp;~(is2|dxnothing)</Target>
-                <Rect>
-                  <Location>
-                    <X>16</X>
-                    <Y>590</Y>
-                  </Location>
-                  <Size>
-                    <Width>334</Width>
-                    <Height>24</Height>
-                  </Size>
-                  <X>16</X>
-                  <Y>590</Y>
-                  <Width>334</Width>
-                  <Height>24</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot2clicks</Name>
-                <Target>all&amp;~(is2|dxnothing)</Target>
-                <Rect>
-                  <Location>
-                    <X>174</X>
-                    <Y>911</Y>
-                  </Location>
-                  <Size>
-                    <Width>163</Width>
-                    <Height>43</Height>
-                  </Size>
-                  <X>174</X>
-                  <Y>911</Y>
-                  <Width>163</Width>
-                  <Height>43</Height>
-                </Rect>
-                <UseMouseRepeat>true</UseMouseRepeat>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot2casting</Name>
-                <Target>all&amp;~(is2|dxnothing)</Target>
-                <Rect>
-                  <Location>
-                    <X>360</X>
-                    <Y>956</Y>
-                  </Location>
-                  <Size>
-                    <Width>100</Width>
-                    <Height>24</Height>
-                  </Size>
-                  <X>360</X>
-                  <Y>956</Y>
-                  <Width>100</Width>
-                  <Height>24</Height>
-                </Rect>
-                <UseMouseRepeat>true</UseMouseRepeat>
-                <MappedKey />
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: VFX - Slot3</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot3player</Name>
-                <Target>3</Target>
-                <IsSource>true</IsSource>
-                <Rect>
-                  <Location>
-                    <X>485</X>
-                    <Y>947</Y>
-                  </Location>
-                  <Size>
-                    <Width>169</Width>
-                    <Height>190</Height>
-                  </Size>
-                  <X>485</X>
-                  <Y>947</Y>
-                  <Width>169</Width>
-                  <Height>190</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot3target</Name>
-                <Target>3</Target>
-                <IsSource>true</IsSource>
-                <Rect>
-                  <Location>
-                    <X>32</X>
-                    <Y>1012</Y>
-                  </Location>
-                  <Size>
-                    <Width>446</Width>
-                    <Height>24</Height>
-                  </Size>
-                  <X>32</X>
-                  <Y>1012</Y>
-                  <Width>446</Width>
-                  <Height>24</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot3clicks</Name>
-                <Target>3</Target>
-                <IsSource>true</IsSource>
-                <Rect>
-                  <Location>
-                    <X>174</X>
-                    <Y>959</Y>
-                  </Location>
-                  <Size>
-                    <Width>163</Width>
-                    <Height>51</Height>
-                  </Size>
-                  <X>174</X>
-                  <Y>959</Y>
-                  <Width>163</Width>
-                  <Height>51</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot3casting</Name>
-                <Target>3</Target>
-                <IsSource>true</IsSource>
-                <Rect>
-                  <Location>
-                    <X>360</X>
-                    <Y>985</Y>
-                  </Location>
-                  <Size>
-                    <Width>100</Width>
-                    <Height>24</Height>
-                  </Size>
-                  <X>360</X>
-                  <Y>985</Y>
-                  <Width>100</Width>
-                  <Height>24</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot3player</Name>
-                <Target>all&amp;~(is3|dxnothing)</Target>
-                <Rect>
-                  <Location>
-                    <X>152</X>
-                    <Y>219</Y>
-                  </Location>
-                  <Size>
-                    <Width>152</Width>
-                    <Height>171</Height>
-                  </Size>
-                  <X>152</X>
-                  <Y>219</Y>
-                  <Width>152</Width>
-                  <Height>171</Height>
-                </Rect>
-                <UseMouseRepeat>true</UseMouseRepeat>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot3target</Name>
-                <Target>all&amp;~(is3|dxnothing)</Target>
-                <Rect>
-                  <Location>
-                    <X>371</X>
-                    <Y>590</Y>
-                  </Location>
-                  <Size>
-                    <Width>334</Width>
-                    <Height>24</Height>
-                  </Size>
-                  <X>371</X>
-                  <Y>590</Y>
-                  <Width>334</Width>
-                  <Height>24</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot3clicks</Name>
-                <Target>all&amp;~(is3|dxnothing)</Target>
-                <Rect>
-                  <Location>
-                    <X>174</X>
-                    <Y>867</Y>
-                  </Location>
-                  <Size>
-                    <Width>163</Width>
-                    <Height>43</Height>
-                  </Size>
-                  <X>174</X>
-                  <Y>867</Y>
-                  <Width>163</Width>
-                  <Height>43</Height>
-                </Rect>
-                <UseMouseRepeat>true</UseMouseRepeat>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot3casting</Name>
-                <Target>all&amp;~(is3|dxnothing)</Target>
-                <Rect>
-                  <Location>
-                    <X>360</X>
-                    <Y>932</Y>
-                  </Location>
-                  <Size>
-                    <Width>100</Width>
-                    <Height>24</Height>
-                  </Size>
-                  <X>360</X>
-                  <Y>932</Y>
-                  <Width>100</Width>
-                  <Height>24</Height>
-                </Rect>
-                <UseMouseRepeat>true</UseMouseRepeat>
-                <MappedKey />
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: VFX - Slot4</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot4player</Name>
-                <Target>4</Target>
-                <IsSource>true</IsSource>
-                <Rect>
-                  <Location>
-                    <X>485</X>
-                    <Y>947</Y>
-                  </Location>
-                  <Size>
-                    <Width>169</Width>
-                    <Height>190</Height>
-                  </Size>
-                  <X>485</X>
-                  <Y>947</Y>
-                  <Width>169</Width>
-                  <Height>190</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot4target</Name>
-                <Target>4</Target>
-                <IsSource>true</IsSource>
-                <Rect>
-                  <Location>
-                    <X>32</X>
-                    <Y>1012</Y>
-                  </Location>
-                  <Size>
-                    <Width>446</Width>
-                    <Height>24</Height>
-                  </Size>
-                  <X>32</X>
-                  <Y>1012</Y>
-                  <Width>446</Width>
-                  <Height>24</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot4clicks</Name>
-                <Target>4</Target>
-                <IsSource>true</IsSource>
-                <Rect>
-                  <Location>
-                    <X>174</X>
-                    <Y>959</Y>
-                  </Location>
-                  <Size>
-                    <Width>163</Width>
-                    <Height>51</Height>
-                  </Size>
-                  <X>174</X>
-                  <Y>959</Y>
-                  <Width>163</Width>
-                  <Height>51</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot4casting</Name>
-                <Target>4</Target>
-                <IsSource>true</IsSource>
-                <Rect>
-                  <Location>
-                    <X>360</X>
-                    <Y>985</Y>
-                  </Location>
-                  <Size>
-                    <Width>100</Width>
-                    <Height>24</Height>
-                  </Size>
-                  <X>360</X>
-                  <Y>985</Y>
-                  <Width>100</Width>
-                  <Height>24</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot4player</Name>
-                <Target>all&amp;~(is4|dxnothing)</Target>
-                <Rect>
-                  <Location>
-                    <X>304</X>
-                    <Y>219</Y>
-                  </Location>
-                  <Size>
-                    <Width>152</Width>
-                    <Height>171</Height>
-                  </Size>
-                  <X>304</X>
-                  <Y>219</Y>
-                  <Width>152</Width>
-                  <Height>171</Height>
-                </Rect>
-                <UseMouseRepeat>true</UseMouseRepeat>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot4target</Name>
-                <Target>all&amp;~(is4|dxnothing)</Target>
-                <Rect>
-                  <Location>
-                    <X>16</X>
-                    <Y>397</Y>
-                  </Location>
-                  <Size>
-                    <Width>334</Width>
-                    <Height>24</Height>
-                  </Size>
-                  <X>16</X>
-                  <Y>397</Y>
-                  <Width>334</Width>
-                  <Height>24</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot4clicks</Name>
-                <Target>all&amp;~(is4|dxnothing)</Target>
-                <Rect>
-                  <Location>
-                    <X>174</X>
-                    <Y>823</Y>
-                  </Location>
-                  <Size>
-                    <Width>163</Width>
-                    <Height>43</Height>
-                  </Size>
-                  <X>174</X>
-                  <Y>823</Y>
-                  <Width>163</Width>
-                  <Height>43</Height>
-                </Rect>
-                <UseMouseRepeat>true</UseMouseRepeat>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot4casting</Name>
-                <Target>all&amp;~(is4|dxnothing)</Target>
-                <Rect>
-                  <Location>
-                    <X>360</X>
-                    <Y>908</Y>
-                  </Location>
-                  <Size>
-                    <Width>100</Width>
-                    <Height>24</Height>
-                  </Size>
-                  <X>360</X>
-                  <Y>908</Y>
-                  <Width>100</Width>
-                  <Height>24</Height>
-                </Rect>
-                <UseMouseRepeat>true</UseMouseRepeat>
-                <MappedKey />
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: VFX - Slot5</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot5player</Name>
-                <Target>5</Target>
-                <IsSource>true</IsSource>
-                <Rect>
-                  <Location>
-                    <X>485</X>
-                    <Y>947</Y>
-                  </Location>
-                  <Size>
-                    <Width>169</Width>
-                    <Height>190</Height>
-                  </Size>
-                  <X>485</X>
-                  <Y>947</Y>
-                  <Width>169</Width>
-                  <Height>190</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot5target</Name>
-                <Target>5</Target>
-                <IsSource>true</IsSource>
-                <Rect>
-                  <Location>
-                    <X>32</X>
-                    <Y>1012</Y>
-                  </Location>
-                  <Size>
-                    <Width>446</Width>
-                    <Height>24</Height>
-                  </Size>
-                  <X>32</X>
-                  <Y>1012</Y>
-                  <Width>446</Width>
-                  <Height>24</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot5clicks</Name>
-                <Target>5</Target>
-                <IsSource>true</IsSource>
-                <Rect>
-                  <Location>
-                    <X>174</X>
-                    <Y>959</Y>
-                  </Location>
-                  <Size>
-                    <Width>163</Width>
-                    <Height>51</Height>
-                  </Size>
-                  <X>174</X>
-                  <Y>959</Y>
-                  <Width>163</Width>
-                  <Height>51</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot5casting</Name>
-                <Target>5</Target>
-                <IsSource>true</IsSource>
-                <Rect>
-                  <Location>
-                    <X>360</X>
-                    <Y>985</Y>
-                  </Location>
-                  <Size>
-                    <Width>100</Width>
-                    <Height>24</Height>
-                  </Size>
-                  <X>360</X>
-                  <Y>985</Y>
-                  <Width>100</Width>
-                  <Height>24</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot5player</Name>
-                <Target>all&amp;~(is5|dxnothing)</Target>
-                <Rect>
-                  <Location>
-                    <X>456</X>
-                    <Y>219</Y>
-                  </Location>
-                  <Size>
-                    <Width>152</Width>
-                    <Height>171</Height>
-                  </Size>
-                  <X>456</X>
-                  <Y>219</Y>
-                  <Width>152</Width>
-                  <Height>171</Height>
-                </Rect>
-                <UseMouseRepeat>true</UseMouseRepeat>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot5target</Name>
-                <Target>all&amp;~(is5|dxnothing)</Target>
-                <Rect>
-                  <Location>
-                    <X>371</X>
-                    <Y>397</Y>
-                  </Location>
-                  <Size>
-                    <Width>334</Width>
-                    <Height>24</Height>
-                  </Size>
-                  <X>371</X>
-                  <Y>397</Y>
-                  <Width>334</Width>
-                  <Height>24</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot5clicks</Name>
-                <Target>all&amp;~(is5|dxnothing)</Target>
-                <Rect>
-                  <Location>
-                    <X>174</X>
-                    <Y>779</Y>
-                  </Location>
-                  <Size>
-                    <Width>163</Width>
-                    <Height>43</Height>
-                  </Size>
-                  <X>174</X>
-                  <Y>779</Y>
-                  <Width>163</Width>
-                  <Height>43</Height>
-                </Rect>
-                <UseMouseRepeat>true</UseMouseRepeat>
-                <MappedKey />
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
-                <Name>slot5casting</Name>
-                <Target>all&amp;~(is5|dxnothing)</Target>
-                <Rect>
-                  <Location>
-                    <X>360</X>
-                    <Y>884</Y>
-                  </Location>
-                  <Size>
-                    <Width>100</Width>
-                    <Height>24</Height>
-                  </Size>
-                  <X>360</X>
-                  <Y>884</Y>
-                  <Width>100</Width>
-                  <Height>24</Height>
-                </Rect>
-                <UseMouseRepeat>true</UseMouseRepeat>
                 <MappedKey />
               </MappedKeyAction>
             </Actions>
