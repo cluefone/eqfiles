@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/29/2023 11:52:50 AM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="2/3/2023 5:44:28 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>04Box</Name>
@@ -1520,6 +1520,30 @@
         </ToMappedKey>
       </VirtualMappedKey>
     </VirtualMappedKeys>
+    <VariableKeystrokeInstances />
+  </Character>
+  <Character>
+    <ExecuteOnLoad />
+    <Name>dxNothing2</Name>
+    <AccountName />
+    <SubAccountName />
+    <ServerName />
+    <ActualName />
+    <Game>dxNothing</Game>
+    <GameProfile>dxNothing Default Profile</GameProfile>
+    <AppendParameters />
+    <VideoFeedViewersPermanent>true</VideoFeedViewersPermanent>
+    <KnownGame>Unknown</KnownGame>
+    <RelayGroupStrings />
+    <KeyMapStrings />
+    <KeyMapWhiteOrBlackListType>Ignore</KeyMapWhiteOrBlackListType>
+    <KeyMapWhiteOrBlackList />
+    <ClickBarStrings />
+    <MenuInstances />
+    <VirtualFileTargets />
+    <WoWMacroSets />
+    <CrypticMacroSets />
+    <VirtualMappedKeys />
     <VariableKeystrokeInstances />
   </Character>
   <VirtualFile>
@@ -5085,6 +5109,20 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuStateAction">
+                <Target>all&amp;~dxnothing</Target>
+                <Menu>
+                  <MenuString>_Unified01</MenuString>
+                </Menu>
+                <ActionType>Load</ActionType>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuStateAction">
+                <Target>all&amp;~dxnothing</Target>
+                <Menu>
+                  <MenuString>_Unified02</MenuString>
+                </Menu>
+                <ActionType>Load</ActionType>
+              </MappedKeyAction>
             </Actions>
           </Step>
           <Step>
@@ -5093,6 +5131,20 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
                 <Target>all&amp;~dxnothing</Target>
                 <Menu>
                   <MenuString>_Setup</MenuString>
+                </Menu>
+                <ActionType>Unload</ActionType>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuStateAction">
+                <Target>all&amp;~dxnothing</Target>
+                <Menu>
+                  <MenuString>_Unified01</MenuString>
+                </Menu>
+                <ActionType>Unload</ActionType>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuStateAction">
+                <Target>all&amp;~dxnothing</Target>
+                <Menu>
+                  <MenuString>_Unified02</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
@@ -5362,14 +5414,14 @@ useful in the Avatar of War mission</Description>
                 <Name>BRD-Tracking</Name>
                 <Rect>
                   <Location>
-                    <X>2135</X>
+                    <X>2355</X>
                     <Y>370</Y>
                   </Location>
                   <Size>
                     <Width>205</Width>
                     <Height>700</Height>
                   </Size>
-                  <X>2135</X>
+                  <X>2355</X>
                   <Y>370</Y>
                   <Width>205</Width>
                   <Height>700</Height>
@@ -7361,32 +7413,33 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Control: Show Menus</Name>
+        <Description>old target: all&amp;~(is5|dxnothing)</Description>
         <Steps>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is5|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>ENC01</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is5|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>ENC02</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is5|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>ENC03</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is5|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>ENC04</MenuString>
                 </Menu>
@@ -7397,28 +7450,28 @@ useful in the Avatar of War mission</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>ENC01</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>ENC02</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>ENC03</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>ENC04</MenuString>
                 </Menu>
@@ -7538,6 +7591,8 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Control: VFX - Slot</Name>
+        <Description>old target: all&amp;~(is5|dxnothing)
+old target viewer: 371,397</Description>
         <Steps>
           <Step>
             <Actions>
@@ -7570,16 +7625,16 @@ useful in the Avatar of War mission</Description>
                 <Rect>
                   <Location>
                     <X>32</X>
-                    <Y>1012</Y>
+                    <Y>1018</Y>
                   </Location>
                   <Size>
                     <Width>446</Width>
-                    <Height>24</Height>
+                    <Height>18</Height>
                   </Size>
                   <X>32</X>
-                  <Y>1012</Y>
+                  <Y>1018</Y>
                   <Width>446</Width>
-                  <Height>24</Height>
+                  <Height>18</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -7626,9 +7681,9 @@ useful in the Avatar of War mission</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Hide</Action>
                 <Name>slot5player</Name>
-                <Target>all&amp;~(is5|dxnothing)</Target>
+                <Target>7</Target>
                 <Rect>
                   <Location>
                     <X>456</X>
@@ -7652,17 +7707,17 @@ useful in the Avatar of War mission</Description>
                 <Target>all&amp;~(is5|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>371</X>
-                    <Y>397</Y>
+                    <X>752</X>
+                    <Y>919</Y>
                   </Location>
                   <Size>
                     <Width>334</Width>
-                    <Height>24</Height>
+                    <Height>18</Height>
                   </Size>
-                  <X>371</X>
-                  <Y>397</Y>
+                  <X>752</X>
+                  <Y>919</Y>
                   <Width>334</Width>
-                  <Height>24</Height>
+                  <Height>18</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -7817,14 +7872,14 @@ useful in the Avatar of War mission</Description>
                 <Name>BRD-Tracking</Name>
                 <Rect>
                   <Location>
-                    <X>2135</X>
+                    <X>2355</X>
                     <Y>370</Y>
                   </Location>
                   <Size>
                     <Width>205</Width>
                     <Height>700</Height>
                   </Size>
-                  <X>2135</X>
+                  <X>2355</X>
                   <Y>370</Y>
                   <Width>205</Width>
                   <Height>700</Height>
@@ -8800,32 +8855,33 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Control: Show Menus</Name>
+        <Description>old target: all&amp;~(is2|dxnothing)</Description>
         <Steps>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is2|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>WIZ01</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is2|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>WIZ02</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is2|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>WIZ03</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is2|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>WIZ04</MenuString>
                 </Menu>
@@ -8836,28 +8892,28 @@ useful in the Avatar of War mission</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is2|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>WIZ01</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is2|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>WIZ02</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is2|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>WIZ03</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is2|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>WIZ04</MenuString>
                 </Menu>
@@ -8995,6 +9051,9 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Control: VFX - Slot</Name>
+        <Description>0,219
+860,0
+old target: all&amp;~(is2|dxnothing)</Description>
         <Steps>
           <Step>
             <Actions>
@@ -9027,16 +9086,16 @@ useful in the Avatar of War mission</Description>
                 <Rect>
                   <Location>
                     <X>32</X>
-                    <Y>1012</Y>
+                    <Y>1018</Y>
                   </Location>
                   <Size>
                     <Width>446</Width>
-                    <Height>24</Height>
+                    <Height>18</Height>
                   </Size>
                   <X>32</X>
-                  <Y>1012</Y>
+                  <Y>1018</Y>
                   <Width>446</Width>
-                  <Height>24</Height>
+                  <Height>18</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -9083,9 +9142,9 @@ useful in the Avatar of War mission</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Hide</Action>
                 <Name>slot2player</Name>
-                <Target>all&amp;~(is2|dxnothing)</Target>
+                <Target>7</Target>
                 <Rect>
                   <Location>
                     <X>0</X>
@@ -9109,17 +9168,17 @@ useful in the Avatar of War mission</Description>
                 <Target>all&amp;~(is2|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>16</X>
-                    <Y>590</Y>
+                    <X>752</X>
+                    <Y>973</Y>
                   </Location>
                   <Size>
                     <Width>334</Width>
-                    <Height>24</Height>
+                    <Height>18</Height>
                   </Size>
-                  <X>16</X>
-                  <Y>590</Y>
+                  <X>752</X>
+                  <Y>973</Y>
                   <Width>334</Width>
-                  <Height>24</Height>
+                  <Height>18</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -9309,14 +9368,14 @@ useful in the Avatar of War mission</Description>
                 <Name>BRD-Tracking</Name>
                 <Rect>
                   <Location>
-                    <X>2135</X>
+                    <X>2355</X>
                     <Y>370</Y>
                   </Location>
                   <Size>
                     <Width>205</Width>
                     <Height>700</Height>
                   </Size>
-                  <X>2135</X>
+                  <X>2355</X>
                   <Y>370</Y>
                   <Width>205</Width>
                   <Height>700</Height>
@@ -10873,32 +10932,33 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Control: Show Menus</Name>
+        <Description>old target: all&amp;~(is4|dxnothing)</Description>
         <Steps>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is4|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>BRD01</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is4|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>BRD02</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is4|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>BRD03</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is4|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>BRD04</MenuString>
                 </Menu>
@@ -10909,28 +10969,28 @@ useful in the Avatar of War mission</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is4|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>BRD01</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is4|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>BRD02</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is4|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>BRD03</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is4|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>BRD04</MenuString>
                 </Menu>
@@ -11068,6 +11128,7 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Control: VFX - Slot</Name>
+        <Description>old target: all&amp;~(is4|dxnothing)</Description>
         <Steps>
           <Step>
             <Actions>
@@ -11100,16 +11161,16 @@ useful in the Avatar of War mission</Description>
                 <Rect>
                   <Location>
                     <X>32</X>
-                    <Y>1012</Y>
+                    <Y>1018</Y>
                   </Location>
                   <Size>
                     <Width>446</Width>
-                    <Height>24</Height>
+                    <Height>18</Height>
                   </Size>
                   <X>32</X>
-                  <Y>1012</Y>
+                  <Y>1018</Y>
                   <Width>446</Width>
-                  <Height>24</Height>
+                  <Height>18</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -11156,9 +11217,9 @@ useful in the Avatar of War mission</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Hide</Action>
                 <Name>slot4player</Name>
-                <Target>all&amp;~(is4|dxnothing)</Target>
+                <Target>7</Target>
                 <Rect>
                   <Location>
                     <X>304</X>
@@ -11182,17 +11243,17 @@ useful in the Avatar of War mission</Description>
                 <Target>all&amp;~(is4|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>16</X>
-                    <Y>397</Y>
+                    <X>752</X>
+                    <Y>937</Y>
                   </Location>
                   <Size>
                     <Width>334</Width>
-                    <Height>24</Height>
+                    <Height>18</Height>
                   </Size>
-                  <X>16</X>
-                  <Y>397</Y>
+                  <X>752</X>
+                  <Y>937</Y>
                   <Width>334</Width>
-                  <Height>24</Height>
+                  <Height>18</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -11600,14 +11661,14 @@ useful in the Avatar of War mission</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>2135</X>
+                    <X>2355</X>
                     <Y>370</Y>
                   </Location>
                   <Size>
                     <Width>205</Width>
                     <Height>700</Height>
                   </Size>
-                  <X>2135</X>
+                  <X>2355</X>
                   <Y>370</Y>
                   <Width>205</Width>
                   <Height>700</Height>
@@ -14054,32 +14115,33 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Control: Show Menus</Name>
+        <Description>old target: all&amp;~(is3|dxnothing)</Description>
         <Steps>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is3|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>SHM01</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is3|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>SHM02</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is3|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>SHM03</MenuString>
                 </Menu>
                 <ActionType>Load</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is3|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>SHM04</MenuString>
                 </Menu>
@@ -14121,28 +14183,28 @@ useful in the Avatar of War mission</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is3|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>SHM01</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is3|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>SHM02</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is3|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>SHM03</MenuString>
                 </Menu>
                 <ActionType>Unload</ActionType>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~(is3|dxnothing)</Target>
+                <Target>7</Target>
                 <Menu>
                   <MenuString>SHM04</MenuString>
                 </Menu>
@@ -14301,6 +14363,11 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Control: VFX - Slot</Name>
+        <Description>152,219
+1012,0
+old target: all&amp;~(is3|dxnothing)
+
+old target viewer loc: 371,590</Description>
         <Steps>
           <Step>
             <Actions>
@@ -14333,16 +14400,16 @@ useful in the Avatar of War mission</Description>
                 <Rect>
                   <Location>
                     <X>32</X>
-                    <Y>1012</Y>
+                    <Y>1018</Y>
                   </Location>
                   <Size>
                     <Width>446</Width>
-                    <Height>24</Height>
+                    <Height>18</Height>
                   </Size>
                   <X>32</X>
-                  <Y>1012</Y>
+                  <Y>1018</Y>
                   <Width>446</Width>
-                  <Height>24</Height>
+                  <Height>18</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -14389,9 +14456,9 @@ useful in the Avatar of War mission</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Hide</Action>
                 <Name>slot3player</Name>
-                <Target>all&amp;~(is3|dxnothing)</Target>
+                <Target>7</Target>
                 <Rect>
                   <Location>
                     <X>152</X>
@@ -14415,17 +14482,17 @@ useful in the Avatar of War mission</Description>
                 <Target>all&amp;~(is3|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>371</X>
-                    <Y>590</Y>
+                    <X>752</X>
+                    <Y>955</Y>
                   </Location>
                   <Size>
                     <Width>334</Width>
-                    <Height>24</Height>
+                    <Height>18</Height>
                   </Size>
-                  <X>371</X>
-                  <Y>590</Y>
+                  <X>752</X>
+                  <Y>955</Y>
                   <Width>334</Width>
-                  <Height>24</Height>
+                  <Height>18</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -14564,14 +14631,14 @@ useful in the Avatar of War mission</Description>
                 <Name>BRD-Tracking</Name>
                 <Rect>
                   <Location>
-                    <X>2135</X>
+                    <X>2355</X>
                     <Y>370</Y>
                   </Location>
                   <Size>
                     <Width>205</Width>
                     <Height>700</Height>
                   </Size>
-                  <X>2135</X>
+                  <X>2355</X>
                   <Y>370</Y>
                   <Width>205</Width>
                   <Height>700</Height>
@@ -19306,7 +19373,7 @@ now all 'other' characters will know how to target the MA, and assist the MA whe
                 <MappedKeyString>SetHealingBarsStatusOnSwitch</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(dxnothing|is7)</Target>
                 <Menu>
                   <MenuString>_Setup</MenuString>
                 </Menu>
@@ -19318,7 +19385,7 @@ now all 'other' characters will know how to target the MA, and assist the MA whe
                 </ActionTimer>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuStateAction">
-                <Target>all&amp;~dxnothing</Target>
+                <Target>all&amp;~(dxnothing|is7)</Target>
                 <Menu>
                   <MenuString>ISB42 - Toggles</MenuString>
                 </Menu>
@@ -19486,6 +19553,7 @@ activate hotkeys for CurrentBoxes ATG</Description>
             </Actions>
           </Step>
           <Step>
+            <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="VariableKeystrokeAction">
                 <Target>~CurrentBoxes</Target>
@@ -22630,6 +22698,20 @@ activate hotkeys for CurrentBoxes ATG</Description>
                     <Code>28</Code>
                   </Key>
                 </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Take Screenshot</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="ScreenshotAction">
+                <Filename>{CHARACTERSET} - {CHARACTER} - {DATETIME}</Filename>
+                <DirectXCapture>false</DirectXCapture>
+                <Rect />
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -36773,8 +36855,3724 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <DisplayText />
       </MenuButton>
       <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Take Screenshot</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>ScrnSht</Text>
+        <DisplayText />
+      </MenuButton>
+    </Buttons>
+  </MenuButtonSet>
+  <MenuButtonSet>
+    <Name>_Unified01</Name>
+    <Buttons>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 01</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 01</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 01</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 01</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>xt01</Text>
+        <DisplayText>xt01</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 02</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>xt02</Text>
+        <DisplayText>xt02</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 03</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 03</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 03</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 03</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>xt03</Text>
+        <DisplayText>xt03</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 04</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 04</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 04</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 04</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>xt04</Text>
+        <DisplayText>xt04</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 05</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 05</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 05</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 05</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>xt05</Text>
+        <DisplayText>xt05</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 06</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 06</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 06</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 06</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>xt06</Text>
+        <DisplayText>xt06</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 07</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 07</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 07</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 07</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>xt07</Text>
+        <DisplayText>xt07</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 08</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 08</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 08</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 08</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>xt08</Text>
+        <DisplayText>xt08</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 09</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 09</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 09</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 09</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>xt09</Text>
+        <DisplayText>xt09</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 10</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 10</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 10</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 10</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>xt10</Text>
+        <DisplayText>xt10</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 11</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 11</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 11</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 11</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>xt11</Text>
+        <DisplayText>xt11</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 12</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 12</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 12</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 12</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>xt12</Text>
+        <DisplayText>xt12</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 13</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 13</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 13</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 13</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>xt13</Text>
+        <DisplayText>xt13</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 14</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 14</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 14</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Combat: xtar 14</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>xt14</Text>
+        <DisplayText>xt14</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 01</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 01</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 01</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 01</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>SP01</Text>
+        <DisplayText>Cast 1</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 02</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>SP02</Text>
+        <DisplayText>Cast 2</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 03</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 03</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 03</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 03</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>SP03</Text>
+        <DisplayText>Cast 3</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 04</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 04</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 04</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 04</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>SP04</Text>
+        <DisplayText>Cast 4</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 05</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 05</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 05</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 05</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>SP05</Text>
+        <DisplayText>Cast 5</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 06</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 06</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 06</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 06</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>SP06</Text>
+        <DisplayText>Cast 6</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 07</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 07</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 07</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 07</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>SP07</Text>
+        <DisplayText>Cast 7</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 08</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 08</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 08</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 08</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>SP08</Text>
+        <DisplayText>Cast 8</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 09</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 09</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 09</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 09</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>SP09</Text>
+        <DisplayText>Cast 9</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 10</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 10</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 10</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 10</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>SP10</Text>
+        <DisplayText>Cast 10</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 11</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 11</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 11</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 11</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>SP11</Text>
+        <DisplayText>Cast 11</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 12</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 12</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 12</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 12</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>SP12</Text>
+        <DisplayText>Cast 12</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 13</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 13</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 13</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 13</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>SP13</Text>
+        <DisplayText>Cast 13</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:01</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:01</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:01</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:01</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>1</Text>
+        <DisplayText>1</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:02</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>2</Text>
+        <DisplayText>2</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:03</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:03</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:03</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:03</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>3</Text>
+        <DisplayText>3</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:04</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:04</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:04</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:04</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>4</Text>
+        <DisplayText>4</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:05</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:05</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:05</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:05</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>5</Text>
+        <DisplayText>5</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:06</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:06</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:06</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:06</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>6</Text>
+        <DisplayText>6</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:07</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:07</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:07</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:07</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>7</Text>
+        <DisplayText>7</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:08</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:08</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:08</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:08</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>8</Text>
+        <DisplayText>8</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:09</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:09</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:09</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:09</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>9</Text>
+        <DisplayText>9</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:10</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:10</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:10</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:10</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>0</Text>
+        <DisplayText>10</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:11</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:11</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:11</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:11</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>-</Text>
+        <DisplayText>-</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:12</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:12</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:12</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:12</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>=</Text>
+        <DisplayText>=</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Attack On</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Attack On</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Attack On</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Attack On</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>atkon</Text>
+        <DisplayText>Attack On</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Attack Off</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Attack Off</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Attack Off</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Attack Off</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>atkof</Text>
+        <DisplayText>Attack Off</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB05:09</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB05:09</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>pets</Text>
+        <DisplayText>Swarm Pets</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB05:10</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB05:10</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>swarm</Text>
+        <DisplayText>Pet Swarm</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Clicky: Mount</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Clicky: Mount</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Clicky: Mount</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Clicky: Mount</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>mnt</Text>
+        <DisplayText>Mount</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB06:01</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB06:01</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>lev</Text>
+        <DisplayText>Lev</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB06:02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB06:02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB05:02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB06:02</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>invis</Text>
+        <DisplayText>Invis</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB06:03</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB05:02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB06:03</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>ivu</Text>
+        <DisplayText>IVU</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB06:07</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>cheeta</Text>
+        <DisplayText>Cheetah</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:01</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>dots</Text>
+        <DisplayText>DoT 1st Melody</DisplayText>
+        <BackgroundColor>
+          <Red>27</Red>
+          <Green>9</Green>
+          <Blue>227</Blue>
+        </BackgroundColor>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:02</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>noqt</Text>
+        <DisplayText>No QT Melody</DisplayText>
+        <BackgroundColor>
+          <Red>27</Red>
+          <Green>9</Green>
+          <Blue>227</Blue>
+        </BackgroundColor>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:03</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>qt</Text>
+        <DisplayText>QT Melody</DisplayText>
+        <BackgroundColor>
+          <Red>27</Red>
+          <Green>9</Green>
+          <Blue>227</Blue>
+        </BackgroundColor>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:04</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>burn</Text>
+        <DisplayText>Burn Melody</DisplayText>
+        <BackgroundColor>
+          <Red>27</Red>
+          <Green>9</Green>
+          <Blue>227</Blue>
+        </BackgroundColor>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Movement: Duck</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Movement: Duck</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Movement: Duck</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Movement: Duck</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>Duck</Text>
+        <DisplayText>Duck</DisplayText>
+        <BackgroundColor>
+          <Red>255</Red>
+        </BackgroundColor>
+      </MenuButton>
+    </Buttons>
+  </MenuButtonSet>
+  <MenuButtonSet>
+    <Name>_Unified02</Name>
+    <Buttons>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB06:03</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.498039216</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>2.5</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>1</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>5</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+        </Actions>
+        <Text>shrink</Text>
+        <DisplayText>Group Shrink</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:01</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:11</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:09</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>UHC</Text>
+        <DisplayText>Single Unity Haste Clarity</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB03:07</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:08</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:10</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>G-UHC</Text>
+        <DisplayText>GroupTak Unity Haste Clarity</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:03</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB03:06</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:09</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB03:04</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>Auras</Text>
+        <DisplayText>Auras / VU</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:12</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:12</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:12</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:12</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>Base</Text>
+        <DisplayText>Base spells</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+        <Text />
+        <DisplayText />
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+        <Text />
+        <DisplayText />
+      </MenuButton>
+      <MenuButton>
         <Actions />
         <DisplayText />
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+        <DisplayText />
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB05:01</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.247058824</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>15</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.498039216</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>30</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.7490196</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>45</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>1</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>60</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+        </Actions>
+        <Text>RC</Text>
+        <DisplayText>RC</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB05:02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.498039216</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>10</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>1</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>20</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+        </Actions>
+        <Text>IPS</Text>
+        <DisplayText>IPS</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB05:07</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.247058824</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>75</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.498039216</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>150</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.7490196</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>225</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>1</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>300</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+        </Actions>
+        <Text>SG</Text>
+        <DisplayText>Spirit Guardian</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB05:08</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.247058824</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>150</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.498039216</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>300</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.7490196</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>450</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>1</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>600</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+        </Actions>
+        <Text>UoS</Text>
+        <DisplayText>Union of Spirits</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB05:11</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>0rez</Text>
+        <DisplayText>0 Rez</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB05:12</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>96rez</Text>
+        <DisplayText>96 Rez</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:06</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB03:12</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>rejuv</Text>
+        <DisplayText>Forceful Rejuvenation</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.498039216</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>6</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>1</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>12</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+        </Actions>
+        <Text>root</Text>
+        <DisplayText>Wizard Root</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:03</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.247058824</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>22.5</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.498039216</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>45</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.7490196</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>67.5</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>1</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>90</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+        </Actions>
+        <Text>conc</Text>
+        <DisplayText>Concussion</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB03:01</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB03:01</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB03:02</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>SC</Text>
+        <DisplayText>Silent Casting</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB03:02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.247058824</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>300</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.498039216</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>600</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.7490196</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>900</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>1</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>1200</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+        </Actions>
+        <Text>MC</Text>
+        <DisplayText>Mind Crash</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB03:03</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.247058824</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>150</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.498039216</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>300</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.7490196</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>450</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>1</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>600</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+        </Actions>
+        <Text>Whsp</Text>
+        <DisplayText>Arcane Whisper</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.247058824</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>15</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.498039216</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>30</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.7490196</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>45</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>1</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>60</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+        </Actions>
+        <Text>ImpF</Text>
+        <DisplayText>Improved Familiar</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:03</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:11</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>scales</Text>
+        <DisplayText>Rune</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:04</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 01</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>splshd</Text>
+        <DisplayText>Spellshield</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:05</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:07</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>DimSh</Text>
+        <DisplayText>Dimensional Shield</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:10</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>Ward</Text>
+        <DisplayText>Wiz Ward</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:04</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>Mez1</Text>
+        <DisplayText>Mez 1</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:05</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>Mez2</Text>
+        <DisplayText>Mez 2</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:06</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>Mez3</Text>
+        <DisplayText>Mez 3</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:07</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>aemz</Text>
+        <DisplayText>AE Mez</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:04</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:02</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>aemalo</Text>
+        <DisplayText>AE Malo / Tash</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:02</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:05</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>aeslow</Text>
+        <DisplayText>AE Slow</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:03</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Spellcasting</KeyMapString>
+            <MappedKeyString>Cast 04</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>malo</Text>
+        <DisplayText>Malo / Tash</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:01</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:04</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>slow</Text>
+        <DisplayText>Slow</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:01</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:01</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB01:01</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>debuff</Text>
+        <DisplayText>debuff</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:11</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.498039216</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>6</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>1</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>12</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+        </Actions>
+        <Text>blur</Text>
+        <DisplayText>Fog of Memories</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:12</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.498039216</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>5</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>1</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>10</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+        </Actions>
+        <Text>aeblur</Text>
+        <DisplayText>Blanket of Forgetfulness</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB03:08</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.247058824</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>150</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.498039216</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>300</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.7490196</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>450</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>BrdButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>1</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>600</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+        </Actions>
+        <Text>Haze</Text>
+        <DisplayText>Chromatic Haze</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB03:05</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB03:10</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB03:10</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>ITC</Text>
+        <DisplayText>ITC</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:11</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB03:11</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>Tens</Text>
+        <DisplayText>Intensity</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:10</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:01</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>AHR</Text>
+        <DisplayText>AHR Garg</DisplayText>
+        <BackgroundColor>
+          <Red>7</Red>
+          <Green>9</Green>
+          <Blue>61</Blue>
+        </BackgroundColor>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:11</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:02</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>BatMz</Text>
+        <DisplayText>Bat Mez</DisplayText>
+        <BackgroundColor>
+          <Red>7</Red>
+          <Green>9</Green>
+          <Blue>61</Blue>
+        </BackgroundColor>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:12</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB02:03</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>Pool</Text>
+        <DisplayText>Pool Charm</DisplayText>
+        <BackgroundColor>
+          <Red>7</Red>
+          <Green>9</Green>
+          <Blue>61</Blue>
+        </BackgroundColor>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB05:01</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>exds</Text>
+        <DisplayText>Exodus</DisplayText>
+        <BorderColor>
+          <Red>255</Red>
+        </BorderColor>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>2</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB05:02</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>absc</Text>
+        <DisplayText>Abscond</DisplayText>
+        <BorderColor>
+          <Red>255</Red>
+        </BorderColor>
       </MenuButton>
     </Buttons>
   </MenuButtonSet>
@@ -49243,6 +53041,54 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     </Grid_Size>
   </MenuTemplate>
   <MenuTemplate>
+    <Name>_Unified</Name>
+    <Popup />
+    <NumButtons>56</NumButtons>
+    <BackgroundImage />
+    <BackgroundColor>
+      <Alpha>0</Alpha>
+    </BackgroundColor>
+    <Border>0</Border>
+    <BorderColor>
+      <Alpha>0</Alpha>
+    </BorderColor>
+    <frameSize>
+      <Width>896</Width>
+      <Height>40</Height>
+    </frameSize>
+    <buttonSize>
+      <Width>32</Width>
+      <Height>20</Height>
+    </buttonSize>
+    <buttonImage />
+    <buttonImageHover />
+    <buttonImagePressed />
+    <buttonBackgroundColor />
+    <buttonBorderColor>
+      <Red>127</Red>
+      <Blue>127</Blue>
+      <Alpha>200</Alpha>
+    </buttonBorderColor>
+    <buttonFontColor>
+      <Red>255</Red>
+      <Green>255</Green>
+      <Blue>255</Blue>
+    </buttonFontColor>
+    <buttonFontBold>0</buttonFontBold>
+    <buttonFontSize>11</buttonFontSize>
+    <buttonFontName>Tahoma</buttonFontName>
+    <XML_FileName />
+    <XML_Element />
+    <Grid_buttonMargin>
+      <Width>0</Width>
+      <Height>0</Height>
+    </Grid_buttonMargin>
+    <Grid_Size>
+      <Width>28</Width>
+      <Height>2</Height>
+    </Grid_Size>
+  </MenuTemplate>
+  <MenuTemplate>
     <Name>Formations</Name>
     <Description>Quick Setup Wizard 42 - Standard Formations Menu Template</Description>
     <Popup />
@@ -49768,12 +53614,30 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Name>_Setup</Name>
     <Description>a menu for setting up
 3440x1392 starting pos - 750,1020
-2256x1160 starting pos - 750, 788</Description>
+2256x1160 starting pos - 750, 788
+750,1020</Description>
     <Template>_Setup</Template>
     <ButtonLayout>_Setup_BS01</ButtonLayout>
     <HotkeyLayout />
-    <X>750</X>
-    <Y>1020</Y>
+    <X>1150</X>
+    <Y>-15</Y>
+  </Menu>
+  <Menu>
+    <Name>_Unified01</Name>
+    <Description>testing a single menu with some buttons that work differently based on CTRL/ALT/SHIFT modifers to change the target of the mapped key</Description>
+    <Template>_Unified</Template>
+    <ButtonLayout>_Unified01</ButtonLayout>
+    <HotkeyLayout />
+    <X>752</X>
+    <Y>975</Y>
+  </Menu>
+  <Menu>
+    <Name>_Unified02</Name>
+    <Template>_Unified</Template>
+    <ButtonLayout>_Unified02</ButtonLayout>
+    <HotkeyLayout />
+    <X>752</X>
+    <Y>1015</Y>
   </Menu>
   <Menu>
     <Name>BRD01</Name>
@@ -49884,7 +53748,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Template>Toggles</Template>
     <ButtonLayout>ISB42 - Toggles</ButtonLayout>
     <HotkeyLayout />
-    <Y>133</Y>
+    <X>700</X>
   </Menu>
   <Menu>
     <Name>PAL01</Name>
@@ -49961,7 +53825,7 @@ C8088A08</Description>
   <Menu>
     <Name>xtargets</Name>
     <Template>xtar 4x13</Template>
-    <ButtonLayout>xtarButtonSet</ButtonLayout>
+    <ButtonLayout />
     <HotkeyLayout>MyHotkeySet</HotkeyLayout>
     <X>483</X>
     <Y>584</Y>
