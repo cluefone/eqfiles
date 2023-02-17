@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="2/10/2023 4:16:53 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="2/15/2023 10:03:23 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>04Box</Name>
@@ -4068,7 +4068,9 @@ will work best with one of pal/wiz/enc casting IVU in step 1, then SHM in step 2
       <MappedKey>
         <Name>Control: Unload My Group 1 Member ATGs</Name>
         <Steps>
-          <Step />
+          <Step>
+            <Actions />
+          </Step>
         </Steps>
       </MappedKey>
       <MappedKey>
@@ -5158,6 +5160,10 @@ be mindful of long character names and the 14-character limit when stuffing comm
               <MappedKeyAction xsi:type="VariableKeystrokeAction">
                 <Name>Invite (Decline Invite)</Name>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>100: Chinger</KeyMapString>
+                <MappedKeyString>Control: Unload My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -5665,6 +5671,42 @@ be mindful of long character names and the 14-character limit when stuffing comm
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Control: Unload My Group 1 Member ATGs</Name>
+        <Description>Remove ATG assignments when this character is not a group member
+</Description>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>Class-PAL</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>CurrentBoxes</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>Group1</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>Group1-Members</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>Non-Trackers</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>FeatherHorn</RelayGroupString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Forage</Name>
         <Description>execute forage social</Description>
         <Steps>
@@ -5804,42 +5846,6 @@ useful in the Avatar of War mission</Description>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
                 <MappedKey />
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Unload My Group 1 Member ATGs</Name>
-        <Description>ATG assignments when this character is a group member
-</Description>
-        <ResetTimer>0</ResetTimer>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="TargetGroupAction">
-                <Action>Leave</Action>
-                <RelayGroupString>Class-PAL</RelayGroupString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="TargetGroupAction">
-                <Action>Leave</Action>
-                <RelayGroupString>CurrentBoxes</RelayGroupString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="TargetGroupAction">
-                <Action>Leave</Action>
-                <RelayGroupString>Group1</RelayGroupString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="TargetGroupAction">
-                <Action>Leave</Action>
-                <RelayGroupString>Group1-Members</RelayGroupString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="TargetGroupAction">
-                <Action>Leave</Action>
-                <RelayGroupString>Non-Trackers</RelayGroupString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="TargetGroupAction">
-                <Action>Leave</Action>
-                <RelayGroupString>FeatherHorn</RelayGroupString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -8043,6 +8049,7 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Control: Unload My Group 1 Member ATGs</Name>
+        <Description>Remove ATG assignments when this character is not a group member</Description>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -9573,6 +9580,7 @@ old target viewer: 371,397</Description>
       </MappedKey>
       <MappedKey>
         <Name>Control: Unload My Group 1 Member ATGs</Name>
+        <Description>Remove ATG assignments when this character is not a group member</Description>
         <Steps>
           <Step>
             <Actions>
@@ -11723,6 +11731,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
       </MappedKey>
       <MappedKey>
         <Name>Control: Unload My Group 1 Member ATGs</Name>
+        <Description>Remove ATG assignments when this character is not a group member</Description>
         <Steps>
           <Step>
             <Actions>
@@ -15023,6 +15032,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
       </MappedKey>
       <MappedKey>
         <Name>Control: Unload My Group 1 Member ATGs</Name>
+        <Description>Remove ATG assignments when this character is not a group member</Description>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -20097,25 +20107,33 @@ now all 'other' characters will know how to target the MA, and assist the MA whe
       <MappedKey>
         <Name>Control: Invite - Accept</Name>
         <Steps>
-          <Step />
+          <Step>
+            <Actions />
+          </Step>
         </Steps>
       </MappedKey>
       <MappedKey>
         <Name>Control: Invite - Decline</Name>
         <Steps>
-          <Step />
+          <Step>
+            <Actions />
+          </Step>
         </Steps>
       </MappedKey>
       <MappedKey>
         <Name>Control: Invite - Process</Name>
         <Steps>
-          <Step />
+          <Step>
+            <Actions />
+          </Step>
         </Steps>
       </MappedKey>
       <MappedKey>
         <Name>Control: Invite - Send</Name>
         <Steps>
-          <Step />
+          <Step>
+            <Actions />
+          </Step>
         </Steps>
       </MappedKey>
       <MappedKey>
