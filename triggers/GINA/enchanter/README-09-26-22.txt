@@ -1,0 +1,38 @@
+*** Updated 09/26/22
+
+
+*** Notes:
+
+--- Redid or added regex checks on all triggers
+--- Compartamentlized the triggers better to make it easier to turn off what you don't want on
+--- Removed Caster aDPS sub-folder
+--- Added a common trigger sub-folder for Improved Twincast and Shield (spell guard)
+
+
+*** Information:
+
+1. These triggers will be placed in a top level folder called: Rexa's GINA Triggers
+
+2. Subfolders are: "Common Triggers" and "Enchanter"
+
+
+*** Categories:
+
+- Every trigger has an assigned category based on my own personal overlays for GINA. 
+
+- As a result, any triggers with timers may auto-populate in your default overlay.
+
+- You are responsible for changing the categories or assigning them correctly to your own GINA overlays.
+
+
+*** Any Problems?
+
+--- Email me directly at: contact@rexaraven.com
+--- Or, DM me via Discord at: Rexa#4320
+--- Before you contact me with any issues...
+--- Lag (especially raid lag) can sometimes affect timers being slightly off in many cases
+
+
+
+
+
