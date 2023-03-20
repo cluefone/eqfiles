@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="2/15/2023 10:03:23 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="3/19/2023 10:11:41 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>04Box</Name>
@@ -2368,6 +2368,35 @@
     <Description>Real buttons being pressed on the keyboard</Description>
     <Mappings>
       <MappedKey>
+        <Name>Ability ----------------------------------------------------------</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Ability: Forage</Name>
+        <Combo>
+          <Combo>G600-G10</Combo>
+          <Key>
+            <Key>G600-G10</Key>
+            <Code>0</Code>
+          </Key>
+        </Combo>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>all&amp;~dxnothing</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Ability: Forage</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Clicky ----------------------------------------------------------</Name>
         <Steps />
       </MappedKey>
@@ -2379,10 +2408,10 @@ ToDo: figure out how to more gracefully recover from a misfire. ISB assumes succ
 
 clicking manually through VFX is possible, but probably not the best way</Description>
         <Combo>
-          <Combo>Num Del</Combo>
+          <Combo>G600-G9</Combo>
           <Key>
-            <Key>Num Del</Key>
-            <Code>83</Code>
+            <Key>G600-G9</Key>
+            <Code>0</Code>
           </Key>
         </Combo>
         <ResetTimer>600</ResetTimer>
@@ -2505,6 +2534,86 @@ clicking manually through VFX is possible, but probably not the best way</Descri
                 </MappedKey>
                 <Action>Set</Action>
                 <Value>7</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>33</Stick>
+            <Stump>true</Stump>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>@(FeatherHorn&amp;CurrentBoxes)%7</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Clicky: FeatherHorn</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all other</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Clicky: FeatherHorn</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>8</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>33</Stick>
+            <Stump>true</Stump>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>@(FeatherHorn&amp;CurrentBoxes)%8</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Clicky: FeatherHorn</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all other</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Clicky: FeatherHorn</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>11</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>33</Stick>
+            <Stump>true</Stump>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>@(FeatherHorn&amp;CurrentBoxes)%9</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Clicky: FeatherHorn</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all other</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Clicky: FeatherHorn</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>9</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>33</Stick>
+            <Stump>true</Stump>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>@(FeatherHorn&amp;CurrentBoxes)%10</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Clicky: FeatherHorn</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all other</Target>
+                <MappedKey>
+                  <KeyMapString>000: - HOTKEYS</KeyMapString>
+                  <MappedKeyString>Clicky: FeatherHorn</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>11</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -3743,6 +3852,22 @@ will work best with one of pal/wiz/enc casting IVU in step 1, then SHM in step 2
     <Description>CHARACTER TEMPLATE is virtualized at the CHARACTER level</Description>
     <Mappings>
       <MappedKey>
+        <Name>Ability ----------------------------------------------------------</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Ability: Forage</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Clicky ----------------------------------------------------------</Name>
         <Steps>
           <Step>
@@ -4075,14 +4200,6 @@ will work best with one of pal/wiz/enc casting IVU in step 1, then SHM in step 2
       </MappedKey>
       <MappedKey>
         <Name>Control: VFX - Slot</Name>
-        <Steps>
-          <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Forage</Name>
         <Steps>
           <Step>
             <Actions />
@@ -4658,6 +4775,28 @@ will work best with one of pal/wiz/enc casting IVU in step 1, then SHM in step 2
   <KeyMap>
     <Name>100: Chinger</Name>
     <Mappings>
+      <MappedKey>
+        <Name>Ability ----------------------------------------------------------</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Ability: Forage</Name>
+        <Description>execute forage social</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:11</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
       <MappedKey>
         <Name>Clicky ----------------------------------------------------------</Name>
         <Steps>
@@ -5707,20 +5846,6 @@ be mindful of long character names and the 14-character limit when stuffing comm
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Forage</Name>
-        <Description>execute forage social</Description>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB11:11</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>GroupIVU</Name>
         <Description>group perfected invis to undead</Description>
         <Steps>
@@ -6741,6 +6866,27 @@ useful in the Avatar of War mission</Description>
     <Name>100: Ibsen</Name>
     <Mappings>
       <MappedKey>
+        <Name>Ability ----------------------------------------------------------</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Ability: Forage</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:11</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Clicky ----------------------------------------------------------</Name>
         <Steps>
           <Step>
@@ -6750,70 +6896,44 @@ useful in the Avatar of War mission</Description>
       </MappedKey>
       <MappedKey>
         <Name>Clicky: FeatherHorn</Name>
+        <Description>multi-step mapped key. resets to step 1 10 minutes after first action
+
+1. clicks feather, holds at this step for 32 seconds
+2. clicks horn, holds at this step for 32 seconds
+3. popup text to let us know we're wasting our time</Description>
         <ResetTimer>600</ResetTimer>
         <ResetType>FromFirstPress</ResetType>
         <Steps>
           <Step>
+            <Stick>32</Stick>
+            <Stump>true</Stump>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>100: Ibsen</KeyMapString>
-                <MappedKeyString>Clicky: Unified Phoenix Feather</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStateAction">
-                <Value>Off</Value>
-                <KeyMapString>100: Ibsen</KeyMapString>
-                <MappedKeyString>Clicky: Unified Phoenix Feather</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStateAction">
-                <ActionTimer>
-                  <PoolName>FeatherHorn</PoolName>
-                  <Seconds>600</Seconds>
-                  <Enabled>true</Enabled>
-                </ActionTimer>
-                <KeyMapString>100: Ibsen</KeyMapString>
-                <MappedKeyString>Clicky: Unified Phoenix Feather</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>{CHARACTER} Clicky: FeatherHorn STEP 1</Text>
-                <Red>0</Red>
-                <Blue>0</Blue>
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB08:07</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
           <Step>
+            <Stick>32</Stick>
+            <Stump>true</Stump>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>100: Ibsen</KeyMapString>
-                <MappedKeyString>Clicky: Miniature Horn of Unity</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStateAction">
-                <Value>Off</Value>
-                <KeyMapString>100: Ibsen</KeyMapString>
-                <MappedKeyString>Clicky: Miniature Horn of Unity</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStateAction">
-                <ActionTimer>
-                  <PoolName>FeatherHorn</PoolName>
-                  <Seconds>600</Seconds>
-                  <Enabled>true</Enabled>
-                </ActionTimer>
-                <KeyMapString>100: Ibsen</KeyMapString>
-                <MappedKeyString>Clicky: Miniature Horn of Unity</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>{CHARACTER} Clicky: FeatherHorn STEP 2</Text>
-                <Red>0</Red>
-                <Blue>0</Blue>
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB08:08</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Clicky: Miniature Horn of Unity</Name>
-        <Steps>
           <Step>
-            <Actions />
+            <Stop>true</Stop>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>{CHARACTER} FEATHERHORN ON COOLDOWN</Text>
+                <Green>0</Green>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
           </Step>
         </Steps>
       </MappedKey>
@@ -6836,14 +6956,6 @@ useful in the Avatar of War mission</Description>
                 <MappedKeyString>Paste from Clipboard</MappedKeyString>
               </MappedKeyAction>
             </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Clicky: Unified Phoenix Feather</Name>
-        <Steps>
-          <Step>
-            <Actions />
           </Step>
         </Steps>
       </MappedKey>
@@ -7783,6 +7895,10 @@ useful in the Avatar of War mission</Description>
                 <Action>Join</Action>
                 <RelayGroupString>Non-Trackers</RelayGroupString>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
+                <RelayGroupString>FeatherHorn</RelayGroupString>
+              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -7812,6 +7928,10 @@ useful in the Avatar of War mission</Description>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
                 <RelayGroupString>Non-Trackers</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
+                <RelayGroupString>FeatherHorn</RelayGroupString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -8257,19 +8377,6 @@ old target viewer: 371,397</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Forage</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB11:11</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Invisibility -----------------------------------------------------</Name>
         <Steps>
           <Step>
@@ -8385,6 +8492,27 @@ old target viewer: 371,397</Description>
   <KeyMap>
     <Name>100: Ijuante</Name>
     <Mappings>
+      <MappedKey>
+        <Name>Ability ----------------------------------------------------------</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Ability: Forage</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:11</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
       <MappedKey>
         <Name>Clicky ----------------------------------------------------------</Name>
         <Steps>
@@ -9814,19 +9942,6 @@ old target: all&amp;~(is2|dxnothing)</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Forage</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB11:11</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>GroupIVU</Name>
         <Steps>
           <Step>
@@ -10398,6 +10513,27 @@ old target: all&amp;~(is2|dxnothing)</Description>
     <Name>100: Shatner</Name>
     <Mappings>
       <MappedKey>
+        <Name>Ability ----------------------------------------------------------</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Ability: Forage</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:11</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Clicky ----------------------------------------------------------</Name>
         <Steps>
           <Step>
@@ -10407,78 +10543,44 @@ old target: all&amp;~(is2|dxnothing)</Description>
       </MappedKey>
       <MappedKey>
         <Name>Clicky: FeatherHorn</Name>
+        <Description>multi-step mapped key. resets to step 1 10 minutes after first action
+
+1. clicks feather, holds at this step for 32 seconds
+2. clicks horn, holds at this step for 32 seconds
+3. popup text to let us know we're wasting our time</Description>
         <ResetTimer>600</ResetTimer>
         <ResetType>FromFirstPress</ResetType>
         <Steps>
           <Step>
+            <Stick>32</Stick>
+            <Stump>true</Stump>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>100: Shatner</KeyMapString>
-                <MappedKeyString>Clicky: Unified Phoenix Feather</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStateAction">
-                <Value>Off</Value>
-                <KeyMapString>100: Shatner</KeyMapString>
-                <MappedKeyString>Clicky: Unified Phoenix Feather</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStateAction">
-                <ActionTimer>
-                  <PoolName>FeatherHorn</PoolName>
-                  <Seconds>600</Seconds>
-                  <Enabled>true</Enabled>
-                </ActionTimer>
-                <KeyMapString>100: Shatner</KeyMapString>
-                <MappedKeyString>Clicky: Unified Phoenix Feather</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>{CHARACTER} Clicky: FeatherHorn STEP 1</Text>
-                <Red>0</Red>
-                <Blue>0</Blue>
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB08:07</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
           <Step>
+            <Stick>32</Stick>
+            <Stump>true</Stump>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>100: Shatner</KeyMapString>
-                <MappedKeyString>Clicky: Miniature Horn of Unity</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStateAction">
-                <Value>Off</Value>
-                <KeyMapString>100: Shatner</KeyMapString>
-                <MappedKeyString>Clicky: Miniature Horn of Unity</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStateAction">
-                <ActionTimer>
-                  <PoolName>FeatherHorn</PoolName>
-                  <Seconds>600</Seconds>
-                  <Enabled>true</Enabled>
-                </ActionTimer>
-                <KeyMapString>100: Shatner</KeyMapString>
-                <MappedKeyString>Clicky: Miniature Horn of Unity</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>{CHARACTER} Clicky: FeatherHorn STEP 2</Text>
-                <Red>0</Red>
-                <Blue>0</Blue>
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB08:08</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Clicky: Miniature Horn of Unity</Name>
-        <Steps>
           <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Clicky: Unified Phoenix Feather</Name>
-        <Steps>
-          <Step>
-            <Actions />
+            <Stop>true</Stop>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>{CHARACTER} FEATHERHORN ON COOLDOWN</Text>
+                <Green>0</Green>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
           </Step>
         </Steps>
       </MappedKey>
@@ -11452,6 +11554,10 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Action>Join</Action>
                 <RelayGroupString>Group1-Leader</RelayGroupString>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
+                <RelayGroupString>FeatherHorn</RelayGroupString>
+              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -11476,6 +11582,10 @@ old target: all&amp;~(is2|dxnothing)</Description>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
                 <RelayGroupString>Group1-Members</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
+                <RelayGroupString>FeatherHorn</RelayGroupString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -11927,19 +12037,6 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
                 <MappedKey />
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Forage</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB11:11</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -13197,6 +13294,27 @@ old target: all&amp;~(is2|dxnothing)</Description>
   <KeyMap>
     <Name>100: Watley</Name>
     <Mappings>
+      <MappedKey>
+        <Name>Ability ----------------------------------------------------------</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Ability: Forage</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:11</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
       <MappedKey>
         <Name>Blessed Spiritstaff of the Heyokah</Name>
         <Steps>
@@ -15241,19 +15359,6 @@ old target viewer loc: 371,590</Description>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
                 <MappedKey />
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Forage</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB11:11</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -37375,7 +37480,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>all&amp;~dxnothing</Target>
             <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-            <MappedKeyString>Forage</MappedKeyString>
+            <MappedKeyString>Ability: Forage</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>FOR</Text>
