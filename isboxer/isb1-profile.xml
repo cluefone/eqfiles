@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="4/13/2023 2:23:45 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="4/19/2023 8:55:03 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>04Box</Name>
@@ -1257,12 +1257,12 @@
     <MenuInstances />
     <VirtualFileTargets>
       <VirtualFileTarget>
-        <Filename>eqclient-Chinger (povar).ini</Filename>
-        <VirtualFileString>eqclient.ini</VirtualFileString>
-      </VirtualFileTarget>
-      <VirtualFileTarget>
         <Filename>eqlsPlayerData-Chinger (povar).ini</Filename>
         <VirtualFileString>eqlsPlayerData.ini</VirtualFileString>
+      </VirtualFileTarget>
+      <VirtualFileTarget>
+        <Filename>eqclient-Chinger (povar).ini</Filename>
+        <VirtualFileString>eqclient.ini</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
     <WoWMacroSets />
@@ -1337,12 +1337,12 @@
     <MenuInstances />
     <VirtualFileTargets>
       <VirtualFileTarget>
-        <Filename>eqclient-Ibsen (povar).ini</Filename>
-        <VirtualFileString>eqclient.ini</VirtualFileString>
-      </VirtualFileTarget>
-      <VirtualFileTarget>
         <Filename>eqlsPlayerData-Ibsen (povar).ini</Filename>
         <VirtualFileString>eqlsPlayerData.ini</VirtualFileString>
+      </VirtualFileTarget>
+      <VirtualFileTarget>
+        <Filename>eqclient-Ibsen (povar).ini</Filename>
+        <VirtualFileString>eqclient.ini</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
     <WoWMacroSets />
@@ -1394,12 +1394,12 @@
     <MenuInstances />
     <VirtualFileTargets>
       <VirtualFileTarget>
-        <Filename>eqclient-Ijuante (povar).ini</Filename>
-        <VirtualFileString>eqclient.ini</VirtualFileString>
-      </VirtualFileTarget>
-      <VirtualFileTarget>
         <Filename>eqlsPlayerData-Ijuante (povar).ini</Filename>
         <VirtualFileString>eqlsPlayerData.ini</VirtualFileString>
+      </VirtualFileTarget>
+      <VirtualFileTarget>
+        <Filename>eqclient-Ijuante (povar).ini</Filename>
+        <VirtualFileString>eqclient.ini</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
     <WoWMacroSets />
@@ -1449,12 +1449,12 @@
     <MenuInstances />
     <VirtualFileTargets>
       <VirtualFileTarget>
-        <Filename>eqclient-Shatner (povar).ini</Filename>
-        <VirtualFileString>eqclient.ini</VirtualFileString>
-      </VirtualFileTarget>
-      <VirtualFileTarget>
         <Filename>eqlsPlayerData-Shatner (povar).ini</Filename>
         <VirtualFileString>eqlsPlayerData.ini</VirtualFileString>
+      </VirtualFileTarget>
+      <VirtualFileTarget>
+        <Filename>eqclient-Shatner (povar).ini</Filename>
+        <VirtualFileString>eqclient.ini</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
     <WoWMacroSets />
@@ -1505,12 +1505,12 @@
     <MenuInstances />
     <VirtualFileTargets>
       <VirtualFileTarget>
-        <Filename>eqclient-Watley (povar).ini</Filename>
-        <VirtualFileString>eqclient.ini</VirtualFileString>
-      </VirtualFileTarget>
-      <VirtualFileTarget>
         <Filename>eqlsPlayerData-Watley (povar).ini</Filename>
         <VirtualFileString>eqlsPlayerData.ini</VirtualFileString>
+      </VirtualFileTarget>
+      <VirtualFileTarget>
+        <Filename>eqclient-Watley (povar).ini</Filename>
+        <VirtualFileString>eqclient.ini</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
     <WoWMacroSets />
@@ -1826,12 +1826,12 @@
     <MenuInstances />
     <VirtualFileTargets>
       <VirtualFileTarget>
-        <Filename>eqclient-Chingerz (test).ini</Filename>
-        <VirtualFileString>eqclient.ini</VirtualFileString>
-      </VirtualFileTarget>
-      <VirtualFileTarget>
         <Filename>eqlsPlayerData-Chingerz (test).ini</Filename>
         <VirtualFileString>eqlsPlayerData.ini</VirtualFileString>
+      </VirtualFileTarget>
+      <VirtualFileTarget>
+        <Filename>eqclient-Chingerz (test).ini</Filename>
+        <VirtualFileString>eqclient.ini</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
     <WoWMacroSets />
@@ -4009,6 +4009,54 @@ will work best with one of pal/wiz/enc casting IVU in step 1, then SHM in step 2
       </MappedKey>
       <MappedKey>
         <Name>Combat: Burns</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Call Slot 1</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Call Slot 2</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Call Slot 3</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Call Slot 4</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Call Slot 5</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Call Slot 6</Name>
         <Steps>
           <Step>
             <Actions />
@@ -14521,6 +14569,91 @@ old target: all&amp;~(is2|dxnothing)</Description>
                   <MappedKeyString>Combat: Burns</MappedKeyString>
                 </MappedKey>
                 <Enable>1</Enable>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Call Slot 1</Name>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 20</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB05:11</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Call Slot 2</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 19</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB05:11</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Call Slot 4</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 17</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB05:11</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Call Slot 5</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 16</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB05:11</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -37450,13 +37583,15 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
   </VariableKeystroke>
   <VariableKeystroke>
     <Name>Invite (Accept Invite)</Name>
-    <Description>firescue17 Variable Keystroke</Description>
+    <Description>firescue17 Variable Keystroke ALT+I
+
+</Description>
     <DefaultValue>
-      <Combo>Alt+I</Combo>
-      <Modifiers>Alt</Modifiers>
+      <Combo>Ctrl+F4</Combo>
+      <Modifiers>Ctrl</Modifiers>
       <Key>
-        <Key>I</Key>
-        <Code>23</Code>
+        <Key>F4</Key>
+        <Code>62</Code>
       </Key>
     </DefaultValue>
   </VariableKeystroke>
@@ -40330,7 +40465,61 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <Actions />
       </MenuButton>
       <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Combat: Call Slot 1</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>Call 1</Text>
+        <DisplayText>Call Slot 1</DisplayText>
+        <BackgroundColor>
+          <Green>127</Green>
+        </BackgroundColor>
+      </MenuButton>
+      <MenuButton>
         <Actions />
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Combat: Call Slot 2</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Combat: Call Slot 4</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>3</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Combat: Call Slot 5</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>Call</Text>
+        <DisplayText>Call Slot X</DisplayText>
+        <BackgroundColor>
+          <Green>127</Green>
+        </BackgroundColor>
       </MenuButton>
       <MenuButton>
         <Actions />
@@ -40401,12 +40590,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <Green>9</Green>
           <Blue>227</Blue>
         </BackgroundColor>
-      </MenuButton>
-      <MenuButton>
-        <Actions />
-      </MenuButton>
-      <MenuButton>
-        <Actions />
       </MenuButton>
       <MenuButton>
         <Actions>
