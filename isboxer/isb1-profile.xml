@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="4/19/2023 8:55:03 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="6/10/2023 5:56:59 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>04Box</Name>
@@ -4982,7 +4982,7 @@ pureforge</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB04:02</MappedKeyString>
+                <MappedKeyString>HB03:02</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -5011,7 +5011,7 @@ pureforge</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB04:07</MappedKeyString>
+                <MappedKeyString>HB03:07</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -5068,7 +5068,7 @@ inquisitor's judgment</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:04</MappedKeyString>
+                <MappedKeyString>HB02:04</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -5097,7 +5097,7 @@ inquisitor's judgment</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB04:01</MappedKeyString>
+                <MappedKeyString>HB03:01</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -7734,7 +7734,7 @@ useful in the Avatar of War mission</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:09</MappedKeyString>
+                <MappedKeyString>HB02:09</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -7763,7 +7763,7 @@ useful in the Avatar of War mission</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:10</MappedKeyString>
+                <MappedKeyString>HB02:10</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -7859,7 +7859,7 @@ useful in the Avatar of War mission</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:06</MappedKeyString>
+                <MappedKeyString>HB02:06</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -7888,7 +7888,7 @@ useful in the Avatar of War mission</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:07</MappedKeyString>
+                <MappedKeyString>HB02:07</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -7918,7 +7918,7 @@ useful in the Avatar of War mission</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:08</MappedKeyString>
+                <MappedKeyString>HB02:08</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -8795,7 +8795,7 @@ old target viewer: 371,397</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Hide</Action>
                 <Name>slot5player</Name>
                 <Target>5</Target>
                 <IsSource>true</IsSource>
@@ -8822,22 +8822,22 @@ old target viewer: 371,397</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>32</X>
-                    <Y>925</Y>
+                    <X>450</X>
+                    <Y>926</Y>
                   </Location>
                   <Size>
-                    <Width>446</Width>
-                    <Height>18</Height>
+                    <Width>370</Width>
+                    <Height>23</Height>
                   </Size>
-                  <X>32</X>
-                  <Y>925</Y>
-                  <Width>446</Width>
-                  <Height>18</Height>
+                  <X>450</X>
+                  <Y>926</Y>
+                  <Width>370</Width>
+                  <Height>23</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Hide</Action>
                 <Name>slot5clicks</Name>
                 <Target>5</Target>
                 <IsSource>true</IsSource>
@@ -8864,16 +8864,16 @@ old target viewer: 371,397</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>358</X>
-                    <Y>888</Y>
+                    <X>185</X>
+                    <Y>850</Y>
                   </Location>
                   <Size>
-                    <Width>100</Width>
+                    <Width>110</Width>
                     <Height>24</Height>
                   </Size>
-                  <X>358</X>
-                  <Y>888</Y>
-                  <Width>100</Width>
+                  <X>185</X>
+                  <Y>850</Y>
+                  <Width>110</Width>
                   <Height>24</Height>
                 </Rect>
                 <MappedKey />
@@ -8905,22 +8905,22 @@ old target viewer: 371,397</Description>
                 <Target>all&amp;~(is5|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>1092</X>
-                    <Y>1035</Y>
+                    <X>2163</X>
+                    <Y>1004</Y>
                   </Location>
                   <Size>
                     <Width>334</Width>
-                    <Height>18</Height>
+                    <Height>23</Height>
                   </Size>
-                  <X>1092</X>
-                  <Y>1035</Y>
+                  <X>2163</X>
+                  <Y>1004</Y>
                   <Width>334</Width>
-                  <Height>18</Height>
+                  <Height>23</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Hide</Action>
                 <Name>slot5clicks</Name>
                 <Target>all&amp;~(is5|dxnothing)</Target>
                 <Rect>
@@ -8946,16 +8946,16 @@ old target viewer: 371,397</Description>
                 <Target>all&amp;~(is5|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>358</X>
-                    <Y>792</Y>
+                    <X>185</X>
+                    <Y>728</Y>
                   </Location>
                   <Size>
-                    <Width>100</Width>
+                    <Width>110</Width>
                     <Height>24</Height>
                   </Size>
-                  <X>358</X>
-                  <Y>792</Y>
-                  <Width>100</Width>
+                  <X>185</X>
+                  <Y>728</Y>
+                  <Width>110</Width>
                   <Height>24</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
@@ -9261,7 +9261,7 @@ old target viewer: 371,397</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:05</MappedKeyString>
+                <MappedKeyString>HB02:05</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -9290,7 +9290,7 @@ old target viewer: 371,397</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:06</MappedKeyString>
+                <MappedKeyString>HB02:06</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -9350,7 +9350,7 @@ old target viewer: 371,397</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:07</MappedKeyString>
+                <MappedKeyString>HB02:07</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -9379,7 +9379,7 @@ old target viewer: 371,397</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:08</MappedKeyString>
+                <MappedKeyString>HB02:08</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -9408,7 +9408,7 @@ old target viewer: 371,397</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:09</MappedKeyString>
+                <MappedKeyString>HB02:09</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -9437,7 +9437,7 @@ old target viewer: 371,397</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:10</MappedKeyString>
+                <MappedKeyString>HB02:10</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -10351,7 +10351,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Hide</Action>
                 <Name>slot2player</Name>
                 <Target>2</Target>
                 <IsSource>true</IsSource>
@@ -10378,22 +10378,22 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>32</X>
-                    <Y>925</Y>
+                    <X>450</X>
+                    <Y>926</Y>
                   </Location>
                   <Size>
-                    <Width>446</Width>
-                    <Height>18</Height>
+                    <Width>370</Width>
+                    <Height>23</Height>
                   </Size>
-                  <X>32</X>
-                  <Y>925</Y>
-                  <Width>446</Width>
-                  <Height>18</Height>
+                  <X>450</X>
+                  <Y>926</Y>
+                  <Width>370</Width>
+                  <Height>23</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Hide</Action>
                 <Name>slot2clicks</Name>
                 <Target>2</Target>
                 <IsSource>true</IsSource>
@@ -10420,16 +10420,16 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>358</X>
-                    <Y>888</Y>
+                    <X>185</X>
+                    <Y>850</Y>
                   </Location>
                   <Size>
-                    <Width>100</Width>
+                    <Width>110</Width>
                     <Height>24</Height>
                   </Size>
-                  <X>358</X>
-                  <Y>888</Y>
-                  <Width>100</Width>
+                  <X>185</X>
+                  <Y>850</Y>
+                  <Width>110</Width>
                   <Height>24</Height>
                 </Rect>
                 <MappedKey />
@@ -10461,22 +10461,22 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>all&amp;~(is2|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>752</X>
-                    <Y>1053</Y>
+                    <X>1158</X>
+                    <Y>1004</Y>
                   </Location>
                   <Size>
                     <Width>334</Width>
-                    <Height>18</Height>
+                    <Height>23</Height>
                   </Size>
-                  <X>752</X>
-                  <Y>1053</Y>
+                  <X>1158</X>
+                  <Y>1004</Y>
                   <Width>334</Width>
-                  <Height>18</Height>
+                  <Height>23</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Hide</Action>
                 <Name>slot2clicks</Name>
                 <Target>all&amp;~(is2|dxnothing)</Target>
                 <Rect>
@@ -10502,16 +10502,16 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>all&amp;~(is2|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>358</X>
-                    <Y>864</Y>
+                    <X>185</X>
+                    <Y>800</Y>
                   </Location>
                   <Size>
-                    <Width>100</Width>
+                    <Width>110</Width>
                     <Height>24</Height>
                   </Size>
-                  <X>358</X>
-                  <Y>864</Y>
-                  <Width>100</Width>
+                  <X>185</X>
+                  <Y>800</Y>
+                  <Width>110</Width>
                   <Height>24</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
@@ -10528,7 +10528,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB06:02</MappedKeyString>
+                <MappedKeyString>HB05:02</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -10537,7 +10537,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB06:03</MappedKeyString>
+                <MappedKeyString>HB05:03</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -10550,7 +10550,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB06:03</MappedKeyString>
+                <MappedKeyString>HB05:03</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -11365,11 +11365,9 @@ old target: all&amp;~(is2|dxnothing)</Description>
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>BRD02</MenuString>
-                </Menu>
-                <NumButton>24</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB02:11</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -11396,11 +11394,9 @@ old target: all&amp;~(is2|dxnothing)</Description>
           </Step>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="DoMenuButtonAction">
-                <Menu>
-                  <MenuString>BRD02</MenuString>
-                </Menu>
-                <NumButton>25</NumButton>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB02:12</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -11418,7 +11414,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 </ActionTimer>
                 <Target>self</Target>
                 <MappedKey>
-                  <KeyMapString>100: Ijuante</KeyMapString>
+                  <KeyMapString>100: Shatner</KeyMapString>
                   <MappedKeyString>Combat: Burns</MappedKeyString>
                 </MappedKey>
                 <Enable>1</Enable>
@@ -11473,7 +11469,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:06</MappedKeyString>
+                <MappedKeyString>HB02:06</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -11502,7 +11498,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:04</MappedKeyString>
+                <MappedKeyString>HB02:04</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -11531,7 +11527,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:05</MappedKeyString>
+                <MappedKeyString>HB02:05</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -11560,7 +11556,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:08</MappedKeyString>
+                <MappedKeyString>HB02:08</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -11634,7 +11630,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB04:06</MappedKeyString>
+                <MappedKeyString>HB03:06</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -11663,7 +11659,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB04:05</MappedKeyString>
+                <MappedKeyString>HB03:05</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -12487,7 +12483,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Hide</Action>
                 <Name>slot4player</Name>
                 <Target>4</Target>
                 <IsSource>true</IsSource>
@@ -12514,22 +12510,22 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>32</X>
-                    <Y>925</Y>
+                    <X>450</X>
+                    <Y>926</Y>
                   </Location>
                   <Size>
-                    <Width>446</Width>
-                    <Height>18</Height>
+                    <Width>370</Width>
+                    <Height>23</Height>
                   </Size>
-                  <X>32</X>
-                  <Y>925</Y>
-                  <Width>446</Width>
-                  <Height>18</Height>
+                  <X>450</X>
+                  <Y>926</Y>
+                  <Width>370</Width>
+                  <Height>23</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Hide</Action>
                 <Name>slot4clicks</Name>
                 <Target>4</Target>
                 <IsSource>true</IsSource>
@@ -12556,16 +12552,16 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>358</X>
-                    <Y>888</Y>
+                    <X>185</X>
+                    <Y>850</Y>
                   </Location>
                   <Size>
-                    <Width>100</Width>
+                    <Width>110</Width>
                     <Height>24</Height>
                   </Size>
-                  <X>358</X>
-                  <Y>888</Y>
-                  <Width>100</Width>
+                  <X>185</X>
+                  <Y>850</Y>
+                  <Width>110</Width>
                   <Height>24</Height>
                 </Rect>
                 <MappedKey />
@@ -12597,22 +12593,22 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>all&amp;~(is4|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>1092</X>
-                    <Y>1053</Y>
+                    <X>1828</X>
+                    <Y>1004</Y>
                   </Location>
                   <Size>
                     <Width>334</Width>
-                    <Height>18</Height>
+                    <Height>23</Height>
                   </Size>
-                  <X>1092</X>
-                  <Y>1053</Y>
+                  <X>1828</X>
+                  <Y>1004</Y>
                   <Width>334</Width>
-                  <Height>18</Height>
+                  <Height>23</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Hide</Action>
                 <Name>slot4clicks</Name>
                 <Target>all&amp;~(is4|dxnothing)</Target>
                 <Rect>
@@ -12638,16 +12634,16 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>all&amp;~(is4|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>358</X>
-                    <Y>816</Y>
+                    <X>185</X>
+                    <Y>752</Y>
                   </Location>
                   <Size>
-                    <Width>100</Width>
+                    <Width>110</Width>
                     <Height>24</Height>
                   </Size>
-                  <X>358</X>
-                  <Y>816</Y>
-                  <Width>100</Width>
+                  <X>185</X>
+                  <Y>752</Y>
+                  <Width>110</Width>
                   <Height>24</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
@@ -14518,7 +14514,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:09</MappedKeyString>
+                <MappedKeyString>HB02:09</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -14547,7 +14543,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:10</MappedKeyString>
+                <MappedKeyString>HB02:10</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -14590,7 +14586,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB05:11</MappedKeyString>
+                <MappedKeyString>HB04:11</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -14611,7 +14607,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB05:11</MappedKeyString>
+                <MappedKeyString>HB04:11</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -14632,7 +14628,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB05:11</MappedKeyString>
+                <MappedKeyString>HB04:11</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -14653,7 +14649,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB05:11</MappedKeyString>
+                <MappedKeyString>HB04:11</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -14800,7 +14796,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB03:08</MappedKeyString>
+                <MappedKeyString>HB02:08</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -15907,7 +15903,7 @@ old target viewer loc: 371,590</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Hide</Action>
                 <Name>slot3player</Name>
                 <Target>3</Target>
                 <IsSource>true</IsSource>
@@ -15934,22 +15930,22 @@ old target viewer loc: 371,590</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>32</X>
-                    <Y>925</Y>
+                    <X>450</X>
+                    <Y>926</Y>
                   </Location>
                   <Size>
-                    <Width>446</Width>
-                    <Height>18</Height>
+                    <Width>370</Width>
+                    <Height>23</Height>
                   </Size>
-                  <X>32</X>
-                  <Y>925</Y>
-                  <Width>446</Width>
-                  <Height>18</Height>
+                  <X>450</X>
+                  <Y>926</Y>
+                  <Width>370</Width>
+                  <Height>23</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Hide</Action>
                 <Name>slot3clicks</Name>
                 <Target>3</Target>
                 <IsSource>true</IsSource>
@@ -15976,16 +15972,16 @@ old target viewer loc: 371,590</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>358</X>
-                    <Y>888</Y>
+                    <X>185</X>
+                    <Y>850</Y>
                   </Location>
                   <Size>
-                    <Width>100</Width>
+                    <Width>110</Width>
                     <Height>24</Height>
                   </Size>
-                  <X>358</X>
-                  <Y>888</Y>
-                  <Width>100</Width>
+                  <X>185</X>
+                  <Y>850</Y>
+                  <Width>110</Width>
                   <Height>24</Height>
                 </Rect>
                 <MappedKey />
@@ -16017,22 +16013,22 @@ old target viewer loc: 371,590</Description>
                 <Target>all&amp;~(is3|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>752</X>
-                    <Y>1035</Y>
+                    <X>1493</X>
+                    <Y>1004</Y>
                   </Location>
                   <Size>
                     <Width>334</Width>
-                    <Height>18</Height>
+                    <Height>23</Height>
                   </Size>
-                  <X>752</X>
-                  <Y>1035</Y>
+                  <X>1493</X>
+                  <Y>1004</Y>
                   <Width>334</Width>
-                  <Height>18</Height>
+                  <Height>23</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Hide</Action>
                 <Name>slot3clicks</Name>
                 <Target>all&amp;~(is3|dxnothing)</Target>
                 <Rect>
@@ -16058,16 +16054,16 @@ old target viewer loc: 371,590</Description>
                 <Target>all&amp;~(is3|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>358</X>
-                    <Y>840</Y>
+                    <X>185</X>
+                    <Y>776</Y>
                   </Location>
                   <Size>
-                    <Width>100</Width>
+                    <Width>110</Width>
                     <Height>24</Height>
                   </Size>
-                  <X>358</X>
-                  <Y>840</Y>
-                  <Width>100</Width>
+                  <X>185</X>
+                  <Y>776</Y>
+                  <Width>110</Width>
                   <Height>24</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
@@ -28639,246 +28635,6 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
-                  <Combo>Ctrl+1</Combo>
-                  <Modifiers>Ctrl</Modifiers>
-                  <Key>
-                    <Key>1</Key>
-                    <Code>2</Code>
-                  </Key>
-                </Combo>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>HB02:02</Name>
-        <ResetTimer>0</ResetTimer>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="Keystroke">
-                <Combo>
-                  <Combo>Ctrl+2</Combo>
-                  <Modifiers>Ctrl</Modifiers>
-                  <Key>
-                    <Key>2</Key>
-                    <Code>3</Code>
-                  </Key>
-                </Combo>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>HB02:03</Name>
-        <ResetTimer>0</ResetTimer>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="Keystroke">
-                <Combo>
-                  <Combo>Ctrl+3</Combo>
-                  <Modifiers>Ctrl</Modifiers>
-                  <Key>
-                    <Key>3</Key>
-                    <Code>4</Code>
-                  </Key>
-                </Combo>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>HB02:04</Name>
-        <ResetTimer>0</ResetTimer>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="Keystroke">
-                <Combo>
-                  <Combo>Ctrl+4</Combo>
-                  <Modifiers>Ctrl</Modifiers>
-                  <Key>
-                    <Key>4</Key>
-                    <Code>5</Code>
-                  </Key>
-                </Combo>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>HB02:05</Name>
-        <ResetTimer>0</ResetTimer>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="Keystroke">
-                <Combo>
-                  <Combo>Ctrl+5</Combo>
-                  <Modifiers>Ctrl</Modifiers>
-                  <Key>
-                    <Key>5</Key>
-                    <Code>6</Code>
-                  </Key>
-                </Combo>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>HB02:06</Name>
-        <ResetTimer>0</ResetTimer>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="Keystroke">
-                <Combo>
-                  <Combo>Ctrl+6</Combo>
-                  <Modifiers>Ctrl</Modifiers>
-                  <Key>
-                    <Key>6</Key>
-                    <Code>7</Code>
-                  </Key>
-                </Combo>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>HB02:07</Name>
-        <ResetTimer>0</ResetTimer>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="Keystroke">
-                <Combo>
-                  <Combo>Ctrl+7</Combo>
-                  <Modifiers>Ctrl</Modifiers>
-                  <Key>
-                    <Key>7</Key>
-                    <Code>8</Code>
-                  </Key>
-                </Combo>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>HB02:08</Name>
-        <ResetTimer>0</ResetTimer>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="Keystroke">
-                <Combo>
-                  <Combo>Ctrl+8</Combo>
-                  <Modifiers>Ctrl</Modifiers>
-                  <Key>
-                    <Key>8</Key>
-                    <Code>9</Code>
-                  </Key>
-                </Combo>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>HB02:09</Name>
-        <ResetTimer>0</ResetTimer>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="Keystroke">
-                <Combo>
-                  <Combo>Ctrl+9</Combo>
-                  <Modifiers>Ctrl</Modifiers>
-                  <Key>
-                    <Key>9</Key>
-                    <Code>10</Code>
-                  </Key>
-                </Combo>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>HB02:10</Name>
-        <ResetTimer>0</ResetTimer>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="Keystroke">
-                <Combo>
-                  <Combo>Ctrl+0</Combo>
-                  <Modifiers>Ctrl</Modifiers>
-                  <Key>
-                    <Key>0</Key>
-                    <Code>11</Code>
-                  </Key>
-                </Combo>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>HB02:11</Name>
-        <ResetTimer>0</ResetTimer>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="Keystroke">
-                <Combo>
-                  <Combo>Ctrl+-</Combo>
-                  <Modifiers>Ctrl</Modifiers>
-                  <Key>
-                    <Key>-</Key>
-                    <Code>12</Code>
-                  </Key>
-                </Combo>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>HB02:12</Name>
-        <ResetTimer>0</ResetTimer>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="Keystroke">
-                <Combo>
-                  <Combo>Ctrl+=</Combo>
-                  <Modifiers>Ctrl</Modifiers>
-                  <Key>
-                    <Key>=</Key>
-                    <Code>13</Code>
-                  </Key>
-                </Combo>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>HB03:01</Name>
-        <ResetTimer>0</ResetTimer>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="Keystroke">
-                <Combo>
                   <Combo>Shift+Alt+F1</Combo>
                   <Modifiers>Shift Alt</Modifiers>
                   <Key>
@@ -28892,7 +28648,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB03:02</Name>
+        <Name>HB02:02</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -28912,7 +28668,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB03:03</Name>
+        <Name>HB02:03</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -28932,7 +28688,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB03:04</Name>
+        <Name>HB02:04</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -28952,7 +28708,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB03:05</Name>
+        <Name>HB02:05</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -28972,7 +28728,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB03:06</Name>
+        <Name>HB02:06</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -28992,7 +28748,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB03:07</Name>
+        <Name>HB02:07</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29012,7 +28768,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB03:08</Name>
+        <Name>HB02:08</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29032,7 +28788,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB03:09</Name>
+        <Name>HB02:09</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29052,7 +28808,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB03:10</Name>
+        <Name>HB02:10</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29072,7 +28828,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB03:11</Name>
+        <Name>HB02:11</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29092,7 +28848,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB03:12</Name>
+        <Name>HB02:12</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29112,7 +28868,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB04:01</Name>
+        <Name>HB03:01</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29132,7 +28888,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB04:02</Name>
+        <Name>HB03:02</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29152,7 +28908,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB04:03</Name>
+        <Name>HB03:03</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29172,7 +28928,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB04:04</Name>
+        <Name>HB03:04</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29192,7 +28948,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB04:05</Name>
+        <Name>HB03:05</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29212,7 +28968,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB04:06</Name>
+        <Name>HB03:06</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29232,7 +28988,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB04:07</Name>
+        <Name>HB03:07</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29252,7 +29008,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB04:08</Name>
+        <Name>HB03:08</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29272,7 +29028,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB04:09</Name>
+        <Name>HB03:09</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29292,7 +29048,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB04:10</Name>
+        <Name>HB03:10</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29312,7 +29068,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB04:11</Name>
+        <Name>HB03:11</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29332,7 +29088,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB04:12</Name>
+        <Name>HB03:12</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29352,7 +29108,8 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB05:01</Name>
+        <Name>HB04:01</Name>
+        <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
             <Actions>
@@ -29371,7 +29128,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB05:02</Name>
+        <Name>HB04:02</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29391,7 +29148,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB05:03</Name>
+        <Name>HB04:03</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29411,7 +29168,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB05:04</Name>
+        <Name>HB04:04</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29431,7 +29188,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB05:05</Name>
+        <Name>HB04:05</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29451,7 +29208,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB05:06</Name>
+        <Name>HB04:06</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29471,7 +29228,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB05:07</Name>
+        <Name>HB04:07</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29491,7 +29248,8 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB05:08</Name>
+        <Name>HB04:08</Name>
+        <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
             <Actions>
@@ -29510,7 +29268,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB05:09</Name>
+        <Name>HB04:09</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29530,7 +29288,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB05:10</Name>
+        <Name>HB04:10</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29550,7 +29308,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB05:11</Name>
+        <Name>HB04:11</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29570,7 +29328,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB05:12</Name>
+        <Name>HB04:12</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29590,7 +29348,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB06:01</Name>
+        <Name>HB05:01</Name>
         <Steps>
           <Step>
             <Actions>
@@ -29609,7 +29367,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB06:02</Name>
+        <Name>HB05:02</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29629,7 +29387,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB06:03</Name>
+        <Name>HB05:03</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29649,7 +29407,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB06:04</Name>
+        <Name>HB05:04</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29669,7 +29427,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB06:05</Name>
+        <Name>HB05:05</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29689,7 +29447,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB06:06</Name>
+        <Name>HB05:06</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29709,7 +29467,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB06:07</Name>
+        <Name>HB05:07</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29729,8 +29487,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB06:08</Name>
-        <ResetTimer>0</ResetTimer>
+        <Name>HB05:08</Name>
         <Steps>
           <Step>
             <Actions>
@@ -29749,7 +29506,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB06:09</Name>
+        <Name>HB05:09</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29769,7 +29526,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB06:10</Name>
+        <Name>HB05:10</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29789,7 +29546,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB06:11</Name>
+        <Name>HB05:11</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29809,7 +29566,7 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>HB06:12</Name>
+        <Name>HB05:12</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -29821,6 +29578,245 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
                   <Key>
                     <Key>Z</Key>
                     <Code>44</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:01</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+1</Combo>
+                  <Modifiers>Ctrl</Modifiers>
+                  <Key>
+                    <Key>1</Key>
+                    <Code>2</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:02</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+2</Combo>
+                  <Modifiers>Ctrl</Modifiers>
+                  <Key>
+                    <Key>2</Key>
+                    <Code>3</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:03</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+3</Combo>
+                  <Modifiers>Ctrl</Modifiers>
+                  <Key>
+                    <Key>3</Key>
+                    <Code>4</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:04</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+4</Combo>
+                  <Modifiers>Ctrl</Modifiers>
+                  <Key>
+                    <Key>4</Key>
+                    <Code>5</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:05</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+5</Combo>
+                  <Modifiers>Ctrl</Modifiers>
+                  <Key>
+                    <Key>5</Key>
+                    <Code>6</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:06</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+6</Combo>
+                  <Modifiers>Ctrl</Modifiers>
+                  <Key>
+                    <Key>6</Key>
+                    <Code>7</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:07</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+7</Combo>
+                  <Modifiers>Ctrl</Modifiers>
+                  <Key>
+                    <Key>7</Key>
+                    <Code>8</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:08</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+8</Combo>
+                  <Modifiers>Ctrl</Modifiers>
+                  <Key>
+                    <Key>8</Key>
+                    <Code>9</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:09</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+9</Combo>
+                  <Modifiers>Ctrl</Modifiers>
+                  <Key>
+                    <Key>9</Key>
+                    <Code>10</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:10</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+0</Combo>
+                  <Modifiers>Ctrl</Modifiers>
+                  <Key>
+                    <Key>0</Key>
+                    <Code>11</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:11</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+-</Combo>
+                  <Modifiers>Ctrl</Modifiers>
+                  <Key>
+                    <Key>-</Key>
+                    <Code>12</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:12</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+=</Combo>
+                  <Modifiers>Ctrl</Modifiers>
+                  <Key>
+                    <Key>=</Key>
+                    <Code>13</Code>
                   </Key>
                 </Combo>
               </MappedKeyAction>
@@ -33636,7 +33632,7 @@ clicking manually through VFX is possible, but probably not the best way</Descri
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>MainHealer</Target>
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB05:07</MappedKeyString>
+                <MappedKeyString>HB04:07</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Text>Alt Bar Left Click</Text>
@@ -33662,7 +33658,7 @@ clicking manually through VFX is possible, but probably not the best way</Descri
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>MainHealer</Target>
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB05:08</MappedKeyString>
+                <MappedKeyString>HB04:08</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Text>Alt Bar Right Click</Text>
@@ -37772,8 +37768,8 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
   <ClickBar>
     <Name>AltHealerBar</Name>
     <Description>old pos 763,752</Description>
-    <X>132</X>
-    <Y>648</Y>
+    <X>2528</X>
+    <Y>818</Y>
     <BackgroundColor />
     <CellBorder_Color>
       <Red>255</Red>
@@ -37898,8 +37894,8 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
   <ClickBar>
     <Name>BufferBar</Name>
     <Description>old pos 611,752</Description>
-    <X>0</X>
-    <Y>648</Y>
+    <X>2396</X>
+    <Y>818</Y>
     <BackgroundColor />
     <CellBorder_Color>
       <Red>255</Red>
@@ -38024,8 +38020,8 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
   <ClickBar>
     <Name>MainHealerBar</Name>
     <Description>old pos 643,752</Description>
-    <X>32</X>
-    <Y>648</Y>
+    <X>2428</X>
+    <Y>818</Y>
     <ColumnWidth>100</ColumnWidth>
     <BackgroundColor />
     <CellBorder_Color>
@@ -40422,7 +40418,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>42</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB05:09</MappedKeyString>
+            <MappedKeyString>HB04:09</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>3</Target>
@@ -40431,7 +40427,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>29</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB05:09</MappedKeyString>
+            <MappedKeyString>HB04:09</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>pets</Text>
@@ -40446,7 +40442,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>42</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB05:10</MappedKeyString>
+            <MappedKeyString>HB04:10</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>3</Target>
@@ -40455,7 +40451,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>29</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB05:10</MappedKeyString>
+            <MappedKeyString>HB04:10</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>swarm</Text>
@@ -40532,7 +40528,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>4</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:01</MappedKeyString>
+            <MappedKeyString>HB06:01</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>dots</Text>
@@ -40548,7 +40544,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>4</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:02</MappedKeyString>
+            <MappedKeyString>HB06:02</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>noqt</Text>
@@ -40564,7 +40560,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>4</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:03</MappedKeyString>
+            <MappedKeyString>HB06:03</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>qt</Text>
@@ -40580,7 +40576,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>4</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:04</MappedKeyString>
+            <MappedKeyString>HB06:04</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>burn</Text>
@@ -40646,7 +40642,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>3</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB06:03</MappedKeyString>
+            <MappedKeyString>HB05:03</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
@@ -40704,7 +40700,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>42</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:12</MappedKeyString>
+            <MappedKeyString>HB06:12</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>3</Target>
@@ -40713,7 +40709,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>29</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:12</MappedKeyString>
+            <MappedKeyString>HB06:12</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>4</Target>
@@ -40722,7 +40718,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>56</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:12</MappedKeyString>
+            <MappedKeyString>HB06:12</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -40731,7 +40727,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>0</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:12</MappedKeyString>
+            <MappedKeyString>HB06:12</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>Base</Text>
@@ -40746,7 +40742,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>29</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:01</MappedKeyString>
+            <MappedKeyString>HB06:01</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -40755,7 +40751,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>56</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:11</MappedKeyString>
+            <MappedKeyString>HB06:11</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -40764,7 +40760,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>0</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:09</MappedKeyString>
+            <MappedKeyString>HB06:09</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>UHC</Text>
@@ -40779,7 +40775,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>42</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:07</MappedKeyString>
+            <MappedKeyString>HB02:07</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>3</Target>
@@ -40788,7 +40784,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>29</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:02</MappedKeyString>
+            <MappedKeyString>HB06:02</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -40797,7 +40793,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>56</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:08</MappedKeyString>
+            <MappedKeyString>HB06:08</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -40806,7 +40802,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>0</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:10</MappedKeyString>
+            <MappedKeyString>HB06:10</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>G-UHC</Text>
@@ -40821,7 +40817,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>42</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:03</MappedKeyString>
+            <MappedKeyString>HB06:03</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>3</Target>
@@ -40830,7 +40826,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>29</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:06</MappedKeyString>
+            <MappedKeyString>HB02:06</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>4</Target>
@@ -40839,7 +40835,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>56</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:09</MappedKeyString>
+            <MappedKeyString>HB06:09</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -40848,7 +40844,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>0</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:04</MappedKeyString>
+            <MappedKeyString>HB02:04</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>Auras</Text>
@@ -40859,7 +40855,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>2</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:02</MappedKeyString>
+            <MappedKeyString>HB03:02</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
@@ -40991,7 +40987,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>42</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:03</MappedKeyString>
+            <MappedKeyString>HB03:03</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -41066,7 +41062,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>3</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB06:07</MappedKeyString>
+            <MappedKeyString>HB05:07</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>cheeta</Text>
@@ -41081,7 +41077,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>42</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB06:01</MappedKeyString>
+            <MappedKeyString>HB05:01</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>3</Target>
@@ -41090,7 +41086,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>29</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB06:01</MappedKeyString>
+            <MappedKeyString>HB05:01</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>lev</Text>
@@ -41105,7 +41101,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>42</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB06:02</MappedKeyString>
+            <MappedKeyString>HB05:02</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>3</Target>
@@ -41114,7 +41110,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>29</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB06:02</MappedKeyString>
+            <MappedKeyString>HB05:02</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>4</Target>
@@ -41123,7 +41119,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>56</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB05:02</MappedKeyString>
+            <MappedKeyString>HB04:02</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -41132,7 +41128,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>0</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB06:02</MappedKeyString>
+            <MappedKeyString>HB05:02</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>invis</Text>
@@ -41147,7 +41143,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>42</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB06:03</MappedKeyString>
+            <MappedKeyString>HB05:03</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>4</Target>
@@ -41156,7 +41152,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>56</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB05:02</MappedKeyString>
+            <MappedKeyString>HB04:02</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -41165,7 +41161,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>0</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB06:03</MappedKeyString>
+            <MappedKeyString>HB05:03</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>ivu</Text>
@@ -41180,7 +41176,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>3</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB05:01</MappedKeyString>
+            <MappedKeyString>HB04:01</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
@@ -41274,7 +41270,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>42</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:01</MappedKeyString>
+            <MappedKeyString>HB02:01</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>3</Target>
@@ -41283,7 +41279,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>29</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:01</MappedKeyString>
+            <MappedKeyString>HB02:01</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -41292,7 +41288,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>0</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:02</MappedKeyString>
+            <MappedKeyString>HB02:02</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>SC</Text>
@@ -41307,7 +41303,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>42</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:03</MappedKeyString>
+            <MappedKeyString>HB02:03</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -41316,7 +41312,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>0</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:03</MappedKeyString>
+            <MappedKeyString>HB02:03</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>Whsp</Text>
@@ -41413,7 +41409,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>2</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:02</MappedKeyString>
+            <MappedKeyString>HB02:02</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
@@ -41512,7 +41508,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>42</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:04</MappedKeyString>
+            <MappedKeyString>HB03:04</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -41536,7 +41532,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>42</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:05</MappedKeyString>
+            <MappedKeyString>HB03:05</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -41556,7 +41552,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>2</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:10</MappedKeyString>
+            <MappedKeyString>HB03:10</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>Ward</Text>
@@ -41573,7 +41569,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:04</MappedKeyString>
+            <MappedKeyString>HB06:04</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>Mez1</Text>
@@ -41584,7 +41580,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:05</MappedKeyString>
+            <MappedKeyString>HB06:05</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>Mez2</Text>
@@ -41595,7 +41591,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:06</MappedKeyString>
+            <MappedKeyString>HB06:06</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>Mez3</Text>
@@ -41606,7 +41602,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:07</MappedKeyString>
+            <MappedKeyString>HB06:07</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>aemz</Text>
@@ -41621,7 +41617,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>29</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:04</MappedKeyString>
+            <MappedKeyString>HB03:04</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -41630,7 +41626,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>0</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:02</MappedKeyString>
+            <MappedKeyString>HB03:02</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>aemalo</Text>
@@ -41645,7 +41641,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>29</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:02</MappedKeyString>
+            <MappedKeyString>HB03:02</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -41654,7 +41650,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>0</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:05</MappedKeyString>
+            <MappedKeyString>HB03:05</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>aeslow</Text>
@@ -41669,7 +41665,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>29</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:03</MappedKeyString>
+            <MappedKeyString>HB03:03</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -41693,7 +41689,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>29</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:01</MappedKeyString>
+            <MappedKeyString>HB03:01</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -41794,7 +41790,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:11</MappedKeyString>
+            <MappedKeyString>HB03:11</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
@@ -41848,7 +41844,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:12</MappedKeyString>
+            <MappedKeyString>HB03:12</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
@@ -41905,7 +41901,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:08</MappedKeyString>
+            <MappedKeyString>HB02:08</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MenuButtonAction">
             <MenuButton>
@@ -41995,7 +41991,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>42</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:05</MappedKeyString>
+            <MappedKeyString>HB02:05</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>3</Target>
@@ -42004,7 +42000,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>29</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:10</MappedKeyString>
+            <MappedKeyString>HB02:10</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -42013,7 +42009,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>0</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:10</MappedKeyString>
+            <MappedKeyString>HB02:10</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>ITC</Text>
@@ -42024,7 +42020,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>4</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:07</MappedKeyString>
+            <MappedKeyString>HB02:07</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>dirge</Text>
@@ -42039,7 +42035,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>42</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:11</MappedKeyString>
+            <MappedKeyString>HB03:11</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -42048,7 +42044,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>0</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:11</MappedKeyString>
+            <MappedKeyString>HB02:11</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>Tens</Text>
@@ -42063,7 +42059,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>29</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:06</MappedKeyString>
+            <MappedKeyString>HB03:06</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -42072,7 +42068,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>0</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:12</MappedKeyString>
+            <MappedKeyString>HB02:12</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>rejuv</Text>
@@ -42093,7 +42089,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>56</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:10</MappedKeyString>
+            <MappedKeyString>HB03:10</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -42102,7 +42098,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>0</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:01</MappedKeyString>
+            <MappedKeyString>HB06:01</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>AHR</Text>
@@ -42122,7 +42118,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>56</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:11</MappedKeyString>
+            <MappedKeyString>HB03:11</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -42131,7 +42127,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>0</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:02</MappedKeyString>
+            <MappedKeyString>HB06:02</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>BatMz</Text>
@@ -42151,7 +42147,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>56</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:12</MappedKeyString>
+            <MappedKeyString>HB03:12</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>5</Target>
@@ -42160,7 +42156,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Code>0</Code>
             </ConditionalKey>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:03</MappedKeyString>
+            <MappedKeyString>HB06:03</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>Pool</Text>
@@ -42179,7 +42175,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>2</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB05:02</MappedKeyString>
+            <MappedKeyString>HB04:02</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>absc</Text>
@@ -42193,7 +42189,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>2</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB05:01</MappedKeyString>
+            <MappedKeyString>HB04:01</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>exds</Text>
@@ -55256,16 +55252,16 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Template>_Unified</Template>
     <ButtonLayout>_Unified01</ButtonLayout>
     <HotkeyLayout />
-    <X>752</X>
-    <Y>935</Y>
+    <X>1158</X>
+    <Y>905</Y>
   </Menu>
   <Menu>
     <Name>_Unified02</Name>
     <Template>_Unified</Template>
     <ButtonLayout>_Unified02</ButtonLayout>
     <HotkeyLayout />
-    <X>752</X>
-    <Y>975</Y>
+    <X>1158</X>
+    <Y>945</Y>
   </Menu>
   <Menu>
     <Name>BRD01</Name>
@@ -55376,7 +55372,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Template>Toggles</Template>
     <ButtonLayout>ISB42 - Toggles</ButtonLayout>
     <HotkeyLayout />
-    <X>700</X>
+    <X>800</X>
   </Menu>
   <Menu>
     <Name>PAL01</Name>
