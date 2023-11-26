@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="11/26/2023 2:20:13 AM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="11/26/2023 2:21:52 AM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>04Box</Name>
@@ -49971,35 +49971,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     </Buttons>
   </MenuButtonSet>
   <MenuButtonSet>
-    <Name>PAL01</Name>
-    <Buttons>
-      <MenuButton>
-        <Actions>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>Chinger</Target>
-            <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:07</MappedKeyString>
-          </MappedKeyAction>
-        </Actions>
-        <Mode>OnPress</Mode>
-        <Text>beac</Text>
-        <DisplayText>Beacon</DisplayText>
-      </MenuButton>
-      <MenuButton>
-        <Actions>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>Chinger</Target>
-            <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:08</MappedKeyString>
-          </MappedKeyAction>
-        </Actions>
-        <Mode>OnPress</Mode>
-        <Text>lode</Text>
-        <DisplayText>Lodestar</DisplayText>
-      </MenuButton>
-    </Buttons>
-  </MenuButtonSet>
-  <MenuButtonSet>
     <Name>SHM01</Name>
     <Buttons>
       <MenuButton>
@@ -56698,14 +56669,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <ButtonLayout>ISB42 - Toggles</ButtonLayout>
     <HotkeyLayout />
     <X>800</X>
-  </Menu>
-  <Menu>
-    <Name>PAL01</Name>
-    <Template>Menu - 1x13</Template>
-    <ButtonLayout>PAL01</ButtonLayout>
-    <HotkeyLayout />
-    <X>470</X>
-    <Y>868</Y>
   </Menu>
   <Menu>
     <Name>SHM01</Name>
