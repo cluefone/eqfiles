@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="12/21/2023 4:13:17 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="12/22/2023 11:57:01 AM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -2173,7 +2173,10 @@
     </WindowLayout>
   </CharacterSet>
   <Character>
-    <ExecuteOnLoad />
+    <ExecuteOnLoad>
+      <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+      <MappedKeyString>Control: Activate Persona00</MappedKeyString>
+    </ExecuteOnLoad>
     <Name>Chinger</Name>
     <AccountName />
     <SubAccountName />
@@ -2190,7 +2193,6 @@
       <string>Tank</string>
     </RelayGroupStrings>
     <KeyMapStrings>
-      <string>110: PAL</string>
       <string>100: Slot1</string>
     </KeyMapStrings>
     <KeyMapWhiteOrBlackListType>Ignore</KeyMapWhiteOrBlackListType>
@@ -2216,14 +2218,6 @@
         </FromMappedKey>
         <ToMappedKey>
           <KeyMapString>100: Slot1</KeyMapString>
-        </ToMappedKey>
-      </VirtualMappedKey>
-      <VirtualMappedKey>
-        <FromMappedKey>
-          <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-        </FromMappedKey>
-        <ToMappedKey>
-          <KeyMapString>110: PAL</KeyMapString>
         </ToMappedKey>
       </VirtualMappedKey>
     </VirtualMappedKeys>
@@ -6045,6 +6039,21 @@ two virtualization actions that are sent to the _other_ active slots
         <Steps>
           <Step>
             <Actions>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <KeyMapString>110: PAL</KeyMapString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <Value>Off</Value>
+                <KeyMapString>110: ROG</KeyMapString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <Value>Off</Value>
+                <KeyMapString>110: NEC</KeyMapString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <Value>Off</Value>
+                <KeyMapString>110: BER</KeyMapString>
+              </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <FromMappedKey>
                   <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
@@ -6052,6 +6061,22 @@ two virtualization actions that are sent to the _other_ active slots
                 <ToMappedKey>
                   <KeyMapString>110: PAL</KeyMapString>
                 </ToMappedKey>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
+                <RelayGroupString>Class-PAL</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>Class-ROG</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>Class-NEC</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>Class-BER</RelayGroupString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -6062,6 +6087,21 @@ two virtualization actions that are sent to the _other_ active slots
         <Steps>
           <Step>
             <Actions>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <Value>Off</Value>
+                <KeyMapString>110: PAL</KeyMapString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <Value>Off</Value>
+                <KeyMapString>110: NEC</KeyMapString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <Value>Off</Value>
+                <KeyMapString>110: BER</KeyMapString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <KeyMapString>110: ROG</KeyMapString>
+              </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <FromMappedKey>
                   <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
@@ -6070,8 +6110,21 @@ two virtualization actions that are sent to the _other_ active slots
                   <KeyMapString>110: ROG</KeyMapString>
                 </ToMappedKey>
               </MappedKeyAction>
-              <MappedKeyAction xsi:type="KeyMapAction">
-                <KeyMapString>110: ROG</KeyMapString>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>Class-PAL</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
+                <RelayGroupString>Class-ROG</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>Class-NEC</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>Class-BER</RelayGroupString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -6082,6 +6135,21 @@ two virtualization actions that are sent to the _other_ active slots
         <Steps>
           <Step>
             <Actions>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <Value>Off</Value>
+                <KeyMapString>110: PAL</KeyMapString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <Value>Off</Value>
+                <KeyMapString>110: ROG</KeyMapString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <KeyMapString>110: NEC</KeyMapString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <Value>Off</Value>
+                <KeyMapString>110: BER</KeyMapString>
+              </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <FromMappedKey>
                   <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
@@ -6090,8 +6158,21 @@ two virtualization actions that are sent to the _other_ active slots
                   <KeyMapString>110: NEC</KeyMapString>
                 </ToMappedKey>
               </MappedKeyAction>
-              <MappedKeyAction xsi:type="KeyMapAction">
-                <KeyMapString>110: NEC</KeyMapString>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>Class-PAL</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>Class-ROG</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
+                <RelayGroupString>Class-NEC</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>Class-BER</RelayGroupString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -6102,6 +6183,21 @@ two virtualization actions that are sent to the _other_ active slots
         <Steps>
           <Step>
             <Actions>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <Value>Off</Value>
+                <KeyMapString>110: PAL</KeyMapString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <Value>Off</Value>
+                <KeyMapString>110: ROG</KeyMapString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <Value>Off</Value>
+                <KeyMapString>110: NEC</KeyMapString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <KeyMapString>110: BER</KeyMapString>
+              </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <FromMappedKey>
                   <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
@@ -6110,8 +6206,21 @@ two virtualization actions that are sent to the _other_ active slots
                   <KeyMapString>110: BER</KeyMapString>
                 </ToMappedKey>
               </MappedKeyAction>
-              <MappedKeyAction xsi:type="KeyMapAction">
-                <KeyMapString>110: BER</KeyMapString>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>Class-PAL</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>Class-ROG</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>Class-NEC</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
+                <RelayGroupString>Class-BER</RelayGroupString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -6585,10 +6694,6 @@ be mindful of long character names and the 14-character limit when stuffing comm
             <Actions>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
-                <RelayGroupString>Class-PAL</RelayGroupString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="TargetGroupAction">
-                <Action>Join</Action>
                 <RelayGroupString>CurrentBoxes</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
@@ -6619,10 +6724,6 @@ be mindful of long character names and the 14-character limit when stuffing comm
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="TargetGroupAction">
-                <Action>Join</Action>
-                <RelayGroupString>Class-PAL</RelayGroupString>
-              </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
                 <RelayGroupString>CurrentBoxes</RelayGroupString>
