@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/3/2024 12:04:43 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/15/2024 6:17:11 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -3618,6 +3618,9 @@
     <Name>Group1-Members</Name>
   </RelayGroup>
   <RelayGroup>
+    <Name>ITC</Name>
+  </RelayGroup>
+  <RelayGroup>
     <Name>IVU</Name>
   </RelayGroup>
   <RelayGroup>
@@ -3630,13 +3633,13 @@
     <Name>Non-Trackers</Name>
   </RelayGroup>
   <RelayGroup>
-    <Name>Tank</Name>
+    <Name>PetOwners</Name>
   </RelayGroup>
   <RelayGroup>
     <Name>SwarmPets</Name>
   </RelayGroup>
   <RelayGroup>
-    <Name>ITC</Name>
+    <Name>Tank</Name>
   </RelayGroup>
   <KeyMap>
     <Name>000: - HOTKEYS</Name>
@@ -3685,6 +3688,16 @@
         </Combo>
         <Steps>
           <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes&amp;~dxnothing</Target>
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Ability: Forage</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>all&amp;~dxnothing</Target>
@@ -5529,6 +5542,18 @@ alt - 1920</Description>
           <Step>
             <Actions />
           </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>TributeOff</Name>
+        <Steps>
+          <Step />
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>TributeOn</Name>
+        <Steps>
+          <Step />
         </Steps>
       </MappedKey>
     </Mappings>
@@ -7404,19 +7429,47 @@ useful in the Avatar of War mission</Description>
                 <Rect>
                   <Location>
                     <X>2165</X>
-                    <Y>328</Y>
+                    <Y>298</Y>
                   </Location>
                   <Size>
                     <Width>205</Width>
                     <Height>700</Height>
                   </Size>
                   <X>2165</X>
-                  <Y>328</Y>
+                  <Y>298</Y>
                   <Width>205</Width>
                   <Height>700</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
                 <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>TributeOff</Name>
+        <ResetTimer>2</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB10:08</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>TributeOn</Name>
+        <ResetTimer>2</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB10:07</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -9191,15 +9244,15 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>157</X>
-                    <Y>853</Y>
+                    <X>13</X>
+                    <Y>809</Y>
                   </Location>
                   <Size>
                     <Width>148</Width>
                     <Height>27</Height>
                   </Size>
-                  <X>157</X>
-                  <Y>853</Y>
+                  <X>13</X>
+                  <Y>809</Y>
                   <Width>148</Width>
                   <Height>27</Height>
                 </Rect>
@@ -9275,14 +9328,14 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Rect>
                   <Location>
                     <X>430</X>
-                    <Y>921</Y>
+                    <Y>817</Y>
                   </Location>
                   <Size>
                     <Width>148</Width>
                     <Height>27</Height>
                   </Size>
                   <X>430</X>
-                  <Y>921</Y>
+                  <Y>817</Y>
                   <Width>148</Width>
                   <Height>27</Height>
                 </Rect>
@@ -9462,19 +9515,47 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Rect>
                   <Location>
                     <X>2165</X>
-                    <Y>328</Y>
+                    <Y>298</Y>
                   </Location>
                   <Size>
                     <Width>205</Width>
                     <Height>700</Height>
                   </Size>
                   <X>2165</X>
-                  <Y>328</Y>
+                  <Y>298</Y>
                   <Width>205</Width>
                   <Height>700</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
                 <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>TributeOff</Name>
+        <ResetTimer>2</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB10:08</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>TributeOn</Name>
+        <ResetTimer>2</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB10:07</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -9856,6 +9937,10 @@ this key map contains slot specific mapped keys</Description>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
                 <RelayGroupString>IVU</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
+                <RelayGroupString>PetOwners</RelayGroupString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -10349,6 +10434,10 @@ this key map contains slot specific mapped keys</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
+                <RelayGroupString>PetOwners</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
                 <RelayGroupString>SwarmPets</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
@@ -10757,6 +10846,10 @@ this key map contains slot specific mapped keys</Description>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Leave</Action>
                 <RelayGroupString>FeatherHorn</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>PetOwners</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Leave</Action>
@@ -11555,15 +11648,15 @@ old target viewer loc: 371,590</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>157</X>
-                    <Y>853</Y>
+                    <X>13</X>
+                    <Y>809</Y>
                   </Location>
                   <Size>
                     <Width>148</Width>
                     <Height>27</Height>
                   </Size>
-                  <X>157</X>
-                  <Y>853</Y>
+                  <X>13</X>
+                  <Y>809</Y>
                   <Width>148</Width>
                   <Height>27</Height>
                 </Rect>
@@ -11639,14 +11732,14 @@ old target viewer loc: 371,590</Description>
                 <Rect>
                   <Location>
                     <X>580</X>
-                    <Y>921</Y>
+                    <Y>817</Y>
                   </Location>
                   <Size>
                     <Width>148</Width>
                     <Height>27</Height>
                   </Size>
                   <X>580</X>
-                  <Y>921</Y>
+                  <Y>817</Y>
                   <Width>148</Width>
                   <Height>27</Height>
                 </Rect>
@@ -11775,19 +11868,47 @@ old target viewer loc: 371,590</Description>
                 <Rect>
                   <Location>
                     <X>2165</X>
-                    <Y>328</Y>
+                    <Y>298</Y>
                   </Location>
                   <Size>
                     <Width>205</Width>
                     <Height>700</Height>
                   </Size>
                   <X>2165</X>
-                  <Y>328</Y>
+                  <Y>298</Y>
                   <Width>205</Width>
                   <Height>700</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
                 <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>TributeOff</Name>
+        <ResetTimer>2</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB10:08</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>TributeOn</Name>
+        <ResetTimer>2</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB10:07</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -13599,15 +13720,15 @@ alt - 1920</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>157</X>
-                    <Y>853</Y>
+                    <X>13</X>
+                    <Y>809</Y>
                   </Location>
                   <Size>
                     <Width>148</Width>
                     <Height>27</Height>
                   </Size>
-                  <X>157</X>
-                  <Y>853</Y>
+                  <X>13</X>
+                  <Y>809</Y>
                   <Width>148</Width>
                   <Height>27</Height>
                 </Rect>
@@ -13683,14 +13804,14 @@ alt - 1920</Description>
                 <Rect>
                   <Location>
                     <X>730</X>
-                    <Y>921</Y>
+                    <Y>817</Y>
                   </Location>
                   <Size>
                     <Width>148</Width>
                     <Height>27</Height>
                   </Size>
                   <X>730</X>
-                  <Y>921</Y>
+                  <Y>817</Y>
                   <Width>148</Width>
                   <Height>27</Height>
                 </Rect>
@@ -14113,18 +14234,46 @@ alt - 1920</Description>
                 <Rect>
                   <Location>
                     <X>2165</X>
-                    <Y>328</Y>
+                    <Y>298</Y>
                   </Location>
                   <Size>
                     <Width>205</Width>
                     <Height>700</Height>
                   </Size>
                   <X>2165</X>
-                  <Y>328</Y>
+                  <Y>298</Y>
                   <Width>205</Width>
                   <Height>700</Height>
                 </Rect>
                 <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>TributeOff</Name>
+        <ResetTimer>2</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB10:08</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>TributeOn</Name>
+        <ResetTimer>2</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB10:07</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -14353,6 +14502,10 @@ this key map contains slot specific mapped keys</Description>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
                 <RelayGroupString>IVU</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
+                <RelayGroupString>PetOwners</RelayGroupString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -15083,6 +15236,10 @@ this key map contains slot specific mapped keys</Description>
                 <Action>Leave</Action>
                 <RelayGroupString>ITC</RelayGroupString>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>PetOwners</RelayGroupString>
+              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -15121,6 +15278,10 @@ this key map contains slot specific mapped keys</Description>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Leave</Action>
                 <RelayGroupString>ITC</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>PetOwners</RelayGroupString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -15859,15 +16020,15 @@ old target viewer: 371,397</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>158</X>
-                    <Y>853</Y>
+                    <X>13</X>
+                    <Y>809</Y>
                   </Location>
                   <Size>
                     <Width>148</Width>
                     <Height>27</Height>
                   </Size>
-                  <X>158</X>
-                  <Y>853</Y>
+                  <X>13</X>
+                  <Y>809</Y>
                   <Width>148</Width>
                   <Height>27</Height>
                 </Rect>
@@ -15943,14 +16104,14 @@ old target viewer: 371,397</Description>
                 <Rect>
                   <Location>
                     <X>880</X>
-                    <Y>921</Y>
+                    <Y>817</Y>
                   </Location>
                   <Size>
                     <Width>148</Width>
                     <Height>27</Height>
                   </Size>
                   <X>880</X>
-                  <Y>921</Y>
+                  <Y>817</Y>
                   <Width>148</Width>
                   <Height>27</Height>
                 </Rect>
@@ -16095,19 +16256,47 @@ old target viewer: 371,397</Description>
                 <Rect>
                   <Location>
                     <X>2165</X>
-                    <Y>328</Y>
+                    <Y>298</Y>
                   </Location>
                   <Size>
                     <Width>205</Width>
                     <Height>700</Height>
                   </Size>
                   <X>2165</X>
-                  <Y>328</Y>
+                  <Y>298</Y>
                   <Width>205</Width>
                   <Height>700</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
                 <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>TributeOff</Name>
+        <ResetTimer>2</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB10:08</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>TributeOn</Name>
+        <ResetTimer>2</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB10:07</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -16373,6 +16562,14 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Combat: Pet Back</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Combat: Pre-Burn</Name>
         <Steps>
           <Step>
@@ -16407,6 +16604,14 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
       </MappedKey>
       <MappedKey>
         <Name>Combat: Snare</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Summon Companion</Name>
         <Steps>
           <Step>
             <Actions />
@@ -16732,7 +16937,8 @@ executes Call of Xuzl and Spirit Call</Description>
                   <Seconds>601</Seconds>
                   <Enabled>true</Enabled>
                 </ActionTimer>
-                <KeyMapString>110: BST</KeyMapString>
+                <KeyMapString>110: BRD</KeyMapString>
+                <MappedKeyString>Combat: 2</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -17891,6 +18097,19 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Combat: Pet Back</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB10:08</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Combat: Reset</Name>
         <ResetTimer>5</ResetTimer>
         <ResetType>FromLastPress</ResetType>
@@ -17979,6 +18198,19 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
                   <MappedKeyString>Combat: SaveUs</MappedKeyString>
                 </MappedKey>
                 <Enable>1</Enable>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Summon Companion</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: AA</KeyMapString>
+                <MappedKeyString>Summon Companion</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -19330,6 +19562,19 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Combat: Pet Back</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB10:08</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Combat: Quick DPS</Name>
         <Steps>
           <Step>
@@ -19463,6 +19708,19 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
                   <MappedKeyString>Combat: SaveUs</MappedKeyString>
                 </MappedKey>
                 <Enable>1</Enable>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Summon Companion</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: AA</KeyMapString>
+                <MappedKeyString>Summon Companion</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -43547,7 +43805,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Name>AltHealerBar</Name>
     <Description>old pos 763,752</Description>
     <X>2528</X>
-    <Y>835</Y>
+    <Y>810</Y>
     <BackgroundColor />
     <CellBorder_Color>
       <Red>255</Red>
@@ -43673,7 +43931,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Name>BufferBar</Name>
     <Description>old pos 611,752</Description>
     <X>2396</X>
-    <Y>835</Y>
+    <Y>810</Y>
     <BackgroundColor />
     <CellBorder_Color>
       <Red>255</Red>
@@ -43799,7 +44057,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Name>MainHealerBar</Name>
     <Description>old pos 643,752</Description>
     <X>2428</X>
-    <Y>835</Y>
+    <Y>810</Y>
     <ColumnWidth>100</ColumnWidth>
     <BackgroundColor />
     <CellBorder_Color>
@@ -47056,8 +47314,32 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <DisplayText>IVU</DisplayText>
       </MenuButton>
       <MenuButton>
-        <Actions />
-        <DisplayText />
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>PetOwners</Target>
+            <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+            <MappedKeyString>Combat: Pet Back</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>PB</Text>
+        <DisplayText>Pet Back</DisplayText>
+        <BorderColor>
+          <Red>255</Red>
+        </BorderColor>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>PetOwners</Target>
+            <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+            <MappedKeyString>Combat: Summon Companion</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>SumC</Text>
+        <DisplayText>Summon Companion</DisplayText>
+        <BorderColor>
+          <Red>255</Red>
+        </BorderColor>
       </MenuButton>
       <MenuButton>
         <Actions>
@@ -47144,10 +47426,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         </Actions>
         <Text>RC</Text>
         <DisplayText>RC</DisplayText>
-      </MenuButton>
-      <MenuButton>
-        <Actions />
-        <DisplayText />
       </MenuButton>
       <MenuButton>
         <Actions>
@@ -47447,10 +47725,106 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <DisplayText>Wiz Ward</DisplayText>
       </MenuButton>
       <MenuButton>
-        <Actions />
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>CurrentBoxes</Target>
+            <ConditionalKey>
+              <Key>Caps Lock</Key>
+              <Code>58</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>TributeOn</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>TributeOn</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>TributeOn</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>TributeOn</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>TributeOn</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>TrbON</Text>
+        <DisplayText>Trib ON</DisplayText>
       </MenuButton>
       <MenuButton>
-        <Actions />
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>CurrentBoxes</Target>
+            <ConditionalKey>
+              <Key>Caps Lock</Key>
+              <Code>58</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>TributeOff</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>TributeOff</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>TributeOff</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>TributeOff</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>TributeOff</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>TrbOFF</Text>
+        <DisplayText>Trib OFF</DisplayText>
       </MenuButton>
       <MenuButton>
         <Actions>
@@ -47696,6 +48070,15 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
             <MappedKeyString>Ability: Glyph - Dragon</MappedKeyString>
           </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>CurrentBoxes</Target>
+            <ConditionalKey>
+              <Key>Caps Lock</Key>
+              <Code>58</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Ability: Glyph - Dragon</MappedKeyString>
+          </MappedKeyAction>
         </Actions>
         <Text>DGlyp</Text>
         <DisplayText>Dragon Glyph</DisplayText>
@@ -47733,6 +48116,15 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
             <MappedKeyString>Ability: Glyph - Dragon Rebuy</MappedKeyString>
           </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>CurrentBoxes</Target>
+            <ConditionalKey>
+              <Key>Caps Lock</Key>
+              <Code>58</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Ability: Glyph - Dragon Rebuy</MappedKeyString>
+          </MappedKeyAction>
         </Actions>
         <Text>BuyD</Text>
         <DisplayText>Buy Dragon Glyph</DisplayText>
@@ -47762,6 +48154,15 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <ConditionalKey>
               <Key>nomodifiers</Key>
               <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Ability: Glyph - Power</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>CurrentBoxes</Target>
+            <ConditionalKey>
+              <Key>Caps Lock</Key>
+              <Code>58</Code>
             </ConditionalKey>
             <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
             <MappedKeyString>Ability: Glyph - Power</MappedKeyString>
@@ -47799,6 +48200,15 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <ConditionalKey>
               <Key>nomodifiers</Key>
               <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Ability: Glyph - Power Rebuy</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>CurrentBoxes</Target>
+            <ConditionalKey>
+              <Key>Caps Lock</Key>
+              <Code>58</Code>
             </ConditionalKey>
             <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
             <MappedKeyString>Ability: Glyph - Power Rebuy</MappedKeyString>
@@ -50451,12 +50861,13 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
 xtarget selection
 manual cast of spell gems
 manual usage of hotbar 1
-</Description>
+
+1030,925</Description>
     <Template>_Unified</Template>
     <ButtonLayout>_Unified01</ButtonLayout>
     <HotkeyLayout />
-    <X>1030</X>
-    <Y>925</Y>
+    <X>430</X>
+    <Y>830</Y>
   </Menu>
   <Menu>
     <Name>_Unified02</Name>
@@ -50466,12 +50877,14 @@ buffs
 mez
 debuffs
 glyphs
-burns</Description>
+burns
+
+1030,965</Description>
     <Template>_Unified</Template>
     <ButtonLayout>_Unified02</ButtonLayout>
     <HotkeyLayout />
-    <X>1030</X>
-    <Y>965</Y>
+    <X>430</X>
+    <Y>870</Y>
   </Menu>
   <Menu>
     <Name>ISB42 - Formations</Name>
