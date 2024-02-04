@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/15/2024 6:17:11 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="2/4/2024 5:42:39 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -1290,8 +1290,8 @@
     <UseConsoleToggleCombo>true</UseConsoleToggleCombo>
     <Slots>
       <Slot>
-        <ForegroundMaxFPS>0</ForegroundMaxFPS>
-        <BackgroundMaxFPS>0</BackgroundMaxFPS>
+        <ForegroundMaxFPS>85</ForegroundMaxFPS>
+        <BackgroundMaxFPS>40</BackgroundMaxFPS>
         <CharacterString>Slot1</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+1</Combo>
@@ -1323,8 +1323,8 @@
         <VariableKeystrokeInstances />
       </Slot>
       <Slot>
-        <ForegroundMaxFPS>0</ForegroundMaxFPS>
-        <BackgroundMaxFPS>0</BackgroundMaxFPS>
+        <ForegroundMaxFPS>85</ForegroundMaxFPS>
+        <BackgroundMaxFPS>40</BackgroundMaxFPS>
         <CharacterString>Slot2</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+2</Combo>
@@ -1356,8 +1356,8 @@
         <VariableKeystrokeInstances />
       </Slot>
       <Slot>
-        <ForegroundMaxFPS>0</ForegroundMaxFPS>
-        <BackgroundMaxFPS>0</BackgroundMaxFPS>
+        <ForegroundMaxFPS>85</ForegroundMaxFPS>
+        <BackgroundMaxFPS>40</BackgroundMaxFPS>
         <CharacterString>Slot3</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+3</Combo>
@@ -1389,8 +1389,8 @@
         <VariableKeystrokeInstances />
       </Slot>
       <Slot>
-        <ForegroundMaxFPS>0</ForegroundMaxFPS>
-        <BackgroundMaxFPS>0</BackgroundMaxFPS>
+        <ForegroundMaxFPS>85</ForegroundMaxFPS>
+        <BackgroundMaxFPS>40</BackgroundMaxFPS>
         <CharacterString>Slot4</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+4</Combo>
@@ -1422,8 +1422,8 @@
         <VariableKeystrokeInstances />
       </Slot>
       <Slot>
-        <ForegroundMaxFPS>0</ForegroundMaxFPS>
-        <BackgroundMaxFPS>0</BackgroundMaxFPS>
+        <ForegroundMaxFPS>85</ForegroundMaxFPS>
+        <BackgroundMaxFPS>40</BackgroundMaxFPS>
         <CharacterString>Slot5</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+5</Combo>
@@ -1455,8 +1455,8 @@
         <VariableKeystrokeInstances />
       </Slot>
       <Slot>
-        <ForegroundMaxFPS>0</ForegroundMaxFPS>
-        <BackgroundMaxFPS>0</BackgroundMaxFPS>
+        <ForegroundMaxFPS>85</ForegroundMaxFPS>
+        <BackgroundMaxFPS>40</BackgroundMaxFPS>
         <CharacterString>dxNothing</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+6</Combo>
@@ -2509,6 +2509,7 @@
       <string>AltHealer</string>
       <string>ATG3</string>
       <string>MainHealer</string>
+      <string>Melee</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>110: SHM</string>
@@ -2565,6 +2566,7 @@
       <string>AltHealer</string>
       <string>ATG3</string>
       <string>MainHealer</string>
+      <string>Melee</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>110: SHM</string>
@@ -2736,6 +2738,7 @@
     <RelayGroupStrings>
       <string>ATG5</string>
       <string>Buffer</string>
+      <string>Melee</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>110: ENC</string>
@@ -2791,6 +2794,7 @@
     <RelayGroupStrings>
       <string>ATG5</string>
       <string>Buffer</string>
+      <string>Melee</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>110: ENC</string>
@@ -5547,13 +5551,17 @@ alt - 1920</Description>
       <MappedKey>
         <Name>TributeOff</Name>
         <Steps>
-          <Step />
+          <Step>
+            <Actions />
+          </Step>
         </Steps>
       </MappedKey>
       <MappedKey>
         <Name>TributeOn</Name>
         <Steps>
-          <Step />
+          <Step>
+            <Actions />
+          </Step>
         </Steps>
       </MappedKey>
     </Mappings>
@@ -16510,6 +16518,24 @@ the default virtualization is to the main class for the slot, and persona activa
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Combat: Debuff - AE Pull</Name>
+        <Steps>
+          <Step />
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Debuff - AE Resist</Name>
+        <Steps>
+          <Step />
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Debuff - AE Slow</Name>
+        <Steps>
+          <Step />
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Combat: Debuffs - AE</Name>
         <Steps>
           <Step>
@@ -17926,6 +17952,143 @@ executes Call of Xuzl and Spirit Call</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Combat: Debuff - AE Pull</Name>
+        <ResetTimer>10</ResetTimer>
+        <ResetType>FromFirstPress</ResetType>
+        <Steps>
+          <Step>
+            <Stick>2.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:02</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: SHM</KeyMapString>
+                  <MappedKeyString>Combat: Debuff - AE Pull</MappedKeyString>
+                </MappedKey>
+                <Enable>0</Enable>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <ActionTimer>
+                  <PoolName>ENC-AE-Tash</PoolName>
+                  <Seconds>7.2</Seconds>
+                  <Enabled>true</Enabled>
+                </ActionTimer>
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: ENC</KeyMapString>
+                  <MappedKeyString>Combat: Debuff - AE Pull</MappedKeyString>
+                </MappedKey>
+                <Enable>1</Enable>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>2.6</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:04</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: ENC</KeyMapString>
+                  <MappedKeyString>Combat: Debuff - AE Pull</MappedKeyString>
+                </MappedKey>
+                <Enable>0</Enable>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <ActionTimer>
+                  <PoolName>ENC-AE-Slow</PoolName>
+                  <Seconds>180.2</Seconds>
+                  <Enabled>true</Enabled>
+                </ActionTimer>
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: ENC</KeyMapString>
+                  <MappedKeyString>Combat: Debuff - AE Pull</MappedKeyString>
+                </MappedKey>
+                <Enable>1</Enable>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Debuff - AE Resist</Name>
+        <Steps>
+          <Step>
+            <Stick>2.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:02</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: SHM</KeyMapString>
+                  <MappedKeyString>Combat: Debuff - AE Pull</MappedKeyString>
+                </MappedKey>
+                <Enable>0</Enable>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <ActionTimer>
+                  <PoolName>ENC-AE-Tash</PoolName>
+                  <Seconds>7.2</Seconds>
+                  <Enabled>true</Enabled>
+                </ActionTimer>
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: ENC</KeyMapString>
+                  <MappedKeyString>Combat: Debuff - AE Pull</MappedKeyString>
+                </MappedKey>
+                <Enable>1</Enable>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Debuff - AE Slow</Name>
+        <Steps>
+          <Step>
+            <Stick>2.6</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:04</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: ENC</KeyMapString>
+                  <MappedKeyString>Combat: Debuff - AE Pull</MappedKeyString>
+                </MappedKey>
+                <Enable>0</Enable>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <ActionTimer>
+                  <PoolName>ENC-AE-Slow</PoolName>
+                  <Seconds>180.2</Seconds>
+                  <Enabled>true</Enabled>
+                </ActionTimer>
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: ENC</KeyMapString>
+                  <MappedKeyString>Combat: Debuff - AE Pull</MappedKeyString>
+                </MappedKey>
+                <Enable>1</Enable>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Combat: DPS Rotation</Name>
         <Steps>
           <Step>
@@ -17977,7 +18140,20 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
         <Name>Combat: MeleeAttack</Name>
         <Steps>
           <Step>
-            <Actions />
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: Attack On</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: Attack Off</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
           </Step>
         </Steps>
       </MappedKey>
@@ -18103,7 +18279,7 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB10:08</MappedKeyString>
+                <MappedKeyString>HB10:09</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -19368,6 +19544,143 @@ inquisitor's judgment</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Combat: Debuff - AE Pull</Name>
+        <ResetTimer>10</ResetTimer>
+        <ResetType>FromFirstPress</ResetType>
+        <Steps>
+          <Step>
+            <Stick>0.2</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:04</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: SHM</KeyMapString>
+                  <MappedKeyString>Combat: Debuff - AE Pull</MappedKeyString>
+                </MappedKey>
+                <Enable>0</Enable>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <ActionTimer>
+                  <PoolName>SHM-AE-MALO</PoolName>
+                  <Seconds>60.2</Seconds>
+                  <Enabled>true</Enabled>
+                </ActionTimer>
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: SHM</KeyMapString>
+                  <MappedKeyString>Combat: Debuff - AE Pull</MappedKeyString>
+                </MappedKey>
+                <Enable>1</Enable>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>2.7</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:02</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: SHM</KeyMapString>
+                  <MappedKeyString>Combat: Debuff - AE Pull</MappedKeyString>
+                </MappedKey>
+                <Enable>0</Enable>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <ActionTimer>
+                  <PoolName>SHM-AE-Slow</PoolName>
+                  <Seconds>30.2</Seconds>
+                  <Enabled>true</Enabled>
+                </ActionTimer>
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: SHM</KeyMapString>
+                  <MappedKeyString>Combat: Debuff - AE Pull</MappedKeyString>
+                </MappedKey>
+                <Enable>1</Enable>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Debuff - AE Resist</Name>
+        <Steps>
+          <Step>
+            <Stick>0.2</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:04</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: SHM</KeyMapString>
+                  <MappedKeyString>Combat: Debuff - AE Pull</MappedKeyString>
+                </MappedKey>
+                <Enable>0</Enable>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <ActionTimer>
+                  <PoolName>SHM-AE-MALO</PoolName>
+                  <Seconds>60.2</Seconds>
+                  <Enabled>true</Enabled>
+                </ActionTimer>
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: SHM</KeyMapString>
+                  <MappedKeyString>Combat: Debuff - AE Pull</MappedKeyString>
+                </MappedKey>
+                <Enable>1</Enable>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Debuff - AE Slow</Name>
+        <Steps>
+          <Step>
+            <Stick>2.7</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB03:02</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: SHM</KeyMapString>
+                  <MappedKeyString>Combat: Debuff - AE Pull</MappedKeyString>
+                </MappedKey>
+                <Enable>0</Enable>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <ActionTimer>
+                  <PoolName>SHM-AE-Slow</PoolName>
+                  <Seconds>30.2</Seconds>
+                  <Enabled>true</Enabled>
+                </ActionTimer>
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: SHM</KeyMapString>
+                  <MappedKeyString>Combat: Debuff - AE Pull</MappedKeyString>
+                </MappedKey>
+                <Enable>1</Enable>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Combat: Debuffs - AE</Name>
         <Steps>
           <Step>
@@ -19568,7 +19881,7 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB10:08</MappedKeyString>
+                <MappedKeyString>HB10:09</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -20191,12 +20504,12 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <ActionTimer>
                   <PoolName>Offensives</PoolName>
-                  <Seconds>540</Seconds>
+                  <Seconds>900</Seconds>
                   <Enabled>true</Enabled>
                 </ActionTimer>
                 <Target>self</Target>
                 <MappedKey>
-                  <KeyMapString>100: Slot2</KeyMapString>
+                  <KeyMapString>110: WIZ</KeyMapString>
                   <MappedKeyString>Combat: Offensives</MappedKeyString>
                 </MappedKey>
                 <Enable>1</Enable>
@@ -20220,12 +20533,12 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <ActionTimer>
                   <PoolName>Offensives</PoolName>
-                  <Seconds>1200</Seconds>
+                  <Seconds>900</Seconds>
                   <Enabled>true</Enabled>
                 </ActionTimer>
                 <Target>self</Target>
                 <MappedKey>
-                  <KeyMapString>100: Slot2</KeyMapString>
+                  <KeyMapString>110: WIZ</KeyMapString>
                   <MappedKeyString>Combat: Offensives</MappedKeyString>
                 </MappedKey>
                 <Enable>1</Enable>
@@ -43301,6 +43614,21 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
   <ActionTimerPool>
     <Name>FeatherHornTimeout</Name>
   </ActionTimerPool>
+  <ActionTimerPool>
+    <Name>SHM-AE-MALO</Name>
+  </ActionTimerPool>
+  <ActionTimerPool>
+    <Name>SHM-AE-Malo</Name>
+  </ActionTimerPool>
+  <ActionTimerPool>
+    <Name>SHM-AE-Slow</Name>
+  </ActionTimerPool>
+  <ActionTimerPool>
+    <Name>ENC-AE-Tash</Name>
+  </ActionTimerPool>
+  <ActionTimerPool>
+    <Name>ENC-AE-Slow</Name>
+  </ActionTimerPool>
   <VariableKeystroke>
     <Name>Assist Main</Name>
     <Category>Targeting</Category>
@@ -47873,6 +48201,17 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>CurrentBoxes</Target>
+            <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+            <MappedKeyString>Combat: Debuff - AE Pull</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>aepull</Text>
+        <DisplayText>AE Pull</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>ATG3</Target>
             <ConditionalKey>
               <Key>Ctrl</Key>
@@ -47919,85 +48258,8 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <DisplayText>AE Slow</DisplayText>
       </MenuButton>
       <MenuButton>
-        <Actions>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG3</Target>
-            <ConditionalKey>
-              <Key>Ctrl</Key>
-              <Code>29</Code>
-            </ConditionalKey>
-            <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:03</MappedKeyString>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG5</Target>
-            <ConditionalKey>
-              <Key>nomodifiers</Key>
-              <Code>0</Code>
-            </ConditionalKey>
-            <KeyMapString>199: Spellcasting</KeyMapString>
-            <MappedKeyString>Cast 04</MappedKeyString>
-          </MappedKeyAction>
-        </Actions>
-        <Text>malo</Text>
-        <DisplayText>Malo / Tash</DisplayText>
-      </MenuButton>
-      <MenuButton>
-        <Actions>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG3</Target>
-            <ConditionalKey>
-              <Key>Ctrl</Key>
-              <Code>29</Code>
-            </ConditionalKey>
-            <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:01</MappedKeyString>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG5</Target>
-            <ConditionalKey>
-              <Key>nomodifiers</Key>
-              <Code>0</Code>
-            </ConditionalKey>
-            <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:04</MappedKeyString>
-          </MappedKeyAction>
-        </Actions>
-        <Text>slow</Text>
-        <DisplayText>Slow</DisplayText>
-      </MenuButton>
-      <MenuButton>
-        <Actions>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG2</Target>
-            <ConditionalKey>
-              <Key>Shift</Key>
-              <Code>42</Code>
-            </ConditionalKey>
-            <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB01:01</MappedKeyString>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG3</Target>
-            <ConditionalKey>
-              <Key>Ctrl</Key>
-              <Code>29</Code>
-            </ConditionalKey>
-            <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB01:01</MappedKeyString>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG5</Target>
-            <ConditionalKey>
-              <Key>nomodifiers</Key>
-              <Code>0</Code>
-            </ConditionalKey>
-            <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB01:01</MappedKeyString>
-          </MappedKeyAction>
-        </Actions>
-        <Text>debuff</Text>
-        <DisplayText>debuff</DisplayText>
+        <Actions />
+        <DisplayText />
       </MenuButton>
       <MenuButton>
         <Actions>
@@ -48262,110 +48524,24 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG5</Target>
+            <Target>ATG4</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:11</MappedKeyString>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MenuButtonAction">
-            <MenuButton>
-              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
-              <NumButton>-1</NumButton>
-            </MenuButton>
-            <ButtonChanges>
-              <Actions />
-              <Alpha>0</Alpha>
-            </ButtonChanges>
-            <Target>all</Target>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MenuButtonAction">
-            <MenuButton>
-              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
-              <NumButton>-1</NumButton>
-            </MenuButton>
-            <ButtonChanges>
-              <Actions />
-              <Alpha>0.498039216</Alpha>
-            </ButtonChanges>
-            <Target>all</Target>
-            <ActionTimer>
-              <PoolName>OpacityTimer</PoolName>
-              <Seconds>6</Seconds>
-              <Enabled>true</Enabled>
-            </ActionTimer>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MenuButtonAction">
-            <MenuButton>
-              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
-              <NumButton>-1</NumButton>
-            </MenuButton>
-            <ButtonChanges>
-              <Actions />
-              <Alpha>1</Alpha>
-            </ButtonChanges>
-            <Target>all</Target>
-            <ActionTimer>
-              <PoolName>OpacityTimer</PoolName>
-              <Seconds>12</Seconds>
-              <Enabled>true</Enabled>
-            </ActionTimer>
+            <MappedKeyString>HB02:07</MappedKeyString>
           </MappedKeyAction>
         </Actions>
-        <Text>blur</Text>
-        <DisplayText>Fog of Memories</DisplayText>
+        <Text>dirge</Text>
+        <DisplayText>Dirge</DisplayText>
       </MenuButton>
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG5</Target>
+            <Target>ATG2</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB03:12</MappedKeyString>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MenuButtonAction">
-            <MenuButton>
-              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
-              <NumButton>-1</NumButton>
-            </MenuButton>
-            <ButtonChanges>
-              <Actions />
-              <Alpha>0</Alpha>
-            </ButtonChanges>
-            <Target>all</Target>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MenuButtonAction">
-            <MenuButton>
-              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
-              <NumButton>-1</NumButton>
-            </MenuButton>
-            <ButtonChanges>
-              <Actions />
-              <Alpha>0.498039216</Alpha>
-            </ButtonChanges>
-            <Target>all</Target>
-            <ActionTimer>
-              <PoolName>OpacityTimer</PoolName>
-              <Seconds>5</Seconds>
-              <Enabled>true</Enabled>
-            </ActionTimer>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MenuButtonAction">
-            <MenuButton>
-              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
-              <NumButton>-1</NumButton>
-            </MenuButton>
-            <ButtonChanges>
-              <Actions />
-              <Alpha>1</Alpha>
-            </ButtonChanges>
-            <Target>all</Target>
-            <ActionTimer>
-              <PoolName>OpacityTimer</PoolName>
-              <Seconds>10</Seconds>
-              <Enabled>true</Enabled>
-            </ActionTimer>
+            <MappedKeyString>HB02:11</MappedKeyString>
           </MappedKeyAction>
         </Actions>
-        <Text>aeblur</Text>
-        <DisplayText>Blanket of Forgetfulness</DisplayText>
+        <Text>MBurn</Text>
+        <DisplayText>Mana Burn</DisplayText>
       </MenuButton>
       <MenuButton>
         <Actions>
@@ -48487,39 +48663,116 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <DisplayText>ITC</DisplayText>
       </MenuButton>
       <MenuButton>
-        <Actions>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG4</Target>
-            <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:07</MappedKeyString>
-          </MappedKeyAction>
-        </Actions>
-        <Text>dirge</Text>
-        <DisplayText>Dirge</DisplayText>
+        <Actions />
+        <DisplayText />
       </MenuButton>
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG2</Target>
-            <ConditionalKey>
-              <Key>Shift</Key>
-              <Code>42</Code>
-            </ConditionalKey>
+            <Target>ATG5</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
             <MappedKeyString>HB03:11</MappedKeyString>
           </MappedKeyAction>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG5</Target>
-            <ConditionalKey>
-              <Key>nomodifiers</Key>
-              <Code>0</Code>
-            </ConditionalKey>
-            <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB02:11</MappedKeyString>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.498039216</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>6</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>1</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>12</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
           </MappedKeyAction>
         </Actions>
-        <Text>Tens</Text>
-        <DisplayText>Intensity</DisplayText>
+        <Text>blur</Text>
+        <DisplayText>Fog of Memories</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG5</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB03:12</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>0.498039216</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>5</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MenuButtonAction">
+            <MenuButton>
+              <MenuButtonSetString>WizButtonSet01</MenuButtonSetString>
+              <NumButton>-1</NumButton>
+            </MenuButton>
+            <ButtonChanges>
+              <Actions />
+              <Alpha>1</Alpha>
+            </ButtonChanges>
+            <Target>all</Target>
+            <ActionTimer>
+              <PoolName>OpacityTimer</PoolName>
+              <Seconds>10</Seconds>
+              <Enabled>true</Enabled>
+            </ActionTimer>
+          </MappedKeyAction>
+        </Actions>
+        <Text>aeblur</Text>
+        <DisplayText>Blanket of Forgetfulness</DisplayText>
       </MenuButton>
       <MenuButton>
         <Actions>
