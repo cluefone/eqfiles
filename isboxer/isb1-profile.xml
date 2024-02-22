@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="2/4/2024 5:42:39 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="2/22/2024 5:35:02 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -1494,10 +1494,10 @@
       <string>010: 05 Box</string>
       <string>100: - CHARACTER TEMPLATE</string>
       <string>100: Slot1</string>
-      <string>100: Slot5</string>
       <string>100: Slot2</string>
-      <string>100: Slot4</string>
       <string>100: Slot3</string>
+      <string>100: Slot4</string>
+      <string>100: Slot5</string>
       <string>110: - CLASS TEMPLATE</string>
       <string>199: AA</string>
       <string>199: General</string>
@@ -3622,6 +3622,9 @@
     <Name>Group1-Members</Name>
   </RelayGroup>
   <RelayGroup>
+    <Name>Invis</Name>
+  </RelayGroup>
+  <RelayGroup>
     <Name>ITC</Name>
   </RelayGroup>
   <RelayGroup>
@@ -4054,6 +4057,29 @@ brd - melody</Description>
                 <Target>CurrentBoxes</Target>
                 <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
                 <MappedKeyString>Combat: 4</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: AFK Invis</Name>
+        <Description>stopsong + invis</Description>
+        <Combo>
+          <Combo>G600-G15</Combo>
+          <Key>
+            <Key>G600-G15</Key>
+            <Code>0</Code>
+          </Key>
+        </Combo>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: AFK Invis</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -7703,6 +7729,10 @@ this key map contains slot specific mapped keys</Description>
                 <Action>Join</Action>
                 <RelayGroupString>IVU</RelayGroupString>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
+                <RelayGroupString>Invis</RelayGroupString>
+              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -9941,6 +9971,10 @@ this key map contains slot specific mapped keys</Description>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
                 <RelayGroupString>Class-SHM</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
+                <RelayGroupString>Invis</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
@@ -14509,6 +14543,10 @@ this key map contains slot specific mapped keys</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
+                <RelayGroupString>Invis</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
                 <RelayGroupString>IVU</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
@@ -16446,6 +16484,14 @@ the default virtualization is to the main class for the slot, and persona activa
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Combat: AFK Invis</Name>
+        <Description>stopsong + invis</Description>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step />
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Combat: AoE</Name>
         <Steps>
           <Step>
@@ -16520,19 +16566,25 @@ the default virtualization is to the main class for the slot, and persona activa
       <MappedKey>
         <Name>Combat: Debuff - AE Pull</Name>
         <Steps>
-          <Step />
+          <Step>
+            <Actions />
+          </Step>
         </Steps>
       </MappedKey>
       <MappedKey>
         <Name>Combat: Debuff - AE Resist</Name>
         <Steps>
-          <Step />
+          <Step>
+            <Actions />
+          </Step>
         </Steps>
       </MappedKey>
       <MappedKey>
         <Name>Combat: Debuff - AE Slow</Name>
         <Steps>
-          <Step />
+          <Step>
+            <Actions />
+          </Step>
         </Steps>
       </MappedKey>
       <MappedKey>
@@ -17017,6 +17069,20 @@ executes Call of Xuzl and Spirit Call</Description>
                     <Code>5</Code>
                   </Key>
                 </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: AFK Invis</Name>
+        <Description>stopsong + invis</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Spellcasting</KeyMapString>
+                <MappedKeyString>Stopsong</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -17863,6 +17929,20 @@ executes Call of Xuzl and Spirit Call</Description>
                 </ActionTimer>
                 <KeyMapString>110: ENC</KeyMapString>
                 <MappedKeyString>Combat: Offensives</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: AFK Invis</Name>
+        <Description>stopsong + invis</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB05:02</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -19396,6 +19476,20 @@ inquisitor's judgment</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Combat: AFK Invis</Name>
+        <Description>stopsong + invis</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB05:02</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Combat: Burns</Name>
         <Steps>
           <Step>
@@ -20285,6 +20379,15 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
                 <MappedKeyString>Combat: 1</MappedKeyString>
               </MappedKeyAction>
             </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: AFK Invis</Name>
+        <Description>stopsong + invis</Description>
+        <Steps>
+          <Step>
+            <Actions />
           </Step>
         </Steps>
       </MappedKey>
@@ -47455,8 +47558,18 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <DisplayText>Wiz Scale / ENC Runes</DisplayText>
       </MenuButton>
       <MenuButton>
-        <Actions />
-        <DisplayText />
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>CurrentBoxes</Target>
+            <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+            <MappedKeyString>Combat: AFK Invis</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>VIS</Text>
+        <DisplayText>VIS</DisplayText>
+        <BackgroundColor>
+          <Red>255</Red>
+        </BackgroundColor>
       </MenuButton>
       <MenuButton>
         <Actions>
