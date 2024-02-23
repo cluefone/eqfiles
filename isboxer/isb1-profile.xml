@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="2/22/2024 5:35:02 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="2/22/2024 8:16:46 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -5710,17 +5710,6 @@ two virtualization actions that are sent to the _other_ active slots
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
-                <Target>CurrentBoxes</Target>
-                <FromMappedKey>
-                  <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Target Slot 1</MappedKeyString>
-                </FromMappedKey>
-                <ToMappedKey>
-                  <KeyMapString>100: Slot1</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
-                </ToMappedKey>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>other CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
@@ -5729,6 +5718,17 @@ two virtualization actions that are sent to the _other_ active slots
                 <ToMappedKey>
                   <KeyMapString>100: Slot1</KeyMapString>
                   <MappedKeyString>Control: Follow Me</MappedKeyString>
+                </ToMappedKey>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyRewriteAction">
+                <Target>CurrentBoxes</Target>
+                <FromMappedKey>
+                  <KeyMapString>199: General</KeyMapString>
+                  <MappedKeyString>Control: Target Slot 1</MappedKeyString>
+                </FromMappedKey>
+                <ToMappedKey>
+                  <KeyMapString>100: Slot1</KeyMapString>
+                  <MappedKeyString>Control: Target Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
             </Actions>
@@ -6241,16 +6241,7 @@ be mindful of long character names and the 14-character limit when stuffing comm
 
 be mindful of long character names and the 14-character limit when stuffing commands into EQ. 
 /fol&lt;sp&gt;01234567&lt;Enter&gt;</Description>
-        <Mode>OnPressAndRelease</Mode>
         <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Movement: Stand</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
@@ -7643,6 +7634,17 @@ this key map contains slot specific mapped keys</Description>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
+                <Target>other CurrentBoxes</Target>
+                <FromMappedKey>
+                  <KeyMapString>199: General</KeyMapString>
+                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                </FromMappedKey>
+                <ToMappedKey>
+                  <KeyMapString>100: Slot2</KeyMapString>
+                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                </ToMappedKey>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
@@ -7958,16 +7960,7 @@ this key map contains slot specific mapped keys</Description>
       </MappedKey>
       <MappedKey>
         <Name>Control: Follow Me</Name>
-        <Mode>OnPressAndRelease</Mode>
         <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Movement: Stand</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
@@ -9888,6 +9881,17 @@ this key map contains slot specific mapped keys</Description>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
+                <Target>other CurrentBoxes</Target>
+                <FromMappedKey>
+                  <KeyMapString>199: General</KeyMapString>
+                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                </FromMappedKey>
+                <ToMappedKey>
+                  <KeyMapString>100: Slot3</KeyMapString>
+                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                </ToMappedKey>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
@@ -10284,16 +10288,7 @@ this key map contains slot specific mapped keys</Description>
       </MappedKey>
       <MappedKey>
         <Name>Control: Follow Me</Name>
-        <Mode>OnPressAndRelease</Mode>
         <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Movement: Stand</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
@@ -12090,6 +12085,17 @@ this key map contains slot specific mapped keys</Description>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
+                <Target>other CurrentBoxes</Target>
+                <FromMappedKey>
+                  <KeyMapString>199: General</KeyMapString>
+                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                </FromMappedKey>
+                <ToMappedKey>
+                  <KeyMapString>100: Slot4</KeyMapString>
+                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                </ToMappedKey>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
@@ -12405,16 +12411,7 @@ this key map contains slot specific mapped keys</Description>
       </MappedKey>
       <MappedKey>
         <Name>Control: Follow Me</Name>
-        <Mode>OnPressAndRelease</Mode>
         <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Movement: Stand</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
@@ -14455,6 +14452,17 @@ this key map contains slot specific mapped keys</Description>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
+                <Target>other CurrentBoxes</Target>
+                <FromMappedKey>
+                  <KeyMapString>199: General</KeyMapString>
+                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                </FromMappedKey>
+                <ToMappedKey>
+                  <KeyMapString>100: Slot5</KeyMapString>
+                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                </ToMappedKey>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
@@ -14760,16 +14768,7 @@ this key map contains slot specific mapped keys</Description>
       </MappedKey>
       <MappedKey>
         <Name>Control: Follow Me</Name>
-        <Mode>OnPressAndRelease</Mode>
         <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Movement: Stand</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
@@ -16488,7 +16487,9 @@ the default virtualization is to the main class for the slot, and persona activa
         <Description>stopsong + invis</Description>
         <Mode>OnPressAndRelease</Mode>
         <Steps>
-          <Step />
+          <Step>
+            <Actions />
+          </Step>
         </Steps>
       </MappedKey>
       <MappedKey>
@@ -27511,11 +27512,22 @@ TODO: configure button to default to 2560, but use modifiers for alternate resol
       </MappedKey>
       <MappedKey>
         <Name>Movement: Follow: Group1</Name>
+        <Description>use new /fol command
+cannot follow while sitting, so we must /stand first</Description>
         <UseFTLModifiers />
         <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
-            <Disabled>true</Disabled>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>other Group1</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Movement: Stand</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>other Group1</Target>
@@ -27524,7 +27536,16 @@ TODO: configure button to default to 2560, but use modifiers for alternate resol
               </MappedKeyAction>
             </Actions>
           </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Movement: Follow: Group1 (Olde way)</Name>
+        <UseFTLModifiers />
+        <ManualLoad>true</ManualLoad>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
           <Step>
+            <Disabled>true</Disabled>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>other Group1</Target>
@@ -27534,6 +27555,7 @@ TODO: configure button to default to 2560, but use modifiers for alternate resol
             </Actions>
           </Step>
           <Step>
+            <Disabled>true</Disabled>
             <Actions>
               <MappedKeyAction xsi:type="VariableKeystrokeAction">
                 <Target>other Group1</Target>
