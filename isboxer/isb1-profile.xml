@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="3/25/2024 7:12:43 AM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="5/9/2024 7:24:02 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -1291,7 +1291,7 @@
     <Slots>
       <Slot>
         <ForegroundMaxFPS>85</ForegroundMaxFPS>
-        <BackgroundMaxFPS>40</BackgroundMaxFPS>
+        <BackgroundMaxFPS>59</BackgroundMaxFPS>
         <CharacterString>Slot1</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+1</Combo>
@@ -1324,7 +1324,7 @@
       </Slot>
       <Slot>
         <ForegroundMaxFPS>85</ForegroundMaxFPS>
-        <BackgroundMaxFPS>40</BackgroundMaxFPS>
+        <BackgroundMaxFPS>59</BackgroundMaxFPS>
         <CharacterString>Slot2</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+2</Combo>
@@ -1357,7 +1357,7 @@
       </Slot>
       <Slot>
         <ForegroundMaxFPS>85</ForegroundMaxFPS>
-        <BackgroundMaxFPS>40</BackgroundMaxFPS>
+        <BackgroundMaxFPS>59</BackgroundMaxFPS>
         <CharacterString>Slot3</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+3</Combo>
@@ -1390,7 +1390,7 @@
       </Slot>
       <Slot>
         <ForegroundMaxFPS>85</ForegroundMaxFPS>
-        <BackgroundMaxFPS>40</BackgroundMaxFPS>
+        <BackgroundMaxFPS>59</BackgroundMaxFPS>
         <CharacterString>Slot4</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+4</Combo>
@@ -1423,7 +1423,7 @@
       </Slot>
       <Slot>
         <ForegroundMaxFPS>85</ForegroundMaxFPS>
-        <BackgroundMaxFPS>40</BackgroundMaxFPS>
+        <BackgroundMaxFPS>59</BackgroundMaxFPS>
         <CharacterString>Slot5</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+5</Combo>
@@ -1456,7 +1456,7 @@
       </Slot>
       <Slot>
         <ForegroundMaxFPS>85</ForegroundMaxFPS>
-        <BackgroundMaxFPS>40</BackgroundMaxFPS>
+        <BackgroundMaxFPS>59</BackgroundMaxFPS>
         <CharacterString>dxNothing</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+6</Combo>
@@ -2272,6 +2272,7 @@
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>100: Slot1</string>
+      <string>110: PAL</string>
     </KeyMapStrings>
     <KeyMapWhiteOrBlackListType>Ignore</KeyMapWhiteOrBlackListType>
     <KeyMapWhiteOrBlackList />
@@ -2379,7 +2380,7 @@
         <VirtualFileString>eqlsPlayerData.ini</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>eqclient-Chinger-1920.ini</Filename>
+        <Filename>eqclient-Chinger-2256.ini</Filename>
         <VirtualFileString>eqclient.ini</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
@@ -2653,7 +2654,7 @@
         <VirtualFileString>eqlsPlayerData.ini</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>eqclient-Ijuante-1920.ini</Filename>
+        <Filename>eqclient-Ijuante-2256.ini</Filename>
         <VirtualFileString>eqclient.ini</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
@@ -2888,7 +2889,7 @@
         <VirtualFileString>eqlsPlayerData.ini</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>eqclient-Watley-1920.ini</Filename>
+        <Filename>eqclient-Watley-2256.ini</Filename>
         <VirtualFileString>eqclient.ini</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
@@ -3061,7 +3062,7 @@
         <VirtualFileString>eqlsPlayerData.ini</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>eqclient-Shatne-1920r.ini</Filename>
+        <Filename>eqclient-Shatner-1920.ini</Filename>
         <VirtualFileString>eqclient.ini</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
@@ -3119,7 +3120,7 @@
         <VirtualFileString>eqlsPlayerData.ini</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>eqclient-Shatne-1920r.ini</Filename>
+        <Filename>eqclient-Shatner-2256.ini</Filename>
         <VirtualFileString>eqclient.ini</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
@@ -3351,7 +3352,7 @@
         <VirtualFileString>eqlsPlayerData.ini</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>eqclient-Ibsen-1920.ini</Filename>
+        <Filename>eqclient-Ibsen-2256.ini</Filename>
         <VirtualFileString>eqclient.ini</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
@@ -6428,6 +6429,7 @@ two virtualization actions that are sent to the _other_ active slots
       </MappedKey>
       <MappedKey>
         <Name>Control: Activate Persona00</Name>
+        <Description>Activate PAL persona</Description>
         <Steps>
           <Step>
             <Actions>
@@ -6436,7 +6438,7 @@ two virtualization actions that are sent to the _other_ active slots
               </MappedKeyAction>
               <MappedKeyAction xsi:type="KeyMapAction">
                 <Value>Off</Value>
-                <KeyMapString>110: ROG</KeyMapString>
+                <KeyMapString>110: SHD</KeyMapString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="KeyMapAction">
                 <Value>Off</Value>
@@ -6480,7 +6482,7 @@ two virtualization actions that are sent to the _other_ active slots
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Leave</Action>
-                <RelayGroupString>Class-ROG</RelayGroupString>
+                <RelayGroupString>Class-SHD</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Leave</Action>
@@ -6504,6 +6506,7 @@ two virtualization actions that are sent to the _other_ active slots
       </MappedKey>
       <MappedKey>
         <Name>Control: Activate Persona01</Name>
+        <Description>Activate SK persona</Description>
         <Steps>
           <Step>
             <Actions>
@@ -6520,14 +6523,14 @@ two virtualization actions that are sent to the _other_ active slots
                 <KeyMapString>110: BER</KeyMapString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="KeyMapAction">
-                <KeyMapString>110: ROG</KeyMapString>
+                <KeyMapString>110: SHD</KeyMapString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <FromMappedKey>
                   <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
                 </FromMappedKey>
                 <ToMappedKey>
-                  <KeyMapString>110: ROG</KeyMapString>
+                  <KeyMapString>110: SHD</KeyMapString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
@@ -6556,7 +6559,7 @@ two virtualization actions that are sent to the _other_ active slots
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
-                <RelayGroupString>Class-ROG</RelayGroupString>
+                <RelayGroupString>Class-SHD</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Leave</Action>
@@ -6567,7 +6570,11 @@ two virtualization actions that are sent to the _other_ active slots
                 <RelayGroupString>Class-BER</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
-                <Action>Leave</Action>
+                <Action>Join</Action>
+                <RelayGroupString>IVU</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
                 <RelayGroupString>Tank</RelayGroupString>
               </MappedKeyAction>
             </Actions>
@@ -8076,15 +8083,15 @@ useful in the Avatar of War mission</Description>
                 <Target>ATG1</Target>
                 <Rect>
                   <Location>
-                    <X>2165</X>
-                    <Y>298</Y>
+                    <X>1725</X>
+                    <Y>273</Y>
                   </Location>
                   <Size>
                     <Width>205</Width>
                     <Height>700</Height>
                   </Size>
-                  <X>2165</X>
-                  <Y>298</Y>
+                  <X>1725</X>
+                  <Y>273</Y>
                   <Width>205</Width>
                   <Height>700</Height>
                 </Rect>
@@ -9620,14 +9627,14 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>all&amp;~(is2|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>885</X>
+                    <X>906</X>
                     <Y>992</Y>
                   </Location>
                   <Size>
                     <Width>135</Width>
                     <Height>26</Height>
                   </Size>
-                  <X>885</X>
+                  <X>906</X>
                   <Y>992</Y>
                   <Width>135</Width>
                   <Height>26</Height>
@@ -9799,14 +9806,14 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>all&amp;~(is2|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>885</X>
+                    <X>906</X>
                     <Y>992</Y>
                   </Location>
                   <Size>
                     <Width>135</Width>
                     <Height>26</Height>
                   </Size>
-                  <X>885</X>
+                  <X>906</X>
                   <Y>992</Y>
                   <Width>135</Width>
                   <Height>26</Height>
@@ -9898,17 +9905,17 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>165</X>
-                    <Y>847</Y>
+                    <X>166</X>
+                    <Y>856</Y>
                   </Location>
                   <Size>
-                    <Width>148</Width>
-                    <Height>27</Height>
+                    <Width>100</Width>
+                    <Height>30</Height>
                   </Size>
-                  <X>165</X>
-                  <Y>847</Y>
-                  <Width>148</Width>
-                  <Height>27</Height>
+                  <X>166</X>
+                  <Y>856</Y>
+                  <Width>100</Width>
+                  <Height>30</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -9981,17 +9988,17 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>all local&amp;~(ATG2|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>430</X>
-                    <Y>817</Y>
+                    <X>451</X>
+                    <Y>825</Y>
                   </Location>
                   <Size>
-                    <Width>148</Width>
-                    <Height>27</Height>
+                    <Width>100</Width>
+                    <Height>30</Height>
                   </Size>
-                  <X>430</X>
-                  <Y>817</Y>
-                  <Width>148</Width>
-                  <Height>27</Height>
+                  <X>451</X>
+                  <Y>825</Y>
+                  <Width>100</Width>
+                  <Height>30</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -10170,15 +10177,15 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>ATG2</Target>
                 <Rect>
                   <Location>
-                    <X>2165</X>
-                    <Y>298</Y>
+                    <X>1725</X>
+                    <Y>273</Y>
                   </Location>
                   <Size>
                     <Width>205</Width>
                     <Height>700</Height>
                   </Size>
-                  <X>2165</X>
-                  <Y>298</Y>
+                  <X>1725</X>
+                  <Y>273</Y>
                   <Width>205</Width>
                   <Height>700</Height>
                 </Rect>
@@ -12031,14 +12038,14 @@ old target viewer loc: 371,590</Description>
                 <Target>all local&amp;~(ATG3|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>885</X>
+                    <X>906</X>
                     <Y>965</Y>
                   </Location>
                   <Size>
                     <Width>135</Width>
                     <Height>26</Height>
                   </Size>
-                  <X>885</X>
+                  <X>906</X>
                   <Y>965</Y>
                   <Width>135</Width>
                   <Height>26</Height>
@@ -12212,14 +12219,14 @@ old target viewer loc: 371,590</Description>
                 <Target>all local&amp;~(ATG3|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>885</X>
+                    <X>906</X>
                     <Y>965</Y>
                   </Location>
                   <Size>
                     <Width>135</Width>
                     <Height>26</Height>
                   </Size>
-                  <X>885</X>
+                  <X>906</X>
                   <Y>965</Y>
                   <Width>135</Width>
                   <Height>26</Height>
@@ -12310,17 +12317,17 @@ old target viewer loc: 371,590</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>165</X>
-                    <Y>847</Y>
+                    <X>166</X>
+                    <Y>856</Y>
                   </Location>
                   <Size>
-                    <Width>148</Width>
-                    <Height>27</Height>
+                    <Width>100</Width>
+                    <Height>30</Height>
                   </Size>
-                  <X>165</X>
-                  <Y>847</Y>
-                  <Width>148</Width>
-                  <Height>27</Height>
+                  <X>166</X>
+                  <Y>856</Y>
+                  <Width>100</Width>
+                  <Height>30</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -12393,17 +12400,17 @@ old target viewer loc: 371,590</Description>
                 <Target>all local&amp;~(ATG3|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>580</X>
-                    <Y>817</Y>
+                    <X>551</X>
+                    <Y>825</Y>
                   </Location>
                   <Size>
-                    <Width>148</Width>
-                    <Height>27</Height>
+                    <Width>100</Width>
+                    <Height>30</Height>
                   </Size>
-                  <X>580</X>
-                  <Y>817</Y>
-                  <Width>148</Width>
-                  <Height>27</Height>
+                  <X>551</X>
+                  <Y>825</Y>
+                  <Width>100</Width>
+                  <Height>30</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -12531,15 +12538,15 @@ old target viewer loc: 371,590</Description>
                 <Target>ATG3</Target>
                 <Rect>
                   <Location>
-                    <X>2165</X>
-                    <Y>298</Y>
+                    <X>1725</X>
+                    <Y>273</Y>
                   </Location>
                   <Size>
                     <Width>205</Width>
                     <Height>700</Height>
                   </Size>
-                  <X>2165</X>
-                  <Y>298</Y>
+                  <X>1725</X>
+                  <Y>273</Y>
                   <Width>205</Width>
                   <Height>700</Height>
                 </Rect>
@@ -12601,7 +12608,7 @@ this key map contains slot specific mapped keys</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB04:02</MappedKeyString>
+                <MappedKeyString>HB04:01</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -12627,7 +12634,7 @@ this key map contains slot specific mapped keys</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB04:03</MappedKeyString>
+                <MappedKeyString>HB04:02</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -14127,14 +14134,14 @@ alt - 1920</Description>
                 <Target>all local&amp;~(ATG4|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>885</X>
+                    <X>906</X>
                     <Y>938</Y>
                   </Location>
                   <Size>
                     <Width>135</Width>
                     <Height>26</Height>
                   </Size>
-                  <X>885</X>
+                  <X>906</X>
                   <Y>938</Y>
                   <Width>135</Width>
                   <Height>26</Height>
@@ -14304,14 +14311,14 @@ alt - 1920</Description>
                 <Target>all local&amp;~(ATG4|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>885</X>
+                    <X>906</X>
                     <Y>938</Y>
                   </Location>
                   <Size>
                     <Width>135</Width>
                     <Height>26</Height>
                   </Size>
-                  <X>885</X>
+                  <X>906</X>
                   <Y>938</Y>
                   <Width>135</Width>
                   <Height>26</Height>
@@ -14398,17 +14405,17 @@ alt - 1920</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>165</X>
-                    <Y>847</Y>
+                    <X>166</X>
+                    <Y>856</Y>
                   </Location>
                   <Size>
-                    <Width>148</Width>
-                    <Height>27</Height>
+                    <Width>100</Width>
+                    <Height>30</Height>
                   </Size>
-                  <X>165</X>
-                  <Y>847</Y>
-                  <Width>148</Width>
-                  <Height>27</Height>
+                  <X>166</X>
+                  <Y>856</Y>
+                  <Width>100</Width>
+                  <Height>30</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -14481,17 +14488,17 @@ alt - 1920</Description>
                 <Target>all local&amp;~(ATG4|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>730</X>
-                    <Y>817</Y>
+                    <X>651</X>
+                    <Y>825</Y>
                   </Location>
                   <Size>
-                    <Width>148</Width>
-                    <Height>27</Height>
+                    <Width>100</Width>
+                    <Height>30</Height>
                   </Size>
-                  <X>730</X>
-                  <Y>817</Y>
-                  <Width>148</Width>
-                  <Height>27</Height>
+                  <X>651</X>
+                  <Y>825</Y>
+                  <Width>100</Width>
+                  <Height>30</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -14915,15 +14922,15 @@ alt - 1920</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>2165</X>
-                    <Y>298</Y>
+                    <X>1725</X>
+                    <Y>273</Y>
                   </Location>
                   <Size>
                     <Width>205</Width>
                     <Height>700</Height>
                   </Size>
-                  <X>2165</X>
-                  <Y>298</Y>
+                  <X>1725</X>
+                  <Y>273</Y>
                   <Width>205</Width>
                   <Height>700</Height>
                 </Rect>
@@ -16435,14 +16442,14 @@ old target viewer: 371,397</Description>
                 <Target>all local&amp;~(ATG5|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>885</X>
+                    <X>906</X>
                     <Y>911</Y>
                   </Location>
                   <Size>
                     <Width>135</Width>
                     <Height>26</Height>
                   </Size>
-                  <X>885</X>
+                  <X>906</X>
                   <Y>911</Y>
                   <Width>135</Width>
                   <Height>26</Height>
@@ -16613,14 +16620,14 @@ old target viewer: 371,397</Description>
                 <Target>all local&amp;~(ATG5|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>885</X>
+                    <X>906</X>
                     <Y>911</Y>
                   </Location>
                   <Size>
                     <Width>135</Width>
                     <Height>26</Height>
                   </Size>
-                  <X>885</X>
+                  <X>906</X>
                   <Y>911</Y>
                   <Width>135</Width>
                   <Height>26</Height>
@@ -16708,17 +16715,17 @@ old target viewer: 371,397</Description>
                 <IsSource>true</IsSource>
                 <Rect>
                   <Location>
-                    <X>165</X>
-                    <Y>847</Y>
+                    <X>166</X>
+                    <Y>856</Y>
                   </Location>
                   <Size>
-                    <Width>148</Width>
-                    <Height>27</Height>
+                    <Width>100</Width>
+                    <Height>30</Height>
                   </Size>
-                  <X>165</X>
-                  <Y>847</Y>
-                  <Width>148</Width>
-                  <Height>27</Height>
+                  <X>166</X>
+                  <Y>856</Y>
+                  <Width>100</Width>
+                  <Height>30</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -16791,17 +16798,17 @@ old target viewer: 371,397</Description>
                 <Target>all local&amp;~(ATG5|dxnothing)</Target>
                 <Rect>
                   <Location>
-                    <X>880</X>
-                    <Y>817</Y>
+                    <X>751</X>
+                    <Y>825</Y>
                   </Location>
                   <Size>
-                    <Width>148</Width>
-                    <Height>27</Height>
+                    <Width>100</Width>
+                    <Height>30</Height>
                   </Size>
-                  <X>880</X>
-                  <Y>817</Y>
-                  <Width>148</Width>
-                  <Height>27</Height>
+                  <X>751</X>
+                  <Y>825</Y>
+                  <Width>100</Width>
+                  <Height>30</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -16945,15 +16952,15 @@ old target viewer: 371,397</Description>
                 <Target>ATG5</Target>
                 <Rect>
                   <Location>
-                    <X>2165</X>
-                    <Y>298</Y>
+                    <X>1725</X>
+                    <Y>273</Y>
                   </Location>
                   <Size>
                     <Width>205</Width>
                     <Height>700</Height>
                   </Size>
-                  <X>2165</X>
-                  <Y>298</Y>
+                  <X>1725</X>
+                  <Y>273</Y>
                   <Width>205</Width>
                   <Height>700</Height>
                 </Rect>
@@ -17758,6 +17765,35 @@ executes Call of Xuzl and Spirit Call</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB04:10</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>100: Slot4</KeyMapString>
+                  <MappedKeyString>Combat: Burns</MappedKeyString>
+                </MappedKey>
+                <Enable>0</Enable>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <ActionTimer>
+                  <PoolName>Burns</PoolName>
+                  <Seconds>720</Seconds>
+                  <Enabled>true</Enabled>
+                </ActionTimer>
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>100: Slot4</KeyMapString>
+                  <MappedKeyString>Combat: Burns</MappedKeyString>
+                </MappedKey>
+                <Enable>1</Enable>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB04:11</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
@@ -17800,12 +17836,12 @@ executes Call of Xuzl and Spirit Call</Description>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <ActionTimer>
                   <PoolName>Burns</PoolName>
-                  <Seconds>720</Seconds>
+                  <Seconds>2025</Seconds>
                   <Enabled>true</Enabled>
                 </ActionTimer>
                 <Target>self</Target>
                 <MappedKey>
-                  <KeyMapString>100: Slot4</KeyMapString>
+                  <KeyMapString>110: BRD</KeyMapString>
                   <MappedKeyString>Combat: Burns</MappedKeyString>
                 </MappedKey>
                 <Enable>1</Enable>
@@ -17860,7 +17896,7 @@ executes Call of Xuzl and Spirit Call</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB04:06</MappedKeyString>
+                <MappedKeyString>HB04:03</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -17949,7 +17985,7 @@ executes Call of Xuzl and Spirit Call</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB04:08</MappedKeyString>
+                <MappedKeyString>HB04:05</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepStateAction">
                 <Target>self</Target>
@@ -18346,7 +18382,7 @@ executes Call of Xuzl and Spirit Call</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>useitem Radiant Hawk Harness</Text>
+                <Text>useitem Gnomish Hovering Transport</Text>
                 <FillClipboard>true</FillClipboard>
               </MappedKeyAction>
             </Actions>
@@ -26526,7 +26562,7 @@ Loads group members into the appropriate Leader or Member ATGs</Description>
             <Stump>true</Stump>
             <Actions>
               <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>ATGs LOADED --- SEND GROUP INVITES</Text>
+                <Text>ATGs LOADED</Text>
                 <Red>0</Red>
                 <Blue>0</Blue>
               </MappedKeyAction>
@@ -26643,7 +26679,7 @@ Loads group members into the appropriate Leader or Member ATGs</Description>
             <Stump>true</Stump>
             <Actions>
               <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>ATGs LOADED --- SEND GROUP INVITES</Text>
+                <Text>ATGs LOADED</Text>
                 <Red>0</Red>
                 <Blue>0</Blue>
               </MappedKeyAction>
@@ -26760,7 +26796,7 @@ Loads group members into the appropriate Leader or Member ATGs</Description>
             <Stump>true</Stump>
             <Actions>
               <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>SEND INVITES NOW</Text>
+                <Text>ATGs LOADED</Text>
                 <Red>0</Red>
                 <Blue>0</Blue>
               </MappedKeyAction>
@@ -26877,7 +26913,7 @@ Loads group members into the appropriate Leader or Member ATGs</Description>
             <Stump>true</Stump>
             <Actions>
               <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>SEND INVITES NOW</Text>
+                <Text>ATGs LOADED</Text>
                 <Red>0</Red>
                 <Blue>0</Blue>
               </MappedKeyAction>
@@ -44930,7 +44966,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Name>AltHealerBar</Name>
     <Description>old pos 763,752</Description>
     <X>2528</X>
-    <Y>810</Y>
+    <Y>690</Y>
     <BackgroundColor />
     <CellBorder_Color>
       <Red>255</Red>
@@ -45056,7 +45092,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Name>BufferBar</Name>
     <Description>old pos 611,752</Description>
     <X>2396</X>
-    <Y>810</Y>
+    <Y>690</Y>
     <BackgroundColor />
     <CellBorder_Color>
       <Red>255</Red>
@@ -45182,7 +45218,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Name>MainHealerBar</Name>
     <Description>old pos 643,752</Description>
     <X>2428</X>
-    <Y>810</Y>
+    <Y>690</Y>
     <ColumnWidth>100</ColumnWidth>
     <BackgroundColor />
     <CellBorder_Color>
@@ -47759,6 +47795,66 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <Actions />
       </MenuButton>
       <MenuButton>
+        <Actions />
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Movement: Duck</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Movement: Duck</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Movement: Duck</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Movement: Duck</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>Duck</Text>
+        <DisplayText>Duck</DisplayText>
+        <BackgroundColor>
+          <Red>255</Red>
+        </BackgroundColor>
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+      </MenuButton>
+      <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>ATG4</Target>
@@ -47820,51 +47916,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <Red>27</Red>
           <Green>9</Green>
           <Blue>227</Blue>
-        </BackgroundColor>
-      </MenuButton>
-      <MenuButton>
-        <Actions>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG2</Target>
-            <ConditionalKey>
-              <Key>Shift</Key>
-              <Code>42</Code>
-            </ConditionalKey>
-            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-            <MappedKeyString>Movement: Duck</MappedKeyString>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG3</Target>
-            <ConditionalKey>
-              <Key>Ctrl</Key>
-              <Code>29</Code>
-            </ConditionalKey>
-            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-            <MappedKeyString>Movement: Duck</MappedKeyString>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG4</Target>
-            <ConditionalKey>
-              <Key>Alt</Key>
-              <Code>56</Code>
-            </ConditionalKey>
-            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-            <MappedKeyString>Movement: Duck</MappedKeyString>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG5</Target>
-            <ConditionalKey>
-              <Key>nomodifiers</Key>
-              <Code>0</Code>
-            </ConditionalKey>
-            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-            <MappedKeyString>Movement: Duck</MappedKeyString>
-          </MappedKeyAction>
-        </Actions>
-        <Text>Duck</Text>
-        <DisplayText>Duck</DisplayText>
-        <BackgroundColor>
-          <Red>255</Red>
         </BackgroundColor>
       </MenuButton>
     </Buttons>
@@ -49736,6 +49787,43 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <DisplayText>Blanket of Forgetfulness</DisplayText>
       </MenuButton>
       <MenuButton>
+        <Actions />
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+      </MenuButton>
+      <MenuButton>
+        <Actions />
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG2</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:02</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>absc</Text>
+        <DisplayText>Abscond</DisplayText>
+        <BorderColor>
+          <Red>255</Red>
+        </BorderColor>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG2</Target>
+            <KeyMapString>199: Keybinds</KeyMapString>
+            <MappedKeyString>HB04:01</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>exds</Text>
+        <DisplayText>Exodus</DisplayText>
+        <BorderColor>
+          <Red>255</Red>
+        </BorderColor>
+      </MenuButton>
+      <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>ATG4</Target>
@@ -49821,34 +49909,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <Green>9</Green>
           <Blue>61</Blue>
         </BackgroundColor>
-      </MenuButton>
-      <MenuButton>
-        <Actions>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG2</Target>
-            <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:02</MappedKeyString>
-          </MappedKeyAction>
-        </Actions>
-        <Text>absc</Text>
-        <DisplayText>Abscond</DisplayText>
-        <BorderColor>
-          <Red>255</Red>
-        </BorderColor>
-      </MenuButton>
-      <MenuButton>
-        <Actions>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>ATG2</Target>
-            <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:01</MappedKeyString>
-          </MappedKeyAction>
-        </Actions>
-        <Text>exds</Text>
-        <DisplayText>Exodus</DisplayText>
-        <BorderColor>
-          <Red>255</Red>
-        </BorderColor>
       </MenuButton>
     </Buttons>
   </MenuButtonSet>
@@ -50783,6 +50843,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <Image>
           <ImageString>repeater off</ImageString>
         </Image>
+        <ImageHover />
         <ImagePressed>
           <ImageString>repeater pressed</ImageString>
         </ImagePressed>
@@ -52038,7 +52099,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Template>_Setup</Template>
     <ButtonLayout>_Setup_BS01</ButtonLayout>
     <HotkeyLayout />
-    <X>1150</X>
+    <X>1060</X>
     <Y>-15</Y>
   </Menu>
   <Menu>
@@ -52053,8 +52114,8 @@ manual usage of hotbar 1
     <Template>_Unified</Template>
     <ButtonLayout>_Unified01</ButtonLayout>
     <HotkeyLayout />
-    <X>430</X>
-    <Y>830</Y>
+    <X>451</X>
+    <Y>838</Y>
   </Menu>
   <Menu>
     <Name>_Unified02</Name>
@@ -52070,8 +52131,8 @@ burns
     <Template>_Unified</Template>
     <ButtonLayout>_Unified02</ButtonLayout>
     <HotkeyLayout />
-    <X>430</X>
-    <Y>870</Y>
+    <X>451</X>
+    <Y>878</Y>
   </Menu>
   <Menu>
     <Name>ISB42 - Formations</Name>
@@ -52122,6 +52183,6 @@ burns
     <Template>Toggles</Template>
     <ButtonLayout>ISB42 - Toggles</ButtonLayout>
     <HotkeyLayout />
-    <X>800</X>
+    <X>950</X>
   </Menu>
 </ISBoxerToolkitProfile>
