@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="5/9/2024 7:24:02 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="5/29/2024 8:48:06 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -6500,6 +6500,10 @@ two virtualization actions that are sent to the _other_ active slots
                 <Action>Join</Action>
                 <RelayGroupString>Tank</RelayGroupString>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>Slot1 PAL Persona Activated</Text>
+              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -6577,6 +6581,10 @@ two virtualization actions that are sent to the _other_ active slots
                 <Action>Join</Action>
                 <RelayGroupString>Tank</RelayGroupString>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>Slot1 SHD Persona Activated</Text>
+              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -6653,6 +6661,10 @@ two virtualization actions that are sent to the _other_ active slots
                 <Action>Leave</Action>
                 <RelayGroupString>Tank</RelayGroupString>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>Slot1 NEC Persona Activated</Text>
+              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -6728,6 +6740,10 @@ two virtualization actions that are sent to the _other_ active slots
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Leave</Action>
                 <RelayGroupString>Tank</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>Slot1 BER Persona Activated</Text>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -19730,6 +19746,34 @@ inquisitor's judgment</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Ability: Fish</Name>
+        <Description>execute fish social</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:10</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Ability: Forage</Name>
+        <Description>execute forage social</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:11</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Clicky ----------------------------------------------------------</Name>
         <Steps>
           <Step>
@@ -19738,10 +19782,358 @@ inquisitor's judgment</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Clicky: Familiar</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB08:03</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Clicky: FeatherHorn</Name>
+        <Description>multi-step mapped key. resets to step 1 10 minutes after first action
+
+1. clicks feather, holds at this step for 32 seconds
+2. clicks horn, holds at this step for 32 seconds
+3. popup text to let us know we're wasting our time</Description>
+        <ResetTimer>600</ResetTimer>
+        <ResetType>FromFirstPress</ResetType>
+        <Steps>
+          <Step>
+            <Stick>32</Stick>
+            <Stump>true</Stump>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB08:07</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>32</Stick>
+            <Stump>true</Stump>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB08:08</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>{CHARACTER} FEATHERHORN ON COOLDOWN</Text>
+                <Green>0</Green>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Combat --------------------------------------------------------</Name>
         <Steps>
           <Step>
             <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat Assist: Reset</Name>
+        <Description>reset small burns to step 1</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <MappedKey>
+                  <KeyMapString>110: SHD</KeyMapString>
+                  <MappedKeyString>Combat: Offensives</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: AFK Invis</Name>
+        <Description>stopsong + invis</Description>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>Combat: AFK Invis</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Burn Rotation</Name>
+        <ResetTimer>0.5</ResetTimer>
+        <ResetType>FromFirstPress</ResetType>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Z</Combo>
+                  <Key>
+                    <Key>Z</Key>
+                    <Code>44</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Burns</Name>
+        <Description>bigger burns
+
+valorous rage
+pureforge</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB02:02</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>100: Slot2</KeyMapString>
+                  <MappedKeyString>Combat: Offensives</MappedKeyString>
+                </MappedKey>
+                <Enable>0</Enable>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <ActionTimer>
+                  <PoolName>Burns</PoolName>
+                  <Seconds>1200</Seconds>
+                  <Enabled>true</Enabled>
+                </ActionTimer>
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>100: Slot1</KeyMapString>
+                  <MappedKeyString>Combat: Burns</MappedKeyString>
+                </MappedKey>
+                <Enable>1</Enable>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB02:07</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: PAL</KeyMapString>
+                  <MappedKeyString>Combat: Burns</MappedKeyString>
+                </MappedKey>
+                <Enable>0</Enable>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <ActionTimer>
+                  <PoolName>Burns</PoolName>
+                  <Seconds>1200</Seconds>
+                  <Enabled>true</Enabled>
+                </ActionTimer>
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>100: Slot1</KeyMapString>
+                  <MappedKeyString>Combat: Burns</MappedKeyString>
+                </MappedKey>
+                <Enable>1</Enable>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: DPS Rotation</Name>
+        <Description>multibind spam</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>X</Combo>
+                  <Key>
+                    <Key>X</Key>
+                    <Code>45</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Offensives</Name>
+        <Description>smaller burns
+
+spire
+inquisitor's judgment</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB02:06</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>100: Slot1</KeyMapString>
+                  <MappedKeyString>Combat: Offensives</MappedKeyString>
+                </MappedKey>
+                <Enable>0</Enable>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <ActionTimer>
+                  <PoolName>Offensives</PoolName>
+                  <Seconds>450</Seconds>
+                  <Enabled>true</Enabled>
+                </ActionTimer>
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>100: Slot1</KeyMapString>
+                  <MappedKeyString>Combat: Offensives</MappedKeyString>
+                </MappedKey>
+                <Enable>1</Enable>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB02:07</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: SHD</KeyMapString>
+                  <MappedKeyString>Combat: Offensives</MappedKeyString>
+                </MappedKey>
+                <Enable>0</Enable>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <ActionTimer>
+                  <PoolName>Offensives</PoolName>
+                  <Seconds>600</Seconds>
+                  <Enabled>true</Enabled>
+                </ActionTimer>
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: SHD</KeyMapString>
+                  <MappedKeyString>Combat: Offensives</MappedKeyString>
+                </MappedKey>
+                <Enable>1</Enable>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Reset</Name>
+        <Description>when combat ends, this resets our small burns back to step 1</Description>
+        <ResetTimer>5</ResetTimer>
+        <ResetType>FromLastPress</ResetType>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:12</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <MappedKey>
+                  <KeyMapString>110: SHD</KeyMapString>
+                  <MappedKeyString>Combat: Offensives</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:11</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: SaveUs</Name>
+        <Description>when it hits the fan, this may help</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB01:07</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: SHD</KeyMapString>
+                  <MappedKeyString>Combat: SaveUs</MappedKeyString>
+                </MappedKey>
+                <Enable>0</Enable>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepStateAction">
+                <ActionTimer>
+                  <PoolName>SHD-Combat</PoolName>
+                  <Seconds>730</Seconds>
+                  <Enabled>true</Enabled>
+                </ActionTimer>
+                <Target>self</Target>
+                <MappedKey>
+                  <KeyMapString>110: SHD</KeyMapString>
+                  <MappedKeyString>Combat: SaveUs</MappedKeyString>
+                </MappedKey>
+                <Enable>1</Enable>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>GroupIVU</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>DoubleInvis Popup Text action</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB04:04</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
           </Step>
         </Steps>
       </MappedKey>
@@ -44461,6 +44853,9 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
   </ActionTimerPool>
   <ActionTimerPool>
     <Name>ENC-AE-Slow</Name>
+  </ActionTimerPool>
+  <ActionTimerPool>
+    <Name>SHD-Combat</Name>
   </ActionTimerPool>
   <VariableKeystroke>
     <Name>Assist Main</Name>
