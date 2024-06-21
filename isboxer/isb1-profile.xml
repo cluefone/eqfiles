@@ -45361,7 +45361,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Name>AltHealerBar</Name>
     <Description>old pos 763,752</Description>
     <X>2528</X>
-    <Y>690</Y>
+    <Y>720</Y>
     <BackgroundColor />
     <CellBorder_Color>
       <Red>255</Red>
@@ -45487,7 +45487,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Name>BufferBar</Name>
     <Description>old pos 611,752</Description>
     <X>2396</X>
-    <Y>690</Y>
+    <Y>720</Y>
     <BackgroundColor />
     <CellBorder_Color>
       <Red>255</Red>
@@ -45613,7 +45613,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Name>MainHealerBar</Name>
     <Description>old pos 643,752</Description>
     <X>2428</X>
-    <Y>690</Y>
+    <Y>720</Y>
     <ColumnWidth>100</ColumnWidth>
     <BackgroundColor />
     <CellBorder_Color>
