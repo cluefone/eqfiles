@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="5/29/2024 8:48:06 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="6/19/2024 2:07:19 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -7187,7 +7187,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Target>CurrentBoxes</Target>
-                <Text>PALADIN IS MAIN ASSIST</Text>
+                <Text>SK IS MAIN ASSIST</Text>
                 <DurationMS>5000</DurationMS>
                 <FadeDurationMS>0</FadeDurationMS>
                 <Red>0</Red>
@@ -7358,7 +7358,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Target>CurrentBoxes</Target>
-                <Text>PALADIN IS MAIN TANK</Text>
+                <Text>SK IS MAIN TANK</Text>
                 <DurationMS>5000</DurationMS>
                 <FadeDurationMS>0</FadeDurationMS>
                 <Red>0</Red>
