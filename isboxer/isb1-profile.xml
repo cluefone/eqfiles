@@ -7173,7 +7173,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set ROG 2</Text>
+                <Text>grouproles set Chinger 2</Text>
                 <FillClipboard>true</FillClipboard>
               </MappedKeyAction>
             </Actions>
@@ -7344,7 +7344,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set ROG 1</Text>
+                <Text>grouproles set Chinger 1</Text>
                 <FillClipboard>true</FillClipboard>
               </MappedKeyAction>
             </Actions>
