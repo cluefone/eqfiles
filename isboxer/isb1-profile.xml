@@ -50152,9 +50152,69 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
             <MappedKeyString>Combat: Offensives</MappedKeyString>
           </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>CurrentBoxes</Target>
+            <ConditionalKey>
+              <Key>Caps Lock</Key>
+              <Code>58</Code>
+            </ConditionalKey>
+            <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+            <MappedKeyString>Combat: Offensives</MappedKeyString>
+          </MappedKeyAction>
         </Actions>
         <Text>Off</Text>
         <DisplayText>Offensives</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+            <MappedKeyString>Combat: Burns</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+            <MappedKeyString>Combat: Burns</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+            <MappedKeyString>Combat: Burns</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+            <MappedKeyString>Combat: Burns</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>CurrentBoxes</Target>
+            <ConditionalKey>
+              <Key>Caps Lock</Key>
+              <Code>58</Code>
+            </ConditionalKey>
+            <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+            <MappedKeyString>Combat: Burns</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>burns</Text>
+        <DisplayText>Burns</DisplayText>
       </MenuButton>
       <MenuButton>
         <Actions>
