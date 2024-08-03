@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="6/19/2024 2:07:19 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="8/3/2024 11:34:18 AM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -46702,9 +46702,11 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </MenuButton>
       <MenuButton>
         <Actions />
+        <DisplayText />
       </MenuButton>
       <MenuButton>
         <Actions />
+        <DisplayText />
       </MenuButton>
       <MenuButton>
         <Actions />
@@ -50720,9 +50722,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <Actions />
       </MenuButton>
       <MenuButton>
-        <Actions />
-      </MenuButton>
-      <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>ATG2</Target>
@@ -52360,6 +52359,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <NumButtons>24</NumButtons>
     <BackgroundImage />
     <BackgroundColor />
+    <Border>0</Border>
     <BorderColor>
       <Red>128</Red>
       <Green>128</Green>
