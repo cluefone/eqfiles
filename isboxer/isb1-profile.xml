@@ -52306,12 +52306,12 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       <Blue>128</Blue>
     </BorderColor>
     <frameSize>
-      <Width>393</Width>
-      <Height>40</Height>
+      <Width>441</Width>
+      <Height>52</Height>
     </frameSize>
     <buttonSize>
-      <Width>48</Width>
-      <Height>12</Height>
+      <Width>54</Width>
+      <Height>16</Height>
     </buttonSize>
     <buttonImage />
     <buttonImageHover />
