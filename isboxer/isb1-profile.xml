@@ -7868,16 +7868,16 @@ be mindful of long character names and the 14-character limit when stuffing comm
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>0</Y>
+                    <Y>270</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
-                  <Y>0</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>270</Y>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -7889,16 +7889,16 @@ be mindful of long character names and the 14-character limit when stuffing comm
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>348</Y>
+                    <Y>540</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
-                  <Y>348</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>540</Y>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -7910,16 +7910,16 @@ be mindful of long character names and the 14-character limit when stuffing comm
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>696</Y>
+                    <Y>810</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
-                  <Y>696</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>810</Y>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -7931,16 +7931,16 @@ be mindful of long character names and the 14-character limit when stuffing comm
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>1044</Y>
+                    <Y>1080</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
-                  <Y>1044</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>1080</Y>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -9346,13 +9346,13 @@ this is the default behavior</Description>
                     <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
                   <Y>0</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -9385,16 +9385,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>348</Y>
+                    <Y>540</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
-                  <Y>348</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>540</Y>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -9406,16 +9406,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>696</Y>
+                    <Y>810</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
-                  <Y>696</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>810</Y>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -9427,16 +9427,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>1044</Y>
+                    <Y>1080</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
-                  <Y>1044</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>1080</Y>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -11794,13 +11794,13 @@ this is the default behavior</Description>
                     <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
                   <Y>0</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -11812,16 +11812,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>348</Y>
+                    <Y>270</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
-                  <Y>348</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>270</Y>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -11854,16 +11854,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>696</Y>
+                    <Y>810</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
-                  <Y>696</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>810</Y>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -11875,16 +11875,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>1044</Y>
+                    <Y>1080</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
-                  <Y>1044</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>1080</Y>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -13944,13 +13944,13 @@ this is the default behavior</Description>
                     <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
                   <Y>0</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -13962,16 +13962,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>348</Y>
+                    <Y>270</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
-                  <Y>348</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>270</Y>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -13983,16 +13983,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>696</Y>
+                    <Y>540</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
-                  <Y>696</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>540</Y>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -14025,16 +14025,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>1044</Y>
+                    <Y>1080</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
-                  <Y>1044</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>1080</Y>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -16301,13 +16301,13 @@ this is the default behavior</Description>
                     <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
                   <Y>0</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -16319,16 +16319,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>348</Y>
+                    <Y>270</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
-                  <Y>348</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>270</Y>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -16340,16 +16340,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>696</Y>
+                    <Y>540</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
-                  <Y>696</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>540</Y>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -16361,16 +16361,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>1044</Y>
+                    <Y>810</Y>
                   </Location>
                   <Size>
-                    <Width>880</Width>
-                    <Height>348</Height>
+                    <Width>480</Width>
+                    <Height>270</Height>
                   </Size>
                   <X>0</X>
-                  <Y>1044</Y>
-                  <Width>880</Width>
-                  <Height>348</Height>
+                  <Y>810</Y>
+                  <Width>480</Width>
+                  <Height>270</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
