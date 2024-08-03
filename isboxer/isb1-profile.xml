@@ -49907,7 +49907,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>ATG4</Target>
             <KeyMapString>199: Keybinds</KeyMapString>
-            <MappedKeyString>HB04:07</MappedKeyString>
+            <MappedKeyString>HB04:04</MappedKeyString>
           </MappedKeyAction>
         </Actions>
         <Text>dirge</Text>
