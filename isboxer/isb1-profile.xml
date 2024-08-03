@@ -46661,7 +46661,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>other ATG5</Target>
+            <Target>ATG5</Target>
             <ConditionalKey>
               <Key>nomodifiers</Key>
               <Code>0</Code>
@@ -46670,7 +46670,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <MappedKeyString>Control: Activate Persona00</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>other ATG5</Target>
+            <Target>ATG5</Target>
             <ConditionalKey>
               <Key>Shift</Key>
               <Code>42</Code>
@@ -46679,7 +46679,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <MappedKeyString>Control: Activate Persona01</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>other ATG5</Target>
+            <Target>ATG5</Target>
             <ConditionalKey>
               <Key>Ctrl</Key>
               <Code>29</Code>
@@ -46688,7 +46688,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <MappedKeyString>Control: Activate Persona02</MappedKeyString>
           </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>other ATG5</Target>
+            <Target>ATG5</Target>
             <ConditionalKey>
               <Key>Alt</Key>
               <Code>56</Code>
