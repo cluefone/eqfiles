@@ -4120,6 +4120,10 @@
     <Name>AltHealer</Name>
   </RelayGroup>
   <RelayGroup>
+    <Name>AssistMain</Name>
+    <Description>Members will /assist main instead of the isb assist</Description>
+  </RelayGroup>
+  <RelayGroup>
     <Name>ATG1</Name>
   </RelayGroup>
   <RelayGroup>
@@ -4811,14 +4815,19 @@ reset MeleeAttack back to 1, move things like offensive stuff and burns back to 
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>other CurrentBoxes</Target>
+                <Target>(other CurrentBoxes)&amp;~AssistMain</Target>
                 <KeyMapString>199: General</KeyMapString>
                 <MappedKeyString>Control: Assist the MA</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>(other CurrentBoxes)&amp;AssistMain</Target>
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Main</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>CurrentBoxes</Target>
                 <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-                <MappedKeyString>Combat Assist: Reset</MappedKeyString>
+                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -5945,6 +5954,26 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
       </MappedKey>
       <MappedKey>
         <Name>Control: Show Menus</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: Slot - Assist ISB</Name>
+        <Description>Set slot to assist via internal ISB by leaving the AssistMain ATG
+
+this is the default behavior</Description>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: Slot - Assist Main</Name>
+        <Description>Set slot to /assist main by joining the AssistMain ATG</Description>
         <Steps>
           <Step>
             <Actions />
@@ -7509,6 +7538,48 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Control: Slot - Assist ISB</Name>
+        <Description>Set slot to assist via internal ISB by leaving the AssistMain ATG
+
+this is the default behavior</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>{SLOT} DISABLED - /ASSIST MAIN</Text>
+                <Green>0</Green>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: Slot - Assist Main</Name>
+        <Description>Set slot to /assist main by joining the AssistMain ATG</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>{SLOT} ENABLED - /ASSIST MAIN</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Control: Slot - Disable</Name>
         <Steps>
           <Step>
@@ -7706,6 +7777,10 @@ be mindful of long character names and the 14-character limit when stuffing comm
                 <Action>Leave</Action>
                 <RelayGroupString>FeatherHorn</RelayGroupString>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
+              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -7741,6 +7816,10 @@ be mindful of long character names and the 14-character limit when stuffing comm
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Leave</Action>
                 <RelayGroupString>FeatherHorn</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -8943,6 +9022,48 @@ this key map contains slot specific mapped keys</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Control: Slot - Assist ISB</Name>
+        <Description>Set slot to assist via internal ISB by leaving the AssistMain ATG
+
+this is the default behavior</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>{SLOT} DISABLED - /ASSIST MAIN</Text>
+                <Green>0</Green>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: Slot - Assist Main</Name>
+        <Description>Set slot to /assist main by joining the AssistMain ATG</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>{SLOT} ENABLED - /ASSIST MAIN</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Control: Slot - Disable</Name>
         <Steps>
           <Step>
@@ -9147,6 +9268,10 @@ this key map contains slot specific mapped keys</Description>
                 <Action>Leave</Action>
                 <RelayGroupString>ITC</RelayGroupString>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
+              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -9188,6 +9313,10 @@ this key map contains slot specific mapped keys</Description>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Leave</Action>
                 <RelayGroupString>ITC</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -11345,6 +11474,48 @@ this key map contains slot specific mapped keys</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Control: Slot - Assist ISB</Name>
+        <Description>Set slot to assist via internal ISB by leaving the AssistMain ATG
+
+this is the default behavior</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>{SLOT} DISABLED - /ASSIST MAIN</Text>
+                <Green>0</Green>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: Slot - Assist Main</Name>
+        <Description>Set slot to /assist main by joining the AssistMain ATG</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>{SLOT} ENABLED - /ASSIST MAIN</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Control: Slot - Disable</Name>
         <Steps>
           <Step>
@@ -11544,6 +11715,10 @@ this key map contains slot specific mapped keys</Description>
                 <Action>Leave</Action>
                 <RelayGroupString>ITC</RelayGroupString>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
+              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -11586,6 +11761,10 @@ this key map contains slot specific mapped keys</Description>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Leave</Action>
                 <RelayGroupString>ITC</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -13457,6 +13636,48 @@ this key map contains slot specific mapped keys</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Control: Slot - Assist ISB</Name>
+        <Description>Set slot to assist via internal ISB by leaving the AssistMain ATG
+
+this is the default behavior</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>{SLOT} DISABLED - /ASSIST MAIN</Text>
+                <Green>0</Green>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: Slot - Assist Main</Name>
+        <Description>Set slot to /assist main by joining the AssistMain ATG</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>{SLOT} ENABLED - /ASSIST MAIN</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Control: Slot - Disable</Name>
         <Steps>
           <Step>
@@ -13653,6 +13874,10 @@ this key map contains slot specific mapped keys</Description>
                 <Action>Leave</Action>
                 <RelayGroupString>Trackers</RelayGroupString>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
+              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -13686,6 +13911,10 @@ this key map contains slot specific mapped keys</Description>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Leave</Action>
                 <RelayGroupString>Trackers</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -15765,6 +15994,48 @@ this key map contains slot specific mapped keys</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Control: Slot - Assist ISB</Name>
+        <Description>Set slot to assist via internal ISB by leaving the AssistMain ATG
+
+this is the default behavior</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>{SLOT} DISABLED - /ASSIST MAIN</Text>
+                <Green>0</Green>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: Slot - Assist Main</Name>
+        <Description>Set slot to /assist main by joining the AssistMain ATG</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>all</Target>
+                <Text>{SLOT} ENABLED - /ASSIST MAIN</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Control: Slot - Disable</Name>
         <Steps>
           <Step>
@@ -15951,6 +16222,10 @@ this key map contains slot specific mapped keys</Description>
                 <Action>Leave</Action>
                 <RelayGroupString>PetOwners</RelayGroupString>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
+              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -15993,6 +16268,10 @@ this key map contains slot specific mapped keys</Description>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Leave</Action>
                 <RelayGroupString>PetOwners</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -17110,15 +17389,6 @@ the default virtualization is to the main class for the slot, and persona activa
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Combat Assist: Reset</Name>
-        <Description>reset small burns to step 1</Description>
-        <Steps>
-          <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Combat: 1</Name>
         <Steps>
           <Step>
@@ -17162,6 +17432,24 @@ the default virtualization is to the main class for the slot, and persona activa
       </MappedKey>
       <MappedKey>
         <Name>Combat: AoE</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Assist Main</Name>
+        <Description>for /assist main</Description>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Assist Reset</Name>
+        <Description>reset small burns to step 1</Description>
         <Steps>
           <Step>
             <Actions />
@@ -17612,7 +17900,7 @@ executes Call of Xuzl and Spirit Call</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Combat Assist: Reset</Name>
+        <Name>Combat: Assist Reset</Name>
         <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
@@ -17748,6 +18036,20 @@ executes Call of Xuzl and Spirit Call</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Spellcasting</KeyMapString>
                 <MappedKeyString>Stopsong</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Assist Main</Name>
+        <Description>for /assist main</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:06</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -18422,7 +18724,7 @@ executes Call of Xuzl and Spirit Call</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Combat Assist: Reset</Name>
+        <Name>Combat: Assist Reset</Name>
         <Steps>
           <Step>
             <Actions>
@@ -18653,6 +18955,20 @@ executes Call of Xuzl and Spirit Call</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB05:02</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Assist Main</Name>
+        <Description>for /assist main</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:06</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -19383,7 +19699,7 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Combat Assist: Reset</Name>
+        <Name>Combat: Assist Reset</Name>
         <Description>reset small burns to step 1</Description>
         <Steps>
           <Step>
@@ -19411,6 +19727,20 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
                 <Text>Combat: AFK Invis</Text>
                 <Red>0</Red>
                 <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Assist Main</Name>
+        <Description>for /assist main</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:06</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -19846,7 +20176,7 @@ inquisitor's judgment</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Combat Assist: Reset</Name>
+        <Name>Combat: Assist Reset</Name>
         <Description>reset small burns to step 1</Description>
         <Steps>
           <Step>
@@ -19874,6 +20204,20 @@ inquisitor's judgment</Description>
                 <Text>Combat: AFK Invis</Text>
                 <Red>0</Red>
                 <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Assist Main</Name>
+        <Description>for /assist main</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:06</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -20277,7 +20621,7 @@ inquisitor's judgment</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Combat Assist: Reset</Name>
+        <Name>Combat: Assist Reset</Name>
         <Steps>
           <Step>
             <Actions>
@@ -20586,6 +20930,20 @@ inquisitor's judgment</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB05:02</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Assist Main</Name>
+        <Description>for /assist main</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:06</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -21433,7 +21791,7 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Combat Assist: Reset</Name>
+        <Name>Combat: Assist Reset</Name>
         <Steps>
           <Step>
             <Actions>
@@ -21490,6 +21848,20 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
         <Steps>
           <Step>
             <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Assist Main</Name>
+        <Description>for /assist main</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:06</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
           </Step>
         </Steps>
       </MappedKey>
@@ -26554,6 +26926,10 @@ now all 'other' characters will know how to target the MA, and assist the MA whe
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Leave</Action>
                 <RelayGroupString>FeatherHorn</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Leave</Action>
+                <RelayGroupString>AssistMain</RelayGroupString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -48196,10 +48572,106 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <Actions />
       </MenuButton>
       <MenuButton>
-        <Actions />
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>CurrentBoxes</Target>
+            <ConditionalKey>
+              <Key>Caps Lock</Key>
+              <Code>58</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Control: Slot - Assist Main</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Control: Slot - Assist Main</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Control: Slot - Assist Main</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Control: Slot - Assist Main</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Control: Slot - Assist Main</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>EQ-MA</Text>
+        <DisplayText>Assist Main - Enable</DisplayText>
       </MenuButton>
       <MenuButton>
-        <Actions />
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>CurrentBoxes</Target>
+            <ConditionalKey>
+              <Key>Caps Lock</Key>
+              <Code>58</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Control: Slot - Assist ISB</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG2</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Control: Slot - Assist ISB</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG3</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Control: Slot - Assist ISB</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG4</Target>
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Control: Slot - Assist ISB</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>ATG5</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Control: Slot - Assist ISB</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>isb-ma</Text>
+        <DisplayText>Assist Main - Disable</DisplayText>
       </MenuButton>
       <MenuButton>
         <Actions>
