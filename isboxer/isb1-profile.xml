@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="8/3/2024 11:34:18 AM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="8/21/2024 10:09:18 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -1211,10 +1211,10 @@
       <string>010: 05 Box</string>
       <string>100: - CHARACTER TEMPLATE</string>
       <string>100: Slot1</string>
-      <string>100: Slot5</string>
       <string>100: Slot2</string>
-      <string>100: Slot4</string>
       <string>100: Slot3</string>
+      <string>100: Slot4</string>
+      <string>100: Slot5</string>
       <string>110: - CLASS TEMPLATE</string>
       <string>199: AA</string>
       <string>199: General</string>
@@ -2259,8 +2259,6 @@
       <MappedKeyString>Control: Activate Persona Default</MappedKeyString>
     </ExecuteOnLoad>
     <Name>Slot1</Name>
-    <AccountName />
-    <SubAccountName />
     <ServerName />
     <ActualName />
     <Game>EverQuest</Game>
@@ -2512,8 +2510,6 @@
       <MappedKeyString>Control: Activate Persona Default</MappedKeyString>
     </ExecuteOnLoad>
     <Name>Slot2</Name>
-    <AccountName />
-    <SubAccountName />
     <ServerName />
     <ActualName />
     <Game>EverQuest</Game>
@@ -2741,8 +2737,6 @@
       <MappedKeyString>Control: Activate Persona Default</MappedKeyString>
     </ExecuteOnLoad>
     <Name>Slot3</Name>
-    <AccountName />
-    <SubAccountName />
     <ServerName />
     <ActualName />
     <Game>EverQuest</Game>
@@ -2978,8 +2972,6 @@
       <MappedKeyString>Control: Activate Persona Default</MappedKeyString>
     </ExecuteOnLoad>
     <Name>Slot4</Name>
-    <AccountName />
-    <SubAccountName />
     <ServerName />
     <ActualName />
     <Game>EverQuest</Game>
@@ -3207,8 +3199,6 @@
       <MappedKeyString>Control: Activate Persona Default</MappedKeyString>
     </ExecuteOnLoad>
     <Name>Slot5</Name>
-    <AccountName />
-    <SubAccountName />
     <ServerName />
     <ActualName />
     <Game>EverQuest</Game>
@@ -17900,40 +17890,6 @@ executes Call of Xuzl and Spirit Call</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Combat: Assist Reset</Name>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <MappedKey>
-                  <KeyMapString>110: BRD</KeyMapString>
-                  <MappedKeyString>Combat: MeleeAttack</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <MappedKey>
-                  <KeyMapString>110: BRD</KeyMapString>
-                  <MappedKeyString>Combat: Offensives</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <MappedKey>
-                  <KeyMapString>110: BRD</KeyMapString>
-                  <MappedKeyString>Invisibility: Selo - Clouding</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Combat: 1</Name>
         <Steps>
           <Step>
@@ -18050,6 +18006,40 @@ executes Call of Xuzl and Spirit Call</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB11:06</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Assist Reset</Name>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <MappedKey>
+                  <KeyMapString>110: BRD</KeyMapString>
+                  <MappedKeyString>Combat: MeleeAttack</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <MappedKey>
+                  <KeyMapString>110: BRD</KeyMapString>
+                  <MappedKeyString>Combat: Offensives</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <MappedKey>
+                  <KeyMapString>110: BRD</KeyMapString>
+                  <MappedKeyString>Invisibility: Selo - Clouding</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -18724,23 +18714,6 @@ executes Call of Xuzl and Spirit Call</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Combat: Assist Reset</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <MappedKey>
-                  <KeyMapString>110: ENC</KeyMapString>
-                  <MappedKeyString>Combat: MeleeAttack</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Combat: 1</Name>
         <Steps>
           <Step>
@@ -18969,6 +18942,23 @@ executes Call of Xuzl and Spirit Call</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB11:06</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Assist Reset</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <MappedKey>
+                  <KeyMapString>110: ENC</KeyMapString>
+                  <MappedKeyString>Combat: MeleeAttack</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -19699,30 +19689,15 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Combat: Assist Reset</Name>
-        <Description>reset small burns to step 1</Description>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <MappedKey>
-                  <KeyMapString>110: PAL</KeyMapString>
-                  <MappedKeyString>Combat: Offensives</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Combat: AFK Invis</Name>
         <Description>stopsong + invis</Description>
-        <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
             <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB04:02</MappedKeyString>
+              </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Text>Combat: AFK Invis</Text>
                 <Red>0</Red>
@@ -19741,6 +19716,24 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB11:06</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Assist Reset</Name>
+        <Description>reset small burns to step 1</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <MappedKey>
+                  <KeyMapString>110: PAL</KeyMapString>
+                  <MappedKeyString>Combat: Offensives</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -20176,24 +20169,6 @@ inquisitor's judgment</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Combat: Assist Reset</Name>
-        <Description>reset small burns to step 1</Description>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <MappedKey>
-                  <KeyMapString>110: SHD</KeyMapString>
-                  <MappedKeyString>Combat: Offensives</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Combat: AFK Invis</Name>
         <Description>stopsong + invis</Description>
         <Mode>OnPressAndRelease</Mode>
@@ -20218,6 +20193,24 @@ inquisitor's judgment</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB11:06</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Assist Reset</Name>
+        <Description>reset small burns to step 1</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <MappedKey>
+                  <KeyMapString>110: SHD</KeyMapString>
+                  <MappedKeyString>Combat: Offensives</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -20621,31 +20614,6 @@ inquisitor's judgment</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Combat: Assist Reset</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <MappedKey>
-                  <KeyMapString>110: SHM</KeyMapString>
-                  <MappedKeyString>Combat: MeleeAttack</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <MappedKey>
-                  <KeyMapString>110: SHM</KeyMapString>
-                  <MappedKeyString>Combat: Offensives</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Combat: 1</Name>
         <Steps>
           <Step>
@@ -20926,6 +20894,10 @@ inquisitor's judgment</Description>
         <Description>stopsong + invis</Description>
         <Steps>
           <Step>
+            <Actions />
+          </Step>
+          <Step>
+            <Stick>0.2</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
@@ -20944,6 +20916,31 @@ inquisitor's judgment</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB11:06</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Assist Reset</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <MappedKey>
+                  <KeyMapString>110: SHM</KeyMapString>
+                  <MappedKeyString>Combat: MeleeAttack</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <MappedKey>
+                  <KeyMapString>110: SHM</KeyMapString>
+                  <MappedKeyString>Combat: Offensives</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -21791,31 +21788,6 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Combat: Assist Reset</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <MappedKey>
-                  <KeyMapString>110: WIZ</KeyMapString>
-                  <MappedKeyString>Combat: MeleeAttack</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <MappedKey>
-                  <KeyMapString>110: WIZ</KeyMapString>
-                  <MappedKeyString>Combat: Offensives</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Combat: 1</Name>
         <Steps>
           <Step>
@@ -21860,6 +21832,31 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB11:06</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Assist Reset</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <MappedKey>
+                  <KeyMapString>110: WIZ</KeyMapString>
+                  <MappedKeyString>Combat: MeleeAttack</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <MappedKey>
+                  <KeyMapString>110: WIZ</KeyMapString>
+                  <MappedKeyString>Combat: Offensives</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -46176,57 +46173,24 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>CurrentBoxes</Target>
-            <ConditionalKey>
-              <Key>nomodifiers</Key>
-              <Code>0</Code>
-            </ConditionalKey>
-            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-            <MappedKeyString>Control: VFX - Setup</MappedKeyString>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>CurrentBoxes</Target>
-            <ConditionalKey>
-              <Key>Shift</Key>
-              <Code>42</Code>
-            </ConditionalKey>
-            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-            <MappedKeyString>Control: VFX - Setup-2256</MappedKeyString>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>CurrentBoxes</Target>
-            <ConditionalKey>
-              <Key>Ctrl</Key>
-              <Code>29</Code>
-            </ConditionalKey>
-            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-            <MappedKeyString>Control: VFX - Setup-1920</MappedKeyString>
+            <Target>all&amp;~dxnothing</Target>
+            <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+            <MappedKeyString>Ability: Forage</MappedKeyString>
           </MappedKeyAction>
         </Actions>
-        <Text>VFX</Text>
-        <DisplayText>VFX</DisplayText>
+        <Text>FOR</Text>
+        <DisplayText>Forage</DisplayText>
       </MenuButton>
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <ConditionalKey>
-              <Key>Shift</Key>
-              <Code>42</Code>
-            </ConditionalKey>
-            <KeyMapString>199: General</KeyMapString>
-            <MappedKeyString>Control: VFX - dxNothing-1mon</MappedKeyString>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <ConditionalKey>
-              <Key>Alt</Key>
-              <Code>56</Code>
-            </ConditionalKey>
-            <KeyMapString>199: General</KeyMapString>
-            <MappedKeyString>Control: VFX - dxNothing-2mon</MappedKeyString>
+            <Target>all&amp;~dxnothing</Target>
+            <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+            <MappedKeyString>Ability: Fish</MappedKeyString>
           </MappedKeyAction>
         </Actions>
-        <Text>dxN</Text>
-        <DisplayText>dxNothing</DisplayText>
+        <Text>FISH</Text>
+        <DisplayText>Fish</DisplayText>
       </MenuButton>
       <MenuButton>
         <Actions>
@@ -46461,24 +46425,57 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>all&amp;~dxnothing</Target>
-            <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-            <MappedKeyString>Ability: Forage</MappedKeyString>
+            <Target>CurrentBoxes</Target>
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Control: VFX - Setup</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>CurrentBoxes</Target>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Control: VFX - Setup-2256</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <Target>CurrentBoxes</Target>
+            <ConditionalKey>
+              <Key>Ctrl</Key>
+              <Code>29</Code>
+            </ConditionalKey>
+            <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+            <MappedKeyString>Control: VFX - Setup-1920</MappedKeyString>
           </MappedKeyAction>
         </Actions>
-        <Text>FOR</Text>
-        <DisplayText>Forage</DisplayText>
+        <Text>VFX</Text>
+        <DisplayText>VFX</DisplayText>
       </MenuButton>
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <Target>all&amp;~dxnothing</Target>
-            <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-            <MappedKeyString>Ability: Fish</MappedKeyString>
+            <ConditionalKey>
+              <Key>Shift</Key>
+              <Code>42</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Control: VFX - dxNothing-1mon</MappedKeyString>
+          </MappedKeyAction>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <ConditionalKey>
+              <Key>Alt</Key>
+              <Code>56</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Control: VFX - dxNothing-2mon</MappedKeyString>
           </MappedKeyAction>
         </Actions>
-        <Text>FISH</Text>
-        <DisplayText>Fish</DisplayText>
+        <Text>dxN</Text>
+        <DisplayText>dxNothing</DisplayText>
       </MenuButton>
       <MenuButton>
         <Actions>
