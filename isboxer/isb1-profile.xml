@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="8/21/2024 10:34:57 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="8/22/2024 9:15:10 AM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -2737,6 +2737,8 @@
       <MappedKeyString>Control: Activate Persona Default</MappedKeyString>
     </ExecuteOnLoad>
     <Name>Slot3</Name>
+    <AccountName />
+    <SubAccountName />
     <ServerName />
     <ActualName />
     <Game>EverQuest</Game>
@@ -7860,16 +7862,16 @@ be mindful of long character names and the 14-character limit when stuffing comm
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>270</Y>
+                    <Y>168</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
-                  <Y>270</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Y>168</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -7881,16 +7883,16 @@ be mindful of long character names and the 14-character limit when stuffing comm
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>540</Y>
+                    <Y>474</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
-                  <Y>540</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Y>474</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -7902,16 +7904,16 @@ be mindful of long character names and the 14-character limit when stuffing comm
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>810</Y>
+                    <Y>780</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
-                  <Y>810</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Y>780</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -7923,16 +7925,16 @@ be mindful of long character names and the 14-character limit when stuffing comm
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>1080</Y>
+                    <Y>1086</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
-                  <Y>1080</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Y>1086</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -9338,13 +9340,13 @@ this is the default behavior</Description>
                     <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
                   <Y>0</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -9377,16 +9379,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>540</Y>
+                    <Y>474</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
-                  <Y>540</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Y>474</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -9398,16 +9400,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>810</Y>
+                    <Y>780</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
-                  <Y>810</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Y>780</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -9419,16 +9421,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>1080</Y>
+                    <Y>1086</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
-                  <Y>1080</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Y>1086</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -11786,13 +11788,13 @@ this is the default behavior</Description>
                     <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
                   <Y>0</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -11804,16 +11806,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>270</Y>
+                    <Y>306</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
-                  <Y>270</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Y>306</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -11846,16 +11848,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>810</Y>
+                    <Y>780</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
-                  <Y>810</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Y>780</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -11867,16 +11869,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>1080</Y>
+                    <Y>1086</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
-                  <Y>1080</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Y>1086</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -13936,13 +13938,13 @@ this is the default behavior</Description>
                     <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
                   <Y>0</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -13954,16 +13956,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>270</Y>
+                    <Y>306</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
-                  <Y>270</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Y>306</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -13975,16 +13977,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>540</Y>
+                    <Y>612</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
-                  <Y>540</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Y>612</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -14017,16 +14019,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>1080</Y>
+                    <Y>1086</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
-                  <Y>1080</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Y>1086</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -16293,13 +16295,13 @@ this is the default behavior</Description>
                     <Y>0</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
                   <Y>0</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -16311,16 +16313,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>270</Y>
+                    <Y>306</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
-                  <Y>270</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Y>306</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -16332,16 +16334,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>540</Y>
+                    <Y>612</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
-                  <Y>540</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Y>612</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -16353,16 +16355,16 @@ this is the default behavior</Description>
                 <Rect>
                   <Location>
                     <X>0</X>
-                    <Y>810</Y>
+                    <Y>918</Y>
                   </Location>
                   <Size>
-                    <Width>480</Width>
-                    <Height>270</Height>
+                    <Width>544</Width>
+                    <Height>306</Height>
                   </Size>
                   <X>0</X>
-                  <Y>810</Y>
-                  <Width>480</Width>
-                  <Height>270</Height>
+                  <Y>918</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
                 </Rect>
                 <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
@@ -36254,6 +36256,1194 @@ for sanity, the keystroke actions here should mirror the in-game keybinds for ea
     </Mappings>
   </KeyMap>
   <KeyMap>
+    <Name>199: Keybinds (Blank)</Name>
+    <Mappings>
+      <MappedKey>
+        <Name>HB01:01</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB01:02</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB01:03</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB01:04</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB01:05</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB01:06</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB01:07</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB01:08</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB01:09</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB01:10</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB01:11</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB01:12</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB02:01</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB02:02</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB02:03</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB02:04</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB02:05</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB02:06</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB02:07</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB02:08</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB02:09</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB02:10</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB02:11</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB02:12</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB03:01</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB03:02</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB03:03</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB03:04</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB03:05</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB03:06</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB03:07</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB03:08</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB03:09</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB03:10</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB03:11</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB03:12</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB04:01</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB04:02</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB04:03</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB04:04</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB04:05</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB04:06</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB04:07</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB04:08</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB04:09</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB04:10</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB04:11</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB04:12</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB05:01</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB05:02</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB05:03</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB05:04</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB05:05</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB05:06</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB05:07</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB05:08</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB05:09</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB05:10</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB05:11</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB05:12</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:01</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:02</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:03</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:04</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:05</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:06</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:07</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:08</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:09</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:10</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:11</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB06:12</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB07:01</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB07:02</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB07:03</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB07:04</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB07:05</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB07:06</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB07:07</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB07:08</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB07:09</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB07:10</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB07:11</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB07:12</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB08:01</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB08:02</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB08:03</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB08:04</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB08:05</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB08:06</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB08:07</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB08:08</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB08:09</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB08:10</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB08:11</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB08:12</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB09:01</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB09:02</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB09:03</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB09:04</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB09:05</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB09:06</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB09:07</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB09:08</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB09:09</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB09:10</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB09:11</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB09:12</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB10:01</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB10:02</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB10:03</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB10:04</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB10:05</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB10:06</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB10:07</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB10:08</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB10:09</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB10:10</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB10:11</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB10:12</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB11:01</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB11:02</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB11:03</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB11:04</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB11:05</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB11:06</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB11:07</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB11:08</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB11:09</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB11:10</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB11:11</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>HB11:12</Name>
+        <ResetTimer>0</ResetTimer>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+    </Mappings>
+  </KeyMap>
+  <KeyMap>
     <Name>199: Spellcasting</Name>
     <Description>A list of Mapped Keys to cast spells via /cast or stop an in-progress cast/song</Description>
     <Mappings>
@@ -45802,7 +46992,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Category>Targeting</Category>
     <SubCategory>Per-Slot targeting</SubCategory>
     <Description>This can be configured individually for each Slot in your Character Set, in order to target the Character in Slot 6, in the game. This is useful for being able to easily Auto-Follow or Assist each window, for games that cannot easily do those things on a per-Character basis.</Description>
-    <DefaultValue />
   </VariableKeystroke>
   <VariableKeystroke>
     <Name>Assist Slot 1</Name>
