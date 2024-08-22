@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="8/21/2024 10:09:18 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="8/21/2024 10:34:57 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -2972,6 +2972,8 @@
       <MappedKeyString>Control: Activate Persona Default</MappedKeyString>
     </ExecuteOnLoad>
     <Name>Slot4</Name>
+    <AccountName />
+    <SubAccountName />
     <ServerName />
     <ActualName />
     <Game>EverQuest</Game>
@@ -25130,6 +25132,21 @@ called from the Unified Menu buttons</Description>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
+                  <Combo>Ctrl+Shift+Alt+1</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>1</Key>
+                    <Code>2</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
                   <Combo>/</Combo>
                   <Key>
                     <Key>/</Key>
@@ -25208,6 +25225,21 @@ called from the Unified Menu buttons</Description>
         <Name>Combat: xtar 02</Name>
         <Steps>
           <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+Shift+Alt+2</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>2</Key>
+                    <Code>3</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
@@ -25292,6 +25324,21 @@ called from the Unified Menu buttons</Description>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
+                  <Combo>Ctrl+Shift+Alt+3</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>3</Key>
+                    <Code>4</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
                   <Combo>/</Combo>
                   <Key>
                     <Key>/</Key>
@@ -25370,6 +25417,21 @@ called from the Unified Menu buttons</Description>
         <Name>Combat: xtar 04</Name>
         <Steps>
           <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+Shift+Alt+4</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>4</Key>
+                    <Code>5</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
@@ -25454,6 +25516,21 @@ called from the Unified Menu buttons</Description>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
+                  <Combo>Ctrl+Shift+Alt+5</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>5</Key>
+                    <Code>6</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
                   <Combo>/</Combo>
                   <Key>
                     <Key>/</Key>
@@ -25532,6 +25609,21 @@ called from the Unified Menu buttons</Description>
         <Name>Combat: xtar 06</Name>
         <Steps>
           <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+Shift+Alt+6</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>6</Key>
+                    <Code>7</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
@@ -25616,6 +25708,21 @@ called from the Unified Menu buttons</Description>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
+                  <Combo>Ctrl+Shift+Alt+7</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>7</Key>
+                    <Code>8</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
                   <Combo>/</Combo>
                   <Key>
                     <Key>/</Key>
@@ -25694,6 +25801,21 @@ called from the Unified Menu buttons</Description>
         <Name>Combat: xtar 08</Name>
         <Steps>
           <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+Shift+Alt+8</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>8</Key>
+                    <Code>9</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
@@ -25778,6 +25900,21 @@ called from the Unified Menu buttons</Description>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
+                  <Combo>Ctrl+Shift+Alt+9</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>9</Key>
+                    <Code>10</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
                   <Combo>/</Combo>
                   <Key>
                     <Key>/</Key>
@@ -25856,6 +25993,21 @@ called from the Unified Menu buttons</Description>
         <Name>Combat: xtar 10</Name>
         <Steps>
           <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+Shift+Alt+0</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>0</Key>
+                    <Code>11</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
@@ -25949,6 +26101,21 @@ called from the Unified Menu buttons</Description>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
+                  <Combo>Ctrl+Shift+Alt+-</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>-</Key>
+                    <Code>12</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
                   <Combo>/</Combo>
                   <Key>
                     <Key>/</Key>
@@ -26036,6 +26203,21 @@ called from the Unified Menu buttons</Description>
         <Name>Combat: xtar 12</Name>
         <Steps>
           <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+Shift+Alt+=</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>=</Key>
+                    <Code>13</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
@@ -26129,6 +26311,21 @@ called from the Unified Menu buttons</Description>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
+                  <Combo>Ctrl+Shift+Alt+[</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>[</Key>
+                    <Code>26</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
                   <Combo>/</Combo>
                   <Key>
                     <Key>/</Key>
@@ -26216,6 +26413,21 @@ called from the Unified Menu buttons</Description>
         <Name>Combat: xtar 14</Name>
         <Steps>
           <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+Shift+Alt+]</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>]</Key>
+                    <Code>27</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
@@ -26309,6 +26521,21 @@ called from the Unified Menu buttons</Description>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
+                  <Combo>Ctrl+Shift+Alt+/</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>/</Key>
+                    <Code>53</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
                   <Combo>/</Combo>
                   <Key>
                     <Key>/</Key>
@@ -26396,6 +26623,21 @@ called from the Unified Menu buttons</Description>
         <Name>Combat: xtar 16</Name>
         <Steps>
           <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+Shift+Alt+F5</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>F5</Key>
+                    <Code>63</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
@@ -26489,6 +26731,21 @@ called from the Unified Menu buttons</Description>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
+                  <Combo>Ctrl+Shift+Alt+F4</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>F4</Key>
+                    <Code>62</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
                   <Combo>/</Combo>
                   <Key>
                     <Key>/</Key>
@@ -26576,6 +26833,21 @@ called from the Unified Menu buttons</Description>
         <Name>Combat: xtar 18</Name>
         <Steps>
           <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+Shift+Alt+F3</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>F3</Key>
+                    <Code>61</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
@@ -26669,6 +26941,21 @@ called from the Unified Menu buttons</Description>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
+                  <Combo>Ctrl+Shift+Alt+F2</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>F2</Key>
+                    <Code>60</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
                   <Combo>/</Combo>
                   <Key>
                     <Key>/</Key>
@@ -26756,6 +27043,21 @@ called from the Unified Menu buttons</Description>
         <Name>Combat: xtar 20</Name>
         <Steps>
           <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="Keystroke">
+                <Combo>
+                  <Combo>Ctrl+Shift+Alt+F1</Combo>
+                  <Modifiers>Ctrl Shift Alt</Modifiers>
+                  <Key>
+                    <Key>F1</Key>
+                    <Code>59</Code>
+                  </Key>
+                </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
