@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="8/23/2024 11:40:27 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="8/24/2024 1:00:40 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -4324,15 +4324,12 @@
       </MappedKey>
       <MappedKey>
         <Name>Clicky: FeatherHorn</Name>
-        <Description>clunky mechanism to achieve a Feather and Horn rotation on characters that have them
+        <Description>clunky mechanism to achieve a Feather and Horn rotation
 
-add characters to the FeatherHorn ATG to enable participation
-
-click goes in slot order to a union of FeatherHorn + CurrentBoxes, then advances everyone forward a step.
-
-step advancement is held 33s to avoid wasted clicks
-
-finally, 600s reset brings everyone back to step 1, even if some clicks aren't used
+- add characters to the FeatherHorn ATG to enable participation
+- used in slot order to a union of FeatherHorn + CurrentBoxes, then advances everyone forward a step. all feathers go first, then horns.
+- step advancement is held 33s to avoid wasted clicks
+- a 600s timer resets all back to step 1, even if some clicks aren't used
 
 ToDo: figure out how to more gracefully recover from a misfire. ISB assumes success, but it's possible that the keystroke did nothing because the EQ character was stunned or casting a spell, and didn't actually click the item.
 </Description>
@@ -4569,7 +4566,7 @@ ToDo: figure out how to more gracefully recover from a misfire. ISB assumes succ
 
 shm: malo, slow
 wiz: eradicate magic, lower element
-bard: stopsong
+bard: stopsong, epic/fe
 enc: tash, slow</Description>
         <Combo>
           <Combo>Num 1</Combo>
@@ -4595,7 +4592,7 @@ enc: tash, slow</Description>
         <Description>adps
 
 shm: epic, roar, start heals
-brd: epic, bp, qt, etc..</Description>
+brd: bp, qt, etc..</Description>
         <Combo>
           <Combo>Num 2</Combo>
           <Key>
@@ -4643,8 +4640,8 @@ enc - dot social</Description>
       </MappedKey>
       <MappedKey>
         <Name>Combat: 4</Name>
-        <Description>shm heals and quick dots
-
+        <Description>
+shm - heals and dots
 brd - melody</Description>
         <Combo>
           <Combo>Num 4</Combo>
@@ -4793,10 +4790,10 @@ brd - pet swarm</Description>
         <Name>Combat: Load Combat</Name>
         <Description>combat initiation
 
-Assist the MA (character slot active when pressing this button)
+Assist the ISB driver (or EQ MA) depending on ATG membership
 Assist Reset (resets things back to 1 after a mob dies)
 
-Auto attack automagically turns off when a mob dies, but ISB has no way to know about that. we reset to an attack off state to avoid a clumsy double keypress on our next fight
+EQ automagically stops attacking when the target dies, but ISB has no way to know this. we reset attack off state to off, avoiding a confusion on the next fight
 
 reset MeleeAttack back to 1, move things like offensive stuff and burns back to 1</Description>
         <Combo>
@@ -4895,9 +4892,9 @@ bard - cacophony, bladed song, dance of blades</Description>
       </MappedKey>
       <MappedKey>
         <Name>Combat: Reset</Name>
-        <Description>when a mob dies, this hotkey will shut everything down
+        <Description>when a mob dies, this hotkey can stop all activity
 
-turn off attack, brd double invis
+turn off attack, brd double invis, /pet back
 reset offensives back to 1
 (ToDo: redundant here, if the next assist will do that anyway?)
 
@@ -4924,9 +4921,9 @@ forage</Description>
       </MappedKey>
       <MappedKey>
         <Name>Combat: SaveUs</Name>
-        <Description>initial ideas on easy ways to keep us all alive with a single keypress
+        <Description>initial ideas on easy ways to keep the group alive with a single keypress
 
-if i remember to hit it in time
+if one remembers to use it before it's too late
 </Description>
         <Combo>
           <Combo>Page Down</Combo>
@@ -4949,6 +4946,7 @@ if i remember to hit it in time
       </MappedKey>
       <MappedKey>
         <Name>Combat: Shout/Bellow</Name>
+        <Description>brd - execute vainglorious shout / boastful bellow</Description>
         <Combo>
           <Combo>G600-G17</Combo>
           <Key>
@@ -5279,7 +5277,7 @@ follow the slot that hits this button
                 <MappedKeyString>Movement: Follow</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <MappedKeyString>Show Tracking</MappedKeyString>
+                <MappedKeyString />
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -5380,8 +5378,11 @@ follow the slot that hits this button
       <MappedKey>
         <Name>Focus Slot</Name>
         <Description>Focus Slot is called when switching to a slot
-Focus Slot XX can be called instead if a slot needs something custom
-</Description>
+Focus Slot XX can be enabled and used if a slot needs something custom
+
+sets slot as MA and the Assist/Follow target
+loads healing/buffing clickbar, if SHM is active
+rotates VFX viewers, if active</Description>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -5500,13 +5501,6 @@ Focus Slot XX can be called instead if a slot needs something custom
       </MappedKey>
       <MappedKey>
         <Name>Focus Slot</Name>
-        <Description>Focus Slot is called when switching to a slot
-Focus Slot XX can be enabled and used if a slot needs something custom
-
-sets slot as MA and the Assist/Follow target
-loads healing/buffing clickbar, if SHM is active
-rotates VFX viewers, if active
-</Description>
         <Steps>
           <Step>
             <Actions>
@@ -5737,8 +5731,14 @@ this key map contains slot specific mapped keys</Description>
       <MappedKey>
         <Name>Control: Activate Me</Name>
         <Description>called on switch to a slot
+executed by 010: - SESSIONS TEMPLATE -&gt; Focus Slot
 
-executed by 010: - SESSIONS TEMPLATE -&gt; Focus Slot</Description>
+virtualization actions that are sent to the _other_ active slots
+#1 - tells the others how to assist this slot
+#2 - tells the others how to target this slot
+#3 - tells the others how to follow this slot
+#4 - used by clickbar healing to target this slot
+</Description>
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -6259,13 +6259,6 @@ this key map contains slot specific mapped keys</Description>
       </MappedKey>
       <MappedKey>
         <Name>Control: Activate Me</Name>
-        <Description>executed when switching to this character's window
-
-virtualization actions that are sent to the _other_ active slots
-#1 - tells the others how to assist this slot
-#2 - tells the others how to target this slot
-#3 - tells the others how to follow this slot
-#4 - used by clickbar healing to target this slot</Description>
         <Steps>
           <Step>
             <Actions>
@@ -6365,7 +6358,6 @@ virtualization actions that are sent to the _other_ active slots
       </MappedKey>
       <MappedKey>
         <Name>Control: Activate Persona Default</Name>
-        <Description>Default Persona</Description>
         <Steps>
           <Step>
             <Actions>
@@ -6451,7 +6443,7 @@ virtualization actions that are sent to the _other_ active slots
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot1</KeyMapString>
-                  <MappedKeyString>Control: Set Me as MA00</MappedKeyString>
+                  <MappedKeyString>slot1-Control: Set Me as MA00</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
@@ -6461,7 +6453,7 @@ virtualization actions that are sent to the _other_ active slots
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot1</KeyMapString>
-                  <MappedKeyString>Control: Set Me as MT00</MappedKeyString>
+                  <MappedKeyString>slot1-Control: Set Me as MT00</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
@@ -6560,7 +6552,7 @@ virtualization actions that are sent to the _other_ active slots
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot1</KeyMapString>
-                  <MappedKeyString>Control: Set Me as MA01</MappedKeyString>
+                  <MappedKeyString>slot1-Control: Set Me as MA01</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
@@ -6570,7 +6562,7 @@ virtualization actions that are sent to the _other_ active slots
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot1</KeyMapString>
-                  <MappedKeyString>Control: Set Me as MT01</MappedKeyString>
+                  <MappedKeyString>slot1-Control: Set Me as MT01</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
@@ -6665,7 +6657,7 @@ virtualization actions that are sent to the _other_ active slots
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot1</KeyMapString>
-                  <MappedKeyString>Control: Set Me as MA02</MappedKeyString>
+                  <MappedKeyString>slot1-Control: Set Me as MA02</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
@@ -6675,7 +6667,7 @@ virtualization actions that are sent to the _other_ active slots
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot1</KeyMapString>
-                  <MappedKeyString>Control: Set Me as MT02</MappedKeyString>
+                  <MappedKeyString>slot1-Control: Set Me as MT02</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
@@ -6770,7 +6762,7 @@ virtualization actions that are sent to the _other_ active slots
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot1</KeyMapString>
-                  <MappedKeyString>Control: Set Me as MA03</MappedKeyString>
+                  <MappedKeyString>slot1-Control: Set Me as MA03</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
@@ -6780,7 +6772,7 @@ virtualization actions that are sent to the _other_ active slots
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot1</KeyMapString>
-                  <MappedKeyString>Control: Set Me as MT03</MappedKeyString>
+                  <MappedKeyString>slot1-Control: Set Me as MT03</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
@@ -7112,49 +7104,6 @@ be mindful of long character names and the 14-character limit when stuffing comm
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Control: Invite - Accept</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Name>Invite (Accept Invite)</Name>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Invite - Decline</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Name>Invite (Decline Invite)</Name>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>100: Slot1</KeyMapString>
-                <MappedKeyString>Control: Unload My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Invite - Send</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Name>Invite (Send Invite)</Name>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Control: Load My ATGs</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
@@ -7205,357 +7154,6 @@ be mindful of long character names and the 14-character limit when stuffing comm
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
                 <RelayGroupString>Group1-Members</RelayGroupString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MA</Name>
-        <Description>2-step keystring action that sets this character as the group main assist
-
-step 1 populates the clipboard with a command
-grouproles set charname 2
-
-step 2 pastes the string into EQ with the Paste from Clipboard mapped key
-/ + &lt;step 1 string&gt;</Description>
-        <ManualLoad>true</ManualLoad>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MA00</Name>
-        <Description>2-step keystring action that sets this character as the group main assist
-
-step 1 populates the clipboard with a command
-grouproles set charname 2
-
-step 2 pastes the string into EQ with the Paste from Clipboard mapped key
-/ + &lt;step 1 string&gt;</Description>
-        <ManualLoad>true</ManualLoad>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set Chinger 2</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>PALADIN IS MAIN ASSIST</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MA01</Name>
-        <Description>2-step keystring action that sets this character as the group main assist
-
-step 1 populates the clipboard with a command
-grouproles set charname 2
-
-step 2 pastes the string into EQ with the Paste from Clipboard mapped key
-/ + &lt;step 1 string&gt;</Description>
-        <ManualLoad>true</ManualLoad>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set Chinger 2</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>SK IS MAIN ASSIST</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MA02</Name>
-        <Description>2-step keystring action that sets this character as the group main assist
-
-step 1 populates the clipboard with a command
-grouproles set charname 2
-
-step 2 pastes the string into EQ with the Paste from Clipboard mapped key
-/ + &lt;step 1 string&gt;</Description>
-        <ManualLoad>true</ManualLoad>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set NEC 2</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>PALADIN IS MAIN ASSIST</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MA03</Name>
-        <Description>2-step keystring action that sets this character as the group main assist
-
-step 1 populates the clipboard with a command
-grouproles set charname 2
-
-step 2 pastes the string into EQ with the Paste from Clipboard mapped key
-/ + &lt;step 1 string&gt;</Description>
-        <ManualLoad>true</ManualLoad>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set BER 2</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>PALADIN IS MAIN ASSIST</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MT</Name>
-        <Description>2-step keystring action that sets this character as the group main tank
-
-step 1 populates the clipboard with a command
-grouproles set charname 1
-
-step 2 pastes the string into EQ with the Paste from Clipboard mapped key
-/ + &lt;step 1 string&gt;
-</Description>
-        <ManualLoad>true</ManualLoad>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MT00</Name>
-        <Description>2-step keystring action that sets this character as the group main tank
-
-step 1 populates the clipboard with a command
-grouproles set charname 1
-
-step 2 pastes the string into EQ with the Paste from Clipboard mapped key
-/ + &lt;step 1 string&gt;
-</Description>
-        <ManualLoad>true</ManualLoad>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set Chinger 1</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>PALADIN IS MAIN TANK</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MT01</Name>
-        <Description>2-step keystring action that sets this character as the group main tank
-
-step 1 populates the clipboard with a command
-grouproles set charname 1
-
-step 2 pastes the string into EQ with the Paste from Clipboard mapped key
-/ + &lt;step 1 string&gt;
-</Description>
-        <ManualLoad>true</ManualLoad>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set Chinger 1</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>SK IS MAIN TANK</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MT02</Name>
-        <Description>2-step keystring action that sets this character as the group main tank
-
-step 1 populates the clipboard with a command
-grouproles set charname 1
-
-step 2 pastes the string into EQ with the Paste from Clipboard mapped key
-/ + &lt;step 1 string&gt;
-</Description>
-        <ManualLoad>true</ManualLoad>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set NEC 1</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>PALADIN IS MAIN TANK</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MT03</Name>
-        <Description>2-step keystring action that sets this character as the group main tank
-
-step 1 populates the clipboard with a command
-grouproles set charname 1
-
-step 2 pastes the string into EQ with the Paste from Clipboard mapped key
-/ + &lt;step 1 string&gt;
-</Description>
-        <ManualLoad>true</ManualLoad>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set BER 1</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>PALADIN IS MAIN TANK</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -8962,49 +8560,6 @@ useful in the Avatar of War mission</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Control: Invite - Accept</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Name>Invite (Accept Invite)</Name>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Invite - Decline</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Name>Invite (Decline Invite)</Name>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>100: Slot2</KeyMapString>
-                <MappedKeyString>Control: Unload My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Invite - Send</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Name>Invite (Send Invite)</Name>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Control: Load My ATGs</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
@@ -9065,60 +8620,6 @@ useful in the Avatar of War mission</Description>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
                 <RelayGroupString>Group1-Members</RelayGroupString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MA 1</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set Ijuante 2</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>WIZARD IS MAIN ASSIST 01</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MT 1</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set Ijuante 1</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>WIZARD IS MAIN TANK 01</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -10926,7 +10427,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot3</KeyMapString>
-                  <MappedKeyString>Control: Set Me as MA00</MappedKeyString>
+                  <MappedKeyString>slot3-Control: Set Me as MA00</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
@@ -11405,49 +10906,6 @@ old target: all&amp;~(is2|dxnothing)</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Control: Invite - Accept</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Name>Invite (Accept Invite)</Name>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Invite - Decline</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Name>Invite (Decline Invite)</Name>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>100: Slot3</KeyMapString>
-                <MappedKeyString>Control: Unload My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Invite - Send</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Name>Invite (Send Invite)</Name>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Control: Load My ATGs</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
@@ -11512,78 +10970,6 @@ old target: all&amp;~(is2|dxnothing)</Description>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
                 <RelayGroupString>Group1-Members</RelayGroupString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MA</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MA00</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set Watley 2</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>SHAMAN IS MAIN ASSIST 01</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MT</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MT00</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set Watley 1</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>SHAMAN IS MAIN TANK 01</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -13257,7 +12643,7 @@ old target viewer loc: 371,590</Description>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot4</KeyMapString>
-                  <MappedKeyString>Control: Set Me as MA00</MappedKeyString>
+                  <MappedKeyString>slot4-Control: Set Me as MA00</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
@@ -13267,7 +12653,7 @@ old target viewer loc: 371,590</Description>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot4</KeyMapString>
-                  <MappedKeyString>Control: Set Me as MT00</MappedKeyString>
+                  <MappedKeyString>slot4-Control: Set Me as MT00</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
@@ -13664,49 +13050,6 @@ old target viewer loc: 371,590</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Control: Invite - Accept</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Name>Invite (Accept Invite)</Name>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Invite - Decline</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Name>Invite (Decline Invite)</Name>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>100: Slot4</KeyMapString>
-                <MappedKeyString>Control: Unload My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Invite - Send</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Name>Invite (Send Invite)</Name>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Control: Load My ATGs</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
@@ -13758,132 +13101,6 @@ old target viewer loc: 371,590</Description>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
                 <RelayGroupString>Group1-Members</RelayGroupString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MA</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MA 1</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set Shatner 2</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>BARD IS MAIN ASSIST 01</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MA00</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set Shatner 2</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>BARD IS MAIN ASSIST 01</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MT</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MT 1</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set Shatner 1</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>BARD IS MAIN TANK 01</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MT00</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set Shatner 1</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>BARD IS MAIN TANK 01</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -15761,21 +14978,21 @@ alt - 1920</Description>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <FromMappedKey>
                   <KeyMapString>100: Slot5</KeyMapString>
-                  <MappedKeyString>Control: Set Me as MA</MappedKeyString>
+                  <MappedKeyString>slot5-Control: Set Me as MA</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot5</KeyMapString>
-                  <MappedKeyString>Control: Set Me as MA00</MappedKeyString>
+                  <MappedKeyString>slot5-Control: Set Me as MA00</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <FromMappedKey>
                   <KeyMapString>100: Slot5</KeyMapString>
-                  <MappedKeyString>Control: Set Me as MT</MappedKeyString>
+                  <MappedKeyString>slot5-Control: Set Me as MT</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot5</KeyMapString>
-                  <MappedKeyString>Control: Set Me as MT00</MappedKeyString>
+                  <MappedKeyString>slot5-Control: Set Me as MT00</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
@@ -16144,49 +15361,6 @@ alt - 1920</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Control: Invite - Accept</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Name>Invite (Accept Invite)</Name>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Invite - Decline</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Name>Invite (Decline Invite)</Name>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>100: Slot5</KeyMapString>
-                <MappedKeyString>Control: Unload My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Invite - Send</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Name>Invite (Send Invite)</Name>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Control: Load My ATGs</Name>
         <ResetTimer>0</ResetTimer>
         <Steps>
@@ -16243,78 +15417,6 @@ alt - 1920</Description>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
                 <RelayGroupString>Group1-Members</RelayGroupString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MA</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MA00</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set Ibsen 2</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>ENCHANTER IS MAIN ASSIST 01</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MT</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Set Me as MT00</Name>
-        <ManualLoad>true</ManualLoad>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="KeyStringAction">
-                <Text>grouproles set Ibsen 1</Text>
-                <FillClipboard>true</FillClipboard>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>Group1-Leader</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Paste from Clipboard</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>CurrentBoxes</Target>
-                <Text>ENCHANTER IS MAIN TANK 01</Text>
-                <DurationMS>5000</DurationMS>
-                <FadeDurationMS>0</FadeDurationMS>
-                <Red>0</Red>
-                <Blue>0</Blue>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -28147,7 +27249,7 @@ invoked by Character Set load/reload, or _Setup menu button 1</Description>
                 <Target>all</Target>
                 <MappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Setup-1</MappedKeyString>
+                  <MappedKeyString>Control: Setup-Init</MappedKeyString>
                 </MappedKey>
                 <Action>Set</Action>
                 <Value>1</Value>
@@ -28350,16 +27452,13 @@ sets the current window as group MA and MT</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Control: Setup-1</Name>
+        <Name>Control: Setup-Init</Name>
         <Description>this is typically executed via _Setup menu button, with no modifiers held
 
-Flush ATGs and Clear all VFX
-Load defined ATGs for each slot
-call Setup-X-Leader mapped key
-
----
-Group invites (if needed) are done in-game
-</Description>
+- Flush ATGs and Clear all VFX
+- Load default ATGs for each slot
+- call Setup-Leader mapped key
+-- the active screen joins the Leader ATG, all others join Member ATGs</Description>
         <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
@@ -28394,6 +27493,27 @@ Group invites (if needed) are done in-game
           <Step>
             <Stop>true</Stop>
             <Stump>true</Stump>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>ATGs LOADED</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>all</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: Setup-Leader</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Stump>true</Stump>
+            <Disabled>true</Disabled>
             <Actions>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Text>ATGs LOADED</Text>
@@ -28414,505 +27534,21 @@ Group invites (if needed) are done in-game
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Control: Setup-1-Leader</Name>
-        <Description>Called in Step 2 of the Control: Setup-1 mapped key
+        <Name>Control: Setup-Leader</Name>
+        <Description>Called in Step 2 of the Control: Setup mapped key
 
 Loads group members into the appropriate Leader or Member ATGs</Description>
         <Steps>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG1</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG2</Target>
+                <Target>all other&amp;~dxnothing</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG3</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG4</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG5</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Setup-2</Name>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>all</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Flush ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Clear</Action>
-                <Name />
-                <Target>all</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>0</Y>
-                  </Location>
-                  <Size>
-                    <Width>0</Width>
-                    <Height>0</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>0</Y>
-                  <Width>0</Width>
-                  <Height>0</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stop>true</Stop>
-            <Stump>true</Stump>
-            <Actions>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>ATGs LOADED</Text>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>all</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Setup-2-Leader</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stop>true</Stop>
-            <Stump>true</Stump>
-            <Disabled>true</Disabled>
-            <Actions>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>GROUP FORMATION COMPLETE</Text>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="KeyMapAction">
-                <Target>CurrentBoxes</Target>
-                <KeyMapString>000: - HOTKEYS</KeyMapString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stop>true</Stop>
-            <Stump>true</Stump>
-            <Disabled>true</Disabled>
-            <Actions>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>GROUP FORMATION COMPLETE</Text>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Setup-2-Leader</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG1</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG2</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG3</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG4</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG5</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Setup-3</Name>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>all</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Flush ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Clear</Action>
-                <Name />
-                <Target>all</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>0</Y>
-                  </Location>
-                  <Size>
-                    <Width>0</Width>
-                    <Height>0</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>0</Y>
-                  <Width>0</Width>
-                  <Height>0</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stop>true</Stop>
-            <Stump>true</Stump>
-            <Actions>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>ATGs LOADED</Text>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>all</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Setup-3-Leader</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stop>true</Stop>
-            <Stump>true</Stump>
-            <Disabled>true</Disabled>
-            <Actions>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>GROUP FORMATION COMPLETE</Text>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="KeyMapAction">
-                <Target>CurrentBoxes</Target>
-                <KeyMapString>000: - HOTKEYS</KeyMapString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stop>true</Stop>
-            <Stump>true</Stump>
-            <Disabled>true</Disabled>
-            <Actions>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>GROUP FORMATION COMPLETE</Text>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Setup-3-Leader</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG1</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG2</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG3</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG4</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG5</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Setup-4</Name>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>all</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Flush ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Clear</Action>
-                <Name />
-                <Target>all</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>0</Y>
-                  </Location>
-                  <Size>
-                    <Width>0</Width>
-                    <Height>0</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>0</Y>
-                  <Width>0</Width>
-                  <Height>0</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stop>true</Stop>
-            <Stump>true</Stump>
-            <Actions>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>ATGs LOADED</Text>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>all</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Setup-4-Leader</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stop>true</Stop>
-            <Stump>true</Stump>
-            <Disabled>true</Disabled>
-            <Actions>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>GROUP FORMATION COMPLETE</Text>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="KeyMapAction">
-                <Target>CurrentBoxes</Target>
-                <KeyMapString>000: - HOTKEYS</KeyMapString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stop>true</Stop>
-            <Stump>true</Stump>
-            <Disabled>true</Disabled>
-            <Actions>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>GROUP FORMATION COMPLETE</Text>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Setup-4-Leader</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG1</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG2</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG3</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG4</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG5</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Setup-5</Name>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>all</Target>
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Flush ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Clear</Action>
-                <Name />
-                <Target>all</Target>
-                <Rect>
-                  <Location>
-                    <X>0</X>
-                    <Y>0</Y>
-                  </Location>
-                  <Size>
-                    <Width>0</Width>
-                    <Height>0</Height>
-                  </Size>
-                  <X>0</X>
-                  <Y>0</Y>
-                  <Width>0</Width>
-                  <Height>0</Height>
-                </Rect>
-                <MappedKey />
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stop>true</Stop>
-            <Stump>true</Stump>
-            <Actions>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>ATGs LOADED</Text>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>all</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Setup-5-Leader</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stop>true</Stop>
-            <Stump>true</Stump>
-            <Disabled>true</Disabled>
-            <Actions>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>GROUP FORMATION COMPLETE</Text>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="KeyMapAction">
-                <Target>CurrentBoxes</Target>
-                <KeyMapString>000: - HOTKEYS</KeyMapString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stop>true</Stop>
-            <Stump>true</Stump>
-            <Disabled>true</Disabled>
-            <Actions>
-              <MappedKeyAction xsi:type="PopupTextAction">
-                <Text>GROUP FORMATION COMPLETE</Text>
-                <Red>0</Red>
-                <Blue>0</Blue>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Setup-5-Leader</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG1</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG2</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG3</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG4</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <Target>ATG5</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -30147,13 +28783,15 @@ TODO: configure button to default to 2560, but use modifiers for alternate resol
       </MappedKey>
       <MappedKey>
         <Name>Movement: Follow: Group1</Name>
-        <Description>use new /fol command
-cannot follow while sitting, so we must /stand first</Description>
+        <Description>we cannot follow while sitting, so we must /stand
+
+using an EQ social that does /stand will make step1 here redundant
+</Description>
         <UseFTLModifiers />
-        <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
             <Stick>0.1</Stick>
+            <Disabled>true</Disabled>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>other Group1</Target>
@@ -40017,7 +38655,7 @@ clicking manually through VFX is possible, but probably not the best way</Descri
                 <Target>all</Target>
                 <MappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Setup-1</MappedKeyString>
+                  <MappedKeyString>Control: Setup-Init</MappedKeyString>
                 </MappedKey>
                 <Action>Set</Action>
                 <Value>1</Value>
@@ -40204,7 +38842,7 @@ clicking manually through VFX is possible, but probably not the best way</Descri
                 <Target>all</Target>
                 <MappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Setup-1</MappedKeyString>
+                  <MappedKeyString>Control: Setup-Init</MappedKeyString>
                 </MappedKey>
                 <Action>Set</Action>
                 <Value>1</Value>
@@ -40391,7 +39029,7 @@ clicking manually through VFX is possible, but probably not the best way</Descri
                 <Target>all</Target>
                 <MappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Setup-1</MappedKeyString>
+                  <MappedKeyString>Control: Setup-Init</MappedKeyString>
                 </MappedKey>
                 <Action>Set</Action>
                 <Value>1</Value>
@@ -40597,7 +39235,7 @@ clicking manually through VFX is possible, but probably not the best way</Descri
                 <Target>all</Target>
                 <MappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Setup-1</MappedKeyString>
+                  <MappedKeyString>Control: Setup-Init</MappedKeyString>
                 </MappedKey>
                 <Action>Set</Action>
                 <Value>1</Value>
@@ -40814,6 +39452,41 @@ clicking manually through VFX is possible, but probably not the best way</Descri
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Control: Set Me as MA</Name>
+        <Description>2-step keystring action that sets this character as the group main assist
+
+step 1 populates the clipboard with a command
+grouproles set charname 2
+
+step 2 pastes the string into EQ with the Paste from Clipboard mapped key
+/ + &lt;step 1 string&gt;</Description>
+        <ManualLoad>true</ManualLoad>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: Set Me as MT</Name>
+        <Description>2-step keystring action that sets this character as the group main tank
+
+step 1 populates the clipboard with a command
+grouproles set charname 1
+
+step 2 pastes the string into EQ with the Paste from Clipboard mapped key
+/ + &lt;step 1 string&gt;
+</Description>
+        <ManualLoad>true</ManualLoad>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Control: Setup-1_sav</Name>
         <Description>this is typically executed via menu button
 
@@ -40918,6 +39591,44 @@ activate hotkeys for CurrentBoxes ATG</Description>
                 </MappedKey>
                 <Action>Set</Action>
                 <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: Setup-1-Leader</Name>
+        <Description>Called in Step 2 of the Control: Setup-1 mapped key
+
+Loads group members into the appropriate Leader or Member ATGs</Description>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG1</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG2</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG3</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG4</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG5</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41089,6 +39800,482 @@ activate hotkeys for CurrentBoxes ATG</Description>
                 <Text>GROUP FORMATION COMPLETE</Text>
                 <Red>0</Red>
                 <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: Setup-2</Name>
+        <ManualLoad>true</ManualLoad>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>all</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: Flush ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Clear</Action>
+                <Name />
+                <Target>all</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>0</Width>
+                    <Height>0</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>0</Width>
+                  <Height>0</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Stump>true</Stump>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>ATGs LOADED</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>all</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: Setup-2-Leader</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Stump>true</Stump>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>GROUP FORMATION COMPLETE</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>000: - HOTKEYS</KeyMapString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Stump>true</Stump>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>GROUP FORMATION COMPLETE</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: Setup-2-Leader</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG1</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG2</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG3</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG4</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG5</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: Setup-3</Name>
+        <ManualLoad>true</ManualLoad>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>all</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: Flush ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Clear</Action>
+                <Name />
+                <Target>all</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>0</Width>
+                    <Height>0</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>0</Width>
+                  <Height>0</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Stump>true</Stump>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>ATGs LOADED</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>all</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: Setup-3-Leader</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Stump>true</Stump>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>GROUP FORMATION COMPLETE</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>000: - HOTKEYS</KeyMapString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Stump>true</Stump>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>GROUP FORMATION COMPLETE</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: Setup-3-Leader</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG1</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG2</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG3</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG4</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG5</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: Setup-4</Name>
+        <ManualLoad>true</ManualLoad>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>all</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: Flush ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Clear</Action>
+                <Name />
+                <Target>all</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>0</Width>
+                    <Height>0</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>0</Width>
+                  <Height>0</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Stump>true</Stump>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>ATGs LOADED</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>all</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: Setup-4-Leader</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Stump>true</Stump>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>GROUP FORMATION COMPLETE</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>000: - HOTKEYS</KeyMapString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Stump>true</Stump>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>GROUP FORMATION COMPLETE</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: Setup-4-Leader</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG1</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG2</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG3</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG4</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG5</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: Setup-5</Name>
+        <ManualLoad>true</ManualLoad>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>all</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: Flush ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Clear</Action>
+                <Name />
+                <Target>all</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>0</Width>
+                    <Height>0</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>0</Width>
+                  <Height>0</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Stump>true</Stump>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>ATGs LOADED</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>all</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Control: Setup-5-Leader</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Stump>true</Stump>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>GROUP FORMATION COMPLETE</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="KeyMapAction">
+                <Target>CurrentBoxes</Target>
+                <KeyMapString>000: - HOTKEYS</KeyMapString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stop>true</Stop>
+            <Stump>true</Stump>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>GROUP FORMATION COMPLETE</Text>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Control: Setup-5-Leader</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG1</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG2</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG3</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG4</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>ATG5</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -43710,6 +42897,807 @@ functionality moved to Setup-* in 199: General Key Map</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: General</KeyMapString>
                 <MappedKeyString>Movement: Sit</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot1-Control: Invite - Accept</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Name>Invite (Accept Invite)</Name>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot1-Control: Invite - Decline</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Name>Invite (Decline Invite)</Name>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>100: Slot1</KeyMapString>
+                <MappedKeyString>Control: Unload My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot1-Control: Invite - Send</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Name>Invite (Send Invite)</Name>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot1-Control: Set Me as MA00</Name>
+        <Description>2-step keystring action that sets this character as the group main assist
+
+step 1 populates the clipboard with a command
+grouproles set charname 2
+
+step 2 pastes the string into EQ with the Paste from Clipboard mapped key
+/ + &lt;step 1 string&gt;</Description>
+        <ManualLoad>true</ManualLoad>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set Chinger 2</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>PALADIN IS MAIN ASSIST</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot1-Control: Set Me as MA01</Name>
+        <Description>2-step keystring action that sets this character as the group main assist
+
+step 1 populates the clipboard with a command
+grouproles set charname 2
+
+step 2 pastes the string into EQ with the Paste from Clipboard mapped key
+/ + &lt;step 1 string&gt;</Description>
+        <ManualLoad>true</ManualLoad>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set Chinger 2</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>SK IS MAIN ASSIST</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot1-Control: Set Me as MA02</Name>
+        <Description>2-step keystring action that sets this character as the group main assist
+
+step 1 populates the clipboard with a command
+grouproles set charname 2
+
+step 2 pastes the string into EQ with the Paste from Clipboard mapped key
+/ + &lt;step 1 string&gt;</Description>
+        <ManualLoad>true</ManualLoad>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set NEC 2</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>PALADIN IS MAIN ASSIST</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot1-Control: Set Me as MA03</Name>
+        <Description>2-step keystring action that sets this character as the group main assist
+
+step 1 populates the clipboard with a command
+grouproles set charname 2
+
+step 2 pastes the string into EQ with the Paste from Clipboard mapped key
+/ + &lt;step 1 string&gt;</Description>
+        <ManualLoad>true</ManualLoad>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set BER 2</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>PALADIN IS MAIN ASSIST</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot1-Control: Set Me as MT00</Name>
+        <Description>2-step keystring action that sets this character as the group main tank
+
+step 1 populates the clipboard with a command
+grouproles set charname 1
+
+step 2 pastes the string into EQ with the Paste from Clipboard mapped key
+/ + &lt;step 1 string&gt;
+</Description>
+        <ManualLoad>true</ManualLoad>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set Chinger 1</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>PALADIN IS MAIN TANK</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot1-Control: Set Me as MT01</Name>
+        <Description>2-step keystring action that sets this character as the group main tank
+
+step 1 populates the clipboard with a command
+grouproles set charname 1
+
+step 2 pastes the string into EQ with the Paste from Clipboard mapped key
+/ + &lt;step 1 string&gt;
+</Description>
+        <ManualLoad>true</ManualLoad>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set Chinger 1</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>SK IS MAIN TANK</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot1-Control: Set Me as MT02</Name>
+        <Description>2-step keystring action that sets this character as the group main tank
+
+step 1 populates the clipboard with a command
+grouproles set charname 1
+
+step 2 pastes the string into EQ with the Paste from Clipboard mapped key
+/ + &lt;step 1 string&gt;
+</Description>
+        <ManualLoad>true</ManualLoad>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set NEC 1</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>PALADIN IS MAIN TANK</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot1-Control: Set Me as MT03</Name>
+        <Description>2-step keystring action that sets this character as the group main tank
+
+step 1 populates the clipboard with a command
+grouproles set charname 1
+
+step 2 pastes the string into EQ with the Paste from Clipboard mapped key
+/ + &lt;step 1 string&gt;
+</Description>
+        <ManualLoad>true</ManualLoad>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set BER 1</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>PALADIN IS MAIN TANK</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot2-Control: Invite - Accept</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Name>Invite (Accept Invite)</Name>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot2-Control: Invite - Decline</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Name>Invite (Decline Invite)</Name>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>100: Slot2</KeyMapString>
+                <MappedKeyString>Control: Unload My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot2-Control: Invite - Send</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Name>Invite (Send Invite)</Name>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot2-Control: Set Me as MA 1</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set Ijuante 2</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>WIZARD IS MAIN ASSIST 01</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot2-Control: Set Me as MT 1</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set Ijuante 1</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>WIZARD IS MAIN TANK 01</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot3-Control: Invite - Accept</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Name>Invite (Accept Invite)</Name>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot3-Control: Invite - Decline</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Name>Invite (Decline Invite)</Name>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>100: Slot3</KeyMapString>
+                <MappedKeyString>Control: Unload My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot3-Control: Invite - Send</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Name>Invite (Send Invite)</Name>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot3-Control: Set Me as MA00</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set Watley 2</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>SHAMAN IS MAIN ASSIST 01</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot3-Control: Set Me as MT00</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set Watley 1</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>SHAMAN IS MAIN TANK 01</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot4-Control: Invite - Accept</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Name>Invite (Accept Invite)</Name>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot4-Control: Invite - Decline</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Name>Invite (Decline Invite)</Name>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>100: Slot4</KeyMapString>
+                <MappedKeyString>Control: Unload My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot4-Control: Invite - Send</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Name>Invite (Send Invite)</Name>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot4-Control: Set Me as MA 1</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set Shatner 2</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>BARD IS MAIN ASSIST 01</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot4-Control: Set Me as MA00</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set Shatner 2</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>BARD IS MAIN ASSIST 01</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot4-Control: Set Me as MT 1</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set Shatner 1</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>BARD IS MAIN TANK 01</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot4-Control: Set Me as MT00</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set Shatner 1</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>BARD IS MAIN TANK 01</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot5-Control: Invite - Accept</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Name>Invite (Accept Invite)</Name>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot5-Control: Invite - Decline</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Name>Invite (Decline Invite)</Name>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>100: Slot5</KeyMapString>
+                <MappedKeyString>Control: Unload My Group 1 Member ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot5-Control: Invite - Send</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Name>Invite (Send Invite)</Name>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot5-Control: Set Me as MA00</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set Ibsen 2</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>ENCHANTER IS MAIN ASSIST 01</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>slot5-Control: Set Me as MT00</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="KeyStringAction">
+                <Text>grouproles set Ibsen 1</Text>
+                <FillClipboard>true</FillClipboard>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>Group1-Leader</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Paste from Clipboard</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Target>CurrentBoxes</Target>
+                <Text>ENCHANTER IS MAIN TANK 01</Text>
+                <DurationMS>5000</DurationMS>
+                <FadeDurationMS>0</FadeDurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -48570,6 +48558,20 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <ConditionalKey>
+              <Key>nomodifiers</Key>
+              <Code>0</Code>
+            </ConditionalKey>
+            <KeyMapString>199: General</KeyMapString>
+            <MappedKeyString>Control: Setup-Init</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>ISB-Init</Text>
+        <DisplayText>Setup Leader Slot</DisplayText>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>all&amp;~dxnothing</Target>
             <KeyMapString>199: General</KeyMapString>
             <MappedKeyString>Disband</MappedKeyString>
@@ -48577,9 +48579,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         </Actions>
         <Text>Disband</Text>
         <DisplayText>Disband Group</DisplayText>
-      </MenuButton>
-      <MenuButton>
-        <Actions />
       </MenuButton>
       <MenuButton>
         <Actions>
@@ -48676,14 +48675,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <ConditionalKey>
-              <Key>nomodifiers</Key>
-              <Code>0</Code>
-            </ConditionalKey>
-            <KeyMapString>199: General</KeyMapString>
-            <MappedKeyString>Control: Setup-1</MappedKeyString>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>ATG1</Target>
             <ConditionalKey>
               <Key>Ctrl</Key>
@@ -48707,14 +48698,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </MenuButton>
       <MenuButton>
         <Actions>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <ConditionalKey>
-              <Key>nomodifiers</Key>
-              <Code>0</Code>
-            </ConditionalKey>
-            <KeyMapString>199: General</KeyMapString>
-            <MappedKeyString>Control: Setup-2</MappedKeyString>
-          </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>ATG2</Target>
             <ConditionalKey>
@@ -48740,14 +48723,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <ConditionalKey>
-              <Key>nomodifiers</Key>
-              <Code>0</Code>
-            </ConditionalKey>
-            <KeyMapString>199: General</KeyMapString>
-            <MappedKeyString>Control: Setup-3</MappedKeyString>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>ATG3</Target>
             <ConditionalKey>
               <Key>Ctrl</Key>
@@ -48772,14 +48747,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <ConditionalKey>
-              <Key>nomodifiers</Key>
-              <Code>0</Code>
-            </ConditionalKey>
-            <KeyMapString>199: General</KeyMapString>
-            <MappedKeyString>Control: Setup-4</MappedKeyString>
-          </MappedKeyAction>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>ATG4</Target>
             <ConditionalKey>
               <Key>Ctrl</Key>
@@ -48803,14 +48770,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </MenuButton>
       <MenuButton>
         <Actions>
-          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <ConditionalKey>
-              <Key>nomodifiers</Key>
-              <Code>0</Code>
-            </ConditionalKey>
-            <KeyMapString>199: General</KeyMapString>
-            <MappedKeyString>Control: Setup-5</MappedKeyString>
-          </MappedKeyAction>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
             <Target>ATG5</Target>
             <ConditionalKey>
