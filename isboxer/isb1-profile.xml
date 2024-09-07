@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="8/24/2024 1:38:33 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="9/7/2024 4:51:31 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -4686,6 +4686,33 @@ brd - melody</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Combat: Assist</Name>
+        <Combo>
+          <Combo>Num 0</Combo>
+          <Key>
+            <Key>Num 0</Key>
+            <Code>82</Code>
+          </Key>
+        </Combo>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>(other CurrentBoxes)&amp;~AssistMain</Target>
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: Assist Me</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>(other CurrentBoxes)&amp;AssistMain</Target>
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Main</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Combat: Burn Rotation</Name>
         <Description>pal - Z multibind
 wiz - Z multibind
@@ -4803,6 +4830,7 @@ reset MeleeAttack back to 1, move things like offensive stuff and burns back to 
             <Code>82</Code>
           </Key>
         </Combo>
+        <ManualLoad>true</ManualLoad>
         <Steps>
           <Step>
             <Actions>
@@ -6247,6 +6275,49 @@ this key map contains slot specific mapped keys</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Combat: Assist Me</Name>
+        <Steps>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 20</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:01</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Target Me</Name>
+        <Description>keystroke command to target this character
+
+be mindful of long character names and the 14-character limit when stuffing commands into EQ. 
+/tar&lt;sp&gt;01234567&lt;Enter&gt;</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 20</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Control ---------------------------------------------------------</Name>
         <Steps>
           <Step>
@@ -6263,44 +6334,44 @@ this key map contains slot specific mapped keys</Description>
                 <Target>other CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Assist the MA</MappedKeyString>
+                  <MappedKeyString>Combat: Assist Me</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot1</KeyMapString>
-                  <MappedKeyString>Control: Assist Me</MappedKeyString>
+                  <MappedKeyString>Combat: Assist Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>other CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot1</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>other CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                  <MappedKeyString>Movement: Follow Me</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot1</KeyMapString>
-                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                  <MappedKeyString>Movement: Follow Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Target Slot 1</MappedKeyString>
+                  <MappedKeyString>Combat: Target Slot 1</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot1</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
             </Actions>
@@ -6323,22 +6394,71 @@ this key map contains slot specific mapped keys</Description>
                 <Target>other CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot1</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
+                </ToMappedKey>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyRewriteAction">
+                <Target>other CurrentBoxes</Target>
+                <FromMappedKey>
+                  <KeyMapString>199: General</KeyMapString>
+                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                </FromMappedKey>
+                <ToMappedKey>
+                  <KeyMapString>100: Slot1</KeyMapString>
+                  <MappedKeyString>Movement: Follow Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Target Slot 1</MappedKeyString>
+                  <MappedKeyString>Combat: Target Slot 1</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot1</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
+                </ToMappedKey>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Disabled>true</Disabled>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyRewriteAction">
+                <Target>other CurrentBoxes</Target>
+                <FromMappedKey>
+                  <KeyMapString>199: General</KeyMapString>
+                  <MappedKeyString>Control: Assist the MA</MappedKeyString>
+                </FromMappedKey>
+                <ToMappedKey>
+                  <KeyMapString>100: Slot1</KeyMapString>
+                  <MappedKeyString>Control: Assist Me</MappedKeyString>
+                </ToMappedKey>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyRewriteAction">
+                <Target>other CurrentBoxes</Target>
+                <FromMappedKey>
+                  <KeyMapString>199: General</KeyMapString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
+                </FromMappedKey>
+                <ToMappedKey>
+                  <KeyMapString>100: Slot1</KeyMapString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
+                </ToMappedKey>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyRewriteAction">
+                <Target>CurrentBoxes</Target>
+                <FromMappedKey>
+                  <KeyMapString>199: General</KeyMapString>
+                  <MappedKeyString>Combat: Target Slot 1</MappedKeyString>
+                </FromMappedKey>
+                <ToMappedKey>
+                  <KeyMapString>100: Slot1</KeyMapString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
             </Actions>
@@ -6810,9 +6930,11 @@ this key map contains slot specific mapped keys</Description>
 
 be mindful of long character names and the 14-character limit when stuffing commands into EQ. 
 /ass&lt;sp&gt;01234567&lt;Enter&gt;</Description>
+        <ManualLoad>true</ManualLoad>
         <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
+            <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: General</KeyMapString>
@@ -6825,32 +6947,6 @@ be mindful of long character names and the 14-character limit when stuffing comm
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB11:01</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Follow Me</Name>
-        <Description>keystroke command to follow this character
-
-be mindful of long character names and the 14-character limit when stuffing commands into EQ. 
-/fol&lt;sp&gt;01234567&lt;Enter&gt;</Description>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Combat: xtar 20</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB11:02</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -7056,23 +7152,6 @@ this is the default behavior</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>100: Slot1</KeyMapString>
                 <MappedKeyString>Control: Load My ATGs</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Target Me</Name>
-        <Description>keystroke command to target this character
-
-be mindful of long character names and the 14-character limit when stuffing commands into EQ. 
-/tar&lt;sp&gt;01234567&lt;Enter&gt;</Description>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Combat: xtar 20</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -7457,6 +7536,32 @@ useful in the Avatar of War mission</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Movement: Follow Me</Name>
+        <Description>keystroke command to follow this character
+
+be mindful of long character names and the 14-character limit when stuffing commands into EQ. 
+/fol&lt;sp&gt;01234567&lt;Enter&gt;</Description>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 20</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:02</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>TrackOff</Name>
         <Description>destroy tracking vfx viewer</Description>
         <Steps>
@@ -7644,6 +7749,42 @@ useful in the Avatar of War mission</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Combat: Assist Me</Name>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 19</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:01</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Target Me</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 19</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Control ---------------------------------------------------------</Name>
         <Steps>
           <Step>
@@ -7661,44 +7802,44 @@ useful in the Avatar of War mission</Description>
                 <Target>other CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Assist the MA</MappedKeyString>
+                  <MappedKeyString>Combat: Assist Me</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot2</KeyMapString>
-                  <MappedKeyString>Control: Assist Me</MappedKeyString>
+                  <MappedKeyString>Combat: Assist Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>other CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot2</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>other CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                  <MappedKeyString>Movement: Follow Me</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot2</KeyMapString>
-                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                  <MappedKeyString>Movement: Follow Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Target Slot 2</MappedKeyString>
+                  <MappedKeyString>Combat: Target Slot 2</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot2</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
             </Actions>
@@ -7810,28 +7951,6 @@ useful in the Avatar of War mission</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Control: Assist Me</Name>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Combat: xtar 19</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB11:01</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Control: Create VFX Sources</Name>
         <Steps>
           <Step>
@@ -7919,28 +8038,6 @@ useful in the Avatar of War mission</Description>
                   <Height>24</Height>
                 </Rect>
                 <MappedKey />
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Follow Me</Name>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Combat: xtar 19</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB11:02</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -8148,19 +8245,6 @@ this is the default behavior</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>100: Slot2</KeyMapString>
                 <MappedKeyString>Control: Load My ATGs</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Target Me</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Combat: xtar 19</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -9214,6 +9298,28 @@ old target: all&amp;~(is2|dxnothing)</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Movement: Follow Me</Name>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 19</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:02</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>TrackOff</Name>
         <Steps>
           <Step>
@@ -9552,6 +9658,42 @@ old target: all&amp;~(is2|dxnothing)</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Combat: Assist Me</Name>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 18</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:01</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Target Me</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 18</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Control ---------------------------------------------------------</Name>
         <Steps>
           <Step>
@@ -9569,44 +9711,44 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>other CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Assist the MA</MappedKeyString>
+                  <MappedKeyString>Combat: Assist Me</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot3</KeyMapString>
-                  <MappedKeyString>Control: Assist Me</MappedKeyString>
+                  <MappedKeyString>Combat: Assist Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>other CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot3</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>other CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                  <MappedKeyString>Movement: Follow Me</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot3</KeyMapString>
-                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                  <MappedKeyString>Movement: Follow Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Target Slot 3</MappedKeyString>
+                  <MappedKeyString>Combat: Target Slot 3</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot3</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
             </Actions>
@@ -9718,28 +9860,6 @@ old target: all&amp;~(is2|dxnothing)</Description>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
                 <RelayGroupString>PetOwners</RelayGroupString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Assist Me</Name>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Combat: xtar 18</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB11:01</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -9917,28 +10037,6 @@ old target: all&amp;~(is2|dxnothing)</Description>
                   <Height>24</Height>
                 </Rect>
                 <MappedKey />
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Follow Me</Name>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Combat: xtar 18</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB11:02</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -10213,19 +10311,6 @@ this is the default behavior</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>100: Slot3</KeyMapString>
                 <MappedKeyString>Control: Load My ATGs</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Target Me</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Combat: xtar 18</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -11247,6 +11332,28 @@ old target viewer loc: 371,590</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Movement: Follow Me</Name>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 18</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:02</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>TrackOff</Name>
         <Steps>
           <Step>
@@ -11429,6 +11536,42 @@ old target viewer loc: 371,590</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Combat: Assist Me</Name>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 17</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:01</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Target Me</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 17</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Control ---------------------------------------------------------</Name>
         <Steps>
           <Step>
@@ -11446,44 +11589,44 @@ old target viewer loc: 371,590</Description>
                 <Target>other CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Assist the MA</MappedKeyString>
+                  <MappedKeyString>Combat: Assist Me</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot4</KeyMapString>
-                  <MappedKeyString>Control: Assist Me</MappedKeyString>
+                  <MappedKeyString>Combat: Assist Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>other CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot4</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>other CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                  <MappedKeyString>Movement: Follow Me</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot4</KeyMapString>
-                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                  <MappedKeyString>Movement: Follow Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Target Slot 4</MappedKeyString>
+                  <MappedKeyString>Combat: Target Slot 4</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot4</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
             </Actions>
@@ -11595,28 +11738,6 @@ old target viewer loc: 371,590</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Control: Assist Me</Name>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Combat: xtar 17</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB11:01</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Control: Create VFX Sources</Name>
         <Steps>
           <Step>
@@ -11704,28 +11825,6 @@ old target viewer loc: 371,590</Description>
                   <Height>24</Height>
                 </Rect>
                 <MappedKey />
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Follow Me</Name>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Combat: xtar 17</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB11:02</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -11924,19 +12023,6 @@ this is the default behavior</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>100: Slot4</KeyMapString>
                 <MappedKeyString>Control: Load My ATGs</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Target Me</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Combat: xtar 17</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -13084,6 +13170,28 @@ alt - 1920</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Movement: Follow Me</Name>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 17</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:02</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Track</Name>
         <Steps>
           <Step>
@@ -13402,6 +13510,42 @@ alt - 1920</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Combat: Assist Me</Name>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Stick>0.1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 16</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:01</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Target Me</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 16</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Control ---------------------------------------------------------</Name>
         <Steps>
           <Step>
@@ -13419,44 +13563,44 @@ alt - 1920</Description>
                 <Target>other CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Assist the MA</MappedKeyString>
+                  <MappedKeyString>Combat: Assist Me</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot5</KeyMapString>
-                  <MappedKeyString>Control: Assist Me</MappedKeyString>
+                  <MappedKeyString>Combat: Assist Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>other CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot5</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>other CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                  <MappedKeyString>Movement: Follow Me</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot5</KeyMapString>
-                  <MappedKeyString>Control: Follow Me</MappedKeyString>
+                  <MappedKeyString>Movement: Follow Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyRewriteAction">
                 <Target>CurrentBoxes</Target>
                 <FromMappedKey>
                   <KeyMapString>199: General</KeyMapString>
-                  <MappedKeyString>Control: Target Slot 5</MappedKeyString>
+                  <MappedKeyString>Combat: Target Slot 5</MappedKeyString>
                 </FromMappedKey>
                 <ToMappedKey>
                   <KeyMapString>100: Slot5</KeyMapString>
-                  <MappedKeyString>Control: Target Me</MappedKeyString>
+                  <MappedKeyString>Combat: Target Me</MappedKeyString>
                 </ToMappedKey>
               </MappedKeyAction>
             </Actions>
@@ -13576,28 +13720,6 @@ alt - 1920</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Control: Assist Me</Name>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Combat: xtar 16</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB11:01</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Control: Create VFX Sources</Name>
         <Steps>
           <Step>
@@ -13685,28 +13807,6 @@ alt - 1920</Description>
                   <Height>24</Height>
                 </Rect>
                 <MappedKey />
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Follow Me</Name>
-        <Mode>OnPressAndRelease</Mode>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Combat: xtar 16</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: Keybinds</KeyMapString>
-                <MappedKeyString>HB11:02</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -13910,19 +14010,6 @@ this is the default behavior</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>100: Slot5</KeyMapString>
                 <MappedKeyString>Control: Load My ATGs</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Target Me</Name>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Combat: xtar 16</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -14947,6 +15034,28 @@ old target viewer: 371,397</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Movement: Follow Me</Name>
+        <Mode>OnPressAndRelease</Mode>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: General</KeyMapString>
+                <MappedKeyString>Combat: xtar 16</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:02</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>TrackOff</Name>
         <Steps>
           <Step>
@@ -15773,6 +15882,14 @@ executes Call of Xuzl and Spirit Call</Description>
         <Name>Combat: Assist Main</Name>
         <Description>for /assist main</Description>
         <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
@@ -16762,6 +16879,14 @@ executes Call of Xuzl and Spirit Call</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB11:06</MappedKeyString>
               </MappedKeyAction>
@@ -17612,6 +17737,14 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB11:06</MappedKeyString>
               </MappedKeyAction>
@@ -18132,6 +18265,14 @@ inquisitor's judgment</Description>
         <Name>Combat: Assist Main</Name>
         <Description>for /assist main</Description>
         <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
@@ -18885,6 +19026,14 @@ inquisitor's judgment</Description>
         <Name>Combat: Assist Main</Name>
         <Description>for /assist main</Description>
         <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
@@ -19843,6 +19992,14 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
         <Name>Combat: Assist Main</Name>
         <Description>for /assist main</Description>
         <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
@@ -22654,6 +22811,15 @@ If a character doesn't have an ability directly bound to an EQ keybind for some 
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Combat: Assist Me</Name>
+        <Description>Virtualization target
+
+Activate Me populates this key when called from Focus Slot</Description>
+        <Steps>
+          <Step />
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Combat: Attack Off</Name>
         <Description>send /attack off via keystroke action(s)</Description>
         <Steps>
@@ -23163,6 +23329,62 @@ If a character doesn't have an ability directly bound to an EQ keybind for some 
                 </Combo>
               </MappedKeyAction>
             </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Target Me</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Target Slot 1</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Target Slot 2</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Target Slot 3</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Target Slot 4</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Target Slot 5</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Target Slot 6</Name>
+        <Steps>
+          <Step>
+            <Actions />
           </Step>
         </Steps>
       </MappedKey>
@@ -23836,17 +24058,6 @@ now all 'other' characters will know how to target the MA, and assist the MA whe
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Control: Follow Me</Name>
-        <Description>virtualized by a chain starting at SESSIONS TEMPLATE -&gt; Focus Slot XX
-
-</Description>
-        <Steps>
-          <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Control: ISB-Reset</Name>
         <Description>reset all group creation mapped keys and other bits back to step 1
 
@@ -24124,63 +24335,6 @@ Loads group members into the appropriate Leader or Member ATGs</Description>
                 <MappedKeyString>Control: Load My Group 1 Member ATGs</MappedKeyString>
               </MappedKeyAction>
             </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Target Me</Name>
-        <ResetTimer>0</ResetTimer>
-        <Steps>
-          <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Target Slot 1</Name>
-        <Steps>
-          <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Target Slot 2</Name>
-        <Steps>
-          <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Target Slot 3</Name>
-        <Steps>
-          <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Target Slot 4</Name>
-        <Steps>
-          <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Target Slot 5</Name>
-        <Steps>
-          <Step>
-            <Actions />
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Control: Target Slot 6</Name>
-        <Steps>
-          <Step>
-            <Actions />
           </Step>
         </Steps>
       </MappedKey>
@@ -25355,6 +25509,15 @@ TODO: configure button to default to 2560, but use modifiers for alternate resol
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Movement: Follow Me</Name>
+        <Description>Virtualization target
+
+Activate Me populates this key when called from Focus Slot</Description>
+        <Steps>
+          <Step />
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Movement: Follow: Group1</Name>
         <Description>we cannot follow while sitting, so we must /stand
 
@@ -25378,7 +25541,7 @@ using an EQ social that does /stand will make step1 here redundant
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>other Group1</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Follow Me</MappedKeyString>
+                <MappedKeyString>Movement: Follow Me</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -39098,7 +39261,7 @@ functionality moved to Setup-* in 199: General Key Map</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>other Group1</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Me</MappedKeyString>
+                <MappedKeyString>Combat: Target Me</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -40998,7 +41161,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>AltHealer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 1</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 1</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41024,7 +41187,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>AltHealer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 2</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 2</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41050,7 +41213,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>AltHealer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 3</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 3</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41076,7 +41239,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>AltHealer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 4</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 4</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41102,7 +41265,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>AltHealer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 5</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 5</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41128,7 +41291,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>AltHealer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 6</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 6</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41154,7 +41317,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>Buffer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 1</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 1</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41180,7 +41343,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>Buffer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 2</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 2</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41206,7 +41369,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>Buffer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 3</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 3</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41232,7 +41395,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>Buffer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 4</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 4</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41258,7 +41421,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>Buffer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 5</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 5</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41284,7 +41447,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>Buffer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 6</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 6</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41310,7 +41473,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>MainHealer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 1</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 1</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41336,7 +41499,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>MainHealer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 2</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 2</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41362,7 +41525,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>MainHealer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 3</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 3</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41388,7 +41551,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>MainHealer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 4</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 4</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41414,7 +41577,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>MainHealer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 5</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 5</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -41440,7 +41603,7 @@ step 2 pastes the string into EQ with the Paste from Clipboard mapped key
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>MainHealer</Target>
                 <KeyMapString>199: General</KeyMapString>
-                <MappedKeyString>Control: Target Slot 6</MappedKeyString>
+                <MappedKeyString>Combat: Target Slot 6</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
