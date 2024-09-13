@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="9/7/2024 4:51:31 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="9/12/2024 11:15:03 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -5746,6 +5746,12 @@ this key map contains slot specific mapped keys</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Combat: Assist Me</Name>
+        <Steps>
+          <Step />
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Control ---------------------------------------------------------</Name>
         <Steps>
           <Step>
@@ -6278,7 +6284,6 @@ this key map contains slot specific mapped keys</Description>
         <Name>Combat: Assist Me</Name>
         <Steps>
           <Step>
-            <Stick>0.1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
@@ -7753,8 +7758,11 @@ be mindful of long character names and the 14-character limit when stuffing comm
         <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
-            <Stick>0.1</Stick>
             <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
+              </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: General</KeyMapString>
                 <MappedKeyString>Combat: xtar 19</MappedKeyString>
@@ -9662,8 +9670,11 @@ old target: all&amp;~(is2|dxnothing)</Description>
         <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
-            <Stick>0.1</Stick>
             <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
+              </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: General</KeyMapString>
                 <MappedKeyString>Combat: xtar 18</MappedKeyString>
@@ -11540,8 +11551,11 @@ old target viewer loc: 371,590</Description>
         <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
-            <Stick>0.1</Stick>
             <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
+              </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: General</KeyMapString>
                 <MappedKeyString>Combat: xtar 17</MappedKeyString>
@@ -13514,8 +13528,11 @@ alt - 1920</Description>
         <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
-            <Stick>0.1</Stick>
             <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
+              </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: General</KeyMapString>
                 <MappedKeyString>Combat: xtar 16</MappedKeyString>
@@ -22816,7 +22833,9 @@ If a character doesn't have an ability directly bound to an EQ keybind for some 
 
 Activate Me populates this key when called from Focus Slot</Description>
         <Steps>
-          <Step />
+          <Step>
+            <Actions />
+          </Step>
         </Steps>
       </MappedKey>
       <MappedKey>
@@ -24079,6 +24098,15 @@ invoked by Character Set load/reload, or _Setup menu button 1</Description>
                 <MappedKey>
                   <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                   <MappedKeyString>Control: Show Menus</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                  <MappedKeyString>Combat: Assist Me</MappedKeyString>
                 </MappedKey>
                 <Action>Set</Action>
                 <Value>1</Value>
@@ -25514,7 +25542,9 @@ TODO: configure button to default to 2560, but use modifiers for alternate resol
 
 Activate Me populates this key when called from Focus Slot</Description>
         <Steps>
-          <Step />
+          <Step>
+            <Actions />
+          </Step>
         </Steps>
       </MappedKey>
       <MappedKey>
