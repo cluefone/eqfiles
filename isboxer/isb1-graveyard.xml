@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="9/15/2024 10:59:21 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="9/20/2024 5:08:30 PM">
   <KeyMap>
     <Name>110: ----------------------------------------</Name>
     <Mappings />
@@ -1798,6 +1798,1158 @@ reset MeleeAttack back to 1, move things like offensive stuff and burns back to 
                 <Target>1</Target>
                 <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
                 <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>100: Slot1 Control: VFX - dxNothing-1mon</Name>
+        <Description>dxNothing viewers for 1-monitor layout</Description>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>is1</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>1146</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>1146</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is2</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>168</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>168</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is3</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>474</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>474</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is4</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>780</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>780</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is5</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>1086</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>1086</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>100: Slot1 Control: VFX - dxNothing-2mon</Name>
+        <Description>dxNothing viewers for 2-monitor layout</Description>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>is1</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>1146</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>1146</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is2</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is3</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>912</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>912</X>
+                  <Y>0</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is4</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>513</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is5</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>912</X>
+                    <Y>513</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>912</X>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>100: Slot2 Control: VFX - dxNothing-1mon</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is1</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>is2</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>278</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>278</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is3</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>474</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>474</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is4</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>780</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>780</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is5</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>1086</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>1086</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>100: Slot2 Control: VFX - dxNothing-2mon</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is1</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>is2</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>278</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>278</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is3</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>912</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>912</X>
+                  <Y>0</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is4</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>513</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is5</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>912</X>
+                    <Y>513</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>912</X>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>100: Slot3 Control: VFX - dxNothing-1mon</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is1</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is2</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>306</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>306</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>is3</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>556</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>556</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is4</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>780</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>780</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is5</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>1086</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>1086</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>100: Slot3 Control: VFX - dxNothing-2mon</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is1</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is2</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>912</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>912</X>
+                  <Y>0</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>is3</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>556</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>556</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is4</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>513</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is5</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>912</X>
+                    <Y>513</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>912</X>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>100: Slot4 Control: VFX - dxNothing-1mon</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is1</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is2</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>306</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>306</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is3</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>612</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>612</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>is4</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>834</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>834</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is5</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>1086</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>1086</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>100: Slot4 Control: VFX - dxNothing-2mon</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is1</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is2</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>912</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>912</X>
+                  <Y>0</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is3</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>513</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>is4</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>834</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>834</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is5</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>912</X>
+                    <Y>513</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>912</X>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>100: Slot5 Control: VFX - dxNothing-1mon</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is1</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is2</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>306</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>306</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is3</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>612</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>612</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is4</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>918</Y>
+                  </Location>
+                  <Size>
+                    <Width>544</Width>
+                    <Height>306</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>918</Y>
+                  <Width>544</Width>
+                  <Height>306</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>is5</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>1112</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>1112</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>100: Slot5 Control: VFX - dxNothing-2mon</Name>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is1</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is2</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>912</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>912</X>
+                  <Y>0</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is3</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>513</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>is4</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>912</X>
+                    <Y>513</Y>
+                  </Location>
+                  <Size>
+                    <Width>912</Width>
+                    <Height>513</Height>
+                  </Size>
+                  <X>912</X>
+                  <Y>513</Y>
+                  <Width>912</Width>
+                  <Height>513</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>is5</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>1112</Y>
+                  </Location>
+                  <Size>
+                    <Width>880</Width>
+                    <Height>278</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>1112</Y>
+                  <Width>880</Width>
+                  <Height>278</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
               </MappedKeyAction>
             </Actions>
           </Step>
