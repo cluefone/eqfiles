@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="9/20/2024 8:04:22 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="9/27/2024 5:35:38 PM">
   <CharacterSet>
     <ExecuteOnLoad>
       <KeyMapString>199: General</KeyMapString>
@@ -4122,6 +4122,10 @@
     <Description>Members will /assist main instead of the isb assist</Description>
   </RelayGroup>
   <RelayGroup>
+    <Name>AssistMe</Name>
+    <Description>Members will /assist the isb assist</Description>
+  </RelayGroup>
+  <RelayGroup>
     <Name>ATG1</Name>
   </RelayGroup>
   <RelayGroup>
@@ -4689,6 +4693,8 @@ brd - melody</Description>
         <Name>Combat: Assist</Name>
         <Description>combat initiation
 
+a two step process
+1: 
 Assist the ISB driver (or EQ MA) depending on ATG membership
 Assist Reset (resets things back to 1 after a mob dies)
 
@@ -4703,6 +4709,8 @@ reset MeleeAttack back to 1, move things like offensive stuff and burns back to 
             <Code>82</Code>
           </Key>
         </Combo>
+        <ResetTimer>0.2</ResetTimer>
+        <ResetType>FromFirstPress</ResetType>
         <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
@@ -4714,7 +4722,7 @@ reset MeleeAttack back to 1, move things like offensive stuff and burns back to 
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>(other CurrentBoxes)&amp;AssistMain</Target>
-                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <KeyMapString>199: General</KeyMapString>
                 <MappedKeyString>Combat: Assist Main</MappedKeyString>
               </MappedKeyAction>
             </Actions>
@@ -6208,10 +6216,6 @@ this key map contains slot specific mapped keys</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: General</KeyMapString>
                 <MappedKeyString>Combat: xtar 20</MappedKeyString>
               </MappedKeyAction>
@@ -6222,6 +6226,10 @@ this key map contains slot specific mapped keys</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB11:01</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -6449,7 +6457,6 @@ be mindful of long character names and the 14-character limit when stuffing comm
                 <MappedKeyString>Control: Load My ATGs - PAL</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
-                <Target>all</Target>
                 <Text>Slot1 PAL Persona Activated</Text>
               </MappedKeyAction>
             </Actions>
@@ -7036,7 +7043,7 @@ this is the default behavior</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Target>all</Target>
-                <Text>{SLOT} DISABLED - /ASSIST MAIN</Text>
+                <Text>{SLOT} - ASSISTING ISB</Text>
                 <Green>0</Green>
                 <Blue>0</Blue>
               </MappedKeyAction>
@@ -7056,7 +7063,7 @@ this is the default behavior</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Target>all</Target>
-                <Text>{SLOT} ENABLED - /ASSIST MAIN</Text>
+                <Text>{SLOT} ASSISTING EQ MA</Text>
                 <Red>0</Red>
                 <Blue>0</Blue>
               </MappedKeyAction>
@@ -7270,7 +7277,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is2</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -7291,7 +7298,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is3</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -7312,7 +7319,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is4</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -7333,7 +7340,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is5</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -7394,19 +7401,39 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>slot1player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>755</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>755</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
                 <Name>slot2casting</Name>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>248</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>248</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -7419,14 +7446,14 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>318</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>318</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -7435,18 +7462,39 @@ old target: all&amp;~(is2|dxnothing)</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
+                <Name>slot2player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>168</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>168</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
                 <Name>slot3casting</Name>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>554</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>554</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -7459,14 +7507,14 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>614</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>614</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -7475,18 +7523,39 @@ old target: all&amp;~(is2|dxnothing)</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
+                <Name>slot3player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>474</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>474</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
                 <Name>slot4casting</Name>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>860</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>860</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -7499,14 +7568,14 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>930</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>930</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -7515,18 +7584,39 @@ old target: all&amp;~(is2|dxnothing)</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
+                <Name>slot4player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>780</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>780</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
                 <Name>slot5casting</Name>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>1166</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>1166</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -7539,18 +7629,39 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>1236</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>1236</Y>
                   <Width>220</Width>
                   <Height>60</Height>
                 </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot5player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>1086</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>1086</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
               </MappedKeyAction>
             </Actions>
@@ -7848,14 +7959,9 @@ be mindful of long character names and the 14-character limit when stuffing comm
       </MappedKey>
       <MappedKey>
         <Name>Combat: Assist Me</Name>
-        <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
-              </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: General</KeyMapString>
                 <MappedKeyString>Combat: xtar 19</MappedKeyString>
@@ -7867,6 +7973,10 @@ be mindful of long character names and the 14-character limit when stuffing comm
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB11:01</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -8282,7 +8392,7 @@ this is the default behavior</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Target>all</Target>
-                <Text>{SLOT} DISABLED - /ASSIST MAIN</Text>
+                <Text>{SLOT} - ASSISTING ISB</Text>
                 <Green>0</Green>
                 <Blue>0</Blue>
               </MappedKeyAction>
@@ -8302,7 +8412,7 @@ this is the default behavior</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Target>all</Target>
-                <Text>{SLOT} ENABLED - /ASSIST MAIN</Text>
+                <Text>{SLOT} ASSISTING EQ MA</Text>
                 <Red>0</Red>
                 <Blue>0</Blue>
               </MappedKeyAction>
@@ -8927,7 +9037,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is1</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -8969,7 +9079,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is3</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -8990,7 +9100,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is4</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -9011,7 +9121,7 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is5</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -9037,14 +9147,14 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>0</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>0</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -9057,18 +9167,39 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>70</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>70</Y>
                   <Width>220</Width>
                   <Height>60</Height>
                 </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot1player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
@@ -9112,19 +9243,40 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>slot2player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>168</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>168</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
                 <Name>slot3casting</Name>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>554</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>554</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -9137,14 +9289,14 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>614</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>614</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -9153,18 +9305,39 @@ old target: all&amp;~(is2|dxnothing)</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
+                <Name>slot3player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>474</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>474</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
                 <Name>slot4casting</Name>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>860</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>860</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -9177,14 +9350,14 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>930</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>930</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -9193,18 +9366,39 @@ old target: all&amp;~(is2|dxnothing)</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
+                <Name>slot4player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>780</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>780</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
                 <Name>slot5casting</Name>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>1166</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>1166</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -9217,18 +9411,39 @@ old target: all&amp;~(is2|dxnothing)</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>1236</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>1236</Y>
                   <Width>220</Width>
                   <Height>60</Height>
                 </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot5player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>1086</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>1086</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
               </MappedKeyAction>
             </Actions>
@@ -9864,14 +10079,9 @@ old target: all&amp;~(is2|dxnothing)</Description>
       </MappedKey>
       <MappedKey>
         <Name>Combat: Assist Me</Name>
-        <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
-              </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: General</KeyMapString>
                 <MappedKeyString>Combat: xtar 18</MappedKeyString>
@@ -9883,6 +10093,10 @@ old target: all&amp;~(is2|dxnothing)</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB11:01</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -10583,7 +10797,7 @@ this is the default behavior</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Target>all</Target>
-                <Text>{SLOT} DISABLED - /ASSIST MAIN</Text>
+                <Text>{SLOT} - ASSISTING ISB</Text>
                 <Green>0</Green>
                 <Blue>0</Blue>
               </MappedKeyAction>
@@ -10603,7 +10817,7 @@ this is the default behavior</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Target>all</Target>
-                <Text>{SLOT} ENABLED - /ASSIST MAIN</Text>
+                <Text>{SLOT} ASSISTING EQ MA</Text>
                 <Red>0</Red>
                 <Blue>0</Blue>
               </MappedKeyAction>
@@ -11244,7 +11458,7 @@ old target viewer loc: 371,590</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is1</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -11265,7 +11479,7 @@ old target viewer loc: 371,590</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is2</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -11307,7 +11521,7 @@ old target viewer loc: 371,590</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is4</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -11328,7 +11542,7 @@ old target viewer loc: 371,590</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is5</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -11354,14 +11568,14 @@ old target viewer loc: 371,590</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>80</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>80</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -11374,14 +11588,14 @@ old target viewer loc: 371,590</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>150</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>150</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -11390,18 +11604,39 @@ old target viewer loc: 371,590</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
+                <Name>slot1player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
                 <Name>slot2casting</Name>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>386</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>386</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -11414,18 +11649,39 @@ old target viewer loc: 371,590</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>456</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>456</Y>
                   <Width>220</Width>
                   <Height>60</Height>
                 </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot2player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>306</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>306</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
@@ -11469,19 +11725,40 @@ old target viewer loc: 371,590</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>slot3player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>474</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>474</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
                 <Name>slot4casting</Name>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>860</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>860</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -11494,14 +11771,14 @@ old target viewer loc: 371,590</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>930</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>930</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -11510,18 +11787,39 @@ old target viewer loc: 371,590</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
+                <Name>slot4player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>780</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>780</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
                 <Name>slot5casting</Name>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>1166</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>1166</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -11534,18 +11832,39 @@ old target viewer loc: 371,590</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>1236</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>1236</Y>
                   <Width>220</Width>
                   <Height>60</Height>
                 </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot5player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>1086</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>1086</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
               </MappedKeyAction>
             </Actions>
@@ -11974,14 +12293,9 @@ old target viewer loc: 371,590</Description>
       </MappedKey>
       <MappedKey>
         <Name>Combat: Assist Me</Name>
-        <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
-              </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: General</KeyMapString>
                 <MappedKeyString>Combat: xtar 17</MappedKeyString>
@@ -11993,6 +12307,10 @@ old target viewer loc: 371,590</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB11:01</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -12399,7 +12717,7 @@ this is the default behavior</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Target>all</Target>
-                <Text>{SLOT} DISABLED - /ASSIST MAIN</Text>
+                <Text>{SLOT} - ASSISTING ISB</Text>
                 <Green>0</Green>
                 <Blue>0</Blue>
               </MappedKeyAction>
@@ -12419,7 +12737,7 @@ this is the default behavior</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Target>all</Target>
-                <Text>{SLOT} ENABLED - /ASSIST MAIN</Text>
+                <Text>{SLOT} ASSISTING EQ MA</Text>
                 <Red>0</Red>
                 <Blue>0</Blue>
               </MappedKeyAction>
@@ -13027,7 +13345,7 @@ alt - 1920</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is1</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -13048,7 +13366,7 @@ alt - 1920</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is2</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -13069,7 +13387,7 @@ alt - 1920</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is3</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -13111,7 +13429,7 @@ alt - 1920</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is5</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -13137,14 +13455,14 @@ alt - 1920</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>80</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>80</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -13157,14 +13475,14 @@ alt - 1920</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>150</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>150</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -13173,18 +13491,39 @@ alt - 1920</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
+                <Name>slot1player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
                 <Name>slot2casting</Name>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>386</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>386</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -13197,14 +13536,14 @@ alt - 1920</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>456</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>456</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -13213,18 +13552,39 @@ alt - 1920</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
+                <Name>slot2player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>306</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>306</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
                 <Name>slot3casting</Name>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>692</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>692</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -13237,18 +13597,39 @@ alt - 1920</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>762</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>762</Y>
                   <Width>220</Width>
                   <Height>60</Height>
                 </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot3player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>612</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>612</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
@@ -13292,19 +13673,40 @@ alt - 1920</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>slot4player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>834</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>834</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
                 <Name>slot5casting</Name>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>1166</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>1166</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -13317,18 +13719,39 @@ alt - 1920</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>1236</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>1236</Y>
                   <Width>220</Width>
                   <Height>60</Height>
                 </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot5player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>1086</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>1086</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
               </MappedKeyAction>
             </Actions>
@@ -14052,14 +14475,9 @@ alt - 1920</Description>
       </MappedKey>
       <MappedKey>
         <Name>Combat: Assist Me</Name>
-        <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
-              </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: General</KeyMapString>
                 <MappedKeyString>Combat: xtar 16</MappedKeyString>
@@ -14071,6 +14489,10 @@ alt - 1920</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB11:01</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -14486,7 +14908,7 @@ this is the default behavior</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Target>all</Target>
-                <Text>{SLOT} DISABLED - /ASSIST MAIN</Text>
+                <Text>{SLOT} - ASSISTING ISB</Text>
                 <Green>0</Green>
                 <Blue>0</Blue>
               </MappedKeyAction>
@@ -14506,7 +14928,7 @@ this is the default behavior</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Target>all</Target>
-                <Text>{SLOT} ENABLED - /ASSIST MAIN</Text>
+                <Text>{SLOT} ASSISTING EQ MA</Text>
                 <Red>0</Red>
                 <Blue>0</Blue>
               </MappedKeyAction>
@@ -15134,7 +15556,7 @@ old target viewer: 371,397</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is1</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -15155,7 +15577,7 @@ old target viewer: 371,397</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is2</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -15176,7 +15598,7 @@ old target viewer: 371,397</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is3</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -15197,7 +15619,7 @@ old target viewer: 371,397</Description>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
-                <Action>Add</Action>
+                <Action>Remove</Action>
                 <Name>is4</Name>
                 <Target>dxNothing</Target>
                 <Rect>
@@ -15244,14 +15666,14 @@ old target viewer: 371,397</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>80</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>80</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -15264,14 +15686,14 @@ old target viewer: 371,397</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>150</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>150</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -15280,18 +15702,39 @@ old target viewer: 371,397</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
+                <Name>slot1player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
                 <Name>slot2casting</Name>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>386</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>386</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -15304,14 +15747,14 @@ old target viewer: 371,397</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>456</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>456</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -15320,18 +15763,39 @@ old target viewer: 371,397</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
+                <Name>slot2player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>306</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>306</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
                 <Name>slot3casting</Name>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>692</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>692</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -15344,14 +15808,14 @@ old target viewer: 371,397</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>762</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>762</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -15360,18 +15824,39 @@ old target viewer: 371,397</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
+                <Name>slot3player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>612</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>612</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
                 <Name>slot4casting</Name>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>998</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>998</Y>
                   <Width>220</Width>
                   <Height>60</Height>
@@ -15384,18 +15869,39 @@ old target viewer: 371,397</Description>
                 <Target>dxNothing</Target>
                 <Rect>
                   <Location>
-                    <X>600</X>
+                    <X>200</X>
                     <Y>1068</Y>
                   </Location>
                   <Size>
                     <Width>220</Width>
                     <Height>60</Height>
                   </Size>
-                  <X>600</X>
+                  <X>200</X>
                   <Y>1068</Y>
                   <Width>220</Width>
                   <Height>60</Height>
                 </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot4player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>918</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>918</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
@@ -15436,6 +15942,27 @@ old target viewer: 371,397</Description>
                   <Width>220</Width>
                   <Height>60</Height>
                 </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Remove</Action>
+                <Name>slot5player</Name>
+                <Target>dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>1112</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>1112</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <UseFocusHotkey>true</UseFocusHotkey>
                 <MappedKey />
               </MappedKeyAction>
             </Actions>
@@ -16697,14 +17224,10 @@ executes Call of Xuzl and Spirit Call</Description>
       <MappedKey>
         <Name>Combat: Assist Main</Name>
         <Description>for /assist main</Description>
+        <ManualLoad>true</ManualLoad>
         <Steps>
           <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
+            <Actions />
           </Step>
           <Step>
             <Actions>
@@ -16945,6 +17468,32 @@ executes Call of Xuzl and Spirit Call</Description>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: General</KeyMapString>
                 <MappedKeyString>Combat: Attack Off</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Melody - Non-QT</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB10:04</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Melody - QT</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB10:06</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -17641,14 +18190,10 @@ executes Call of Xuzl and Spirit Call</Description>
       <MappedKey>
         <Name>Combat: Assist Main</Name>
         <Description>for /assist main</Description>
+        <ManualLoad>true</ManualLoad>
         <Steps>
           <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
+            <Actions />
           </Step>
           <Step>
             <Actions>
@@ -18710,14 +19255,10 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
       <MappedKey>
         <Name>Combat: Assist Main</Name>
         <Description>for /assist main</Description>
+        <ManualLoad>true</ManualLoad>
         <Steps>
           <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
+            <Actions />
           </Step>
           <Step>
             <Actions>
@@ -18742,6 +19283,9 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
                 </MappedKey>
                 <Action>Set</Action>
                 <Value>1</Value>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>PAL ASSIST RESET</Text>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -19167,14 +19711,10 @@ inquisitor's judgment</Description>
       <MappedKey>
         <Name>Combat: Assist Main</Name>
         <Description>for /assist main</Description>
+        <ManualLoad>true</ManualLoad>
         <Steps>
           <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
+            <Actions />
           </Step>
           <Step>
             <Actions>
@@ -19941,14 +20481,10 @@ inquisitor's judgment</Description>
       <MappedKey>
         <Name>Combat: Assist Main</Name>
         <Description>for /assist main</Description>
+        <ManualLoad>true</ManualLoad>
         <Steps>
           <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
+            <Actions />
           </Step>
           <Step>
             <Actions>
@@ -20054,6 +20590,19 @@ sent via keystring because HotBar 9 is not configured for keybind access</Descri
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB09:07</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Combat: Buff Moroseness</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Spellcasting</KeyMapString>
+                <MappedKeyString>Cast 11</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -20855,29 +21404,6 @@ sent via keystring because HotBar 9 is not configured for keybind access</Descri
                 <KeyMapString>199: Spellcasting</KeyMapString>
                 <MappedKeyString>Cast 07</MappedKeyString>
               </MappedKeyAction>
-              <MappedKeyAction xsi:type="ClickBarButtonAction">
-                <Target>all</Target>
-                <ClickBarButton>
-                  <ClickBarString>UnifiedBar</ClickBarString>
-                  <ClickBarButtonString>Button 1,4</ClickBarButtonString>
-                </ClickBarButton>
-                <BackgroundColor>
-                  <Red>255</Red>
-                </BackgroundColor>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="ClickBarButtonAction">
-                <Target>all</Target>
-                <ClickBarButton>
-                  <ClickBarString>UnifiedBar</ClickBarString>
-                  <ClickBarButtonString>Button 1,4</ClickBarButtonString>
-                </ClickBarButton>
-                <BackgroundColor />
-                <ActionTimer>
-                  <PoolName>ShamanBar-Buttons</PoolName>
-                  <Seconds>90</Seconds>
-                  <Enabled>true</Enabled>
-                </ActionTimer>
-              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -20890,32 +21416,6 @@ sent via keystring because HotBar 9 is not configured for keybind access</Descri
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Keybinds</KeyMapString>
                 <MappedKeyString>HB01:09</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="ClickBarButtonAction">
-                <Target>all</Target>
-                <ClickBarButton>
-                  <ClickBarString>UnifiedBar</ClickBarString>
-                  <ClickBarButtonString>Button 1,5</ClickBarButtonString>
-                </ClickBarButton>
-                <BackgroundColor>
-                  <Red>255</Red>
-                </BackgroundColor>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="ClickBarButtonAction">
-                <Target>all</Target>
-                <ClickBarButton>
-                  <ClickBarString>UnifiedBar</ClickBarString>
-                  <ClickBarButtonString>Button 1,5</ClickBarButtonString>
-                </ClickBarButton>
-                <BackgroundColor>
-                  <Red>255</Red>
-                  <Blue>160</Blue>
-                </BackgroundColor>
-                <ActionTimer>
-                  <PoolName>ShamanBar-Buttons</PoolName>
-                  <Seconds>180</Seconds>
-                  <Enabled>true</Enabled>
-                </ActionTimer>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -20930,29 +21430,6 @@ sent via keystring because HotBar 9 is not configured for keybind access</Descri
                 <KeyMapString>199: Spellcasting</KeyMapString>
                 <MappedKeyString>Cast 04</MappedKeyString>
               </MappedKeyAction>
-              <MappedKeyAction xsi:type="ClickBarButtonAction">
-                <Target>all</Target>
-                <ClickBarButton>
-                  <ClickBarString>UnifiedBar</ClickBarString>
-                  <ClickBarButtonString>Button 1,1</ClickBarButtonString>
-                </ClickBarButton>
-                <BackgroundColor>
-                  <Red>255</Red>
-                </BackgroundColor>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="ClickBarButtonAction">
-                <Target>all</Target>
-                <ClickBarButton>
-                  <ClickBarString>UnifiedBar</ClickBarString>
-                  <ClickBarButtonString>Button 1,1</ClickBarButtonString>
-                </ClickBarButton>
-                <BackgroundColor />
-                <ActionTimer>
-                  <PoolName>ShamanBar-Buttons</PoolName>
-                  <Seconds>24</Seconds>
-                  <Enabled>true</Enabled>
-                </ActionTimer>
-              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -20966,29 +21443,6 @@ sent via keystring because HotBar 9 is not configured for keybind access</Descri
                 <KeyMapString>199: Spellcasting</KeyMapString>
                 <MappedKeyString>Cast 06</MappedKeyString>
               </MappedKeyAction>
-              <MappedKeyAction xsi:type="ClickBarButtonAction">
-                <Target>all</Target>
-                <ClickBarButton>
-                  <ClickBarString>UnifiedBar</ClickBarString>
-                  <ClickBarButtonString>Button 1,3</ClickBarButtonString>
-                </ClickBarButton>
-                <BackgroundColor>
-                  <Red>255</Red>
-                </BackgroundColor>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="ClickBarButtonAction">
-                <Target>all</Target>
-                <ClickBarButton>
-                  <ClickBarString>UnifiedBar</ClickBarString>
-                  <ClickBarButtonString>Button 1,3</ClickBarButtonString>
-                </ClickBarButton>
-                <BackgroundColor />
-                <ActionTimer>
-                  <PoolName>ShamanBar-Buttons</PoolName>
-                  <Seconds>12</Seconds>
-                  <Enabled>true</Enabled>
-                </ActionTimer>
-              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -21001,29 +21455,6 @@ sent via keystring because HotBar 9 is not configured for keybind access</Descri
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>199: Spellcasting</KeyMapString>
                 <MappedKeyString>Cast 05</MappedKeyString>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="ClickBarButtonAction">
-                <Target>all</Target>
-                <ClickBarButton>
-                  <ClickBarString>UnifiedBar</ClickBarString>
-                  <ClickBarButtonString>Button 1,2</ClickBarButtonString>
-                </ClickBarButton>
-                <BackgroundColor>
-                  <Red>255</Red>
-                </BackgroundColor>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="ClickBarButtonAction">
-                <Target>all</Target>
-                <ClickBarButton>
-                  <ClickBarString>UnifiedBar</ClickBarString>
-                  <ClickBarButtonString>Button 1,2</ClickBarButtonString>
-                </ClickBarButton>
-                <BackgroundColor />
-                <ActionTimer>
-                  <PoolName>ShamanBar-Buttons</PoolName>
-                  <Seconds>10</Seconds>
-                  <Enabled>true</Enabled>
-                </ActionTimer>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -21805,14 +22236,10 @@ sent via keystring because HotBar 9 is not configured for keybind access</Descri
       <MappedKey>
         <Name>Combat: Assist Main</Name>
         <Description>for /assist main</Description>
+        <ManualLoad>true</ManualLoad>
         <Steps>
           <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-                <MappedKeyString>Combat: Assist Reset</MappedKeyString>
-              </MappedKeyAction>
-            </Actions>
+            <Actions />
           </Step>
           <Step>
             <Actions>
@@ -24672,10 +25099,28 @@ If a character doesn't have an ability directly bound to an EQ keybind for some 
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Combat: Assist Main</Name>
+        <Description>for /assist main</Description>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>199: Keybinds</KeyMapString>
+                <MappedKeyString>HB11:06</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Combat: Assist Me</Name>
         <Description>Virtualization target
 
 Activate Me populates this key when called from Focus Slot</Description>
+        <Mode>OnPressAndRelease</Mode>
         <Steps>
           <Step>
             <Actions />
@@ -26320,6 +26765,7 @@ sets the current window as group MA and MT</Description>
               <MappedKeyAction xsi:type="PopupTextAction">
                 <Target>all</Target>
                 <Text>Executed 199: General -&gt; Control: Setup-2560-05Box-dxN</Text>
+                <DurationMS>1000</DurationMS>
                 <Red>0</Red>
                 <Blue>0</Blue>
               </MappedKeyAction>
@@ -26495,6 +26941,27 @@ Loads group members into the appropriate Leader or Member ATGs</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
+                <Name>slot1player</Name>
+                <Target>ATG1</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>755</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>755</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
                 <Name>slot2target</Name>
                 <Target>ATG2</Target>
                 <IsSource>true</IsSource>
@@ -26532,6 +26999,27 @@ Loads group members into the appropriate Leader or Member ATGs</Description>
                   <Y>770</Y>
                   <Width>110</Width>
                   <Height>30</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot2player</Name>
+                <Target>ATG2</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>755</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>755</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -26579,6 +27067,27 @@ Loads group members into the appropriate Leader or Member ATGs</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
+                <Name>slot3player</Name>
+                <Target>ATG3</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>755</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>755</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
                 <Name>slot4target</Name>
                 <Target>ATG4</Target>
                 <IsSource>true</IsSource>
@@ -26621,6 +27130,27 @@ Loads group members into the appropriate Leader or Member ATGs</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VideoFeedsAction">
                 <Action>Add</Action>
+                <Name>slot4player</Name>
+                <Target>ATG4</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>755</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>755</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
                 <Name>slot5target</Name>
                 <Target>ATG5</Target>
                 <IsSource>true</IsSource>
@@ -26658,6 +27188,27 @@ Loads group members into the appropriate Leader or Member ATGs</Description>
                   <Y>770</Y>
                   <Width>110</Width>
                   <Height>28</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Add</Action>
+                <Name>slot5player</Name>
+                <Target>ATG5</Target>
+                <IsSource>true</IsSource>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>755</Y>
+                  </Location>
+                  <Size>
+                    <Width>155</Width>
+                    <Height>240</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>755</Y>
+                  <Width>155</Width>
+                  <Height>240</Height>
                 </Rect>
                 <MappedKey />
               </MappedKeyAction>
@@ -45932,6 +46483,9 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
   <ActionTimerPool>
     <Name>ENC-AE-Mez</Name>
   </ActionTimerPool>
+  <ActionTimerPool>
+    <Name>Assist-Me</Name>
+  </ActionTimerPool>
   <VariableKeystroke>
     <Name>Assist FTL</Name>
     <Category>Targeting</Category>
@@ -46159,7 +46713,8 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
   <VariableKeystroke>
     <Name>Cast gem 11</Name>
     <DefaultValue>
-      <Combo>-</Combo>
+      <Combo>Alt+-</Combo>
+      <Modifiers>Alt</Modifiers>
       <Key>
         <Key>-</Key>
         <Code>12</Code>
@@ -47018,14 +47573,14 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <X>870</X>
     <Y>770</Y>
     <RowHeight>24</RowHeight>
-    <ColumnWidth>44</ColumnWidth>
+    <ColumnWidth>45</ColumnWidth>
     <BackgroundColor />
     <CellBorder_Color>
       <Red>127</Red>
       <Blue>127</Blue>
     </CellBorder_Color>
     <Rows>3</Rows>
-    <Columns>17</Columns>
+    <Columns>16</Columns>
     <Buttons>
       <Button>
         <Enabled>false</Enabled>
@@ -47040,58 +47595,8 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <MappedKeyString>Combat: Heal - Recourse</MappedKeyString>
             </Action>
           </ClickAction>
-        </ClickActions>
-        <MouseOverAction>
-          <LeftRight>Left</LeftRight>
-          <Action />
-        </MouseOverAction>
-        <Tooltip />
-        <Text>Recour</Text>
-        <TextStyle>
-          <Size>11</Size>
-          <Color>
-            <Red>255</Red>
-            <Green>255</Green>
-            <Blue>255</Blue>
-          </Color>
-        </TextStyle>
-      </Button>
-      <Button>
-        <Enabled>false</Enabled>
-        <Name>Button 1,2</Name>
-        <BackgroundColor />
-        <ClickActions>
           <ClickAction>
-            <LeftRight>Left</LeftRight>
-            <Action>
-              <Target>ATG3</Target>
-              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Combat: Heal - Shower</MappedKeyString>
-            </Action>
-          </ClickAction>
-        </ClickActions>
-        <MouseOverAction>
-          <LeftRight>Left</LeftRight>
-          <Action />
-        </MouseOverAction>
-        <Tooltip />
-        <Text>Shower</Text>
-        <TextStyle>
-          <Size>11</Size>
-          <Color>
-            <Red>255</Red>
-            <Green>255</Green>
-            <Blue>255</Blue>
-          </Color>
-        </TextStyle>
-      </Button>
-      <Button>
-        <Enabled>false</Enabled>
-        <Name>Button 1,3</Name>
-        <BackgroundColor />
-        <ClickActions>
-          <ClickAction>
-            <LeftRight>Left</LeftRight>
+            <LeftRight>Right</LeftRight>
             <Action>
               <Target>ATG3</Target>
               <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
@@ -47104,7 +47609,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <Action />
         </MouseOverAction>
         <Tooltip />
-        <Text>Renew</Text>
+        <Text>HoTs</Text>
         <TextStyle>
           <Size>11</Size>
           <Color>
@@ -47116,11 +47621,22 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 1,4</Name>
-        <BackgroundColor />
+        <Name>Button 1,2</Name>
+        <BackgroundColor>
+          <Red>255</Red>
+          <Blue>160</Blue>
+        </BackgroundColor>
         <ClickActions>
           <ClickAction>
             <LeftRight>Left</LeftRight>
+            <Action>
+              <Target>ATG3</Target>
+              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+              <MappedKeyString>Combat: Heal - Intervention AA</MappedKeyString>
+            </Action>
+          </ClickAction>
+          <ClickAction>
+            <LeftRight>Right</LeftRight>
             <Action>
               <Target>ATG3</Target>
               <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
@@ -47145,38 +47661,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 1,5</Name>
-        <BackgroundColor>
-          <Red>255</Red>
-          <Blue>160</Blue>
-        </BackgroundColor>
-        <ClickActions>
-          <ClickAction>
-            <LeftRight>Left</LeftRight>
-            <Action>
-              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Combat: Heal - Intervention AA</MappedKeyString>
-            </Action>
-          </ClickAction>
-        </ClickActions>
-        <MouseOverAction>
-          <LeftRight>Left</LeftRight>
-          <Action />
-        </MouseOverAction>
-        <Tooltip />
-        <Text>AAInter</Text>
-        <TextStyle>
-          <Size>11</Size>
-          <Color>
-            <Red>255</Red>
-            <Green>255</Green>
-            <Blue>255</Blue>
-          </Color>
-        </TextStyle>
-      </Button>
-      <Button>
-        <Enabled>false</Enabled>
-        <Name>Button 1,6</Name>
+        <Name>Button 1,3</Name>
         <BackgroundColor />
         <ClickActions>
           <ClickAction>
@@ -47205,7 +47690,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 1,7</Name>
+        <Name>Button 1,4</Name>
         <BackgroundColor />
         <ClickActions>
           <ClickAction>
@@ -47261,7 +47746,36 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 1,8</Name>
+        <Name>Button 1,5</Name>
+        <BackgroundColor />
+        <ClickActions>
+          <ClickAction>
+            <LeftRight>Left</LeftRight>
+            <Action>
+              <Target>ATG3</Target>
+              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+              <MappedKeyString>Combat: Radiant Cure</MappedKeyString>
+            </Action>
+          </ClickAction>
+        </ClickActions>
+        <MouseOverAction>
+          <LeftRight>Left</LeftRight>
+          <Action />
+        </MouseOverAction>
+        <Tooltip />
+        <Text>RC</Text>
+        <TextStyle>
+          <Size>11</Size>
+          <Color>
+            <Red>255</Red>
+            <Green>255</Green>
+            <Blue>255</Blue>
+          </Color>
+        </TextStyle>
+      </Button>
+      <Button>
+        <Enabled>false</Enabled>
+        <Name>Button 1,6</Name>
         <BackgroundColor>
           <Green>127</Green>
         </BackgroundColor>
@@ -47292,7 +47806,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 1,9</Name>
+        <Name>Button 1,7</Name>
         <BackgroundColor>
           <Green>127</Green>
         </BackgroundColor>
@@ -47341,15 +47855,35 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 1,10</Name>
+        <Name>Button 1,8</Name>
+        <BackgroundColor />
+        <ClickActions />
+        <MouseOverAction>
+          <LeftRight>Left</LeftRight>
+          <Action />
+        </MouseOverAction>
+        <Tooltip />
+        <Text />
+      </Button>
+      <Button>
+        <Enabled>false</Enabled>
+        <Name>Button 1,9</Name>
         <BackgroundColor />
         <ClickActions>
           <ClickAction>
-            <LeftRight>Left</LeftRight>
+            <LeftRight>Right</LeftRight>
             <Action>
               <Target>ATG3</Target>
               <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Combat: Buff Spirit Guardian Slot 1</MappedKeyString>
+              <MappedKeyString>Combat: Mem Base Spells</MappedKeyString>
+            </Action>
+          </ClickAction>
+          <ClickAction>
+            <LeftRight>Left</LeftRight>
+            <Action>
+              <Target>ATG5</Target>
+              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+              <MappedKeyString>Combat: Mem Base Spells</MappedKeyString>
             </Action>
           </ClickAction>
         </ClickActions>
@@ -47358,7 +47892,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <Action />
         </MouseOverAction>
         <Tooltip />
-        <Text>SG1</Text>
+        <Text>BASE</Text>
         <TextStyle>
           <Size>11</Size>
           <Color>
@@ -47370,7 +47904,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 1,11</Name>
+        <Name>Button 1,10</Name>
         <BackgroundColor />
         <ClickActions />
         <MouseOverAction>
@@ -47378,7 +47912,55 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <Action />
         </MouseOverAction>
         <Tooltip />
-        <Text>UoS1</Text>
+        <Text />
+      </Button>
+      <Button>
+        <Enabled>false</Enabled>
+        <Name>Button 1,11</Name>
+        <BackgroundColor />
+        <ClickActions>
+          <ClickAction>
+            <LeftRight>Left</LeftRight>
+            <Action>
+              <Target>ATG5</Target>
+              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+              <MappedKeyString>Clicky: Mount</MappedKeyString>
+            </Action>
+          </ClickAction>
+          <ClickAction>
+            <LeftRight>Left</LeftRight>
+            <Modifiers>Alt</Modifiers>
+            <Action>
+              <Target>ATG4</Target>
+              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+              <MappedKeyString>Clicky: Mount</MappedKeyString>
+            </Action>
+          </ClickAction>
+          <ClickAction>
+            <LeftRight>Left</LeftRight>
+            <Modifiers>Ctrl</Modifiers>
+            <Action>
+              <Target>ATG3</Target>
+              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+              <MappedKeyString>Clicky: Mount</MappedKeyString>
+            </Action>
+          </ClickAction>
+          <ClickAction>
+            <LeftRight>Left</LeftRight>
+            <Modifiers>Shift</Modifiers>
+            <Action>
+              <Target>ATG2</Target>
+              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+              <MappedKeyString>Clicky: Mount</MappedKeyString>
+            </Action>
+          </ClickAction>
+        </ClickActions>
+        <MouseOverAction>
+          <LeftRight>Left</LeftRight>
+          <Action />
+        </MouseOverAction>
+        <Tooltip />
+        <Text>mounts</Text>
         <TextStyle>
           <Size>11</Size>
           <Color>
@@ -47396,9 +47978,17 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <ClickAction>
             <LeftRight>Left</LeftRight>
             <Action>
-              <Target>ATG3</Target>
+              <Target>CurrentBoxes</Target>
               <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Combat: Radiant Cure</MappedKeyString>
+              <MappedKeyString>Clicky: Familiar</MappedKeyString>
+            </Action>
+          </ClickAction>
+          <ClickAction>
+            <LeftRight>Right</LeftRight>
+            <Action>
+              <Target>ATG2</Target>
+              <KeyMapString>110: WIZ</KeyMapString>
+              <MappedKeyString>Combat: Improved Familiar</MappedKeyString>
             </Action>
           </ClickAction>
         </ClickActions>
@@ -47407,7 +47997,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <Action />
         </MouseOverAction>
         <Tooltip />
-        <Text>RC</Text>
+        <Text>Famil</Text>
         <TextStyle>
           <Size>11</Size>
           <Color>
@@ -47420,30 +48010,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       <Button>
         <Enabled>false</Enabled>
         <Name>Button 1,13</Name>
-        <BackgroundColor />
-        <ClickActions />
-        <MouseOverAction>
-          <LeftRight>Left</LeftRight>
-          <Action />
-        </MouseOverAction>
-        <Tooltip />
-        <Text />
-      </Button>
-      <Button>
-        <Enabled>false</Enabled>
-        <Name>Button 1,14</Name>
-        <BackgroundColor />
-        <ClickActions />
-        <MouseOverAction>
-          <LeftRight>Left</LeftRight>
-          <Action />
-        </MouseOverAction>
-        <Tooltip />
-        <Text />
-      </Button>
-      <Button>
-        <Enabled>false</Enabled>
-        <Name>Button 1,15</Name>
         <BackgroundColor>
           <Red>255</Red>
         </BackgroundColor>
@@ -47501,13 +48067,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 1,16</Name>
-        <BackgroundColor />
-        <ClickActions />
-      </Button>
-      <Button>
-        <Enabled>false</Enabled>
-        <Name>Button 1,17</Name>
+        <Name>Button 1,14</Name>
         <BackgroundColor />
         <ClickActions>
           <ClickAction>
@@ -47536,7 +48096,68 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
+        <Name>Button 1,15</Name>
+        <BackgroundColor />
+        <ClickActions />
+        <MouseOverAction>
+          <LeftRight>Left</LeftRight>
+          <Action />
+        </MouseOverAction>
+        <Tooltip />
+        <Text />
+      </Button>
+      <Button>
+        <Enabled>false</Enabled>
+        <Name>Button 1,16</Name>
+        <BackgroundColor />
+        <ClickActions />
+        <MouseOverAction>
+          <LeftRight>Left</LeftRight>
+          <Action />
+        </MouseOverAction>
+        <Tooltip />
+        <Text />
+      </Button>
+      <Button>
+        <Enabled>false</Enabled>
         <Name>Button 2,1</Name>
+        <BackgroundColor />
+        <ClickActions>
+          <ClickAction>
+            <LeftRight>Left</LeftRight>
+            <Action>
+              <Target>ATG4</Target>
+              <KeyMapString>110: BRD</KeyMapString>
+              <MappedKeyString>Combat: Melody - Non-QT</MappedKeyString>
+            </Action>
+          </ClickAction>
+          <ClickAction>
+            <LeftRight>Right</LeftRight>
+            <Action>
+              <Target>ATG4</Target>
+              <KeyMapString>110: BRD</KeyMapString>
+              <MappedKeyString>Combat: Melody - QT</MappedKeyString>
+            </Action>
+          </ClickAction>
+        </ClickActions>
+        <MouseOverAction>
+          <LeftRight>Left</LeftRight>
+          <Action />
+        </MouseOverAction>
+        <Tooltip />
+        <Text>Meldy</Text>
+        <TextStyle>
+          <Size>11</Size>
+          <Color>
+            <Red>255</Red>
+            <Green>255</Green>
+            <Blue>255</Blue>
+          </Color>
+        </TextStyle>
+      </Button>
+      <Button>
+        <Enabled>false</Enabled>
+        <Name>Button 2,2</Name>
         <BackgroundColor>
           <Red>27</Red>
           <Green>9</Green>
@@ -47577,7 +48198,100 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 2,2</Name>
+        <Name>Button 2,3</Name>
+        <BackgroundColor />
+        <ClickActions>
+          <ClickAction>
+            <LeftRight>Left</LeftRight>
+            <Action>
+              <Target>ATG4</Target>
+              <KeyMapString>199: Spellcasting</KeyMapString>
+              <MappedKeyString>Stopsong</MappedKeyString>
+            </Action>
+          </ClickAction>
+          <ClickAction>
+            <LeftRight>Right</LeftRight>
+            <Action>
+              <Target>ATG4</Target>
+              <KeyMapString>199: Keybinds</KeyMapString>
+              <MappedKeyString>HB01:09</MappedKeyString>
+            </Action>
+          </ClickAction>
+        </ClickActions>
+        <MouseOverAction>
+          <LeftRight>Left</LeftRight>
+          <Action />
+        </MouseOverAction>
+        <Tooltip />
+        <Text>SS/DT</Text>
+        <TextStyle>
+          <Size>11</Size>
+          <Color>
+            <Red>255</Red>
+            <Green>255</Green>
+            <Blue>255</Blue>
+          </Color>
+        </TextStyle>
+      </Button>
+      <Button>
+        <Enabled>false</Enabled>
+        <Name>Button 2,4</Name>
+        <BackgroundColor />
+        <ClickActions>
+          <ClickAction>
+            <LeftRight>Left</LeftRight>
+            <Modifiers>Shift</Modifiers>
+            <Action>
+              <Target>ATG2</Target>
+              <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+              <MappedKeyString>Clicky: Chest</MappedKeyString>
+            </Action>
+          </ClickAction>
+          <ClickAction>
+            <LeftRight>Left</LeftRight>
+            <Modifiers>Ctrl</Modifiers>
+            <Action>
+              <Target>ATG3</Target>
+              <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+              <MappedKeyString>Clicky: Chest</MappedKeyString>
+            </Action>
+          </ClickAction>
+          <ClickAction>
+            <LeftRight>Left</LeftRight>
+            <Modifiers>Alt</Modifiers>
+            <Action>
+              <Target>ATG4</Target>
+              <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+              <MappedKeyString>Clicky: Chest</MappedKeyString>
+            </Action>
+          </ClickAction>
+          <ClickAction>
+            <LeftRight>Left</LeftRight>
+            <Action>
+              <Target>ATG5</Target>
+              <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+              <MappedKeyString>Clicky: Chest</MappedKeyString>
+            </Action>
+          </ClickAction>
+        </ClickActions>
+        <MouseOverAction>
+          <LeftRight>Left</LeftRight>
+          <Action />
+        </MouseOverAction>
+        <Tooltip />
+        <Text>BP</Text>
+        <TextStyle>
+          <Size>11</Size>
+          <Color>
+            <Red>255</Red>
+            <Green>255</Green>
+            <Blue>255</Blue>
+          </Color>
+        </TextStyle>
+      </Button>
+      <Button>
+        <Enabled>false</Enabled>
+        <Name>Button 2,5</Name>
         <BackgroundColor>
           <Red>255</Red>
           <Blue>160</Blue>
@@ -47609,7 +48323,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 2,3</Name>
+        <Name>Button 2,6</Name>
         <BackgroundColor />
         <ClickActions>
           <ClickAction>
@@ -47638,25 +48352,15 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 2,4</Name>
-        <BackgroundColor>
-          <Red>255</Red>
-        </BackgroundColor>
+        <Name>Button 2,7</Name>
+        <BackgroundColor />
         <ClickActions>
           <ClickAction>
             <LeftRight>Left</LeftRight>
             <Action>
-              <Target>CurrentBoxes</Target>
+              <Target>SwarmPets&amp;CurrentBoxes</Target>
               <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Combat: AFK Invis</MappedKeyString>
-            </Action>
-          </ClickAction>
-          <ClickAction>
-            <LeftRight>Right</LeftRight>
-            <Action>
-              <Target>ATG3</Target>
-              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Invisibility: Fixed</MappedKeyString>
+              <MappedKeyString>Combat: SwarmPets</MappedKeyString>
             </Action>
           </ClickAction>
         </ClickActions>
@@ -47665,7 +48369,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <Action />
         </MouseOverAction>
         <Tooltip />
-        <Text>VIS</Text>
+        <Text>Swarms</Text>
         <TextStyle>
           <Size>11</Size>
           <Color>
@@ -47677,23 +48381,15 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 2,5</Name>
+        <Name>Button 2,8</Name>
         <BackgroundColor />
         <ClickActions>
           <ClickAction>
             <LeftRight>Left</LeftRight>
             <Action>
               <Target>ATG3</Target>
-              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Movement: Speed</MappedKeyString>
-            </Action>
-          </ClickAction>
-          <ClickAction>
-            <LeftRight>Right</LeftRight>
-            <Action>
-              <Target>ATG4</Target>
-              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Movement: Speed</MappedKeyString>
+              <KeyMapString>110: SHM</KeyMapString>
+              <MappedKeyString>Combat: Buff Moroseness</MappedKeyString>
             </Action>
           </ClickAction>
         </ClickActions>
@@ -47702,7 +48398,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <Action />
         </MouseOverAction>
         <Tooltip />
-        <Text>Run</Text>
+        <Text>Morose</Text>
         <TextStyle>
           <Size>11</Size>
           <Color>
@@ -47714,7 +48410,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 2,6</Name>
+        <Name>Button 2,9</Name>
         <BackgroundColor />
         <ClickActions>
           <ClickAction>
@@ -47751,7 +48447,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 2,7</Name>
+        <Name>Button 2,10</Name>
         <BackgroundColor />
         <ClickActions>
           <ClickAction>
@@ -47797,7 +48493,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 2,8</Name>
+        <Name>Button 2,11</Name>
         <BackgroundColor />
         <ClickActions>
           <ClickAction>
@@ -47843,7 +48539,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 2,9</Name>
+        <Name>Button 2,12</Name>
         <BackgroundColor />
         <ClickActions>
           <ClickAction>
@@ -47880,44 +48576,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 2,10</Name>
-        <BackgroundColor />
-        <ClickActions>
-          <ClickAction>
-            <LeftRight>Right</LeftRight>
-            <Action>
-              <Target>ATG3</Target>
-              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Combat: Mem Base Spells</MappedKeyString>
-            </Action>
-          </ClickAction>
-          <ClickAction>
-            <LeftRight>Left</LeftRight>
-            <Action>
-              <Target>ATG5</Target>
-              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Combat: Mem Base Spells</MappedKeyString>
-            </Action>
-          </ClickAction>
-        </ClickActions>
-        <MouseOverAction>
-          <LeftRight>Left</LeftRight>
-          <Action />
-        </MouseOverAction>
-        <Tooltip />
-        <Text>BASE</Text>
-        <TextStyle>
-          <Size>11</Size>
-          <Color>
-            <Red>255</Red>
-            <Green>255</Green>
-            <Blue>255</Blue>
-          </Color>
-        </TextStyle>
-      </Button>
-      <Button>
-        <Enabled>false</Enabled>
-        <Name>Button 2,11</Name>
+        <Name>Button 2,13</Name>
         <BackgroundColor />
         <ClickActions>
           <ClickAction>
@@ -47926,52 +48585,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <Target>ATG5</Target>
               <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
               <MappedKeyString>Combat: Aura</MappedKeyString>
-            </Action>
-          </ClickAction>
-          <ClickAction>
-            <LeftRight>Right</LeftRight>
-            <Action>
-              <Target>ATG4</Target>
-              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Combat: Aura</MappedKeyString>
-            </Action>
-          </ClickAction>
-          <ClickAction>
-            <LeftRight>Left</LeftRight>
-            <Modifiers>Ctrl</Modifiers>
-            <Action>
-              <Target>ATG3</Target>
-              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Combat: Aura</MappedKeyString>
-            </Action>
-          </ClickAction>
-        </ClickActions>
-        <MouseOverAction>
-          <LeftRight>Left</LeftRight>
-          <Action />
-        </MouseOverAction>
-        <Tooltip />
-        <Text>auras</Text>
-        <TextStyle>
-          <Size>11</Size>
-          <Color>
-            <Red>255</Red>
-            <Green>255</Green>
-            <Blue>255</Blue>
-          </Color>
-        </TextStyle>
-      </Button>
-      <Button>
-        <Enabled>false</Enabled>
-        <Name>Button 2,12</Name>
-        <BackgroundColor />
-        <ClickActions>
-          <ClickAction>
-            <LeftRight>Left</LeftRight>
-            <Action>
-              <Target>ATG5</Target>
-              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Clicky: Mount</MappedKeyString>
             </Action>
           </ClickAction>
           <ClickAction>
@@ -47980,7 +48593,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <Action>
               <Target>ATG4</Target>
               <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Clicky: Mount</MappedKeyString>
+              <MappedKeyString>Combat: Aura</MappedKeyString>
             </Action>
           </ClickAction>
           <ClickAction>
@@ -47989,16 +48602,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <Action>
               <Target>ATG3</Target>
               <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Clicky: Mount</MappedKeyString>
-            </Action>
-          </ClickAction>
-          <ClickAction>
-            <LeftRight>Left</LeftRight>
-            <Modifiers>Shift</Modifiers>
-            <Action>
-              <Target>ATG2</Target>
-              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Clicky: Mount</MappedKeyString>
+              <MappedKeyString>Combat: Aura</MappedKeyString>
             </Action>
           </ClickAction>
         </ClickActions>
@@ -48007,44 +48611,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <Action />
         </MouseOverAction>
         <Tooltip />
-        <Text>mounts</Text>
-        <TextStyle>
-          <Size>11</Size>
-          <Color>
-            <Red>255</Red>
-            <Green>255</Green>
-            <Blue>255</Blue>
-          </Color>
-        </TextStyle>
-      </Button>
-      <Button>
-        <Enabled>false</Enabled>
-        <Name>Button 2,13</Name>
-        <BackgroundColor />
-        <ClickActions>
-          <ClickAction>
-            <LeftRight>Left</LeftRight>
-            <Action>
-              <Target>CurrentBoxes</Target>
-              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Clicky: Familiar</MappedKeyString>
-            </Action>
-          </ClickAction>
-          <ClickAction>
-            <LeftRight>Right</LeftRight>
-            <Action>
-              <Target>ATG2</Target>
-              <KeyMapString>110: WIZ</KeyMapString>
-              <MappedKeyString>Combat: Improved Familiar</MappedKeyString>
-            </Action>
-          </ClickAction>
-        </ClickActions>
-        <MouseOverAction>
-          <LeftRight>Left</LeftRight>
-          <Action />
-        </MouseOverAction>
-        <Tooltip />
-        <Text>Famil</Text>
+        <Text>Aura</Text>
         <TextStyle>
           <Size>11</Size>
           <Color>
@@ -48057,18 +48624,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       <Button>
         <Enabled>false</Enabled>
         <Name>Button 2,14</Name>
-        <BackgroundColor />
-        <ClickActions />
-        <MouseOverAction>
-          <LeftRight>Left</LeftRight>
-          <Action />
-        </MouseOverAction>
-        <Tooltip />
-        <Text />
-      </Button>
-      <Button>
-        <Enabled>false</Enabled>
-        <Name>Button 2,15</Name>
         <BackgroundColor />
         <ClickActions>
           <ClickAction>
@@ -48097,7 +48652,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 2,16</Name>
+        <Name>Button 2,15</Name>
         <BackgroundColor />
         <ClickActions>
           <ClickAction>
@@ -48161,7 +48716,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </Button>
       <Button>
         <Enabled>false</Enabled>
-        <Name>Button 2,17</Name>
+        <Name>Button 2,16</Name>
         <BackgroundColor />
         <ClickActions>
           <ClickAction>
@@ -48287,7 +48842,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <Action />
         </MouseOverAction>
         <Tooltip />
-        <Text>malslw</Text>
+        <Text>AEdebuf</Text>
         <TextStyle>
           <Size>11</Size>
           <Color>
@@ -48443,14 +48998,41 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       <Button>
         <Enabled>false</Enabled>
         <Name>Button 3,7</Name>
-        <BackgroundColor />
-        <ClickActions />
+        <BackgroundColor>
+          <Red>255</Red>
+        </BackgroundColor>
+        <ClickActions>
+          <ClickAction>
+            <LeftRight>Right</LeftRight>
+            <Action>
+              <Target>CurrentBoxes</Target>
+              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+              <MappedKeyString>Combat: AFK Invis</MappedKeyString>
+            </Action>
+          </ClickAction>
+          <ClickAction>
+            <LeftRight>Left</LeftRight>
+            <Action>
+              <Target>ATG3</Target>
+              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+              <MappedKeyString>Invisibility: Fixed</MappedKeyString>
+            </Action>
+          </ClickAction>
+        </ClickActions>
         <MouseOverAction>
           <LeftRight>Left</LeftRight>
           <Action />
         </MouseOverAction>
         <Tooltip />
-        <Text />
+        <Text>VIS</Text>
+        <TextStyle>
+          <Size>11</Size>
+          <Color>
+            <Red>255</Red>
+            <Green>255</Green>
+            <Blue>255</Blue>
+          </Color>
+        </TextStyle>
       </Button>
       <Button>
         <Enabled>false</Enabled>
@@ -48460,17 +49042,17 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <ClickAction>
             <LeftRight>Left</LeftRight>
             <Action>
-              <Target>ATG4</Target>
-              <KeyMapString>199: Spellcasting</KeyMapString>
-              <MappedKeyString>Stopsong</MappedKeyString>
+              <Target>ATG3</Target>
+              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+              <MappedKeyString>Movement: Speed</MappedKeyString>
             </Action>
           </ClickAction>
           <ClickAction>
             <LeftRight>Right</LeftRight>
             <Action>
               <Target>ATG4</Target>
-              <KeyMapString>199: Keybinds</KeyMapString>
-              <MappedKeyString>HB01:09</MappedKeyString>
+              <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+              <MappedKeyString>Movement: Speed</MappedKeyString>
             </Action>
           </ClickAction>
         </ClickActions>
@@ -48479,7 +49061,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <Action />
         </MouseOverAction>
         <Tooltip />
-        <Text>SS/DT</Text>
+        <Text>Run</Text>
         <TextStyle>
           <Size>11</Size>
           <Color>
@@ -48611,57 +49193,13 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <Enabled>false</Enabled>
         <Name>Button 3,13</Name>
         <BackgroundColor />
-        <ClickActions>
-          <ClickAction>
-            <LeftRight>Left</LeftRight>
-            <Modifiers>Shift</Modifiers>
-            <Action>
-              <Target>ATG2</Target>
-              <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-              <MappedKeyString>Clicky: Chest</MappedKeyString>
-            </Action>
-          </ClickAction>
-          <ClickAction>
-            <LeftRight>Left</LeftRight>
-            <Modifiers>Ctrl</Modifiers>
-            <Action>
-              <Target>ATG3</Target>
-              <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-              <MappedKeyString>Clicky: Chest</MappedKeyString>
-            </Action>
-          </ClickAction>
-          <ClickAction>
-            <LeftRight>Left</LeftRight>
-            <Modifiers>Alt</Modifiers>
-            <Action>
-              <Target>ATG4</Target>
-              <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-              <MappedKeyString>Clicky: Chest</MappedKeyString>
-            </Action>
-          </ClickAction>
-          <ClickAction>
-            <LeftRight>Left</LeftRight>
-            <Action>
-              <Target>ATG5</Target>
-              <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-              <MappedKeyString>Clicky: Chest</MappedKeyString>
-            </Action>
-          </ClickAction>
-        </ClickActions>
+        <ClickActions />
         <MouseOverAction>
           <LeftRight>Left</LeftRight>
           <Action />
         </MouseOverAction>
         <Tooltip />
-        <Text>BP</Text>
-        <TextStyle>
-          <Size>11</Size>
-          <Color>
-            <Red>255</Red>
-            <Green>255</Green>
-            <Blue>255</Blue>
-          </Color>
-        </TextStyle>
+        <Text />
       </Button>
       <Button>
         <Enabled>false</Enabled>
@@ -48671,9 +49209,9 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <ClickAction>
             <LeftRight>Left</LeftRight>
             <Action>
-              <Target>SwarmPets&amp;CurrentBoxes</Target>
+              <Target>PetOwners</Target>
               <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Combat: SwarmPets</MappedKeyString>
+              <MappedKeyString>Combat: Pet Back</MappedKeyString>
             </Action>
           </ClickAction>
         </ClickActions>
@@ -48682,7 +49220,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <Action />
         </MouseOverAction>
         <Tooltip />
-        <Text>Swarms</Text>
+        <Text>PB</Text>
         <TextStyle>
           <Size>11</Size>
           <Color>
@@ -48702,7 +49240,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <Action>
               <Target>PetOwners</Target>
               <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
-              <MappedKeyString>Combat: Pet Back</MappedKeyString>
+              <MappedKeyString>Combat: Summon Companion</MappedKeyString>
             </Action>
           </ClickAction>
         </ClickActions>
@@ -48711,7 +49249,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <Action />
         </MouseOverAction>
         <Tooltip />
-        <Text>PB</Text>
+        <Text>SumC</Text>
         <TextStyle>
           <Size>11</Size>
           <Color>
@@ -48749,12 +49287,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <Blue>255</Blue>
           </Color>
         </TextStyle>
-      </Button>
-      <Button>
-        <Enabled>false</Enabled>
-        <Name>Button 3,17</Name>
-        <BackgroundColor />
-        <ClickActions />
       </Button>
     </Buttons>
   </ClickBar>
