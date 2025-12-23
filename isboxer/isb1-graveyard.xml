@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="9/20/2024 5:08:30 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="1/14/2025 10:19:46 AM">
   <KeyMap>
     <Name>110: ----------------------------------------</Name>
     <Mappings />
@@ -1542,6 +1542,22 @@ reset MeleeAttack back to 1, move things like offensive stuff and burns back to 
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>000: - HOTKEYS-Combat: Quick DPS</Name>
+        <Description>Future use: quick dot social for the shaman</Description>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>all</Target>
+                <KeyMapString>110: - CLASS TEMPLATE</KeyMapString>
+                <MappedKeyString>Combat: Quick DPS</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>000: - HOTKEYS-Control: Show Menus</Name>
         <Description>a simple toggle to turn menus on and off with a single keypress</Description>
         <Combo>
@@ -1568,6 +1584,109 @@ reset MeleeAttack back to 1, move things like offensive stuff and burns back to 
                 <MappedKey>
                   <KeyMapString>100: Slot1</KeyMapString>
                   <MappedKeyString>Control: Show Menus</MappedKeyString>
+                </MappedKey>
+                <Action>Add</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>000: - HOTKEYS-Control: Show Traveling VFX</Name>
+        <Description>in the future, we'll have flying cars and VFX activated to show us when following characters are stuck on trees</Description>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>000: - HOTKEYS-Control: VFX-Destroy</Name>
+        <Description>clear all VFX</Description>
+        <Combo>
+          <Combo>Ctrl+Shift+Alt+F7</Combo>
+          <Modifiers>Ctrl Shift Alt</Modifiers>
+          <Key>
+            <Key>F7</Key>
+            <Code>65</Code>
+          </Key>
+        </Combo>
+        <ManualLoad>true</ManualLoad>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VideoFeedsAction">
+                <Action>Clear</Action>
+                <Name />
+                <Target>(all other)&amp;~dxNothing</Target>
+                <Rect>
+                  <Location>
+                    <X>0</X>
+                    <Y>0</Y>
+                  </Location>
+                  <Size>
+                    <Width>0</Width>
+                    <Height>0</Height>
+                  </Size>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Width>0</Width>
+                  <Height>0</Height>
+                </Rect>
+                <MappedKey />
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>000: - HOTKEYS-Invisibility: DoubleInvis</Name>
+        <Description>ToDo: rework this for non-Bard scenarios
+
+will work best with one of pal/wiz/enc casting IVU in step 1, then SHM in step 2</Description>
+        <Combo>
+          <Combo>Page Up</Combo>
+          <Key>
+            <Key>Page Up</Key>
+            <Code>329</Code>
+          </Key>
+        </Combo>
+        <ManualLoad>true</ManualLoad>
+        <ResetTimer>3</ResetTimer>
+        <ResetType>FromFirstPress</ResetType>
+        <Steps>
+          <Step>
+            <Stick>0.2</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>1</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Invisibility: Undead</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all other</Target>
+                <MappedKey>
+                  <KeyMapString>ISB42 - Custom Hotkeys</KeyMapString>
+                </MappedKey>
+                <Action>Add</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <Target>3</Target>
+                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
+                <MappedKeyString>Invisibility: Fixed</MappedKeyString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all other</Target>
+                <MappedKey>
+                  <KeyMapString>ISB42 - Custom Hotkeys</KeyMapString>
+                  <MappedKeyString>Invisibility: DoubleInvis</MappedKeyString>
                 </MappedKey>
                 <Action>Add</Action>
                 <Value>1</Value>
@@ -6949,8 +7068,7 @@ functionality moved to Setup-* in 199: General Key Map</Description>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>1</Target>
-                <KeyMapString>100: - CHARACTER TEMPLATE</KeyMapString>
-                <MappedKeyString>Control: Load My Group 1 Leader ATGs</MappedKeyString>
+                <MappedKeyString />
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>2</Target>
