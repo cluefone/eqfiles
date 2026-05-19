@@ -10877,6 +10877,10 @@ old target: all&amp;~(is2|dxnothing)</Description>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Action>Join</Action>
+                <RelayGroupString>DoT</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Action>Join</Action>
                 <RelayGroupString>Group1</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="TargetGroupAction">
