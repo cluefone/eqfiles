@@ -21381,7 +21381,7 @@ sent via keystring because HotBar 9 is not configured for keybind access</Descri
                 <Target>all</Target>
                 <ClickBarButton>
                   <ClickBarString>UnifiedBar</ClickBarString>
-                  <ClickBarButtonString>Button 1,8</ClickBarButtonString>
+                  <ClickBarButtonString>Button 1,6</ClickBarButtonString>
                 </ClickBarButton>
                 <BackgroundColor>
                   <Red>255</Red>
@@ -21391,7 +21391,7 @@ sent via keystring because HotBar 9 is not configured for keybind access</Descri
                 <Target>all</Target>
                 <ClickBarButton>
                   <ClickBarString>UnifiedBar</ClickBarString>
-                  <ClickBarButtonString>Button 1,8</ClickBarButtonString>
+                  <ClickBarButtonString>Button 1,6</ClickBarButtonString>
                 </ClickBarButton>
                 <BackgroundColor>
                   <Green>127</Green>
@@ -21406,7 +21406,7 @@ sent via keystring because HotBar 9 is not configured for keybind access</Descri
                 <Target>all</Target>
                 <ClickBarButton>
                   <ClickBarString>UnifiedBar</ClickBarString>
-                  <ClickBarButtonString>Button 1,9</ClickBarButtonString>
+                  <ClickBarButtonString>Button 1,7</ClickBarButtonString>
                 </ClickBarButton>
                 <BackgroundColor>
                   <Red>255</Red>
@@ -21416,7 +21416,7 @@ sent via keystring because HotBar 9 is not configured for keybind access</Descri
                 <Target>all</Target>
                 <ClickBarButton>
                   <ClickBarString>UnifiedBar</ClickBarString>
-                  <ClickBarButtonString>Button 1,9</ClickBarButtonString>
+                  <ClickBarButtonString>Button 1,7</ClickBarButtonString>
                 </ClickBarButton>
                 <BackgroundColor>
                   <Green>127</Green>
