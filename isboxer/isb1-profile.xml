@@ -17777,17 +17777,7 @@ executes /pet swarmleave</Description>
         <Mode>OnPress</Mode>
         <Steps>
           <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="Keystroke">
-                <Combo>
-                  <Combo>Z</Combo>
-                  <Key>
-                    <Key>Z</Key>
-                    <Code>44</Code>
-                  </Key>
-                </Combo>
-              </MappedKeyAction>
-            </Actions>
+            <Actions />
           </Step>
         </Steps>
       </MappedKey>
@@ -19774,17 +19764,7 @@ calls ITC on WIZ/ENC, and Fleeting Spirit on SHM</Description>
         <ResetType>FromFirstPress</ResetType>
         <Steps>
           <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="Keystroke">
-                <Combo>
-                  <Combo>Z</Combo>
-                  <Key>
-                    <Key>Z</Key>
-                    <Code>44</Code>
-                  </Key>
-                </Combo>
-              </MappedKeyAction>
-            </Actions>
+            <Actions />
           </Step>
         </Steps>
       </MappedKey>
@@ -20249,17 +20229,7 @@ inquisitor's judgment</Description>
         <ResetType>FromFirstPress</ResetType>
         <Steps>
           <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="Keystroke">
-                <Combo>
-                  <Combo>Z</Combo>
-                  <Key>
-                    <Key>Z</Key>
-                    <Code>44</Code>
-                  </Key>
-                </Combo>
-              </MappedKeyAction>
-            </Actions>
+            <Actions />
           </Step>
         </Steps>
       </MappedKey>
@@ -23040,17 +23010,7 @@ executes /pet swarmleave</Description>
         <Name>Combat: DPS Rotation</Name>
         <Steps>
           <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="Keystroke">
-                <Combo>
-                  <Combo>X</Combo>
-                  <Key>
-                    <Key>X</Key>
-                    <Code>45</Code>
-                  </Key>
-                </Combo>
-              </MappedKeyAction>
-            </Actions>
+            <Actions />
           </Step>
         </Steps>
       </MappedKey>
